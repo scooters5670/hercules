@@ -25,7 +25,7 @@
 <item>
 <title>[COLOR orange]Adryanlist[COLOR red] [/COLOR][/COLOR]</title>
 <link>http:/Ignoreme</link>
-<jsonrpc>plugin:/plugin.video.adryanlist/</jsonrpc>
+<jsonrpc>plugin:/plugin.video.adryanlist</jsonrpc>
 <fanart>https:/i.ytimg.com/vi/SCDAU0N1y4g/maxresdefault.jpg</fanart>
 <thumbnail>http://www.gruponetai.com/images/hercules/adryan.jpg</thumbnail>
 </item>
