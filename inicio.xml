@@ -22,21 +22,7 @@
 <thumbnail>http://www.gruponetai.com/images/hercules/peliculas.png</thumbnail>
 <externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/menu-peliculas-torrent.xml</externallink>
 </item>
-<item>
-<title>[COLOR orange]Adryanlist[COLOR red] [/COLOR][/COLOR]</title>
-<link>http:/Ignoreme</link>
-<jsonrpc>plugin:/plugin.video.adryanlist/</jsonrpc>
-<fanart>https:/i.ytimg.com/vi/SCDAU0N1y4g/maxresdefault.jpg</fanart>
-<thumbnail>http://www.gruponetai.com/images/hercules/adryan.jpg</thumbnail>
-</item>
- 
-<item>
-<title>[COLOR orange]Explora[COLOR red] Addon Necesario e instalado[/COLOR][/COLOR]</title>
-<link>http:/Ignoreme</link>
-<jsonrpc>plugin:/plugin.video.Explora/</jsonrpc>
-<fanart>https:/raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
-<thumbnail>http://www.gruponetai.com/images/hercules/explora.png</thumbnail>
-</item>
+
 <item>
 <title>[COLOR orange]Atlantis[/COLOR]</title>
 <link>http:/Ignoreme</link>
@@ -72,8 +58,8 @@
 <thumbnail>https://pbs.twimg.com/profile_images/810525442633515008/0JCMnHHH.jpg</thumbnail>
 <externallink>https://raw.githubusercontent.com/Andorth/hercules/master/youtubers/inicio.xml</externallink>
 </item>  
-    
-<!--<item>
+
+<item>
 <title>[COLOR orange]Creditos[/COLOR]</title>
 <link>$doregex[openDialog]</link>
 <regex>
@@ -94,5 +80,5 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>http:/www.thebarlowrchigh.co.uk/media/184153/information-icon.png</thumbnail>
 <fanart>https:/raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
-</item> -->
+</item>
 </items> 
