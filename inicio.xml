@@ -8,6 +8,23 @@
 <externallink></externallink>
 </item>
 <item>
+<title>Canciones Navideñas mientras preguntas por tu licencia. ;)</title>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Choose a movie', ['Mariah Carey -  All I Want For Christmas Is You', 'ENYA -The Spirit of Christmas Past', 'Frank Sinatra & Nat King Cole - Christmas Songs'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=yXQViqx6GMY', 'plugin://plugin.video.youtube/play/?video_id=D__kV5CrU4k', 'plugin://plugin.video.youtube/play/?video_id=dwpBHCZ9DBM']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+<item>
 <parentalblock>true</parentalblock> 
 <title>[COLOR yellow][B]Entrar Al servidor[/B][/COLOR] [COLOR white]Su addon está activado.[/COLOR]</title>
 <link>http:/Ignoreme</link>
