@@ -20,12 +20,12 @@
 <link>http:/Ignoreme</link>
 <fanart>http://www.gruponetai.com/images/hercules/peliculas.jpg</fanart>
 <thumbnail>http://www.gruponetai.com/images/hercules/peliculas.png</thumbnail>
-<externallink>https:/raw.githubusercontent.com/Andorth/Hercules/master/peliculas/menu-peliculas-torrent.xml</externallink>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/menu-peliculas-torrent.xml</externallink>
 </item>
 <item>
 <title>[COLOR orange]Adryanlist[COLOR red] [/COLOR][/COLOR]</title>
 <link>http:/Ignoreme</link>
-    <externallink>https:/raw.githubusercontent.com/adrianhn/adryanlist/master/list.xml</externallink>
+<jsonrpc>plugin:/plugin.video.adryanlist/</jsonrpc>
 <fanart>https:/i.ytimg.com/vi/SCDAU0N1y4g/maxresdefault.jpg</fanart>
 <thumbnail>http://www.gruponetai.com/images/hercules/adryan.jpg</thumbnail>
 </item>
