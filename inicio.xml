@@ -8,7 +8,8 @@
 <externallink></externallink>
 </item>
 <item>
-<title>[COLOR orange][B]Entrar Al servidor[/B][/COLOR] [COLOR white]Debe de Activar el addon con una Licencia gratuita.[/COLOR]</title>
+<parentalblock>true</parentalblock> 
+<title>[COLOR orange][B]Entrar Al servidor[/B][/COLOR] [COLOR white]Su addon está activado.[/COLOR]</title>
 <link>http:/Ignoreme</link>
 <thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Oxygen480-status-security-high.svg/1024px-Oxygen480-status-security-high.svg.png</thumbnail>
 <externallink></externallink>
