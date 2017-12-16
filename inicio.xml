@@ -13,7 +13,7 @@
 <link>http:/Ignoreme</link>
 <fanart>http://www.gruponetai.com/images/hercules/series.jpg</fanart>
 <thumbnail>http://www.gruponetai.com/images/hercules/series.png</thumbnail>
-<externallink>https:/pastebin.com/raw/chmKTFhY</externallink>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/series/menu-series.xml</externallink>
 </item>
 <item>
 <title>[COLOR orange]Peliculas[/COLOR]</title>
@@ -25,7 +25,7 @@
 <item>
 <title>[COLOR orange]Adryanlist[COLOR red] [/COLOR][/COLOR]</title>
 <link>http:/Ignoreme</link>
-<jsonrpc>plugin:/plugin.video.adryanlist</jsonrpc>
+<jsonrpc>plugin:/plugin.video.adryanlist/</jsonrpc>
 <fanart>https:/i.ytimg.com/vi/SCDAU0N1y4g/maxresdefault.jpg</fanart>
 <thumbnail>http://www.gruponetai.com/images/hercules/adryan.jpg</thumbnail>
 </item>
@@ -49,28 +49,28 @@
 <link>http:/Ignoreme</link>
 <fanart>https:/raw.githubusercontent.com/Andorth/Hercules/master/imagenes/tv.png</fanart>
 <thumbnail>http://www.gruponetai.com/images/hercules/documentales.png</thumbnail>
-<externallink>https:/raw.githubusercontent.com/Andorth/Hercules/master/documentales/inicio.xml</externallink>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/documentales/inicio.xml</externallink>
 </item>
 <item>
 <title>[COLOR orange]Deportes[/COLOR][COLOR white][/COLOR]</title>
 <link>http:/Ignoreme</link>
 <thumbnail>http://www.gruponetai.com/images/hercules/deportes.png</thumbnail>
 <fanart>https:/raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
-<externallink>https:/raw.githubusercontent.com/Andorth/Hercules/master/deportes/deportes.xml</externallink>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/deportes.xml</externallink>
 </item>
 <item>
 <title>[COLOR orange]Programas tv[/COLOR]</title>
 <link>http:/Ignoreme</link>
 <fanart>https:/raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
 <thumbnail>http://www.gruponetai.com/images/hercules/tv.png</thumbnail>
-<externallink>https:/raw.githubusercontent.com/Andorth/Hercules/master/programastv/inicio.xml</externallink>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/programastv/inicio.xml</externallink>
 </item>
 <item>
 <title>[COLOR orange]YOUtubers Seleccion[/COLOR]</title>
 <link>http:/Ignoreme</link>
 <fanart>https:/raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
 <thumbnail>https://pbs.twimg.com/profile_images/810525442633515008/0JCMnHHH.jpg</thumbnail>
-<externallink>https:/raw.githubusercontent.com/Andorth/Hercules/master/youtubers/inicio.xml</externallink>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/youtubers/inicio.xml</externallink>
 </item>  
     
 <!--<item>
