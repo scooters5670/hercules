@@ -7,6 +7,23 @@
 <thumbnail>http://www.gruponetai.com/images/hercules/icon.png</thumbnail>
 <externallink></externallink>
 </item>
+ https://www.youtube.com/watch?v=TkjiSM68zE4
+<item>
+<title>[COLOR white]Tutoriales de Hercules[/COLOR] [COLOR lime] Necesitas ayuda? Te ayudamos. [/COLOR]</title>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    tutoriales = dialog.select('Elige un tutorial:', ['Activacion de licencia Hercules: Kodiadictos.', 'Tutorial de Hercules - Canal Nereo.', 'Tutorial de QUASAR','Kodiadictos:Hercules.','Notbuffering tutorial'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=TkjiSM68zE4', 'https://archive.org/download/HerculesCANALNEREO/Hercules-CANALNEREO.mp4', 'https://archive.org/download/tutorial_201710/tutorial.mp4','https://archive.org/download/hercules-kodiadictpos/hercules-kodiadictpos.mp4','https://archive.org/download/NetaiAvancedConfigSettings/Netai-avanced-config-settings.mp4']
+    return channels[tutoriales]
+]]></expres>
+<page></page>
+</regex>
+</item>
 <item>
 <title>[COLOR white]Canciones Navideñas[/COLOR] [COLOR lime] Felices fiestas!! [/COLOR]</title>
 <link>$doregex[select]</link>
