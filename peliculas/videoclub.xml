@@ -235,6 +235,35 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 <!-- M -->
 
+<item>
+<title>[COLOR orange]Mia[/COLOR][COLOR white]2011
+Drama |Argentina|[/COLOR]</title>
+<thumbnail>http://www.pelisplanet.com/wp-content/uploads/2017/07/M%C3%ADa-210x300.jpg</thumbnail> 
+<fanart>http://www.pelisplanet.com/wp-content/uploads/2017/07/M%C3%ADa-210x300.jpg</fanart>
+<info>
+Sinopsis:    
+La historia aborda el derecho a la felicidad y a poder formar parte de la comunidad, de quienes han elegido una forma diferente de la moralmente aceptada por la sociedad, y nos permite repasar el tema de la discriminación, la intolerancia, la marginación y la exclusión social, pero también el de la infinita capacidad de amor que tiene el ser humano.
+</info>
+
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamango.com/f/cdbnmnsaabboktdm/M_a_mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail> 
+<page></page>
+</item>
+
 <!-- N -->
 
 <!-- Ñ -->
