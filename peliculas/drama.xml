@@ -72,6 +72,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- G -->
 <item>
 <title>[COLOR orange]Ghost, mas alla del amor. [/COLOR][COLOR white] Castellano[/COLOR]</title>  
+    <thumbnail>https://i.pinimg.com/originals/f2/cc/c1/f2ccc1c5b0646407aada89aa34dd335f.jpg</thumbnail>
 <link>$doregex[resolve]</link>
 <regex>
 <name>resolve</name>
@@ -87,7 +88,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://pics.filmaffinity.com/ghost-419228198-mmed.jpg</thumbnail>    
+<thumbnail>https://i.pinimg.com/originals/f2/cc/c1/f2ccc1c5b0646407aada89aa34dd335f.jpg</thumbnail>    
 </item>
 
 
