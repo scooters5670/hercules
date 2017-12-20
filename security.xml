@@ -1,5 +1,5 @@
 <item>
-<title>Password protected</title>
+<title>[COLOR red][B]Password protected[/B]</title>
 <link>$doregex[getinput]</link>
 
 <regex>
