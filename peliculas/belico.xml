@@ -1,4 +1,38 @@
 
+<!--  Regex para streamplay,streamcloud,openload,StreamGo,Uptobox,Yourupload
+<item>
+<title>[COLOR orange][/COLOR][COLOR white][/COLOR]</title>
+<thumbnail></thumbnail> 
+<fanart></fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = ' Url de la pelicula'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail> 
+<page></page>
+</item>
+-->
+
+
+<!-- 0-9 @# -->
+
+<!-- A -->
+
+<!-- B -->
+
+<!-- C -->
+
 <!--D-->   
    <item>
 <title>[COLOR orange]Dunkerke[/COLOR][COLOR white] 2017[/COLOR]</title>
@@ -39,3 +73,47 @@
 <thumbnail>http://es.web.img3.acsta.net/c_215_290/pictures/17/06/09/12/52/190097.jpg</thumbnail>
 <fanart>http://es.web.img3.acsta.net/c_215_290/pictures/17/06/09/12/52/190097.jpg</fanart>
 </item>
+<!-- E -->
+
+<!-- F -->
+
+<!-- G -->
+
+<!-- H -->
+
+<!-- I -->
+
+<!-- J -->
+
+<!-- K -->
+
+<!-- L -->
+   
+<!-- M -->
+
+<!-- N -->
+
+<!-- Ñ -->
+
+<!-- O -->
+
+<!-- P -->
+
+<!-- Q -->
+
+<!-- R -->
+
+<!-- S -->
+
+<!-- T -->
+<!-- U -->
+
+<!-- V -->
+
+<!-- W -->
+
+<!-- X -->
+
+<!-- Y -->
+
+<!-- Z -->
