@@ -29,6 +29,32 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <!-- 0-9 @# -->
+<item>
+<title>[COLOR orange]50 Primaveras[/COLOR][COLOR white] 2017 [/COLOR]</title>
+    <info>
+       Aurore Tabort está separada, acaba de perder su empleo y recibe la noticia de que va a ser abuela. A sus 50 años su vida parece estar estancada, pero cuando se encuentra por casualidad con un antiguo amor de su juventud, se produce un cambio en Aurore, y se niega a admitir que esa podría ser la ocasión perfecta para empezar una nueva vida. 
+    </info>
+<thumbnail>http://bucket2.clanacion.com.ar/anexos/fotos/cartelera/50-primaveras-c_8024_poster2.jpg</thumbnail> 
+<fanart>http://bucket2.clanacion.com.ar/anexos/fotos/cartelera/50-primaveras-c_8024_poster2.jpg/fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamango.com/f/qartsprocsrsabab/50_Primaveras_264_mkv'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://bucket2.clanacion.com.ar/anexos/fotos/cartelera/50-primaveras-c_8024_poster2.jpg</thumbnail> 
+<page></page>
+</item>
+
 
 <!-- A -->
 
