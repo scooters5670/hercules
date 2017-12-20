@@ -301,28 +301,46 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <!-- T -->
+    
 <item>
-<title>[COLOR orange]Tadeo Jones 2[/COLOR][COLOR white] El secreto del rey Midas[/COLOR]</title>
+<title>[COLOR orange][B]Tadeo Jones 2[/B][/COLOR][COLOR white] El secreto del rey Midas[/COLOR]</title>
+<link>$doregex[makelist]</link>
 <thumbnail>https://i2.wp.com/www.peliculastoday.com/wp-content/uploads/2017/08/Tadeo-Jones-2-El-secreto-del-rey-Midas.jpg</thumbnail> 
-<fanart></fanart>
-<link>$doregex[resolve]</link>
+<fanart>https://i2.wp.com/www.peliculastoday.com/wp-content/uploads/2017/08/Tadeo-Jones-2-El-secreto-del-rey-Midas.jpg</fanart>
+
 <regex>
-<name>resolve</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
-    url = 'https://streamcherry.com/embed/pedpamccfkedonns/'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = 'http://www.gruponetai.com/videos/error.mp4'
-    return u
-]]></expres>
-<page></page>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title> 
+        <link>$doregex[getUrl]</link>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/moipera/tade0-j0n3s-2-98534</page>
+<cookieJar></cookieJar>
 </regex>
-<thumbnail>http://hdfull.tv/tthumb/172x256/movie_50f7663b0c2cb31e690faf009003e1e1.jpg</thumbnail> 
-<page></page>
-</item>    
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://i2.wp.com/www.peliculastoday.com/wp-content/uploads/2017/08/Tadeo-Jones-2-El-secreto-del-rey-Midas.jpg</thumbnail> 
+<fanart>https://i2.wp.com/www.peliculastoday.com/wp-content/uploads/2017/08/Tadeo-Jones-2-El-secreto-del-rey-Midas.jpg</fanart>
+</item>
+
 
 <!-- U -->
 
