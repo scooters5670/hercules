@@ -130,6 +130,46 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- C -->
 
 <!-- D -->
+    <item>
+<title>[COLOR orange]Dunkerke[/COLOR][COLOR white] 2017[/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+<thumbnail>http://es.web.img3.acsta.net/c_215_290/pictures/17/06/09/12/52/190097.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/c_215_290/pictures/17/06/09/12/52/190097.jpg</fanart>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title> 
+        <link>$doregex[getUrl]</link>
+
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/moipera/dunk3rnk3-98535</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://es.web.img3.acsta.net/c_215_290/pictures/17/06/09/12/52/190097.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/c_215_290/pictures/17/06/09/12/52/190097.jpg</fanart>
+</item>
+
 <item>
 <title>[COLOR orange]Dunkerke [2017][/COLOR][COLOR white] V.O[/COLOR]</title>
 <thumbnail>https://foreignpolicymag.files.wordpress.com/2017/07/dunkirk_film_poster.jpg</thumbnail> 
