@@ -70,7 +70,7 @@ def GetLSProData(page_data,Cookie_Jar,m,txt='Contraseña'):
 	verify = 'bmV0YWk='.decode('base64')
     solution = solver.get()
     if solution == 'verify':
-    return "https://pastebin.com/raw/NBn5yngf"
+    return "https://pastebin.com/raw/1Eask00f"
    
  
     class InputWindow(xbmcgui.WindowDialog):
