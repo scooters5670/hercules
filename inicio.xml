@@ -52,7 +52,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
 <item>
-<title>[COLOR red][B]+ZONA PRIVADA[/B][/COLOR]</title>
+<title>[COLOR yellow][B]+ZONA PRIVADA[/B][/COLOR]</title>
 <link>$doregex[getinput]</link>
 
 <regex>
@@ -68,7 +68,7 @@ def GetLSProData(page_data,Cookie_Jar,m,txt='Enter Password?'):
 
     solver = InputWindow( txt=txt)
     solution = solver.get()
-    if solution == 'Z3J1cG9uZXRhaQ=='.decode('base64')
+    if solution == 'gruponetai'
         return play()
     else:
         return ''
