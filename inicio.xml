@@ -53,8 +53,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR red][B]+ZONA PRIVADA[/B][/COLOR]</title>
-<link>$doregex[getinput]</link>
-
+<link>NA</link>
+<externallink>$doregex[getinput]</externallink>
 <regex>
 <name>getinput</name>
 
@@ -62,13 +62,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 import xbmcgui,xbmc, xbmcaddon, time, base64
 
 def GetLSProData(page_data,Cookie_Jar,m,txt='Enter Password?'):
-    addon = xbmcaddon.Addon('plugin.video.live.streamspro')
+    addon = xbmcaddon.Addon('plugin.video.Hercules')
     addon_version = addon.getAddonInfo('version')
     profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
 
     solver = InputWindow( txt=txt)
     solution = solver.get()
-    if solution == 'Z3J1cG9uZXRhaQ=='.decode('base64')
+    if solution == 'Z3J1cG9uZXRhaQ=='.decode('base64'):
         return play()
     else:
         return ''
