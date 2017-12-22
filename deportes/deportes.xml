@@ -16,7 +16,7 @@
 <expres><![CDATA[#$pyFunction
 import xbmcgui,xbmc, xbmcaddon, time, base64
 
-def GetLSProData(page_data,Cookie_Jar,m,txt='Enter Password?'):
+def GetLSProData(page_data,Cookie_Jar,m,txt='Escribe contraseña:'):
     addon = xbmcaddon.Addon('plugin.video.Hercules')
     addon_version = addon.getAddonInfo('version')
     profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
