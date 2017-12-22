@@ -96,7 +96,7 @@ class InputWindow(xbmcgui.WindowDialog):
         return False
 
 def play():
-    return 'http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4'
+    return 'https://raw.githubusercontent.com/Andorth/hercules/master/novedades.xml'
 ]]></expres>
 <page></page>
 </regex>
