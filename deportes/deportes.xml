@@ -6,15 +6,6 @@
   <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
 </item>
 
-
-
-<item>
-<title>[COLOR white][B]Seccion Deportes [/B][/COLOR]</title>
-<link>$doregex</link>
-<page></page>
-<thumbnail>http://www.gruponetai.com/imagenes/deportes.png</thumbnail>
-</item>
-
 <item>
 <title>[COLOR gold][B]+ZONA PRIVADA[/B] [/COLOR][COLOR white]Deportes en directo.[/COLOR]</title>
 <link>NA</link>
