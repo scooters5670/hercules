@@ -52,7 +52,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
 <item>
-<title>Password protected  - Big Buck Bunny (password = test)</title>
+<title>[COLOR red][B]+ZONA PRIVADA[/B][/COLOR]</title>
 <link>$doregex[getinput]</link>
 
 <regex>
@@ -60,7 +60,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <expres><![CDATA[#$pyFunction
 import xbmcgui,xbmc, xbmcaddon, time
-
+import base64
 def GetLSProData(page_data,Cookie_Jar,m,txt='Enter Password?'):
     addon = xbmcaddon.Addon('plugin.video.Hercules')
     addon_version = addon.getAddonInfo('version')
@@ -68,7 +68,8 @@ def GetLSProData(page_data,Cookie_Jar,m,txt='Enter Password?'):
 
     solver = InputWindow( txt=txt)
     solution = solver.get()
-    if solution == 'test':
+    pass = 'Z3J1cG9uZXRhaQ=='.decode('base64')
+    if solution == 'pass':
         return play()
     else:
         return ''
@@ -96,7 +97,7 @@ class InputWindow(xbmcgui.WindowDialog):
         return False
 
 def play():
-    return 'http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4'
+    return 'https://pastebin.com/raw/srcL3fLp'
 ]]></expres>
 <page></page>
 </regex>
