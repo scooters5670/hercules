@@ -62,7 +62,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 import xbmcgui,xbmc, xbmcaddon, time
 
 def GetLSProData(page_data,Cookie_Jar,m,txt='Enter Password?'):
-    addon = xbmcaddon.Addon('plugin.video.live.streamspro')
+    addon = xbmcaddon.Addon('plugin.video.Hercules')
     addon_version = addon.getAddonInfo('version')
     profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
 
