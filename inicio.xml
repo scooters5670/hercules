@@ -52,7 +52,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
 <item>
-<title>[COLOR yellow][B]+ZONA PRIVADA[/B][/COLOR]</title>
+<title>[COLOR red][B]+ZONA PRIVADA[/B][/COLOR]</title>
 <link>$doregex[getinput]</link>
 
 <regex>
@@ -68,7 +68,7 @@ def GetLSProData(page_data,Cookie_Jar,m,txt='Enter Password?'):
 
     solver = InputWindow( txt=txt)
     solution = solver.get()
-    if solution == 'gruponetai'
+    if solution == 'Z3J1cG9uZXRhaQ=='.decode('base64')
         return play()
     else:
         return ''
@@ -96,7 +96,7 @@ class InputWindow(xbmcgui.WindowDialog):
         return False
 
 def play():
-    return 'https://raw.githubusercontent.com/Andorth/hercules/master/novedades.xml'
+    return 'http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4'
 ]]></expres>
 <page></page>
 </regex>
