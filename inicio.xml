@@ -52,7 +52,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
 <item>
-<title>[COLOR red][B]+ZONA PRIVADA[/B][/COLOR]</title>
+<title>[COLOR skyblue][B]+ZONA PRIVADA[/B][/COLOR]</title>
 <link>NA</link>
 <externallink>$doregex[getinput]</externallink>
 <regex>
