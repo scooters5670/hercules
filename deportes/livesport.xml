@@ -7,6 +7,30 @@
 </item>
 
 <item>
+  <title>[COLOR white][B]Real Madrid - F.C. Barcelona[/B] [COLOR gold]AV 1 SPA[/COLOR]</title>
+  <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
+  <link>plugin://program.plexus/?mode=1&url=acestream://541257197770d34d4e89a05dac57b259e9e63127&name=Hercules-Arenavision.tk+channel</link> 
+</item>
+
+<item>
+  <title>[COLOR white][B]Real Madrid - F.C. Barcelona[/B] [COLOR gold]AV 2 SPA[/COLOR]</title>
+  <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
+  <link>plugin://program.plexus/?mode=1&url=acestream://541257197770d34d4e89a05dac57b259e9e63127&name=Hercules-Arenavision.tk+channel</link> 
+</item>
+
+<item>
+  <title>[COLOR white][B]Real Madrid - F.C. Barcelona[/B] [COLOR gold]AV 10 SPA[/COLOR]</title>
+  <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
+  <link>plugin://program.plexus/?mode=1&url=acestream://aa634a4a55bb780a0ae52a53ed0f6bbd120ef59c&name=Hercules-Arenavision.tk+channel</link> 
+</item>
+
+<item>
+  <title>[COLOR white][B]Real Madrid - F.C. Barcelona[/B] [COLOR gold]AV 11 SPA[/COLOR]</title> 
+  <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
+  <link>plugin://program.plexus/?mode=1&url=acestream://aa634a4a55bb780a0ae52a53ed0f6bbd120ef59c&name=Hercules-Arenavision.tk+channel</link> 
+</item>
+
+<item>
 <title>[B][COLOR orange]+ Adryanlist Arenavision + [/B] [COLOR white][B]LA LIGA & LIGA 123[/B] [/COLOR]</title>
 <link>http://ignorame</link>
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/acestream.png</thumbnail>
