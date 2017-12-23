@@ -71,7 +71,7 @@ def play():
 <item>
 <title>[COLOR orange][B]+Canal Liga santander [/B][COLOR white] Eventos.[/COLOR][/COLOR]</title>
 <link>ignorme</link>
-<jsonrpc>plugin://plugin.video.youtube/user/laliga/playlists?disable_polymer=1</jsonrpc>
+<jsonrpc>plugin://plugin.video.youtube/thxQw3t2y6Y/</jsonrpc>
 <thumbnail>https://i.ytimg.com/vi/O8jjuSaHMmY/hqdefault.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
 </item>
