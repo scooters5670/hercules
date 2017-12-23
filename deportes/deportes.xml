@@ -1,5 +1,5 @@
 <item>
-<title>[COLOR white][B]Seccion Deportes [/B][COLOR orange]|En Directo[/COLOR][/COLOR]</title>
+<title>[COLOR white][B]Seccion Deportes [/B][COLOR orange][/COLOR][/COLOR]</title>
 <link>$doregex</link>
 <page></page>
 <thumbnail>http://www.gruponetai.com/imagenes/deportes.png</thumbnail>
@@ -7,7 +7,7 @@
 </item>
 
 <item>
-<title>[COLOR gold][B]+ZONA PRIVADA[/B] [/COLOR][COLOR white]Deportes en directo.[/COLOR]</title>
+<title>[COLOR gold][B]+ZONA PRIVADA[/B] [/COLOR][COLOR white]Eventos en directo.[/COLOR]</title>
 <link>NA</link>
 <externallink>$doregex[getinput]</externallink>
 <regex>
@@ -57,37 +57,7 @@ def play():
 </regex>
 </item>
 
-<item>
-<title>[COLOR orange][B]+ Liga Santander[/B] [COLOR white] [Partidos completos.] [/COLOR][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex><name>makelist</name>
-<listrepeat><![CDATA[   
-<title>[makelist.param1]</title>
-<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-<thumbnail>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</thumbnail>
-]]></listrepeat>
-<expres>title="(.*?)".*?watch\?v=(.*?)[",&amp;]</expres>
-<page>https://www.youtube.com/channel/UC745Hghzlgsj5zzCkOdqrqQ</page> para canales entero
-</regex>  
-<thumbnail>https://yt3.ggpht.com/-3ZbRaLTkikQ/AAAAAAAAAAI/AAAAAAAAAAA/Ee5pLPXR2d4/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
-  <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
-</item>
 
-<item>
-<title>[COLOR orange][B]+ Liga Santander[/B][COLOR white] [Goles y Jugadas] [/COLOR][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex><name>makelist</name>
-<listrepeat><![CDATA[   
-<title>[makelist.param1]</title>
-<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-<thumbnail>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</thumbnail>
-]]></listrepeat>
-<expres>title="(.*?)".*?watch\?v=(.*?)[",&amp;]</expres>
-<page>https://www.youtube.com/channel/UCoBwi6czckIzfocYPnPNH8g</page> para canales entero
-</regex>  
-<thumbnail>http://files.laliga.es/seccion_logos/laliga-v-1200x1200.png</thumbnail>
-  <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
-</item>
 
 
 <item>
@@ -97,6 +67,25 @@ def play():
 <thumbnail>http://files.laliga.es/seccion_logos/laliga-v-1200x1200.png</thumbnail>
   <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
 </item>
+
+<item>
+<title>[COLOR orange][B]+Canal Liga santander [/B][COLOR white] Eventos.[/COLOR][/COLOR]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/channel/UCTv-XvfzLX3i4IGWAm4sbmA</jsonrpc>
+<thumbnail>https://i.ytimg.com/vi/O8jjuSaHMmY/hqdefault.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR orange][B]+ Real Madrid - F.C Barcelona [/B][COLOR white] El clasico 23/12/2017 [/COLOR][/COLOR]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/playlist/PLKj1QUtwqLN8nf-RL8qpVd4Zh4XZSRTBi/</jsonrpc>
+<thumbnail>https://i.ytimg.com/vi/O8jjuSaHMmY/hqdefault.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
+</item>
+
+
+
 
 <item>
 <title>[COLOR orange][B]+ Lo mejor [/B][COLOR white] De la jornada [/COLOR][/COLOR]</title>
