@@ -38,6 +38,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[makelist]</link>
 <thumbnail>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</thumbnail>
 <fanart>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</fanart>
+        <info>Ambientada en un presente alternativo donde los seres humanos, orcos, elfos y hadas han convivido desde el inicio de los tiempos, dos policías con perfiles muy distintos patrullan juntos. Uno es el humano Ward (Will Smith), y el otro el orco Jakoby (Joel Edgerton). Ambos inician una guardia nocturna que cambiará el futuro y el mundo que conocen. A pesar de sus diferencias personales, deberán trabajar juntos para proteger a una joven elfo y una reliquia perdida que, de caer en las manos equivocadas, podría destruirlo todo.</info>
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
