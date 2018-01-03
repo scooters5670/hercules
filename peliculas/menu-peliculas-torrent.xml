@@ -44,15 +44,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR orange][B] Buscar En [/B] [/COLOR][COLOR white] ElMejorTorrent [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
+<title>[COLOR orange][B] Buscar En [/B] [/COLOR][COLOR white] El Mejor Torrent [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
 <link>$doregex[makelist2]</link>
 
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
- <SetViewMode>55</SetViewMode>
- <title>[COLOR skyblue][UPPERCASE][B] [makelist2.param2][/B][/UPPERCASE][/COLOR] [I][COLOR lightslategray][makelist2.param3][/I][/COLOR]  </title>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR white][UPPERCASE][B] [makelist2.param2][/B][/UPPERCASE][/COLOR] [I][COLOR lightslategray][makelist2.param3][/I][/COLOR]  </title>
 <link>$doregex[makelist]</link>
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
 <info>[B][COLOR skyblue]»»»   A  D  R  Y  A  N  L  I  S  T  «««[/COLOR]
@@ -74,7 +74,7 @@ import xbmcaddon
 import xbmcgui
 def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
-    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    d = dialog.input('Buscar Pelicula:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
     return d
 ]]></expres>
 <page></page>
@@ -86,10 +86,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <title>[COLOR lightblue]Reproducir [B][makelist2.param2][/B] [/COLOR]</title>
+<title>[COLOR orange]Ver [B][makelist2.param2][/B] [/COLOR]</title>
 
-    <link>plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com[makelist.param2]</link>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<link>plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com[makelist.param2]</link>
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 <info>[B][COLOR skyblue]»»»   A  D  R  Y  A  N  L  I  S  T  «««[/COLOR]
 [COLOR aquamarine]Donaciones paypal.me/adryanlist[/COLOR][/B]</info>
 ]]></listrepeat>
