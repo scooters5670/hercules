@@ -46,7 +46,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[COLOR orange][B] Buscar En [/B] [/COLOR][COLOR white] El Mejor Torrent [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
 <link>$doregex[makelist2]</link>
-
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 
 <regex>
 <name>makelist2</name>
@@ -54,7 +54,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <SetViewMode>500</SetViewMode>
 <title>[COLOR white][UPPERCASE][B] [makelist2.param2][/B][/UPPERCASE][/COLOR] [I][COLOR lightslategray][makelist2.param3][/I][/COLOR]  </title>
 <link>$doregex[makelist]</link>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
 <info>[B][COLOR skyblue]»»»   A  D  R  Y  A  N  L  I  S  T  «««[/COLOR]
 [COLOR aquamarine]Donaciones paypal.me/adryanlist[/COLOR][/B]</info>
 </regex>
@@ -62,7 +62,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[peli-descargar-torrent-(.*?)-.*?darkblue\'>(.*?)<.*?gray\;\'>(.*?)<]]></expres>
 <page>http://www.mejortorrent.com/secciones.php?sec=buscador&amp;valor=$doregex[search]</page>
 </regex>
-
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 
 
 
@@ -121,7 +121,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>peli-descargar-torrent-(.*?)-.*?\n.*?\/uploads\/imagenes\/peliculas\/(.*?)\.jpg</expres>
 <page>$doregex[select]</page>
 </regex>
-
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
