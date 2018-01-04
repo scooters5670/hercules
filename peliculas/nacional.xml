@@ -1,1 +1,248 @@
-...
+<!--
+Para torrents !
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange] [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=', 'plugin://plugin.video.torrenter/?action=playSTRM&url=', 'plugin://plugin.video.quasar/play?uri=']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+<!--  Regex para streamplay,streamcloud,openload,StreamGo,Uptobox,Yourupload
+<item>
+<title>[COLOR orange][/COLOR][COLOR white][/COLOR]</title>
+<thumbnail></thumbnail> 
+<fanart></fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = ' Url de la pelicula'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail> 
+<page></page>
+</item>
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Angry Birds [/COLOR][COLOR white]Torrent[/COLOR]</title>
+    <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_UY268_CR3,0,182,268_AL_.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_UY268_CR3,0,182,268_AL_.jpg</fanart>
+    <info>
+Título original
+The Angry Birds Movie aka 
+Año
+2016
+Duración
+97 min.
+Basada en la colección de videojuegos "Angry Birds", la historia se desarrolla en una isla poblada por aves felices que no vuelan. En este paraíso, Red, un pájaro con muy mal genio, el veloz Chuck y el volátil Bomb nunca han terminado de encajar. Pero cuando llegan a la isla unos misteriosos cerdos verdes, serán estos tres marginados los que averigüen qué traman los extraños visitantes.   
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent', 'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent', 'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_UY268_CR3,0,182,268_AL_.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_UY268_CR3,0,182,268_AL_.jpg</fanart>
+</item>
+-->
+
+
+<!-- 0-9 @# -->
+<item>
+<title>[COLOR orange]60 Segundos[/COLOR] Castellano [COLOR white] StreamGo [/COLOR]</title>
+    <info>
+    Hace ya tiempo que Randall "Memphis" Raines (Nicolas Cage) ha dejado atrás su pasado delictivo. Sin embargo, se ve obligado a volver... cuando su hermano Kip (Giovanni Ribisi) falla al realizar un trabajo para Raymond Calitri (Christopher Eccleston), un famoso broker del robo de vehículos. Ahora, para salvar a su hermano, Memphis deberá reunir a su antiguo equipo para robar 50 coches de lujo. Con la policía tras él, Memphis deberá cumplir el trato y robar cada auto en 60 segundos. 
+Elenco: Nicolas Cage , Giovanni Ribisi , Angelina Jolie , T.J. Cross , Robert Duvall , William Lee Scott , Scott Caan , James Duval , Delroy Lindo , Timothy Olyphant , Chi McBride , Christopher Eccleston , Grace Zabriskie , Vinnie Jones , Will Patton , Michael Peña .
+    </info>
+<thumbnail>http://hdfull.tv/tthumb/172x256/movie_9a3f0952d44879cc3c57c4f5ee96d02b.jpg</thumbnail> 
+<fanart>http://hdfull.tv/tthumb/172x256/movie_9a3f0952d44879cc3c57c4f5ee96d02b.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamango.com/f/nandstmtadtmlpfn'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://hdfull.tv/tthumb/172x256/movie_9a3f0952d44879cc3c57c4f5ee96d02b.jpg</thumbnail> 
+<page></page>
+</item>
+
+<!-- A -->
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Agente Contrainteligente [/COLOR][COLOR white]Torrent[/COLOR]</title>
+    <thumbnail>http://es.web.img2.acsta.net/pictures/16/02/15/17/31/232750.jpg</thumbnail>
+<fanart>http://es.web.img2.acsta.net/pictures/16/02/15/17/31/232750.jpg</fanart>
+    <info>
+Título:
+Agente contrainteligente
+Año: 2016
+Duración: 80 min.
+Un implacable agente del MI6 británico (Mark Strong), del grupo de operaciones especiales, descubre que tiene un hermano (Sacha Baron Cohen) muy diferente a él: fanático del fútbol y protagonista de numerosos y disparatados altercados dado su peculiar y conflictivo carácter. 
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent', 'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent', 'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+    <thumbnail>http://es.web.img2.acsta.net/pictures/16/02/15/17/31/232750.jpg</thumbnail>
+<fanart>http://es.web.img2.acsta.net/pictures/16/02/15/17/31/232750.jpg</fanart>
+</item>
+<!-- B -->
+
+    <item>
+<title>[COLOR orange]Bright [/COLOR][COLOR white] 2017[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</thumbnail>
+<fanart>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</fanart>
+        <info>Ambientada en un presente alternativo donde los seres humanos, orcos, elfos y hadas han convivido desde el inicio de los tiempos, dos policías con perfiles muy distintos patrullan juntos. Uno es el humano Ward (Will Smith), y el otro el orco Jakoby (Joel Edgerton). Ambos inician una guardia nocturna que cambiará el futuro y el mundo que conocen. A pesar de sus diferencias personales, deberán trabajar juntos para proteger a una joven elfo y una reliquia perdida que, de caer en las manos equivocadas, podría destruirlo todo.</info>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title> 
+        <link>$doregex[getUrl]</link>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/moipera/bright-99139</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</thumbnail>
+<fanart>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</fanart>
+</item>
+<!-- C -->
+
+<!-- D -->
+
+<!-- E -->
+
+<!-- F -->
+
+<!-- G -->
+
+<!-- H -->
+
+<!-- I -->
+
+
+<!-- J -->
+
+<!-- K -->
+
+<!-- L -->
+<item>
+    <title>[COLOR orange][B]Las aventuras de Tadeo Jones[/B][COLOR white] Castellano [/COLOR][/COLOR]</title>
+<thumbnail>http://es.web.img2.acsta.net/medias/nmedia/18/90/40/12/20199350.jpg</thumbnail> 
+<fanart>http://es.web.img2.acsta.net/medias/nmedia/18/90/40/12/20199350.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/cv706fmlg1j2/LsAventdTadJonBRRIP_-_www.newpct.com.avi.html'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail> 
+<thumbnail>http://es.web.img2.acsta.net/medias/nmedia/18/90/40/12/20199350.jpg</thumbnail> 
+</item>
+<!-- M -->
+
+<!-- N -->
+
+<!-- Ñ -->
+
+<!-- O -->
+
+<!-- P -->
+
+<!-- Q -->
+
+<!-- R -->
+
+<!-- S -->
+
+<!-- T -->
+
+<!-- U -->
+
+<!-- V -->
+
+<!-- W -->
+
+<!-- X -->
+
+<!-- Y -->
+
+<!-- Z -->
