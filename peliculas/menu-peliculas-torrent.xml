@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <SetViewMode>500</SetViewMode>
 <items>
-<item>
+<!-- <item>
 <title>[COLOR orange]+BUSCAR [INTERNO][/COLOR]</title>
 <link>$doregex[makelist]</link>
 
@@ -42,6 +42,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 
 </item>
+-->
 
  
 <item>
