@@ -227,14 +227,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/familiar.xml</externallink>	
 </item>
-
+	
 <item>
 <title>[COLOR orange] Videoclub [COLOR white] Fantastico [/COLOR]</title>
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
-	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/fantastico.xml</externallink>	
 </item>
+
+
 	
 <item>
 <title>[COLOR orange] Videoclub [COLOR white] Ficcion [/COLOR]</title>
