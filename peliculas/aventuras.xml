@@ -54,6 +54,41 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <!-- J -->
+<item>
+<title>[COLOR orange]Jumanji: Bienvenidos a la jungla[/COLOR][COLOR white] Streamcloud [/COLOR]</title>
+<thumbnail>https://www.ecartelera.com/carteles/10300/10379/003_p.jpg</thumbnail> 
+<fanart>https://www.ecartelera.com/carteles/10300/10379/003_p.jpg</fanart>
+    <info>
+        Título original
+Jumanji: Welcome to the Jungle
+Año
+2017
+Duración
+119 min.
+País
+Estados Unidos Estados Unidos
+Dirección
+Jake Kasdan
+    </info>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/i3po8peqce75'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://www.ecartelera.com/carteles/10300/10379/003_p.jpg</thumbnail> 
+<fanart>https://www.ecartelera.com/carteles/10300/10379/003_p.jpg</fanart>
+<page></page>
+</item>
 
 <!-- K -->
 
