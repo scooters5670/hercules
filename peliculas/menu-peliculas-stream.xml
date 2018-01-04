@@ -277,7 +277,4 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/thriller.xml</externallink>	
 </item>
-	
-
-
 </items>
