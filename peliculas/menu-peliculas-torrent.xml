@@ -119,7 +119,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>peli-descargar-torrent-(.*?)-.*?\n.*?\/uploads\/imagenes\/peliculas\/(.*?)\.jpg</expres>
 <page>$doregex[select]</page>
 </regex>
-<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
+<thumbnail>http://arabikes.es/wp-content/uploads/2015/10/icono_novedad.png</thumbnail>
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
@@ -157,7 +157,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>href=\'(.*?torrent)\'</expres>
 <page>http://www.mejortorrent.com/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
 </regex>
-<thumbnail>http://3.bp.blogspot.com/-SfGNeDXLVCE/UyhuKKGWGkI/AAAAAAAAFoM/xyMNFt7R8hQ/s1600/google-play-peliculas.png</thumbnail>
+<thumbnail>http://arabikes.es/wp-content/uploads/2015/10/icono_novedad.png</thumbnail>
 </item>
    
 <!--
