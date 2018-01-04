@@ -66,8 +66,8 @@ Basada en la colección de videojuegos "Angry Birds", la historia se desarrolla 
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Por defecto', 'Quasar', 'Torrenter'])
-    channels = ['plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent', 'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent', 'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent']
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent', 'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent', 'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
