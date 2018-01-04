@@ -151,9 +151,32 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://pics.filmaffinity.com/justice_league-973652346-mmed.jpg</fanart>
 </item>
 
-https://files.grantorrent.com/torrents/peliculas/Liga_de_la_justicia_Screener.torrent
 
 
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange][B]La liga de la justicia[/B] [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail>https://pics.filmaffinity.com/justice_league-973652346-mmed.jpg</thumbnail> 
+<fanart>https://pics.filmaffinity.com/justice_league-973652346-mmed.jpg</fanart>   
+    <info>
+     Sinopsis:
+        Motivado por la fe que había recuperado en la humanidad e inspirado por la acción altruista de Superman, Bruce Wayne recluta la ayuda de su nueva aliada, Diana Prince, para enfrentarse a un enemigo aún mayor. Juntos, Batman y Wonder Woman se mueven rápidamente para intentar encontrar y reclutar un equipo de metahumanos que combata esta nueva amenaza. El problema es que a pesar de la formación de esta liga de héroes sin precedentes –Batman, Wonder Woman, Aquaman, Cyborg y Flash– puede que sea demasiado tarde para salvar el planeta de una amenaza de proporciones catastróficas.     
+    </info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver Por:', ['Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Liga_de_la_justicia_Screener.torrent', 'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Liga_de_la_justicia_Screener.torrent', 'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Liga_de_la_justicia_Screener.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://pics.filmaffinity.com/justice_league-973652346-mmed.jpg</thumbnail> 
+<fanart>https://pics.filmaffinity.com/justice_league-973652346-mmed.jpg</fanart>
 
 <!-- M -->
 
