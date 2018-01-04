@@ -215,7 +215,32 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- U -->
 
 <!-- V -->
-
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Valerian Y La Ciudad De Los Mil Planetas [/COLOR][COLOR white]Torrent[/COLOR]</title>
+    <thumbnail>https://grantorrent.com/wp-content/uploads/2017/12/Valerian-y-la-ciudad-de-los-mil-planetas.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/12/Valerian-y-la-ciudad-de-los-mil-planetas.jpg</fanart>
+    <info>Director: Luc Besson.
+Actores: Dane DeHaan, Cara Delevingne, Clive Owen, Rihanna.
+Duración: 137 minutos.
+Edad Recomendada: 7.
+Género: Acción, Aventura, Fantasía, Ciencia-Ficción. </info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/VAlerian_MicroHD.torrent', 'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/VAlerian_MicroHD.torrent', 'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/VAlerian_MicroHD.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+    <thumbnail>https://grantorrent.com/wp-content/uploads/2017/12/Valerian-y-la-ciudad-de-los-mil-planetas.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/12/Valerian-y-la-ciudad-de-los-mil-planetas.jpg</fanart>
+</item>
 <!-- W -->
 
 <!-- X -->
