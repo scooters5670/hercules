@@ -4,7 +4,7 @@
 <items>
 
 <item>
-<title>[COLOR orange][+]Buscar En [/COLOR][COLOR white] |Por Stream| [/COLOR] </title>
+<title>[COLOR orange][+]Buscar:[/COLOR][COLOR white] |Por Stream| [/COLOR] </title>
 <link>$doregex[lista]</link>
 
 <regex>
@@ -34,7 +34,7 @@ import xbmcaddon
 import xbmcgui
 def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
-    d = dialog.input('Buscar Pelicula: [Por Streaming]', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    d = dialog.input('Buscar', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
     return d
 ]]></expres>
 <page></page>
@@ -76,7 +76,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR orange][B] Buscar [/B] [/COLOR][COLOR white] Por Torrent [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
+<title>[COLOR orange][B] Buscar: [/B] [/COLOR][COLOR white] Por Torrent [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
 <link>$doregex[makelist2]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 
