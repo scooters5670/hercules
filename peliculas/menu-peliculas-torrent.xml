@@ -160,16 +160,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://3.bp.blogspot.com/-SfGNeDXLVCE/UyhuKKGWGkI/AAAAAAAAFoM/xyMNFt7R8hQ/s1600/google-play-peliculas.png</thumbnail>
 </item>
    
-   
-   
-   
-   
-   
-   
-   
-   
-
-
+<!--
 <item>
 <title>[COLOR orange][B][+]Peliculas [/B][COLOR white]Por genero[/COLOR][/COLOR]</title>
 <link>$doregex[makelist2]</link>
@@ -210,10 +201,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
    
 <thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/peliculas.png</thumbnail>
 </item>
-   
+-->  
    
 <item>
-<title>[COLOR orange][+] Peliculas[/COLOR][COLOR white] Stream[/COLOR]</title>
+<title>[COLOR orange][B] Peliculas[/B][/COLOR][COLOR white] Video Club[/COLOR]</title>
 <link>http://ignore</link>
 <thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/peliculas.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
