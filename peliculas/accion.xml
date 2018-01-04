@@ -87,7 +87,33 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <!-- A -->
-
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Agente Contrainteligente [/COLOR][COLOR white]Torrent[/COLOR]</title>
+    <thumbnail>http://es.web.img2.acsta.net/pictures/16/02/15/17/31/232750.jpg</thumbnail>
+<fanart>http://es.web.img2.acsta.net/pictures/16/02/15/17/31/232750.jpg</fanart>
+    <info>
+Título:
+Agente contrainteligente
+Año: 2016
+Duración: 80 min.
+Un implacable agente del MI6 británico (Mark Strong), del grupo de operaciones especiales, descubre que tiene un hermano (Sacha Baron Cohen) muy diferente a él: fanático del fútbol y protagonista de numerosos y disparatados altercados dado su peculiar y conflictivo carácter. 
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent', 'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent', 'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+    <thumbnail>http://es.web.img2.acsta.net/pictures/16/02/15/17/31/232750.jpg</thumbnail>
+<fanart>http://es.web.img2.acsta.net/pictures/16/02/15/17/31/232750.jpg</fanart>
+</item>
 <!-- B -->
 
     <item>
