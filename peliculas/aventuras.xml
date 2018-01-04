@@ -25,6 +25,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </item>
 
+<! torrents con info 
+<item>
+<title>[COLOR orange]Angry Birds [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<info>
+   
+</info>
+<fanart>http://sostanbeatle.com/wp-content/uploads/2017/10/ITIT.jpg</fanart>
+<thumbnail>http://es.web.img3.acsta.net/c_215_290/pictures/17/10/23/10/01/0213264.jpg</thumbnail>
+<link>plugin://plugin.video.quasar/play?uri=</link>
+</item>
+-->
 -->
 
 
@@ -140,9 +151,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://pics.filmaffinity.com/justice_league-973652346-mmed.jpg</fanart>
 </item>
 
-
-
 https://files.grantorrent.com/torrents/peliculas/Liga_de_la_justicia_Screener.torrent
+
+
 
 <!-- M -->
 
