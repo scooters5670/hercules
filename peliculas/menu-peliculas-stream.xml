@@ -4,7 +4,7 @@
 <items>
 
 <item>
-<title>[COLOR orange][+]Buscar En [/COLOR][COLOR white] |DiscoKosmiko.mx| [/COLOR] </title>
+<title>[COLOR orange][+]Buscar En [/COLOR][COLOR white] |Por Stream| [/COLOR] </title>
 <link>$doregex[lista]</link>
 
 <regex>
