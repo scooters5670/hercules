@@ -1,4 +1,31 @@
 
+<!--
+Para torrents !
+
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange] [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=', 'plugin://plugin.video.torrenter/?action=playSTRM&url=', 'plugin://plugin.video.quasar/play?uri=']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
 
 <!--  Regex para streamplay,streamcloud,openload,StreamGo,Uptobox,Yourupload
 
