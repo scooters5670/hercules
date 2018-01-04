@@ -112,6 +112,38 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail></thumbnail> 
 <thumbnail>http://es.web.img2.acsta.net/medias/nmedia/18/90/40/12/20199350.jpg</thumbnail> 
 </item>
+
+<item>
+    <title>[COLOR orange][B]La liga de la justicia[/B][COLOR white] Castellano [/COLOR][/COLOR]</title>
+<thumbnail>https://pics.filmaffinity.com/justice_league-973652346-mmed.jpg</thumbnail> 
+<fanart>https://pics.filmaffinity.com/justice_league-973652346-mmed.jpg</fanart>
+<link>$doregex[resolve]</link>
+    <info>
+        Sinopsis:
+        Motivado por la fe que había recuperado en la humanidad e inspirado por la acción altruista de Superman, Bruce Wayne recluta la ayuda de su nueva aliada, Diana Prince, para enfrentarse a un enemigo aún mayor. Juntos, Batman y Wonder Woman se mueven rápidamente para intentar encontrar y reclutar un equipo de metahumanos que combata esta nueva amenaza. El problema es que a pesar de la formación de esta liga de héroes sin precedentes –Batman, Wonder Woman, Aquaman, Cyborg y Flash– puede que sea demasiado tarde para salvar el planeta de una amenaza de proporciones catastróficas. 
+    </info>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/0ikwfnz2slon'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://pics.filmaffinity.com/justice_league-973652346-mmed.jpg</thumbnail> 
+<fanart>https://pics.filmaffinity.com/justice_league-973652346-mmed.jpg</fanart>
+</item>
+
+
+
+https://files.grantorrent.com/torrents/peliculas/Liga_de_la_justicia_Screener.torrent
+
 <!-- M -->
 
 <!-- N -->
