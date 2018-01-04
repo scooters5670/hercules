@@ -25,6 +25,36 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </item>
 
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Angry Birds [/COLOR][COLOR white]Torrent[/COLOR]</title>
+    <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_UY268_CR3,0,182,268_AL_.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_UY268_CR3,0,182,268_AL_.jpg</fanart>
+    <info>
+Título original
+The Angry Birds Movie aka 
+Año
+2016
+Duración
+97 min.
+Basada en la colección de videojuegos "Angry Birds", la historia se desarrolla en una isla poblada por aves felices que no vuelan. En este paraíso, Red, un pájaro con muy mal genio, el veloz Chuck y el volátil Bomb nunca han terminado de encajar. Pero cuando llegan a la isla unos misteriosos cerdos verdes, serán estos tres marginados los que averigüen qué traman los extraños visitantes.   
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent', 'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent', 'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_UY268_CR3,0,182,268_AL_.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_UY268_CR3,0,182,268_AL_.jpg</fanart>
+</item>
 -->
 
 
