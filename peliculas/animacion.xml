@@ -48,8 +48,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <SetViewMode>500</SetViewMode>
 <title>[COLOR orange]Angry Birds [/COLOR][COLOR white]Torrent[/COLOR]</title>
+    <thumbnail>https://pics.filmaffinity.com/the_angry_birds_movie-593249429-large.jpg</thumbnail>
 <info>
-   
+Título original
+The Angry Birds Movie aka 
+Año
+2016
+Duración
+97 min.
+Basada en la colección de videojuegos "Angry Birds", la historia se desarrolla en una isla poblada por aves felices que no vuelan. En este paraíso, Red, un pájaro con muy mal genio, el veloz Chuck y el volátil Bomb nunca han terminado de encajar. Pero cuando llegan a la isla unos misteriosos cerdos verdes, serán estos tres marginados los que averigüen qué traman los extraños visitantes.   
 </info>
 <link>$doregex[select]</link>
 <regex>
@@ -64,8 +71,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://pics.filmaffinity.com/the_angry_birds_movie-593249429-mmed.jpg</thumbnail>
-
+<thumbnail>https://pics.filmaffinity.com/the_angry_birds_movie-593249429-large.jpg</thumbnail>
+<fanart>https://pics.filmaffinity.com/the_angry_birds_movie-593249429-large.jpg</fanart>
 </item>
 
 <!-- B -->
