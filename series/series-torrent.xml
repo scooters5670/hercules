@@ -13,7 +13,7 @@
         <link>plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/series/series-torrents/Arrow/[makelist3.param1]</link>
 
         ]]></listrepeat>
-<expres>(.*?torrent)</expres>
+<expres>href="(.*?torrent)</expres>
 <!-- href="(.*?torrent) -->
 <page>http://www.gruponetai.com/series/series-torrents/Arrow/</page>
 <cookieJar></cookieJar>
@@ -55,7 +55,7 @@
         <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
         <link>plugin://plugin.video.quasar/play?uri=http://gruponetai.com/series/series-torrents/Knightfall/[makelist3.param1]</link>
         ]]></listrepeat>
-<expres>(.*?torrent)</expres>
+<expres>href="(.*?torrent)</expres>
 <!-- href="(.*?torrent) -->
 <page>http://gruponetai.com/series/series-torrents/Knightfall/</page>
 <cookieJar></cookieJar>
@@ -75,7 +75,7 @@
         <link>plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/series/series-torrents/Madam_secretary/[makelist3.param1]</link>
 
         ]]></listrepeat>
-<expres>(.*?torrent)</expres>
+<expres>href="(.*?torrent)</expres>
 <!-- href="(.*?torrent) -->
 <page>http://www.gruponetai.com/series/series-torrents/Madam_secretary/</page>
 <cookieJar></cookieJar>
@@ -107,7 +107,7 @@
         <link>plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/series/series-torrents/Stranger_Things/[makelist3.param1]</link>
 
         ]]></listrepeat>
-<expres>(.*?torrent)</expres>
+<expres>href="(.*?torrent)</expres>
 <!-- href="(.*?torrent) -->
 <page>http://www.gruponetai.com/series/series-torrents/Stranger_Things/</page>
 <cookieJar></cookieJar>
@@ -126,7 +126,7 @@
         <link>$doregex[select]</link>
 
         ]]></listrepeat>
-<expres>(.*?torrent)</expres>
+<expres>href="(.*?torrent)</expres>
 <!-- href="(.*?torrent) -->
 <page>http://www.gruponetai.com/series/series-torrents/Stranger_Things/</page>
 <cookieJar></cookieJar>
@@ -157,7 +157,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
         <link>plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/series/series-torrents/The%20Shooter/[makelist3.param1]</link>
         ]]></listrepeat>
-<expres>(.*?torrent)</expres>
+<expres>href="(.*?torrent)</expres>
 <!-- href="(.*?torrent) -->
 <page>http://www.gruponetai.com/series/series-torrents/The%20Shooter/</page>
 <cookieJar></cookieJar>
