@@ -4,3 +4,7 @@ Name:"Extant T2 [mkv] [Castellano]" url:"http://diskokosmiko.mx/juadacu/extant-t
 Name:"Shooter (El Tirador) T1 [HD] [Castellano]" url:"http://diskokosmiko.mx/SeriesHD/shooter-el-tirador-dual-t1-44492" img:"http://es.web.img2.acsta.net/pictures/16/10/25/16/27/584973.jpg"; server:"http://diskokosmiko.mx"
 Name:"Shooter (El Tirador) T2 [HD] [Castellano]" url:"http://diskokosmiko.mx/juadacu/shooter-el-tirador-t2-76879" img:"http://es.web.img2.acsta.net/pictures/16/10/25/16/27/584973.jpg"; server:"http://diskokosmiko.mx"
 Name:"Shooter (El Tirador) T1,T2 [SD] [Castellano]" url:"http://naghmehkiumarsi.com/trivianita/el-tirador-shooter-tmp-1-2-el-rockero-62472" img:"http://es.web.img2.acsta.net/pictures/16/10/25/16/27/584973.jpg"; server:"http://diskokosmiko.mx"
+Name:"El Ultimo hombre en la tierra  T1 [HD] [Castellano]" url:"http://diskokosmiko.mx/juadacu/el-ultimo-hombre-en-la-tierra-t1-74877" img:"https://image.tmdb.org/t/p/w960_and_h1440_bestv2/wSVdoA7TkgR17eeRVHDCbiMMc0p.jpg"; server:"http://diskokosmiko.mx"
+Name:"El Ultimo hombre en la tierra  T2 [HD] [Castellano]" url:"http://diskokosmiko.mx/juadacu/el-ultimo-hombre-en-la-tierra-t2-74878" img:"http://image.tmdb.org/t/p/w396/rbCNbXLhRWNc5b72G2ApgprzJfs.jpg"; server:"http://diskokosmiko.mx"
+Name:"El Ultimo hombre en la tierra  T3 [HD] [Castellano]" url:"http://diskokosmiko.mx/SeriesHD/el-ultimo-hombre-en-la-tierra-dual-t3-61718" img:"https://media.redadn.es/series/p/el-ultimo-hombre-en-la-tierra_554.jpg"; server:"http://diskokosmiko.mx"
+
