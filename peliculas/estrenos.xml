@@ -52,6 +52,42 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </item>
 
+
+<!-- Prueba de selector torrent y calidad.
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange][/COLOR][COLOR white] [/COLOR]</title>
+<info>
+Año:2016
+Duración: 133 min.
+Sinopsis:
+Año 1926. Newt Scamander acaba de completar un viaje por todo el mundo para encontrar y documentar una extraordinaria selección de criaturas mágicas. Llegando a Nueva York para hacer una breve parada en su camino, donde podría haber llegado y salido sin incidentes…pero no para un Muggle llamado Jacob, un caso perdido de magia, y la fuga de algunas criaturas fantásticas de Newt, que podrían causar problemas el mundo mágico y en el mundo Muggle. 
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.quasar/play?uri=', 
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=', 
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=', 
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</thumbnail>
+<fanart>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</fanart>
+
+</item>
+-->
+
 -->
 
 
@@ -128,6 +164,38 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <!-- E -->
 <item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]El Otro Guardaespaldas[/COLOR][COLOR white] 2017 [/COLOR]</title>
+<info>
+Duración: 118 minutos.
+Edad Recomendada: 16.
+Género: Acción, Comedia.
+El prestigioso guardaespaldas Michael Bryce (Ryan Reynolds) 
+recibe un nuevo cliente: un asesino a sueldo, Darius Kincaid 
+(Samuel L. Jackson), que debe testificar 
+en un juicio en La Haya contra un cruel dictador (Gary Oldman).
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/El_otro_guardaespaldas_HDRIp.torrent',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/El_otro_guardaespaldas_MicroHD.torrent', 
+    'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/El_otro_guardaespaldas_HDRIp.torrent', 
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/El_otro_guardaespaldas_MicroHD.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/12/El-otro-guardaespaldas.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/12/El-otro-guardaespaldas.jpg</fanart>
+</item>
+
+<item>
 <title>[COLOR orange][B]Emoji[/B] [/COLOR][COLOR white]La pelicula[/COLOR]</title>
 <thumbnail>http://www.cinecalidad.to/espana/wp-content/uploads/2017/12/emoji-la-pelicula.jpg</thumbnail> 
 <fanart>http://www.cinecalidad.to/espana/wp-content/uploads/2017/12/emoji-la-pelicula.jpg/fanart>
@@ -181,6 +249,69 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <!-- J -->
+<item>
+<title>[COLOR orange]Jumanji: Bienvenidos a la jungla[/COLOR][COLOR white] Streamcloud [/COLOR]</title>
+<thumbnail>https://www.ecartelera.com/carteles/10300/10379/003_p.jpg</thumbnail> 
+<fanart>https://www.ecartelera.com/carteles/10300/10379/003_p.jpg</fanart>
+    <info>
+        Título original
+Jumanji: Welcome to the Jungle
+Sinopsis:
+Cuatro adolescentes son absorbidos por un videojuego, en el que se convierten en avatares de personajes arquetípicos. Allí vivirán múltiples aventuras, al tiempo que buscan cómo salir de allí para volver a su mundo.
+Año: 2017
+Duración: 119 min.
+
+    </info>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/i3po8peqce75'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://www.ecartelera.com/carteles/10300/10379/003_p.jpg</thumbnail> 
+<fanart>https://www.ecartelera.com/carteles/10300/10379/003_p.jpg</fanart>
+<page></page>
+</item>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Jumanji - Bienvenidos A La Jungla[/COLOR][COLOR white] 2017 Torrent [/COLOR]</title>
+<info>
+Duración: 119 minutos.
+Edad Recomendada: ATP.
+Género: Acción, Aventura, Comedia.
+Sinopsis:
+Cuatro adolescentes son absorbidos por un videojuego, 
+en el que se convierten en avatares de personajes arquetípicos. 
+Allí vivirán múltiples aventuras, al tiempo que buscan cómo salir de allí para volver a su mundo. 
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar - Screener', 'Torrenter - Screener'])
+    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Jumanji_2_Screener.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Jumanji_2_Screener.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2018/01/Jumanji-Bienvenidos-a-la-jungla-HDTS.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2018/01/Jumanji-Bienvenidos-a-la-jungla-HDTS.jpg</fanart>
+
+</item>
 
 <!-- K -->
 
@@ -248,6 +379,34 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <!-- T -->
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Thor: Ragnarok[/COLOR][COLOR white] 2017 Torrent [/COLOR]</title>
+<info>
+Duración: 130 minutos.
+Edad Recomendada: 13.
+Género: Acción, Aventura, Comedia, Ciencia-Ficción.
+
+
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar - Screener', 'Torrenter - Screener'])
+    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Thor_3_Screener.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Thor_3_Screener.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/10/Thor-Ragnarok-TS.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/10/Thor-Ragnarok-TS.jpg</fanart>
+
+</item>
 
 
 <!-- U -->
