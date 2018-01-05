@@ -1,0 +1,54 @@
+
+<item>
+<title>[COLOR orange][B]Prueba de seleccion calidades y torrents[/B]][/COLOR]</title>
+<link>[COLOR white]$doregex[select][/COLOR]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Elije calidad y reproductor:', ['Quasar - DVD rip', 'Quasar - Micro HD', 'Quasar - Bluray', 'Torrenter - DVD rip', 'Torrenter - Micro HD', 'Torrenter - Bluray'])
+    regex = ['$doregex[Quasar-dvd]', '$doregex[Quasar-Microhd]', '$doregex[Quasar-bluray]','$doregex[Torrenter-dvd]', '$doregex[Torrenter-MicroHD]', '$doregex[Torrenter-Bluray]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>Quasar-dvd</name>
+<expres>plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>Quasar-Microhd</name>
+<expres>plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>Quasar-bluray</name>
+<expres>plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_Bluray.torrent</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>Torrenter-dvd</name>
+<expres>plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>Torrenter-MicroHD</name>
+<expres>plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>Torrenter-Bluray</name>
+<expres>plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_Bluray.torrent</expres>
+<page></page>
+</regex>
+</item>

@@ -100,37 +100,69 @@ Año 1926. Newt Scamander acaba de completar un viaje por todo el mundo para enc
 <fanart>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</fanart>
      
 </item>
-<item>
 
-<title>[COLOR orange]Animales fantásticos y dónde encontrarlos[/COLOR][COLOR white] 2016[/COLOR]</title>
+
+<!-- Prueba de selector torrent y calidad. -->
+<item>
+<title>[COLOR orange][B]Prueba de seleccion calidades y torrents[/B]][/COLOR]</title>
+<link>[COLOR white]$doregex[select][/COLOR]</link>
 <thumbnail>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</thumbnail>
 <fanart>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</fanart>
-     <info>
+ <info>
 Año:2016
 Duración: 133 min.
 Sinopsis:
 Año 1926. Newt Scamander acaba de completar un viaje por todo el mundo para encontrar y documentar una extraordinaria selección de criaturas mágicas. Llegando a Nueva York para hacer una breve parada en su camino, donde podría haber llegado y salido sin incidentes…pero no para un Muggle llamado Jacob, un caso perdido de magia, y la fuga de algunas criaturas fantásticas de Newt, que podrían causar problemas el mundo mágico y en el mundo Muggle. 
 </info>
-
-<link>$doregex[select]</link>
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
-    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent']
-    return channels[ret]
+    ret = dialog.select('Elije calidad y reproductor:', ['Quasar - DVD rip', 'Quasar - Micro HD', 'Quasar - Bluray', 'Torrenter - DVD rip', 'Torrenter - Micro HD', 'Torrenter - Bluray'])
+    regex = ['$doregex[Quasar-dvd]', '$doregex[Quasar-Microhd]', '$doregex[Quasar-bluray]','$doregex[Torrenter-dvd]', '$doregex[Torrenter-MicroHD]', '$doregex[Torrenter-Bluray]']
+    return regex[ret]
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
 
+<regex>
+<name>Quasar-dvd</name>
+<expres>plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>Quasar-Microhd</name>
+<expres>plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>Quasar-bluray</name>
+<expres>plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_Bluray.torrent</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>Torrenter-dvd</name>
+<expres>plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>Torrenter-MicroHD</name>
+<expres>plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>Torrenter-Bluray</name>
+<expres>plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_Bluray.torrent</expres>
+<page></page>
+</regex>
+</item>
 
 <!-- B -->
     <item>
