@@ -40,7 +40,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
-    channels = ['plugin://plugin.video.quasar/play?uri=', 'plugin://plugin.video.torrenter/?action=playSTRM&url=', 'plugin://plugin.video.quasar/play?uri=']
+	enlace = ''
+    channels = ['plugin://plugin.video.quasar/play?uri=enlace', 'plugin://plugin.video.torrenter/?action=playSTRM&url=enlace', 'plugin://plugin.video.quasar/play?uri=enlace']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -50,7 +51,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 -->
 
-
+<SetViewMode>500</SetViewMode>
 <!-- 0-9 @# -->
 
 <!-- A -->
@@ -98,6 +99,31 @@ Año 1926. Newt Scamander acaba de completar un viaje por todo el mundo para enc
 <fanart>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</fanart>
      
 </item>
+<item>
+
+<title>[COLOR orange] [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
+	enlace = 'https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent'
+    channels = ['plugin://plugin.video.quasar/play?uri=enlace', 'plugin://plugin.video.torrenter/?action=playSTRM&url=enlace', 'plugin://plugin.video.quasar/play?uri=enlace']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
 
 <!-- B -->
     <item>
@@ -231,7 +257,36 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://grantorrent.com/wp-content/uploads/2017/12/Valerian-y-la-ciudad-de-los-mil-planetas.jpg</fanart>
 </item>
 <!-- W -->
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
 
+ <link>$doregex[id3]</link>
+ 
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamango.com/f/cklmecpsddnnmkol/Wonder_woman_2017_1080p-dual-cast_mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail> 
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+
+<title>[COLOR orange]$doregex[nombre]  [/COLOR][COLOR white] 720p. [/COLOR]</title>
+<info></info>
+<regex><name>nombre</name><expres>Wonder Woman</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
 <!-- X -->
 
 <!-- Y -->

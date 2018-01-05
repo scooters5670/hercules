@@ -232,7 +232,39 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- R -->
 
 <!-- S -->
+<item>
+<title>[COLOR orange]$doregex[nombre]  [/COLOR][COLOR white] 720p. [/COLOR]</title>
+    <info></info>
+<link>$doregex[id3]</link>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BOGU1ZDgxNWMtOTEyZi00MjZjLWI2Y2QtYjMxMTNmOTJlMzRmXkEyXkFqcGdeQXVyMjQ3NzUxOTM@._V1_UY268_CR2,0,182,268_AL_.jpg</thumbnail> 
+<info>Cuando la mujer de Gregorio, un banquero muy conservador, del Real Madrid y muy gruñón, 
+fallece repentinamente, éste se ve obligado a cumplir su última voluntad: 
+pasar un fin de semana con sus hijos y sus respectivas parejas en Sanlúcar de Barrameda para esparcir sus cenizas en el Guadalquivir. 
+Aquí es donde empiezan los problemas para Gregorio, ya que su hija Sandra está casada con Jordi, un catalán muy culé al que no soporta. 
+Su otra hija, Alicia, está saliendo con Leo, un hippy anti-sistema al que tampoco puede ni ver, y Carlos, 
+su hijo pequeño, con el que lleva seis meses sin hablarse desde que salió del armario, se presenta con su novio Eneko, 
+un vasco de origen senegalés. Este viaje multicultural pondrá a prueba la tolerancia y la capacidad de perdonar de una familia tan disfuncional como cualquier otra, 
+en el que tendrán que aprender a aceptarse los unos a los otros, con sus virtudes y defectos.</info>
 
+<regex><name>nombre</name><expres>Señor, dame paciencia (2017)</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page>
+</regex>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamango.com/f/pbqeflespsfkekkp/S3_0r_d4m3_p4c13nc1a_1080p_mkv_mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+</item>
 <!-- T -->
 
 <!-- U -->
