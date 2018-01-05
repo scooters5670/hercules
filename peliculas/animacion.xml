@@ -295,6 +295,28 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <!-- T -->
 <item>
+<title>[COLOR orange][B]Tadeo Jones[/B][COLOR white] Castellano [/COLOR][/COLOR]</title>
+<thumbnail>http://es.web.img2.acsta.net/medias/nmedia/18/90/40/12/20199350.jpg</thumbnail> 
+<fanart>http://es.web.img2.acsta.net/medias/nmedia/18/90/40/12/20199350.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/cv706fmlg1j2/LsAventdTadJonBRRIP_-_www.newpct.com.avi.html'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail> 
+<thumbnail>http://es.web.img2.acsta.net/medias/nmedia/18/90/40/12/20199350.jpg</thumbnail> 
+</item>
+<item>
 <title>[COLOR orange][B]Tadeo Jones 2[/B][/COLOR][COLOR white] El secreto del rey Midas[/COLOR]</title>
 <link>$doregex[makelist]</link>
 <thumbnail>https://i2.wp.com/www.peliculastoday.com/wp-content/uploads/2017/08/Tadeo-Jones-2-El-secreto-del-rey-Midas.jpg</thumbnail> 
