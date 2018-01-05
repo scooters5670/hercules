@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <items>
+<!-- 0-9 @# -->
 
+<!-- A -->
 <item>
 <title>[COLOR orange]Arrow[/COLOR]</title>
 <link>$doregex[makelist3]</link>
@@ -11,7 +13,8 @@
         <link>plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/series/series-torrents/Arrow/[makelist3.param1]</link>
 
         ]]></listrepeat>
-<expres>href="(.*?torrent)</expres>
+<expres>(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
 <page>http://www.gruponetai.com/series/series-torrents/Arrow/</page>
 <cookieJar></cookieJar>
 </regex>
@@ -20,9 +23,48 @@
   
 </item>
 
+<!-- B -->
+
+
+<!-- C -->
+
+<!-- D -->
+
+<!-- E -->
+
+<!-- F -->
+
+<!-- G -->
 
 
 
+<!-- H -->
+
+<!-- I -->
+
+
+
+<!-- J -->
+<!-- K -->
+<item>
+<title>[COLOR orange]Knightfall [COLOR white]| T1 | SD|720p[/COLOR][/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.quasar/play?uri=http://gruponetai.com/series/series-torrents/Knightfall/[makelist3.param1]</link>
+        ]]></listrepeat>
+<expres>(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://gruponetai.com/series/series-torrents/Knightfall/</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://gruponetai.com/series/series-torrents/Knightfall/Knightfall.jpg</thumbnail> 
+</item> 
+
+<!-- L -->
+<!-- M -->
 <item>
 <title>[COLOR orange]Madam secretary[/COLOR]</title>
 <link>$doregex[makelist3]</link>
@@ -33,7 +75,8 @@
         <link>plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/series/series-torrents/Madam_secretary/[makelist3.param1]</link>
 
         ]]></listrepeat>
-<expres>href="(.*?torrent)</expres>
+<expres>(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
 <page>http://www.gruponetai.com/series/series-torrents/Madam_secretary/</page>
 <cookieJar></cookieJar>
 </regex>
@@ -41,7 +84,19 @@
 <thumbnail>http://s3cf.recapguide.com/img/posters/Madam-Secretary_s.jpg</thumbnail>
   
 </item>
+<!-- N -->
 
+<!-- Ñ -->
+
+<!-- O -->
+
+<!-- P -->
+
+<!-- Q -->
+
+<!-- R -->
+
+<!-- S -->
 <item>
 <title>[COLOR orange]Stranger Things[/COLOR]</title>
 <link>$doregex[makelist3]</link>
@@ -52,29 +107,46 @@
         <link>plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/series/series-torrents/Stranger_Things/[makelist3.param1]</link>
 
         ]]></listrepeat>
-<expres>href="(.*?torrent)</expres>
+<expres>(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
 <page>http://www.gruponetai.com/series/series-torrents/Stranger_Things/</page>
 <cookieJar></cookieJar>
 </regex>
 
 <thumbnail>https://images-na.ssl-images-amazon.com/images/I/7142JwaBY%2BL._SL1024_.jpg</thumbnail>
 </item>
-  
+<!-- T -->
 <item>
-<title>[COLOR orange]Knightfall [COLOR white]| T1 | SD|720p[/COLOR][/COLOR]</title>
+<title>[COLOR orange]The Grand Tour T2[/COLOR]</title>
 <link>$doregex[makelist3]</link>
 <regex>
   <name>makelist3</name>
   <listrepeat><![CDATA[
         <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
-        <link>plugin://plugin.video.quasar/play?uri=http://gruponetai.com/series/series-torrents/Knightfall/[makelist3.param1]</link>
+        <link>$doregex[select]</link>
+
         ]]></listrepeat>
-<expres>href="(.*?torrent)</expres>
-<page>http://gruponetai.com/series/series-torrents/Knightfall/</page>
+<expres>(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://www.gruponetai.com/series/series-torrents/Stranger_Things/</page>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://gruponetai.com/series/series-torrents/Knightfall/Knightfall.jpg</thumbnail> 
-</item> 
+
+<thumbnail>https://images-na.ssl-images-amazon.com/images/I/7142JwaBY%2BL._SL1024_.jpg</thumbnail>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter')
+    channels = ['plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/series/series-torrents/the%20grand%20tour%20/[makelist3.param1]',   
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/series/series-torrents/the%20grand%20tour%20/[makelist3.param1]']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+</item>
 
 <item>
 <title>[COLOR orange]The Shooter | El tirador | 720p[/COLOR]</title>
@@ -85,7 +157,8 @@
         <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
         <link>plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/series/series-torrents/The%20Shooter/[makelist3.param1]</link>
         ]]></listrepeat>
-<expres>href="(.*?torrent)</expres>
+<expres>(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
 <page>http://www.gruponetai.com/series/series-torrents/The%20Shooter/</page>
 <cookieJar></cookieJar>
 </regex>
@@ -93,5 +166,27 @@
 <thumbnail>http://www.gruponetai.com/series/series-torrents/The%20Shooter/Shooterhd.jpg</thumbnail>
   
 </item>
+<!-- U -->
+
+<!-- V -->
+
+<!-- W -->
+
+<!-- X -->
+
+<!-- Y -->
+
+<!-- Z -->
+
+
+
+
+
+
+
+
+  
+
+
 
 </items>
