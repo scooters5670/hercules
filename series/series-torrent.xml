@@ -52,7 +52,22 @@
 <!-- D -->
 
 <!-- E -->
-
+<item>
+<title>[COLOR orange]El ultimo hombre en la tierra[COLOR white]|720p[/COLOR][/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.quasar/play?uri=http://gruponetai.com/series/series-torrents/El_ultimo_hombre_en_la_tierra/[makelist3.param1]</link> 
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://gruponetai.com/series/series-torrents/El_ultimo_hombre_en_la_tierra/</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://gruponetai.com/series/series-torrents/El_ultimo_hombre_en_la_tierra/El%20ultimo%20hombre%20en%20la%20Tierrahdd.jpg</thumbnail> 
+</item> 
 <!-- F -->
 
 <!-- G -->
