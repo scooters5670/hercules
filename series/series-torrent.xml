@@ -53,7 +53,7 @@
 
 <!-- E -->
 <item>
-<title>[COLOR orange]El ultimo hombre en la tierra[COLOR white]|720p[/COLOR][/COLOR]</title>
+<title>[COLOR orange]El ultimo hombre en la tierra[COLOR white]T3 |720p[/COLOR][/COLOR]</title>
 <link>$doregex[makelist3]</link>
 <regex>
   <name>makelist3</name>
