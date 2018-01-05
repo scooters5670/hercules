@@ -121,47 +121,18 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Elije calidad y reproductor:', ['Quasar - DVD rip', 'Quasar - Micro HD', 'Quasar - Bluray', 'Torrenter - DVD rip', 'Torrenter - Micro HD', 'Torrenter - Bluray'])
-    regex = ['$doregex[Quasar-dvd]', '$doregex[Quasar-Microhd]', '$doregex[Quasar-bluray]','$doregex[Torrenter-dvd]', '$doregex[Torrenter-MicroHD]', '$doregex[Torrenter-Bluray]']
-    return regex[ret]
+    calidad = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_Bluray.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent', 
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent', 
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_Bluray.torrent']
+    return calidad[ret]
 ]]></expres>
 <page></page>
 </regex>
-
-<regex>
-<name>Quasar-dvd</name>
-<expres>plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent</expres>
-<page></page>
-</regex>
-
-<regex>
-<name>Quasar-Microhd</name>
-<expres>plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent</expres>
-<page></page>
-</regex>
-
-<regex>
-<name>Quasar-bluray</name>
-<expres>plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_Bluray.torrent</expres>
-<page></page>
-</regex>
-
-<regex>
-<name>Torrenter-dvd</name>
-<expres>plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent</expres>
-<page></page>
-</regex>
-
-<regex>
-<name>Torrenter-MicroHD</name>
-<expres>plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent</expres>
-<page></page>
-</regex>
-
-<regex>
-<name>Torrenter-Bluray</name>
-<expres>plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_Bluray.torrent</expres>
-<page></page>
-</regex>
+<thumbnail>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</thumbnail>
+<fanart>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</fanart>
 </item>
 
 <!-- B -->
