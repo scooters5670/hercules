@@ -136,13 +136,13 @@
 </item>
 <!-- T -->
 <item>
-<title>[COLOR orange]The Grand Tour T2[/COLOR]</title>
+<title>[COLOR orange]The Grand Tour - Quasar[/COLOR]</title>
 <link>$doregex[makelist3]</link>
 <regex>
   <name>makelist3</name>
   <listrepeat><![CDATA[
         <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
-        <link>http://www.gruponetai.com/series/series-torrents/The%20Shooter/[makelist3.param1]</link>
+        <link>plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/series/series-torrents/The%20Shooter/[makelist3.param1]</link>
 
         ]]></listrepeat>
 <expres>href="(.*?torrent)</expres>
@@ -153,6 +153,26 @@
 
 <thumbnail>http://gruponetai.com/series/series-torrents/the%20grand%20tour%20/The-Grand-Tour-2016.jpg</thumbnail>
 </item>
+
+<item>
+<title>[COLOR orange]The Grand Tour - Torrenter[/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/series/series-torrents/The%20Shooter/[makelist3.param1]</link>
+
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://www.gruponetai.com/series/series-torrents/the%20grand%20tour%20/</page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://gruponetai.com/series/series-torrents/the%20grand%20tour%20/The-Grand-Tour-2016.jpg</thumbnail>
+</item>
+
 
 <item>
 <title>[COLOR orange]The Shooter | El tirador | 720p[/COLOR]</title>
