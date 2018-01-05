@@ -40,8 +40,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
-	enlace = ''
-    channels = ['plugin://plugin.video.quasar/play?uri=enlace', 'plugin://plugin.video.torrenter/?action=playSTRM&url=enlace', 'plugin://plugin.video.quasar/play?uri=enlace']
+    channels = ['plugin://plugin.video.quasar/play?uri=enlace', 
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=enlace', 
+	'plugin://plugin.video.quasar/play?uri=enlace']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -119,8 +120,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
-	enlace = 'https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent'
-    channels = ['plugin://plugin.video.quasar/play?uri=enlace', 'plugin://plugin.video.torrenter/?action=playSTRM&url=enlace', 'plugin://plugin.video.quasar/play?uri=enlace']
+    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent', 
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
