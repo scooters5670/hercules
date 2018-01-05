@@ -128,11 +128,11 @@
         ]]></listrepeat>
 <expres>href="(.*?torrent)</expres>
 <!-- href="(.*?torrent) -->
-<page>http://www.gruponetai.com/series/series-torrents/Stranger_Things/</page>
+<page>http://www.gruponetai.com/series/series-torrents/the%20grand%20tour%20/</page>
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>https://images-na.ssl-images-amazon.com/images/I/7142JwaBY%2BL._SL1024_.jpg</thumbnail>
+<thumbnail>http://gruponetai.com/series/series-torrents/the%20grand%20tour%20/The-Grand-Tour-2016.jpg</thumbnail>
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
