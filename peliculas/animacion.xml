@@ -143,33 +143,42 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <!-- B -->
 <item>
-<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail> 
-<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Batman: La LEGO Película[/COLOR][COLOR white]Torrent 2017[/COLOR]</title>
+<info>
+Duración: 104 minutos.
+Edad Recomendada: Atp.
+Género: Animación, Acción, Aventura, Comedia, Familia, Fantasía.
 
- <link>$doregex[id3]</link>
- 
+Spin-off de “La LEGO Película”, protagonizado por Batman. En esta ocasión,
+el irreverente Batman, que también tiene algo de artista frustrado, 
+intentará salvar la ciudad de Gotham de un peligroso villano, el Joker. 
+Pero no podrá hacerlo solo, y tendrá que aprender a trabajar con sus demás aliados.
+ </info>
+<link>$doregex[select]</link>
 <regex>
-<name>id3</name>
+<name>select</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
-    url = 'https://streamango.com/f/qpeekopdtocbmesm/Ballerina_microHD_EliteTorrent_net_mkv_mp4'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = 'http://www.gruponetai.com/videos/error.mp4'
-    return u
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar-DVD','Quasar-MicroHD','Quasar-Bluray', 'Torrenter-DVD', 'Torrenter-MicroHD', 'Torrenter-Bluray', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_HDRip.torrent',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_MicroHD.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_Bluray.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_HDRip.torrent', 
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_MicroHD.torrent', 
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_Bluray.torrent',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_HDRip.torrent',]
+    return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail> 
-<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
-<title>[COLOR orange]$doregex[nombre]  [/COLOR][COLOR white] [/COLOR]</title>
-<info></info>
-<regex><name>nombre</name><expres>Ballerina</expres><page></page></regex>
-<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
-<page></page></regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/02/the_lego_batman_movie-974934141-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/02/the_lego_batman_movie-974934141-large.jpg</fanart>
+
 </item>
+
 
 <!-- C -->
 <item>
@@ -199,6 +208,44 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex><name>nombre</name><expres>¡Canta! (2016)</expres><page></page></regex>
 <regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
 <page></page></regex>
+</item>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Capitán Calzoncillos, Su Primer Peliculón[/COLOR][COLOR white]Torrent [/COLOR]</title>
+<info>
+Duración: 89 minutos.
+Edad Recomendada: Atp.
+Género: Animación, Acción, Comedia, Familia.
+
+Dos escolares traviesos hipnotizan al director del colegio para convertirlo en su héroe de cómic:
+ Capitán Calzoncillos. Jorge y Berto son super buenos amigos y pasan sus días creando cómics y 
+ soñando con bromas. Un día, hipnotizan accidentalmente al ‘dire’ de su escuela, el Sr. Krupp, 
+ que a partir de entonces se cree que es el Capitán Calzoncillos, un súperhéroe malhumorado cuyo
+ traje consiste en ropa interior y una capa. Por si esto no fuera suficientemente malo, su nuevo 
+ maestro es un malvado científico maldito dispuesto a exigir su venganza en la escuela. Jorge, 
+ Berto y el Capitán Calzoncillos deberán entonces unirse para frustrar su malvado plan.
+ </info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar-DVD','Quasar-MicroHD','Quasar-Bluray', 'Torrenter-DVD', 'Torrenter-MicroHD', 'Torrenter-Bluray', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Capitan_calzoncillos_HDRip.torrent',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Capitan_calzoncillos_MicroHD.torrent', 
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Capitan_calzoncillos_HDRip.torrent', 
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Capitan_calzoncillos_MicroHD.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_HDRip.torrent',]
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/02/the_lego_batman_movie-974934141-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/02/the_lego_batman_movie-974934141-large.jpg</fanart>
+
 </item>
 <!-- D -->
 
