@@ -155,7 +155,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR orange][B] Buscar [/B] [/COLOR][COLOR white] [Torrentin] [/COLOR] </title>
+<title>[COLOR orange][B] Buscar [/B] [/COLOR][COLOR white] [torrenter] [/COLOR] </title>
 <link>$doregex[makelist2]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 
@@ -198,7 +198,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR orange] [B][makelist2.param2][/B] [makelist2.param1]  [makelist2.param3] [/COLOR]</title>
 
-<link>plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com[makelist.param2]</link>
+<link>plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com[makelist.param2]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 
 ]]></listrepeat>
