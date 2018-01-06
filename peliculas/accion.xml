@@ -145,9 +145,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <SetViewMode>500</SetViewMode>
-<title>[COLOR orange][B]300[/B][/COLOR][COLOR white] [/COLOR]</title>
+<title>[COLOR orange][B]300[/B][/COLOR][COLOR white] Torrent[/COLOR]</title>
 <info>
-300
+
 Título original: 300.
 Director: Zack Snyder.
 Actores: Gerard Butler, Lena Headey, David Wenham, Dominic West.
@@ -178,6 +178,43 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>https://grantorrent.com/wp-content/uploads/2017/04/300-274692460-large.jpg</thumbnail>
 <fanart>https://grantorrent.com/wp-content/uploads/2017/04/300-274692460-large.jpg</fanart>
+</item>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange][B]300: El Origen De Un Imperio[/B][/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+
+Título original: 300: El Origen De Un Imperio
+
+Director: Noam Murro.
+Actores: Sullivan Stapleton, Eva Green, Lena Headey, Hans Matheson.
+Duración: 102 minutos.
+Edad Recomendada: 16.
+Género: Acción, Fantasía.
+
+Guerras médicas (500-479 a.C.). El general griego Temistocles lucha por conseguir la unidad de las polis griegas. 
+Él dirige las tropas griegas que se enfrentan con el ejército persa, liderado por Xerxes y Artemisa, para impedir 
+la invasión del país. Spin-off de la película/cómic 300, basado en la novela gráfica “Xerxes”, de Frank Miller.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer','Quasar-1080', 'Torrenter-1080', 'DVD-Rip'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=i14coKhHnl0',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/300-el-origen-de-un-imperio-bluray-1080p.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/300-el-origen-de-un-imperio-bluray-1080p.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/300_El_origen_de_un_imperio_HDRip.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2016/10/300_rise_of_an_empire-579288813-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2016/10/300_rise_of_an_empire-579288813-large.jpg</fanart>
 </item>
 
 
