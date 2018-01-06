@@ -163,7 +163,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist2</name>
 <listrepeat><![CDATA[
 <SetViewMode>55</SetViewMode>
-<title>[COLOR white][B] [makelist2.param2][/B] [makelist2.param1][/COLOR] [COLOR orange][makelist2.param3][/COLOR]  </title>
+<title>[COLOR white][B] [makelist2.param2][/B] [/COLOR] [COLOR orange][makelist2.param3][/COLOR]  </title>
 <link>$doregex[makelist]</link>
 
 
@@ -196,7 +196,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR orange] [B][makelist2.param2][/B] [makelist2.param1]  [makelist2.param3] [/COLOR]</title>
+<title>[COLOR orange] [B][makelist2.param2][/B]   [makelist2.param3] [/COLOR]</title>
 
 <link>plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com[makelist.param2]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
