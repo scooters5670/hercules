@@ -144,7 +144,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR orange]Ver [B][makelist2.param2][/B] [/COLOR]</title>
+<title>[COLOR orange] [B][makelist2.param2][/B]  [makelist2.param3] [makelist2.param4][/COLOR]</title>
 
 <link>plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com[makelist.param2]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-3d-buttons-icons-business/080337-glossy-black-3d-button-icon-business-magnifying-glass-ps.png</thumbnail>
@@ -163,7 +163,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR orange][B]Novedades[/B] [/COLOR][COLOR white] Micro hd 1080|dvd rip|[/COLOR] [COLOR gold] Castellano[/COLOR] </title>
+<title>[COLOR orange][B]Novedades[/B] [/COLOR][COLOR white] Micro hd 1080 |dvd rip|[/COLOR] [COLOR gold] Castellano[/COLOR] </title>
 <link>$doregex[makelist2]</link>
 
 
