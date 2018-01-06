@@ -252,7 +252,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrenter-1080', 'Por defecto-DVD-Rip'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=','plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent',
+    channels = ['plugin://plugin.video.youtube/play/?video_id=SJpwkrsRZ-w','plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent',
 	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent', 
 	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent']
     return channels[ret]
@@ -263,6 +263,38 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://grantorrent.com/wp-content/uploads/2017/02/Acorralado_Rambo-430459130-large.jpg</fanart>
 
 </item>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Acorralado [Rambo II][/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+Género:  Acción - Aventuras - Suspense. 
+Año:  1988 
+Director:  Peter MacDonald. 
+Actores:  Sylvester Stallone, Richard Crenna, Marc de Jonge, Kurtwood Smith, Spiros Focas, Doudi Shoua, Sasson Gabai.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrenter-1080', 'Por defecto-DVD-Rip'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=RgZjnERdB70',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_acorralado_ii.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_acorralado_ii.torrent', 
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_acorralado_ii.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/Rambo%20Acorralado%20II.jpg</thumbnail>
+<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/Rambo%20Acorralado%20II.jpg</fanart>
+
+</item>
+
+
 
 
 <item>
@@ -441,7 +473,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <SetViewMode>500</SetViewMode>
-<title>[COLOR orange]El Otro Guardaespaldas[/COLOR][COLOR white]Torrent 2017 [/COLOR]</title>
+<title>[COLOR orange]El Otro Guardaespaldas[/COLOR][COLOR white] Torrent 2017 [/COLOR]</title>
 <info>El prestigioso guardaespaldas Michael Bryce (Ryan Reynolds) 
 recibe un nuevo cliente: un asesino a sueldo, Darius Kincaid 
 (Samuel L. Jackson), que debe testificar 
@@ -454,8 +486,9 @@ en un juicio en La Haya contra un cruel dictador (Gary Oldman).
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
-    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/El_otro_guardaespaldas_HDRIp.torrent',
+    ret = dialog.select('Ver via:', ['Ver trailer','Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=itWr1vz1zOo',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/El_otro_guardaespaldas_HDRIp.torrent',
 	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/El_otro_guardaespaldas_MicroHD.torrent', 
     'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/El_otro_guardaespaldas_HDRIp.torrent', 
 	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/El_otro_guardaespaldas_MicroHD.torrent']
@@ -570,6 +603,68 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- Q -->
 
 <!-- R -->
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Rambo III[/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+Director: Peter MacDonald.
+Actores: Sylvester Stallone, Richard Crenna, Marc de Jonge, Kurtwood Smith.
+Duración: 102 minutos.
+Edad Recomendada: 18.
+Género: Acción, Aventura, Suspenso, Guerra.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrenter-1080', 'Por defecto-DVD-Rip'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=xCIo3iF5Vcg',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/rambo_iii.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/rambo_iii.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/rambo_iii.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/02/rambo_iii-189639328-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/02/rambo_iii-189639328-large.jpg</fanart>
+
+</item>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]John Rambo[/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+Director: Peter MacDonald.
+Actores: Sylvester Stallone, Richard Crenna, Marc de Jonge, Kurtwood Smith.
+Duración: 102 minutos.
+Edad Recomendada: 18.
+Género: Acción, Aventura, Suspenso, Guerra.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrenter-1080', 'Por defecto-DVD-Rip'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=At1ReucxHCk',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Rambo_4_BDremux_1080_px.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/Rambo_4_BDremux_1080_px.torrent', 
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Rambo_4_BDremux_1080_px.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/John%20Rambobd.jpg</thumbnail>
+<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/John%20Rambobd.jpg</fanart>
+
+</item>
+
 
 <!-- S -->
 
