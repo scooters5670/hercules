@@ -57,7 +57,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <SetViewMode>500</SetViewMode>
-<title>[COLOR orange][/COLOR][COLOR white] [/COLOR]</title>
+<title>[COLOR orange]Animales fantásticos y dónde encontrarlos[/COLOR][COLOR white] 2016[/COLOR]</title>
 <info>
 Año:2016
 Duración: 133 min.
@@ -71,13 +71,10 @@ Año 1926. Newt Scamander acaba de completar un viaje por todo el mundo para enc
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
-    channels = ['plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.quasar/play?uri=', 
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=']
+    ret = dialog.select('Ver via:', ['Quasar-1080', 'Torrenter-1080', 'Por defecto-DVD-Rip'])
+    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>

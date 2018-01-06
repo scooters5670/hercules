@@ -101,13 +101,10 @@ Año 1926. Newt Scamander acaba de completar un viaje por todo el mundo para enc
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
-    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_Bluray.torrent',
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrenter-1080', 'Por defecto-DVD-Rip'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=','plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent',
 	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_Bluray.torrent']
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -145,6 +142,44 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://hdfull.tv/tthumb/172x256/movie_9a3f0952d44879cc3c57c4f5ee96d02b.jpg</thumbnail> 
 <page></page>
 </item>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange][B]300[/B][/COLOR][COLOR white] [/COLOR]</title>
+<info>
+300
+Título original: 300.
+Director: Zack Snyder.
+Actores: Gerard Butler, Lena Headey, David Wenham, Dominic West.
+Duración: 117 minutos.
+Edad Recomendada: 18.
+Género: Acción, Fantasía.
+
+Adaptación del cómic de Frank Miller (autor del cómic ‘Sin City’) sobre la famosa batalla de las Termópilas (480 a.C.). 
+El objetivo de Jerjes, emperador de Persia, era la conquista de Grecia, lo que desencadenó las Guerras Médicas. 
+Dada la gravedad de la situación, el rey Leónidas de Esparta (Gerard Butler) y 300 espartanos se enfrentaron a un ejército 
+persa que era inmensamente superior.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer','Quasar-1080', 'Torrenter-1080', 'Por defecto-DVD-Rip'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=mi4xUUJSuro',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/300-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/300-microhd-1080-px.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/300-mkv-ac3-hdrip.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/04/300-274692460-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/04/300-274692460-large.jpg</fanart>
+</item>
+
 
 <!-- A -->
 
