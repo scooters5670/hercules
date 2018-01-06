@@ -169,9 +169,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</thumbnail>
-<fanart>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</fanart>
-
+<thumbnail>http://hdfull.tv/tthumb/172x256/movie_9a3f0952d44879cc3c57c4f5ee96d02b.jpg</thumbnail> 
+<fanart>http://hdfull.tv/tthumb/172x256/movie_9a3f0952d44879cc3c57c4f5ee96d02b.jpg</fanart>
 </item>
 
 <item>
@@ -294,7 +293,34 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 </item>
 
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Atómica[/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+Año 1989, el muro de Berlín está a punto de caer. Un agente del MI6 encubierto aparece muerto y 
+la espía Lorraine Broughton (Charlize Theron) debe encontrar por todos los medios una lista 
+que el agente estaba intentando hacer llegar a Occidente,y en la que figuran los nombres de todos los agentes 
+ encubiertos que trabajan en Berlín oriental. Lorraine no se detendrá ante nada para conseguir dar con esa lista, enfrentándose a varios asesinos y sumergiéndose en un mundo en el que nadie parece ser quien dice ser.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrenter-1080', 'DVD-Rip'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=VSWiesqagko','plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Atomica_MicroHD.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Atomica_MicroHD.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Atomica_HDRip.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/10/At%C3%B3mica-screener.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/10/At%C3%B3mica-screener.jpg</fanart>
 
+</item>
 
 
 <item>
@@ -350,7 +376,38 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
 <page></page></regex>
 </item>
+
+
 <!-- B -->
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Baby driver[/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+Baby (Ansel Elgort), un joven y talentoso conductor especializado en fugas, depende del ritmo de su banda sonora personal para ser el mejor en lo suyo. Cuando conoce a la chica de sus sueños (Lily James), Baby ve una oportunidad de abandonar su vida criminal y realizar una huida limpia. Pero después de ser forzado a trabajar para un jefe de una banda criminal (Kevin Spacey), deberá dar la cara cuando un golpe malogrado amenaza su vida, su amor y su libertad.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrenter-1080', 'Por defecto-DVD-Rip'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=_XnNVXahJ2k','plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Baby_driver_MicroHD.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Baby_driver_MicroHD.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Baby_driver_HDRip.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/10/At%C3%B3mica-screener.jpg
+</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/10/At%C3%B3mica-screener.jpg
+</fanart>
+
+</item>
+
 <item>
 <title>[COLOR orange]Barry Seal[/COLOR][COLOR white]El traficante [/COLOR]</title>
 <info></info>
