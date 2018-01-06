@@ -143,8 +143,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/50_primaveras_HDRip.torrent',
 	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/50_primaveras_MicroHD.torrent', 
 	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/50_primaveras_HDRip.torrent', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/50_primaveras_MicroHD.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/50_primaveras_HDRip.torrent']
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/50_primaveras_MicroHD.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
