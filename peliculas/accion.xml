@@ -109,8 +109,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</thumbnail>
-<fanart>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</fanart>
+<thumbnail></thumbnail>
+<fanart></fanart>
 
 </item>
 -->
@@ -145,16 +145,39 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <SetViewMode>500</SetViewMode>
+<title>[COLOR orange]60 segundos[/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+Hace ya tiempo que Randall “Memphis” Raines ha dejado atrás su pasado delictivo. 
+Pero cuando se entera de que su hermano está en peligro, para salvarlo se ve obligado 
+a hacer lo que mejor sabe hacer: robar coches: 50 coches y un contrato. 
+Fanático del automovilismo, Memphis es una leyenda en el negocio de robo de coches. 
+No se le resiste ninguna cerradura, ninguna alarma.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrenter-1080', 'Por defecto-DVD-Rip'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=LDafYNLmNPE',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent', 
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/60-segundos-dvdrip.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</thumbnail>
+<fanart>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</fanart>
+
+</item>
+
+<item>
+<SetViewMode>500</SetViewMode>
 <title>[COLOR orange][B]300[/B][/COLOR][COLOR white] Torrent[/COLOR]</title>
 <info>
-
-Título original: 300.
-Director: Zack Snyder.
-Actores: Gerard Butler, Lena Headey, David Wenham, Dominic West.
-Duración: 117 minutos.
-Edad Recomendada: 18.
-Género: Acción, Fantasía.
-
 Adaptación del cómic de Frank Miller (autor del cómic ‘Sin City’) sobre la famosa batalla de las Termópilas (480 a.C.). 
 El objetivo de Jerjes, emperador de Persia, era la conquista de Grecia, lo que desencadenó las Guerras Médicas. 
 Dada la gravedad de la situación, el rey Leónidas de Esparta (Gerard Butler) y 300 espartanos se enfrentaron a un ejército 
@@ -184,15 +207,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <SetViewMode>500</SetViewMode>
 <title>[COLOR orange][B]300: El Origen De Un Imperio[/B][/COLOR][COLOR white] Torrent[/COLOR]</title>
 <info>
-
-Título original: 300: El Origen De Un Imperio
-
-Director: Noam Murro.
-Actores: Sullivan Stapleton, Eva Green, Lena Headey, Hans Matheson.
-Duración: 102 minutos.
-Edad Recomendada: 16.
-Género: Acción, Fantasía.
-
 Guerras médicas (500-479 a.C.). El general griego Temistocles lucha por conseguir la unidad de las polis griegas. 
 Él dirige las tropas griegas que se enfrentan con el ejército persa, liderado por Xerxes y Artemisa, para impedir 
 la invasión del país. Spin-off de la película/cómic 300, basado en la novela gráfica “Xerxes”, de Frank Miller.
@@ -219,6 +233,37 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <!-- A -->
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Acorralado [Rambo I][/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info> Edad Recomendada: 18.
+
+Cuando John Rambo, un veterano boina verde, va a visitar a un viejo compañero de armas, 
+se entera de que ha muerto víctima de las secuelas de la guerra. Algunos días después, 
+la policía lo detiene por vagabundo y se ensaña con él. Entonces recuerda las torturas 
+que sufrió en Vietnam y reacciona violentamente.
+
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrenter-1080', 'Por defecto-DVD-Rip'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=','plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/02/Acorralado_Rambo-430459130-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/02/Acorralado_Rambo-430459130-large.jpg</fanart>
+
+</item>
+
 
 <item>
 <SetViewMode>500</SetViewMode>
@@ -226,10 +271,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
     <thumbnail>http://es.web.img2.acsta.net/pictures/16/02/15/17/31/232750.jpg</thumbnail>
 <fanart>http://es.web.img2.acsta.net/pictures/16/02/15/17/31/232750.jpg</fanart>
     <info>
-Título:
-Agente contrainteligente
-Año: 2016
-Duración: 80 min.
 Un implacable agente del MI6 británico (Mark Strong), del grupo de operaciones especiales, descubre que tiene un hermano (Sacha Baron Cohen) muy diferente a él: fanático del fútbol y protagonista de numerosos y disparatados altercados dado su peculiar y conflictivo carácter. 
 <link>$doregex[select]</link>
 <regex>
@@ -279,7 +320,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 <!-- B -->
 <item>
-<title>[COLOR orange]Barry Seal[/COLOR][COLOR white]El traficante | 720[/COLOR]</title>
+<title>[COLOR orange]Barry Seal[/COLOR][COLOR white]El traficante [/COLOR]</title>
 <info></info>
 <link>$doregex[resolve]</link>
 <regex>
@@ -287,7 +328,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
     import urlresolver
-    url = 'http://streamcloud.eu/4uju80m865vi'
+    url = 'http://streamcloud.eu/bax3ssup5bxc/4m3r1c4n.m4d3.2017.hdrip.720p.castellano.mp4.html'
     try:
         u = urlresolver.resolve(url)
     except:
@@ -303,8 +344,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Barry Seal[/COLOR][COLOR white]El traficante | openload [/COLOR]</title>
-<info>Basada en la vida real de Barry Seal, 
-un expiloto que se convirtió en un importante narcotraficante en el cartel de Medellín
+<info>Basada en la vida real de Barry Seal, un expiloto que se convirtió en un importante narcotraficante en el cartel de Medellín
  y que acabó siendo reclutado por la CIA y el departamento de inteligencia de la DEA.</info>
 <link>$doregex[resolve]</link>
 <regex>
@@ -312,7 +352,7 @@ un expiloto que se convirtió en un importante narcotraficante en el cartel de M
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
     import urlresolver
-    url = 'http://streamcloud.eu/1h3vfkko44vt'
+    url = 'https://streamango.com/f/cbkqedorafcttkcd/4m3r1c4n_m4d3_2017_hdrip_720p_castellano_mp4'
     try:
         u = urlresolver.resolve(url)
     except:
@@ -402,11 +442,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <SetViewMode>500</SetViewMode>
 <title>[COLOR orange]El Otro Guardaespaldas[/COLOR][COLOR white]Torrent 2017 [/COLOR]</title>
-<info>
-Duración: 118 minutos.
-Edad Recomendada: 16.
-Género: Acción, Comedia.
-El prestigioso guardaespaldas Michael Bryce (Ryan Reynolds) 
+<info>El prestigioso guardaespaldas Michael Bryce (Ryan Reynolds) 
 recibe un nuevo cliente: un asesino a sueldo, Darius Kincaid 
 (Samuel L. Jackson), que debe testificar 
 en un juicio en La Haya contra un cruel dictador (Gary Oldman).
