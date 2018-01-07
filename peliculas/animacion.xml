@@ -149,14 +149,10 @@ Pero no podrá hacerlo solo, y tendrá que aprender a trabajar con sus demás al
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Quasar-DVD','Quasar-MicroHD','Quasar-Bluray', 'Torrenter-DVD', 'Torrenter-MicroHD', 'Torrenter-Bluray', 'Por defecto'])
-    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_HDRip.torrent',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_MicroHD.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_Bluray.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_HDRip.torrent', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_MicroHD.torrent', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_Bluray.torrent',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_HDRip.torrent',]
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrentin-1080'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=gNqse8p9tGw',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Batman_La_LEGO_pelicula_MicroHD_1080p.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Batman_La_LEGO_pelicula_MicroHD_1080p.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -220,18 +216,16 @@ Dos escolares traviesos hipnotizan al director del colegio para convertirlo en s
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Quasar-DVD','Quasar-MicroHD','Quasar-Bluray', 'Torrenter-DVD', 'Torrenter-MicroHD', 'Torrenter-Bluray', 'Por defecto'])
-    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Capitan_calzoncillos_HDRip.torrent',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Capitan_calzoncillos_MicroHD.torrent', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Capitan_calzoncillos_HDRip.torrent', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Capitan_calzoncillos_MicroHD.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Batman_la_lego_pelicula_HDRip.torrent',]
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrentin-1080'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=8hxO7GWn_Hw',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Capitan_calzoncillos_MicroHD4,11gb.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Capitan_calzoncillos_MicroHD4,11gb.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://grantorrent.com/wp-content/uploads/2017/02/the_lego_batman_movie-974934141-large.jpg</thumbnail>
-<fanart>https://grantorrent.com/wp-content/uploads/2017/02/the_lego_batman_movie-974934141-large.jpg</fanart>
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/Capit%C3%A1n%20Calzoncillos,%20su%20primer%20pelicul%C3%B3n%2011.jpg</thumbnail>
+<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/Capit%C3%A1n%20Calzoncillos,%20su%20primer%20pelicul%C3%B3n%2011.jpg</fanart>
 
 </item>
 <!-- D -->
@@ -426,6 +420,35 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://i2.wp.com/www.peliculastoday.com/wp-content/uploads/2017/08/Tadeo-Jones-2-El-secreto-del-rey-Midas.jpg</thumbnail> 
 <fanart>https://i2.wp.com/www.peliculastoday.com/wp-content/uploads/2017/08/Tadeo-Jones-2-El-secreto-del-rey-Midas.jpg</fanart>
 </item>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Tadeo Jones 2. El secreto del Rey Midas [/COLOR][COLOR white]Torrent [/COLOR]</title>
+<info>
+Tadeo Jones viaja hasta Las Vegas para asistir a la presentación del último descubrimiento de la arqueóloga Sara Lavroff: el papiro que demuestra la existencia del Collar de Midas, el mítico Rey que convertía en oro todo aquello que tocaba. Pero el feliz reencuentro se verá enturbiado cuando un malvado ricachón secuestra a Sara para poder encontrar el talismán y conseguir riquezas infinitas. Junto a sus amigos el loro Belzoni y su perro Jeff, Tadeo tendrá que hacer uso de su ingenio para rescatar a Sara, en un viaje por medio mundo, donde encontrará nuevos amigos ¡y nuevos villanos!
+
+ </info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrentin-1080'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=vJIJXabDqU0',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/secciones.php?sec=descargas&ap=contar&tabla=peliculas&id=17090&link_bajar=1',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/secciones.php?sec=descargas&ap=contar&tabla=peliculas&id=17090&link_bajar=1']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/Tadeo%20Jones%202bluray.jpg</thumbnail>
+<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/Tadeo%20Jones%202bluray.jpg</fanart>
+
+</item>
+
+
 <!-- U -->
 
 <!-- V -->
