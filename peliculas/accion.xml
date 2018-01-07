@@ -54,16 +54,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <SetViewMode>500</SetViewMode>
 <title>[COLOR orange]Angry Birds [/COLOR][COLOR white]Torrent[/COLOR]</title>
-    <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_UY268_CR3,0,182,268_AL_.jpg</thumbnail>
-<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_UY268_CR3,0,182,268_AL_.jpg</fanart>
+    <thumbnail></thumbnail>
+<fanart></fanart>
     <info>
-Título original
-The Angry Birds Movie aka 
-Año
-2016
-Duración
-97 min.
-Basada en la colección de videojuegos "Angry Birds", la historia se desarrolla en una isla poblada por aves felices que no vuelan. En este paraíso, Red, un pájaro con muy mal genio, el veloz Chuck y el volátil Bomb nunca han terminado de encajar. Pero cuando llegan a la isla unos misteriosos cerdos verdes, serán estos tres marginados los que averigüen qué traman los extraños visitantes.   
+
 </info>
 <link>$doregex[select]</link>
 <regex>
@@ -78,8 +72,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_UY268_CR3,0,182,268_AL_.jpg</thumbnail>
-<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_UY268_CR3,0,182,268_AL_.jpg</fanart>
+<thumbnail></thumbnail>
+<fanart></fanart>
 </item>
 -->
 
@@ -87,12 +81,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <SetViewMode>500</SetViewMode>
-<title>[COLOR orange]Animales fantásticos y dónde encontrarlos[/COLOR][COLOR white] 2016[/COLOR]</title>
+<title>[COLOR orange][/COLOR][COLOR white] Torrent[/COLOR]</title>
 <info>
-Año:2016
-Duración: 133 min.
-Sinopsis:
-Año 1926. Newt Scamander acaba de completar un viaje por todo el mundo para encontrar y documentar una extraordinaria selección de criaturas mágicas. Llegando a Nueva York para hacer una breve parada en su camino, donde podría haber llegado y salido sin incidentes…pero no para un Muggle llamado Jacob, un caso perdido de magia, y la fuga de algunas criaturas fantásticas de Newt, que podrían causar problemas el mundo mágico y en el mundo Muggle. 
+
 </info>
 <link>$doregex[select]</link>
 <regex>
@@ -408,31 +399,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 </item>
 
-<item>
-<title>[COLOR orange]Barry Seal[/COLOR][COLOR white]El traficante [/COLOR]</title>
-<info></info>
-<link>$doregex[resolve]</link>
-<regex>
-<name>resolve</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
-    url = 'http://streamcloud.eu/bax3ssup5bxc/4m3r1c4n.m4d3.2017.hdrip.720p.castellano.mp4.html'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = 'http://www.gruponetai.com/videos/error.mp4'
-    return u
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</thumbnail> 
-<fanart>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</fanart>
-<page></page>
-</item>
 
 <item>
-<title>[COLOR orange]Barry Seal[/COLOR][COLOR white]El traficante | openload [/COLOR]</title>
+<title>[COLOR orange]Barry Seal[/COLOR][COLOR white] El traficante | Streamgo[/COLOR]</title>
 <info>Basada en la vida real de Barry Seal, un expiloto que se convirtió en un importante narcotraficante en el cartel de Medellín
  y que acabó siendo reclutado por la CIA y el departamento de inteligencia de la DEA.</info>
 <link>$doregex[resolve]</link>
@@ -454,34 +423,32 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</fanart>
 <page></page>
 </item>
+
 <item>
-<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BNTA4MjQ0ODQzNF5BMl5BanBnXkFtZTgwNzA5NjYzMjI@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail> 
-<link>$doregex[url]</link>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Barry Seal: El traficante[/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+Basada en la vida real de Barry Seal, un expiloto que se convirtió en un importante narcotraficante en el cartel de Medellín y que acabó siendo reclutado por la CIA y el departamento de inteligencia de la DEA.
+</info>
+<link>$doregex[select]</link>
 <regex>
-<name>url</name>
+<name>select</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
-    url = 'http://uptobox.com/nvq0h59zvo8f'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = 'http://www.gruponetai.com/videos/error.mp4'
-    return u
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrenter-1080', 'Por defecto-DVD-Rip'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=GhG8tISCkW8','plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Barry_Seal_el_traficante_MicroHD.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Barry_Seal_el_traficante_MicroHD.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Barry_Seal_el_traficante_HDRip.torrent']
+    return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
-<regex>
-<name></name>
-<expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
-<title>[COLOR orange] Baywatch: Los vigilantes de la playa (2017) [/COLOR][COLOR white] 720p. [/COLOR][COLOR gold] HD [/COLOR]</title>
-    <info></info>
-<regex><name>nombre</name><expres></expres><page></page></regex>
-<page></page>
-</regex>
+<thumbnail>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</thumbnail> 
+<fanart>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</fanart>
+
 </item>
-
-
 
 <item>
 <title>[COLOR orange]Bright [/COLOR][COLOR white] 2017[/COLOR]</title>
