@@ -157,9 +157,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
     ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-dvd', 'Quasar-1080', 'torrentin-dvd', 'Torrentin-1080'])
     channels = ['plugin://plugin.video.youtube/play/?video_id=LDafYNLmNPE',
 	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/60-segundos-dvdrip.torrent',
-	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/60-segundos-microhd-1080-px.torrent',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent',
 	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/portal/peliculas/torrents/60-segundos-dvdrip.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/portal/peliculas/torrents/60-segundos-microhd-1080-px.torrent']
+	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
