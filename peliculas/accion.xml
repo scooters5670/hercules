@@ -362,10 +362,10 @@ Baby (Ansel Elgort), un joven y talentoso conductor especializado en fugas, depe
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080', 'Por defecto-DVD-Rip'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=_XnNVXahJ2k','plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Baby_driver_MicroHD.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Baby_driver_MicroHD.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Baby_driver_HDRip.torrent']
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=_XnNVXahJ2k',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Baby_driver_MicroHD.torrent',
+	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Baby_driver_MicroHD.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -414,9 +414,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080', 'Por defecto-DVD-Rip'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=GhG8tISCkW8','plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Barry_Seal_el_traficante_MicroHD.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Barry_Seal_el_traficante_MicroHD.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Barry_Seal_el_traficante_HDRip.torrent']
+    channels = ['plugin://plugin.video.youtube/play/?video_id=GhG8tISCkW8',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/barry-seal-bluray-1080p-dts-5-1-ac3-5-1-castellano-dts-5-1-ingles-subs-es-en.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/barry-seal-bluray-1080p-dts-5-1-ac3-5-1-castellano-dts-5-1-ingles-subs-es-en.torrent', 
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Barry%20Seal%20El%20traficantehdrip1,78gb.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -465,6 +466,33 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</thumbnail>
 <fanart>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</fanart>
 </item>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Bright[/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+Basada en la vida real de Barry Seal, un expiloto que se convirtió en un importante narcotraficante en el cartel de Medellín y que acabó siendo reclutado por la CIA y el departamento de inteligencia de la DEA.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=yIToB-4_VYA',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Bright_MicroHD4,60gb.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Bright_MicroHD4,60gb.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</thumbnail> 
+<fanart>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</fanart>
+
+</item>
+http://www.mejortorrent.com/uploads/torrents/peliculas/Bright_MicroHD4,60gb.torrent
 <!-- C -->
 
 <!-- D -->
