@@ -488,8 +488,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</thumbnail> 
-<fanart>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</fanart>
+<thumbnail>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</thumbnail>
+<fanart>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</fanart>
 
 </item>
 http://www.mejortorrent.com/uploads/torrents/peliculas/Bright_MicroHD4,60gb.torrent
@@ -514,13 +514,13 @@ en un juicio en La Haya contra un cruel dictador (Gary Oldman).
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver trailer','Quasar', 'torrentin', 'Por defecto'])
+    ret = dialog.select('Ver via:', ['Ver trailer','Quasar 720','Torrentin 720','Quasar 1080', 'torrentin 1080'])
     channels = ['plugin://plugin.video.youtube/play/?video_id=itWr1vz1zOo',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/El_otro_guardaespaldas_HDRIp.torrent',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/El_otro_guardaespaldas_MicroHD.torrent', 
-    'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/El_otro_guardaespaldas_HDRIp.torrent', 
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/El_otro_guardaespaldas_MicroHD.torrent']
-    return channels[ret]
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/secciones.php?sec=descargas&ap=contar&tabla=peliculas&id=17145&link_bajar=1',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/secciones.php?sec=descargas&ap=contar&tabla=peliculas&id=17145&link_bajar=1',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/El_otro_guardaespaldas_MicroHD4,79gb.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/El_otro_guardaespaldas_MicroHD4,79gb.torrent'] 
+     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
@@ -603,34 +603,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- O -->
 
 <!-- P -->
-<item>
-<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail> 
-<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
 
- <link>$doregex[id3]</link>
- 
-<regex>
-<name>id3</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
-    url = 'https://streamango.com/f/bmdqeknntemkdelc/Pir4t4s_d3l_C4rib3_L4_v3ng4nz4_d3_S4l4z4r_mkv'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = 'http://www.gruponetai.com/videos/error.mp4'
-    return u
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail> 
-<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
-<title>[COLOR orange]$doregex[nombre]  [/COLOR][COLOR white] 720p. [/COLOR]</title>
-<info></info>
-<regex><name>nombre</name><expres>Piratas del Caribe: La venganza de Salazar</expres><page></page></regex>
-<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
-<page></page></regex>
-</item>
 <!-- Q -->
 
 <!-- R -->
@@ -651,11 +624,12 @@ Género: Acción, Aventura, Suspenso, Guerra.
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080', 'Por defecto-DVD-Rip'])
+    ret = dialog.select('Ver via:', ['Ver Trailer','Quasar-DVD-Rip','torrentin-DVD-Rip', 'Quasar-1080', 'torrentin-1080'])
     channels = ['plugin://plugin.video.youtube/play/?video_id=xCIo3iF5Vcg',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/rambo_iii.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/rambo_iii.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/rambo_iii.torrent']
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_iii.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_iii.torrent',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Rambo_3_BDremux_1080_px.torrent',
+	'plugin://plugin.video.torrentin/?uri='http://www.mejortorrent.com/uploads/torrents/peliculas/Rambo_3_BDremux_1080_px.torrent]
     return channels[ret]
 ]]></expres>
 <page></page>
