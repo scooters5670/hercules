@@ -619,25 +619,23 @@ Edad Recomendada: 18.
 Género: Acción, Aventura, Suspenso, Guerra.
 </info>
 <link>$doregex[select]</link>
+
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/02/rambo_iii-189639328-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/02/rambo_iii-189639328-large.jpg</fanart>
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer','Quasar-DVD-Rip','torrentin-DVD-Rip', 'Quasar-1080', 'torrentin-1080'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=xCIo3iF5Vcg',
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_iii.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_iii.torrent',
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=bZemQdvthBs',
 	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Rambo_3_BDremux_1080_px.torrent',
-	'plugin://plugin.video.torrentin/?uri='http://www.mejortorrent.com/uploads/torrents/peliculas/Rambo_3_BDremux_1080_px.torrent']
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Rambo_3_BDremux_1080_px.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://grantorrent.com/wp-content/uploads/2017/02/rambo_iii-189639328-large.jpg</thumbnail>
-<fanart>https://grantorrent.com/wp-content/uploads/2017/02/rambo_iii-189639328-large.jpg</fanart>
-
 </item>
 
 <item>
