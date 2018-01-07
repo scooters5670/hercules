@@ -66,8 +66,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
-    channels = ['plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent', 'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent', 'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Angry_birds_la_pelicula_MicroHD.torrent']
+    ret = dialog.select('Ver via:', ['Ver trailer', 'Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['',
+	'plugin://plugin.video.quasar/play?uri=', 
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=', 
+	'plugin://plugin.video.quasar/play?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -93,9 +96,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrenter-1080', 'Por defecto-DVD-Rip'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=','plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent']
+    channels = ['plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=', 
+	'plugin://plugin.video.quasar/play?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -328,8 +332,9 @@ Un implacable agente del MI6 británico (Mark Strong), del grupo de operaciones 
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
-    channels = ['plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent', 
+    ret = dialog.select('Ver via:', ['Ver trailer','Quasar', 'Torrenter', 'Por defecto'])
+    channels = [''plugin://plugin.video.youtube/play/?video_id=jq0Eh6t0teY',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent', 
 	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent', 
 	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent']
     return channels[ret]
@@ -392,10 +397,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://grantorrent.com/wp-content/uploads/2017/10/At%C3%B3mica-screener.jpg
-</thumbnail>
-<fanart>https://grantorrent.com/wp-content/uploads/2017/10/At%C3%B3mica-screener.jpg
-</fanart>
+<thumbnail>https://in.bmscdn.com/iedb/movies/images/website/poster/large/baby-driver-et00040794-14-03-2017-09-05-24.jpg</thumbnail>
+<fanart>https://in.bmscdn.com/iedb/movies/images/website/poster/large/baby-driver-et00040794-14-03-2017-09-05-24.jpg</fanart>
 
 </item>
 
@@ -526,7 +529,32 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- F -->
 
 <!-- G -->
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Ghost In The Shell[/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
 
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrenter-1080', 'Por defecto-DVD-Rip'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=YzVbtWZ3Rxk',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Ghost_in_the_shell_17_MicroHD.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Ghost_in_the_shell_17_MicroHD.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Ghost_in_the_shell_17_HDRip.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/07/Ghost-in-the-Shell-El-alma-de-la-m%C3%A1quina.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/07/Ghost-in-the-Shell-El-alma-de-la-m%C3%A1quina.jpg</fanart>
+
+</item>
 <!-- H -->
 
 <!-- I -->
@@ -537,28 +565,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- K -->
 
 <!-- L -->
-<item>
-    <title>[COLOR orange][B]Las aventuras de Tadeo Jones[/B][COLOR white] Castellano [/COLOR][/COLOR]</title>
-<thumbnail>http://es.web.img2.acsta.net/medias/nmedia/18/90/40/12/20199350.jpg</thumbnail> 
-<fanart>http://es.web.img2.acsta.net/medias/nmedia/18/90/40/12/20199350.jpg</fanart>
-<link>$doregex[resolve]</link>
-<regex>
-<name>resolve</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
-    url = 'http://streamcloud.eu/cv706fmlg1j2/LsAventdTadJonBRRIP_-_www.newpct.com.avi.html'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = 'http://www.gruponetai.com/videos/error.mp4'
-    return u
-]]></expres>
-<page></page>
-</regex>
-<thumbnail></thumbnail> 
-<thumbnail>http://es.web.img2.acsta.net/medias/nmedia/18/90/40/12/20199350.jpg</thumbnail> 
-</item>
+
 <item>
 <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail> 
 <fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>

@@ -66,13 +66,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <!-- Prueba de selector torrent y calidad.
-
 <item>
 <SetViewMode>500</SetViewMode>
-<title>[COLOR orange][/COLOR][COLOR white] Torrent 1080[/COLOR]</title>
+<title>[COLOR orange]Animales fantásticos y dónde encontrarlos[/COLOR][COLOR white] 2016[/COLOR]</title>
 <info>
-
-
+Año:2016
+Duración: 133 min.
+Sinopsis:
+Año 1926. Newt Scamander acaba de completar un viaje por todo el mundo para encontrar y documentar una extraordinaria selección de criaturas mágicas. Llegando a Nueva York para hacer una breve parada en su camino, donde podría haber llegado y salido sin incidentes…pero no para un Muggle llamado Jacob, un caso perdido de magia, y la fuga de algunas criaturas fantásticas de Newt, que podrían causar problemas el mundo mágico y en el mundo Muggle. 
 </info>
 <link>$doregex[select]</link>
 <regex>
@@ -81,18 +82,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Quasar-DVD','Quasar-MicroHD', 'Torrenter-DVD', 'Torrenter-MicroHD'])
-    channels = ['plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.quasar/play?uri=', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=', 
-	'plugin://plugin.video.quasar/play?uri=']
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent', 
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
+<thumbnail>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</thumbnail>
+<fanart>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</fanart>
 
 </item>
 -->
@@ -123,8 +122,9 @@ Sin ayuda en la superficie, sin ayuda bajo la superficie.
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Quasar-DVD','Quasar-MicroHD', 'Torrenter-DVD', 'Torrenter-MicroHD'])
-    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/A_47_metros_HDRip.torrent',
+    ret = dialog.select('Ver via:', ['Ver trailer','Quasar-DVD','Quasar-MicroHD', 'Torrenter-DVD', 'Torrenter-MicroHD'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=Iu8tUoiPWFQ',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/A_47_metros_HDRip.torrent',
 	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/A_47_metros_MicroHD.torrent', 
 	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/A_47_metros_HDRip.torrent', 
 	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/A_47_metros_MicroHD.torrent', 
