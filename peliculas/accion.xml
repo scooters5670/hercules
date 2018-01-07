@@ -604,6 +604,135 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <!-- P -->
 
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Piratas del caribe: La maldicion de la perla negra [/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+Mar Caribe, siglo XVIII. El aventurero capitán Jack Sparrow piratea en aguas caribeñas, 
+pero su andanzas terminan cuando su enemigo, el Capitán Barbossa, después de robarle su barco, el Perla Negra, ataca la ciudad de Port Royal 
+y secuestra a Elizabeth Swann, la hija del Gobernador. Will Turner, amigo de la infancia de Elizabeth, se une a Jack para rescatarla y recuperar 
+el Perla Negra. Pero Barbossa y su tripulación son víctimas de un conjuro que los condena a vivir eternamente y a transformarse cada noche en esqueletos vivientes. 
+El conjuro sólo puede romperse si devuelven una pieza de oro azteca y saldan una deuda de sangre. El rescate de la bella Elizabeth será una tarea difícil, 
+pues la maldición es real y será difícil enfrentarse con quienes no pueden morir.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer','Quasar-DVD-Rip','torrentin-DVD-Rip', 'Quasar-1080', 'torrentin-1080'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=5Itr2jHuJaw',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/PIRATASDELCARIBE1[Dvd-rip][Castellano][2006][Aventura][SpaTorrent.com].torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/PIRATASDELCARIBE1[Dvd-rip][Castellano][2006][Aventura][SpaTorrent.com].torrent',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/piratas-del-caribe-1-bdremux-1080-px.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/piratas-del-caribe-1-bdremux-1080-px.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2016/12/pirates_of_the_caribbean_the_curse_of_the_black_pearl-627724446-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2016/12/pirates_of_the_caribbean_the_curse_of_the_black_pearl-627724446-large.jpg</fanart>
+</item>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Piratas del caribe: El hombre del cofre muerto [/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+Mar Caribe, siglo XVIII. El aventurero capitán Jack Sparrow piratea en aguas caribeñas, 
+pero su andanzas terminan cuando su enemigo, el Capitán Barbossa, después de robarle su barco, el Perla Negra, ataca la ciudad de Port Royal 
+y secuestra a Elizabeth Swann, la hija del Gobernador. Will Turner, amigo de la infancia de Elizabeth, se une a Jack para rescatarla y recuperar 
+el Perla Negra. Pero Barbossa y su tripulación son víctimas de un conjuro que los condena a vivir eternamente y a transformarse cada noche en esqueletos vivientes. 
+El conjuro sólo puede romperse si devuelven una pieza de oro azteca y saldan una deuda de sangre. El rescate de la bella Elizabeth será una tarea difícil, 
+pues la maldición es real y será difícil enfrentarse con quienes no pueden morir.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer','Quasar-DVD-Rip','torrentin-DVD-Rip', 'Quasar-1080', 'torrentin-1080'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=cB4C5u8z3Fs',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/PIRATASDELCARIBE2[Dvd-rip][Castellano][2006][Aventura][SpaTorrent.com].torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/PIRATASDELCARIBE2[Dvd-rip][Castellano][2006][Aventura][SpaTorrent.com].torrent',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/piratas-del-caribe-2-bdremux-1080-px.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/piratas-del-caribe-2-bdremux-1080-px.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2016/12/Piratas_del_Caribe_El_cofre_del_hombre_muerto-517206870-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2016/12/Piratas_del_Caribe_El_cofre_del_hombre_muerto-517206870-large.jpg</fanart>
+</item>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Piratas del caribe:En el fin del mundo[/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+Mar Caribe, siglo XVIII. El aventurero capitán Jack Sparrow piratea en aguas caribeñas, 
+pero su andanzas terminan cuando su enemigo, el Capitán Barbossa, después de robarle su barco, el Perla Negra, ataca la ciudad de Port Royal 
+y secuestra a Elizabeth Swann, la hija del Gobernador. Will Turner, amigo de la infancia de Elizabeth, se une a Jack para rescatarla y recuperar 
+el Perla Negra. Pero Barbossa y su tripulación son víctimas de un conjuro que los condena a vivir eternamente y a transformarse cada noche en esqueletos vivientes. 
+El conjuro sólo puede romperse si devuelven una pieza de oro azteca y saldan una deuda de sangre. El rescate de la bella Elizabeth será una tarea difícil, 
+pues la maldición es real y será difícil enfrentarse con quienes no pueden morir.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer','Quasar-DVD-Rip','torrentin-DVD-Rip', 'Quasar-1080', 'torrentin-1080'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=3LioCI-QTPE',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Piratas_del_caribe_3.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/portal/peliculas/torrents/Piratas_del_caribe_3.torrent',
+		'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/piratas-del-caribe-3-bdremux-1080-px.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/piratas-del-caribe-3-bdremux-1080-px.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2016/12/Piratas_del_Caribe_En_el_fin_del_mundo-479913341-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2016/12/Piratas_del_Caribe_En_el_fin_del_mundo-479913341-large.jpg</fanart>
+</item>
+
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Piratas del caribe: La venganza de Salazar [/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+Director: Peter MacDonald.
+Actores: Sylvester Stallone, Richard Crenna, Marc de Jonge, Kurtwood Smith.
+Duración: 102 minutos.
+Edad Recomendada: 18.
+Género: Acción, Aventura, Suspenso, Guerra.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer','Quasar-DVD-Rip','torrentin-DVD-Rip', 'Quasar-1080', 'torrentin-1080'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=azjsS0wxTA8',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Piratas_del_Caribe_La_venganza_de_Salazar.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Piratas_del_Caribe_La_venganza_de_Salazar.torrent',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Piratas_del_Caribe_La_venganza_de_Salazar_MicroHD_1080p.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Piratas_del_Caribe_La_venganza_de_Salazar_MicroHD_1080p.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/Piratas%20del%20Caribe%20La%20venganza%20de%20Salazar.jpg</thumbnail>
+<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/Piratas%20del%20Caribe%20La%20venganza%20de%20Salazar.jpg</fanart>
+
+</item>
+
 <!-- Q -->
 
 <!-- R -->
