@@ -344,34 +344,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     <thumbnail>http://es.web.img2.acsta.net/pictures/16/02/15/17/31/232750.jpg</thumbnail>
 <fanart>http://es.web.img2.acsta.net/pictures/16/02/15/17/31/232750.jpg</fanart>
 </item>
-<item>
-<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail> 
-<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
 
- <link>$doregex[id3]</link>
- 
-<regex>
-<name>id3</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
-    url = 'https://streamango.com/f/febbempdbmraefns/Anacleto_agente_secreto_HDRip_EliteTorrent_net_avi_mp4'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = 'http://www.gruponetai.com/videos/error.mp4'
-    return u
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail> 
-<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
-<title>[COLOR orange]$doregex[nombre]  [/COLOR][COLOR white] [/COLOR]</title>
-<info></info>
-<regex><name>nombre</name><expres> Anacleto: agente secreto</expres><page></page></regex>
-<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
-<page></page></regex>
-</item>
 
 
 <!-- B -->
@@ -542,11 +515,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080', 'Por defecto-DVD-Rip'])
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080'])
     channels = ['plugin://plugin.video.youtube/play/?video_id=YzVbtWZ3Rxk',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Ghost_in_the_shell_17_MicroHD.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Ghost_in_the_shell_17_MicroHD.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Ghost_in_the_shell_17_HDRip.torrent']
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Ghost_in_the_Shell_MicroHD_1080p.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Ghost_in_the_Shell_MicroHD_1080p.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>

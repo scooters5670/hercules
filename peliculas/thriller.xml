@@ -138,11 +138,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Trailer','Quasar-DVD','Quasar-MicroHD', 'Torrentin-DVD', 'Torrentin-MicroHD'])
+    ret = dialog.select('Ver via:', ['Trailer','Quasar-MicroHD', 'Torrentin-MicroHD'])
     channels = ['plugin://plugin.video.youtube/play/?video_id=KT3LmKT7BR4',
-	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/21-black-jack-dvdrip-spanish.torrent',
 	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/21-blackjack--bluray-microhd.torrent', 
-	'plugin://plugin.video.torrentin/?url=http://www.gruponetai.com/portal/peliculas/torrents/21-black-jack-dvdrip-spanish.torrent', 
 	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/portal/peliculas/torrents/21-blackjack--bluray-microhd.torrent']
     return channels[ret]
 ]]></expres>
