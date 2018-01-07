@@ -95,11 +95,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrentin-1080', 'Por defecto-DVD-Rip'])
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrentin-1080'])
     channels = ['plugin://plugin.video.youtube/play/?video_id=',
 	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrentin/?uri=', 
-	'plugin://plugin.video.quasar/play?uri=']
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -155,11 +154,10 @@ No se le resiste ninguna cerradura, ninguna alarma.
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080', 'Por defecto-DVD-Rip'])
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080'])
     channels = ['plugin://plugin.video.youtube/play/?video_id=LDafYNLmNPE',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent', 
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/60-segundos-dvdrip.torrent']
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/60-segundos--bluray-microhd.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/portal/peliculas/torrents/60-segundos--bluray-microhd.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -184,11 +182,11 @@ persa que era inmensamente superior.
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer','Quasar-1080', 'Torrentin-1080', 'Por defecto-DVD-Rip'])
+    ret = dialog.select('Ver via:', ['Ver Trailer','Quasar-1080', 'Torrentin-1080'])
     channels = ['plugin://plugin.video.youtube/play/?video_id=mi4xUUJSuro',
 	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/300-microhd-1080-px.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/300-microhd-1080-px.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/300-mkv-ac3-hdrip.torrent']
+	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/300-microhd-1080-px.torrent'
+]
     return channels[ret]
 ]]></expres>
 <page></page>
