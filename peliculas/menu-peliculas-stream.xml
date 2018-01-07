@@ -165,13 +165,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-<item>
+<!--<item>
 <title>[COLOR orange] Videoclub [COLOR white] Especial Navidad [/COLOR]</title>
 <thumbnail>https://bartolomeborrego.files.wordpress.com/2013/12/feliz-navidad-letras-3b.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/cine-navidad.xml</externallink>	
 </item>
+-->
 
 		
 <item>
