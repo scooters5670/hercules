@@ -109,6 +109,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 -->
 
 <!-- 0-9 @# -->
+
 <item>
 <title>[COLOR orange]60 Segundos[/COLOR] Castellano [COLOR white] StreamGo [/COLOR]</title>
     <info>
@@ -358,7 +359,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver:', ['Trailer','Pelicula'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=',
+    channels = ['plugin://plugin.video.youtube/play/?video_id=YSOkNEv3uYs',
 	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Anacleto_Agente_Secreto_MicroHD_1080p.torrent']
     return channels[ret]
 ]]></expres>
