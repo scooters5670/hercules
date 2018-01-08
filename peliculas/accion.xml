@@ -109,6 +109,30 @@ def GetLSProData(page_data,Cookie_Jar,m):
 -->
 
 <!-- 0-9 @# -->
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Spectre[/COLOR][COLOR white] Torrent[/COLOR]</title>
+<info>
+
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Ver Trailer','Ver Pelicula'])
+    channels = ['plugin://plugin.video.youtube/play/?video_id=-_X2xs49iek',
+	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Spectre_Microhd-1080p.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2016/10/spectre-683709494-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2016/10/spectre-683709494-large.jpg</fanart>
+
+</item>
 
 <item>
 <title>[COLOR orange]60 Segundos[/COLOR] Castellano [COLOR white] StreamGo [/COLOR]</title>
