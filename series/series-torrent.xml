@@ -103,6 +103,44 @@
   
 </item>
 <item>
+<title>[COLOR orange]Agent Carter T1[/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR gold][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/Agent_carter1/[makelist3.param1]</link>
+
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://www.gruponetai.com/series/series-torrents/Agent_carter1/</page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/series/Agent%20Carter.jpg</thumbnail>
+  
+</item>
+<item>
+<title>[COLOR orange]Agent Carter T2[/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR gold][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/Agent_carter2/[makelist3.param1]</link>
+
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://www.gruponetai.com/series/series-torrents/Agent_carter2/</page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/series/Agent%20Carter.jpg</thumbnail>
+  
+</item>
+<item>
 <title>[COLOR orange]Arrow[/COLOR]</title>
 <link>$doregex[makelist3]</link>
 <regex>
