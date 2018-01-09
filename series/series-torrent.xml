@@ -117,7 +117,7 @@
 <thumbnail>http://www.mejortorrent.com/uploads/imagenes/series/Las%20chicas%20del%20cablehd.jpg</thumbnail> 
 </item> 
 <item>
-<title>[COLOR orange]Las chicas del cable T1 [COLOR white]|HD|720p[/COLOR][/COLOR]</title>
+<title>[COLOR orange]Las chicas del cable T2 [COLOR white]|HD|720p[/COLOR][/COLOR]</title>
 <link>$doregex[makelist3]</link>
 <regex>
   <name>makelist3</name>
@@ -127,7 +127,7 @@
         ]]></listrepeat>
 <expres>href="(.*?torrent)</expres>
 <!-- href="(.*?torrent) -->
-<page>http://gruponetai.com/series/series-torrents/Las_chicas_del_cable/</page>
+<page>http://gruponetai.com/series/series-torrents/Las_chicas_del_cable2/</page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>http://www.mejortorrent.com/uploads/imagenes/series/las-chicas-del-cable2.jpg</thumbnail> 
