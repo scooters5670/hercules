@@ -3,7 +3,25 @@
 <!-- 0-9 @# -->
 
 <!-- A -->
+<item>
+<title>[COLOR orange]Arrow[/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR gold][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/series/series-torrents/Arrow/[makelist3.param1]</link>
 
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://www.gruponetai.com/series/series-torrents/Arrow/</page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://i.pinimg.com/736x/39/9d/32/399d327f13f219f1f17b9e956b049fcb--roy-arrow-arrow-dc.jpg</thumbnail>
+  
+</item>
 <item>
 <title>[COLOR orange]Atlantis[/COLOR]</title>
 <link>$doregex[makelist3]</link>
@@ -24,25 +42,7 @@
   
 </item>
 
-<item>
-<title>[COLOR orange]Arrow[/COLOR]</title>
-<link>$doregex[makelist3]</link>
-<regex>
-  <name>makelist3</name>
-  <listrepeat><![CDATA[
-        <title>$pyFunction:'[COLOR gold][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
-        <link>plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/series/series-torrents/Arrow/[makelist3.param1]</link>
 
-        ]]></listrepeat>
-<expres>href="(.*?torrent)</expres>
-<!-- href="(.*?torrent) -->
-<page>http://www.gruponetai.com/series/series-torrents/Arrow/</page>
-<cookieJar></cookieJar>
-</regex>
-
-<thumbnail>https://i.pinimg.com/736x/39/9d/32/399d327f13f219f1f17b9e956b049fcb--roy-arrow-arrow-dc.jpg</thumbnail>
-  
-</item>
 
 <!-- B -->
 
@@ -100,6 +100,39 @@
 </item> 
 
 <!-- L -->
+<item>
+<title>[COLOR orange]Las chicas del cable T1 [COLOR white]|HD|720p[/COLOR][/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.quasar/play?uri=http://gruponetai.com/series/series-torrents/Las_chicas_del_cable/[makelist3.param1]</link>
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://gruponetai.com/series/series-torrents/Las_chicas_del_cable/</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/series/Las%20chicas%20del%20cablehd.jpg</thumbnail> 
+</item> 
+<item>
+<title>[COLOR orange]Las chicas del cable T1 [COLOR white]|HD|720p[/COLOR][/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.quasar/play?uri=http://gruponetai.com/series/series-torrents/Las_chicas_del_cable2/[makelist3.param1]</link>
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://gruponetai.com/series/series-torrents/Las_chicas_del_cable/</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/series/las-chicas-del-cable2.jpg</thumbnail> 
+</item> 
+
 <!-- M -->
 <item>
 <title>[COLOR orange]Madam secretary[/COLOR]</title>
