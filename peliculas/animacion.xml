@@ -115,9 +115,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrentin-1080'])
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Torrentin-1080'])
     channels = ['plugin://plugin.video.youtube/play/?video_id=I5NUePZrJ20',
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Angry_Birds_la_Pelicula_BluRay_1080p.torrent',
 	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Angry_Birds_la_Pelicula_BluRay_1080p.torrent']
     return channels[ret]
 ]]></expres>
