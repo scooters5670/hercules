@@ -21,7 +21,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	'plugin://plugin.video.youtube/play/?video_id=',
 	'plugin://plugin.video.quasar/play?uri=',
 	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.torrentin/?uri=&image=imageurl&player=20']
     return channels[ret]
 ]]></expres>
 <page></page>

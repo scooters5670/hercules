@@ -21,7 +21,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	'plugin://plugin.video.youtube/play/?video_id=',
 	'plugin://plugin.video.quasar/play?uri=',
 	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.torrentin/?uri=&image=imageurl&player=20']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -107,16 +107,17 @@ No se le resiste ninguna cerradura, ninguna alarma.
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-dvd', 'Quasar-1080', 'torrentin-dvd', 'Torrentin-1080'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=LDafYNLmNPE',
-	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/60-segundos-dvdrip.torrent',
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=e88TFo21dP0',
 	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/portal/peliculas/torrents/60-segundos-dvdrip.torrent&image=https://grantorrent.com/wp-content/uploads/2016/10/spectre-683709494-large.jpg&player=20',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent']
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent&image=imageurl&player=20']
     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
+
 <thumbnail>http://hdfull.tv/tthumb/172x256/movie_9a3f0952d44879cc3c57c4f5ee96d02b.jpg</thumbnail> 
 <fanart>http://hdfull.tv/tthumb/172x256/movie_9a3f0952d44879cc3c57c4f5ee96d02b.jpg</fanart>
 </item>
@@ -137,15 +138,17 @@ persa que era inmensamente superior.
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer','Quasar-1080', 'Torrentin-1080'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=mi4xUUJSuro',
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=mi4xUUJSuro',
 	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/300-microhd-1080-px.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/300-microhd-1080-px.torrent'
-]
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/300-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/300-microhd-1080-px.torrent&image=imageurl&player=20']
     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
+
 <thumbnail>https://grantorrent.com/wp-content/uploads/2017/04/300-274692460-large.jpg</thumbnail>
 <fanart>https://grantorrent.com/wp-content/uploads/2017/04/300-274692460-large.jpg</fanart>
 </item>
@@ -167,13 +170,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Ver Trailer','Quasar-1080', 'Torrentin-1080', 'DVD-Rip'])
     channels = ['plugin://plugin.video.youtube/play/?video_id=i14coKhHnl0',
-	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/300-el-origen-de-un-imperio--bluray-microhd.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/portal/peliculas/torrents/300-el-origen-de-un-imperio--bluray-microhd.torrent', 
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/300[2007][Accion][Castellano][SpaTorrent.com].torrent']
+	'plugin://plugin.video.youtube/play/?video_id=uHqtubrBgkY',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/300_El_origen_de_un_imperio_HDRip.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/300_El_origen_de_un_imperio_HDRip.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/300_El_origen_de_un_imperio_HDRip.torrent&image=imageurl&player=20']
     return channels[ret]
-]]></expres>
-<page></page>
-</regex>
+	]]>
 <thumbnail>https://grantorrent.com/wp-content/uploads/2016/10/300_rise_of_an_empire-579288813-large.jpg</thumbnail>
 <fanart>https://grantorrent.com/wp-content/uploads/2016/10/300_rise_of_an_empire-579288813-large.jpg</fanart>
 </item>
@@ -198,10 +200,12 @@ que sufrió en Vietnam y reacciona violentamente.
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080', 'Por defecto-DVD-Rip'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=SJpwkrsRZ-w','plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent']
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=6iz6u_gCpUE',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent',
+	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent&image=imageurl&player=20']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -227,11 +231,11 @@ Actores:  Sylvester Stallone, Richard Crenna, Marc de Jonge, Kurtwood Smith, Spi
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080', 'Por defecto-DVD-Rip'])
+    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = ['plugin://plugin.video.youtube/play/?video_id=RgZjnERdB70',
 	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_acorralado_ii.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_acorralado_ii.torrent', 
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_acorralado_ii.torrent']
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_acorralado_ii.torrent', 
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_acorralado_ii.torrent&image=imageurl&player=20']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -257,14 +261,17 @@ que el agente estaba intentando hacer llegar a Occidente,y en la que figuran los
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080', 'DVD-Rip'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=VSWiesqagko','plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Atomica_MicroHD.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Atomica_MicroHD.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Atomica_HDRip.torrent']
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=VSWiesqagko',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Atomica_HDRip.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Atomica_HDRip.torrent',
+	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Atomica_HDRip.torrent&image=imageurl&player=20']
     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
+
 <thumbnail>https://grantorrent.com/wp-content/uploads/2017/10/At%C3%B3mica-screener.jpg</thumbnail>
 <fanart>https://grantorrent.com/wp-content/uploads/2017/10/At%C3%B3mica-screener.jpg</fanart>
 
@@ -285,11 +292,11 @@ Un implacable agente del MI6 británico (Mark Strong), del grupo de operaciones 
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver trailer','Quasar', 'torrentin', 'Por defecto'])
+    ret = dialog.select('Ver via:', ['Ver trailer','Quasar', 'torrentin', 'Torrenter'])
     channels = [''plugin://plugin.video.youtube/play/?video_id=jq0Eh6t0teY',
 	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent', 
 	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent', 
-	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent']
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -311,13 +318,17 @@ Adolfo, un treintañero que trabaja de segurata, está pasando una mala racha. N
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver:', ['Trailer','Pelicula'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=YSOkNEv3uYs',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Anacleto_Agente_Secreto_MicroHD_1080p.torrent']
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=r5ZavNs93sw',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Anacleto_Agente_Secreto_MicroHD_1080p.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Anacleto_Agente_Secreto_MicroHD_1080p.torrent',
+	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Anacleto_Agente_Secreto_MicroHD_1080p.torrent&image=imageurl&player=20']
     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
+
 <thumbnail>https://grantorrent.com/wp-content/uploads/2016/09/anacleto_agente_secreto-863043600-large.jpg</thumbnail>
 <fanart>https://grantorrent.com/wp-content/uploads/2016/09/anacleto_agente_secreto-863043600-large.jpg</fanart>
 
@@ -340,14 +351,18 @@ Baby (Ansel Elgort), un joven y talentoso conductor especializado en fugas, depe
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=_XnNVXahJ2k',
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=_XnNVXahJ2k',
 	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Baby_driver_MicroHD.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Baby_driver_MicroHD.torrent']
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Baby_driver_MicroHD.torrent',
+	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Baby_driver_MicroHD.torrent&image=imageurl&player=20']
     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
+
+
 <thumbnail>https://in.bmscdn.com/iedb/movies/images/website/poster/large/baby-driver-et00040794-14-03-2017-09-05-24.jpg</thumbnail>
 <fanart>https://in.bmscdn.com/iedb/movies/images/website/poster/large/baby-driver-et00040794-14-03-2017-09-05-24.jpg</fanart>
 
@@ -391,15 +406,18 @@ Basada en la vida real de Barry Seal, un expiloto que se convirtió en un import
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080', 'Por defecto-DVD-Rip'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=GhG8tISCkW8',
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=_VBHPl3S35g',
 	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/barry-seal-bluray-1080p-dts-5-1-ac3-5-1-castellano-dts-5-1-ingles-subs-es-en.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/barry-seal-bluray-1080p-dts-5-1-ac3-5-1-castellano-dts-5-1-ingles-subs-es-en.torrent', 
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Barry%20Seal%20El%20traficantehdrip1,78gb.torrent']
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/barry-seal-bluray-1080p-dts-5-1-ac3-5-1-castellano-dts-5-1-ingles-subs-es-en.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/barry-seal-bluray-1080p-dts-5-1-ac3-5-1-castellano-dts-5-1-ingles-subs-es-en.torrent&image=imageurl&player=20']
     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
+
+
 <thumbnail>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</thumbnail> 
 <fanart>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</fanart>
 
@@ -458,10 +476,12 @@ Basada en la vida real de Barry Seal, un expiloto que se convirtió en un import
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=yIToB-4_VYA',
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=yIToB-4_VYA',
 	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Bright_MicroHD4,60gb.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Bright_MicroHD4,60gb.torrent']
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/Bright_MicroHD4,60gb.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Bright_MicroHD4,60gb.torrent&image=imageurl&player=20']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -470,7 +490,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</fanart>
 
 </item>
-http://www.mejortorrent.com/uploads/torrents/peliculas/Bright_MicroHD4,60gb.torrent
+
 <!-- C -->
 
 <!-- D -->
@@ -492,16 +512,17 @@ en un juicio en La Haya contra un cruel dictador (Gary Oldman).
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver trailer','Quasar 720','Torrentin 720','Quasar 1080', 'torrentin 1080'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=itWr1vz1zOo',
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/secciones.php?sec=descargas&ap=contar&tabla=peliculas&id=17145&link_bajar=1',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/secciones.php?sec=descargas&ap=contar&tabla=peliculas&id=17145&link_bajar=1',
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=itWr1vz1zOo',
 	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/El_otro_guardaespaldas_MicroHD4,79gb.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/El_otro_guardaespaldas_MicroHD4,79gb.torrent'] 
-     return channels[ret]
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/El_otro_guardaespaldas_MicroHD4,79gb.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/El_otro_guardaespaldas_MicroHD4,79gb.torrent&image=imageurl&player=20']
+    return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
+http://www.mejortorrent.com/uploads/torrents/peliculas/El_otro_guardaespaldas_MicroHD4,79gb.torrent
 <thumbnail>https://grantorrent.com/wp-content/uploads/2017/12/El-otro-guardaespaldas.jpg</thumbnail>
 <fanart>https://grantorrent.com/wp-content/uploads/2017/12/El-otro-guardaespaldas.jpg</fanart>
 </item>
