@@ -111,7 +111,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     channels = ['plugin://plugin.video.youtube/play/?video_id=LDafYNLmNPE',
 	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/60-segundos-dvdrip.torrent',
 	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/portal/peliculas/torrents/60-segundos-dvdrip.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/portal/peliculas/torrents/60-segundos-dvdrip.torrent&image=https://grantorrent.com/wp-content/uploads/2016/10/spectre-683709494-large.jpg&player=20',
 	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent']
     return channels[ret]
 ]]></expres>
@@ -652,8 +652,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <SetViewMode>500</SetViewMode>
 <title>[COLOR orange]Spectre 007 [/COLOR][COLOR white]Torrent[/COLOR]</title>
-<thumbnail></thumbnail>
-<fanart></fanart>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2016/10/spectre-683709494-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2016/10/spectre-683709494-large.jpg</fanart>
 <info>Actores: Daniel Craig, Christoph Waltz, Léa Seydoux, Ralph Fiennes.
 Duración: 148 minutos.
 Edad Recomendada: 12.
