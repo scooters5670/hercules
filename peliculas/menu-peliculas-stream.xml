@@ -105,7 +105,7 @@ import xbmcaddon
 import xbmcgui
 def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
-    d = dialog.input('Buscar Pelicula:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    d = dialog.input('Buscar Por Nombre:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
     return d
 ]]></expres>
 <page></page>
@@ -119,7 +119,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR orange]Ver [B][makelist2.param2][/B] [/COLOR]</title>
 
-<link>plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com[makelist.param2]</link>
+<link>plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com[makelist.param2]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 
 ]]></listrepeat>
