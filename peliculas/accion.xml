@@ -16,8 +16,12 @@ Para torrents !
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Quasar', 'torrentin', 'Por defecto'])
-    channels = ['plugin://plugin.video.quasar/play?uri=', 'plugin://plugin.video.torrentin/?uri=', 'plugin://plugin.video.quasar/play?uri=']
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -25,6 +29,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
+
 
 <!--  Regex para streamplay,streamcloud,openload,StreamGo,Uptobox,Yourupload
 
@@ -51,92 +56,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </item>
 
-<item>
-<SetViewMode>500</SetViewMode>
-<title>[COLOR orange]Angry Birds [/COLOR][COLOR white]Torrent[/COLOR]</title>
-    <thumbnail></thumbnail>
-<fanart></fanart>
-    <info>
 
-</info>
-<link>$doregex[select]</link>
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import xbmcgui
-    dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver trailer', 'Quasar', 'torrentin', 'Por defecto'])
-    channels = ['',
-	'plugin://plugin.video.quasar/play?uri=', 
-	'plugin://plugin.video.torrentin/?uri=', 
-	'plugin://plugin.video.quasar/play?uri=']
-    return channels[ret]
-]]></expres>
-<page></page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
--->
-
-<!-- Prueba de selector torrent y calidad.
-
-<item>
-<SetViewMode>500</SetViewMode>
-<title>[COLOR orange][/COLOR][COLOR white] Torrent[/COLOR]</title>
-<info>
-
-</info>
-<link>http://ignore</link>
-<jsonrpc>$doregex[select]</jsonrpc>
-<regex>
-
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import xbmcgui
-    dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer','Ver Pelicula'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.torrentin/?uri=']
-    return channels[ret]
-]]></expres>
-<page></page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-
-</item>
 -->
 
 <!-- 0-9 @# -->
-<item>
-<SetViewMode>500</SetViewMode>
-<title>[COLOR orange]Spectre[/COLOR][COLOR white] Torrent[/COLOR]</title>
-<info>
 
-</info>
-<link>http://ignore</link>
-<jsonrpc>$doregex[select]</jsonrpc>
-<!-- <link>$doregex[select]</link> -->
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import xbmcgui
-    dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer','Ver Pelicula'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=-_X2xs49iek',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Spectre_Microhd-1080p.torrent']
-    return channels[ret]
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://grantorrent.com/wp-content/uploads/2016/10/spectre-683709494-large.jpg</thumbnail>
-<fanart>https://grantorrent.com/wp-content/uploads/2016/10/spectre-683709494-large.jpg</fanart>
 
-</item>
 
 <item>
 <title>[COLOR orange]60 Segundos[/COLOR] Castellano [COLOR white] StreamGo [/COLOR]</title>
@@ -724,7 +649,38 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <!-- S -->
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Spectre 007 [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<info>Actores: Daniel Craig, Christoph Waltz, Léa Seydoux, Ralph Fiennes.
+Duración: 148 minutos.
+Edad Recomendada: 12.
+Género: Acción, Aventura, Suspenso.
 
+Un críptico mensaje del pasado de Bond le sitúa sobre la pista para destapar una siniestra organización. Al tiempo que M lucha contra las fuerzas políticas para mantener con vida a los servicios secretos, Bond desgrana las capas de engaños tras los que se oculta SPECTRE para desvelar la terrible verdad que allí se esconde.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Spectre_Microhd-1080p.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Spectre_Microhd-1080p.torrent',
+	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Spectre_Microhd-1080p.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
 <!-- T -->
 
 <!-- U -->

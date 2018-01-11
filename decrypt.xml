@@ -129,12 +129,4 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://wwwares-project-blogcom-9ueui6uviy.stackpathdns.com/wp-content/uploads/2017/03/icon-1.png</fanart>
 <thumbnail>http://wwwares-project-blogcom-9ueui6uviy.stackpathdns.com/wp-content/uploads/2017/03/icon-1.png</thumbnail>
 </item> 
-
-<item>
-<title>[COLOR lime]DESCARGA PLUGIN TORRENTIN[/COLOR]</title>
-<link>http://Ignoreme</link>
-<jsonrpc>plugin://plugin.video.torrentin/</jsonrpc>
-<thumbnail>https://raw.githubusercontent.com/surebic/plugin.video.torrentin/master/icon.png</thumbnail>
-<fanart></fanart>
-</item> 
 </items>

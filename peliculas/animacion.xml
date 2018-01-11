@@ -16,8 +16,12 @@ Para torrents !
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
-    channels = ['plugin://plugin.video.quasar/play?uri=', 'plugin://plugin.video.torrenter/?action=playSTRM&url=', 'plugin://plugin.video.quasar/play?uri=']
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -53,46 +57,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-<! torrents con info 
-
-<item>
-<title>[COLOR orange]Angry Birds [/COLOR][COLOR white]Torrent[/COLOR]</title>
-<info>
-   
-</info>
-<fanart>http://sostanbeatle.com/wp-content/uploads/2017/10/ITIT.jpg</fanart>
-<thumbnail>http://es.web.img3.acsta.net/c_215_290/pictures/17/10/23/10/01/0213264.jpg</thumbnail>
-<link>plugin://plugin.video.quasar/play?uri=</link>
-</item>
-
-<!-- Prueba de selector torrent y calidad.
-
-<item>
-<SetViewMode>500</SetViewMode>
-<title>[COLOR orange][/COLOR][COLOR white] Torrent[/COLOR]</title>
-<info>
-
-</info>
-<link>$doregex[select]</link>
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import xbmcgui
-    dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'Torrentin-1080'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrentin/?uri=']
-    return channels[ret]
-]]></expres>
-<page></page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-
-</item>
--->
 -->
 
 
