@@ -191,8 +191,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <SetViewMode>500</SetViewMode>
 <title>[COLOR orange] Saw I [/COLOR][COLOR white]Torrent[/COLOR]</title>
-<thumbnail></thumbnail>
-<fanart></fanart>
+<thumbnail>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/gallery_big/public/media/image/2016/12/saw.jpg</thumbnail> 
+<fanart>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/gallery_big/public/media/image/2016/12/saw.jpg</fanart>
 <info>
 </info>
 <link>$doregex[select]</link>
@@ -212,8 +212,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
+<thumbnail>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/gallery_big/public/media/image/2016/12/saw.jpg</thumbnail> 
+<fanart>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/gallery_big/public/media/image/2016/12/saw.jpg</fanart>
 </item>
 
 <item>
