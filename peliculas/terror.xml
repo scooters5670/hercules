@@ -93,12 +93,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <SetViewMode>500</SetViewMode>
-<title>[COLOR orange]Animales fantásticos y dónde encontrarlos[/COLOR][COLOR white] 2016[/COLOR]</title>
+<title>[COLOR orange] [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
 <info>
-Año:2016
-Duración: 133 min.
-Sinopsis:
-Año 1926. Newt Scamander acaba de completar un viaje por todo el mundo para encontrar y documentar una extraordinaria selección de criaturas mágicas. Llegando a Nueva York para hacer una breve parada en su camino, donde podría haber llegado y salido sin incidentes…pero no para un Muggle llamado Jacob, un caso perdido de magia, y la fuga de algunas criaturas fantásticas de Newt, que podrían causar problemas el mundo mágico y en el mundo Muggle. 
 </info>
 <link>$doregex[select]</link>
 <regex>
@@ -107,24 +105,21 @@ Año 1926. Newt Scamander acaba de completar un viaje por todo el mundo para enc
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Quasar', 'Torrentin', 'Por defecto'])
-    channels = ['plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent', 
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_Bluray.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_hdrip.torrent', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_MicroHD.torrent', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/animales_fantasticos_y_donde_encontrarlos_Bluray.torrent']
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=&image=imageurl&player=20']
     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</thumbnail>
-<fanart>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/animales-fantasticos-y-donde-encontrarlos/103227800-2-esl-ES/Animales-fantasticos-y-donde-encontrarlos.jpg</fanart>
-
+<thumbnail></thumbnail>
+<fanart></fanart>
 </item>
 -->
--->
--->
+
 
 
 <!-- 0-9 @# -->
@@ -171,7 +166,377 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- R -->
 
 <!-- S -->
+<item>
+<title>[COLOR orange]Saw I[/COLOR][COLOR white][/COLOR]</title>
+<thumbnail>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/gallery_big/public/media/image/2016/12/saw.jpg</thumbnail> 
+<fanart>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/gallery_big/public/media/image/2016/12/saw.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/iep4xscxkrdd'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/gallery_big/public/media/image/2016/12/saw.jpg</thumbnail> 
+<page></page>
+</item>
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange] Saw I [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=nnkyxFol9Mc',
+	'plugin://plugin.video.quasar/play?uri=http://www.divxtotal2.net/wp-content/uploads/2016/10/Saw-(ARCHIVO).torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.divxtotal2.net/wp-content/uploads/2016/10/Saw-(ARCHIVO).torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.divxtotal2.net/wp-content/uploads/2016/10/Saw-(ARCHIVO).torrent&image=imageurl&player=20']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
 
+<item>
+<title>[COLOR orange]Saw II[/COLOR][COLOR white][/COLOR]</title>
+<thumbnail>http://fr.web.img6.acsta.net/c_215_290/medias/nmedia/18/35/62/56/18443241.jpg</thumbnail> 
+<fanart>http://fr.web.img6.acsta.net/c_215_290/medias/nmedia/18/35/62/56/18443241.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/3amarbq7z2aw'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://fr.web.img6.acsta.net/c_215_290/medias/nmedia/18/35/62/56/18443241.jpg</thumbnail> 
+<page></page>
+</item>
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Saw II [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail>http://fr.web.img6.acsta.net/c_215_290/medias/nmedia/18/35/62/56/18443241.jpg</thumbnail> 
+<fanart>http://fr.web.img6.acsta.net/c_215_290/medias/nmedia/18/35/62/56/18443241.jpg</fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=GBDBu4GJqCg',
+	'plugin://plugin.video.quasar/play?uri=http://www.divxtotal2.net/wp-content/uploads/2016/10/Saw-II-(ARCHIVO).torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.divxtotal2.net/wp-content/uploads/2016/10/Saw-II-(ARCHIVO).torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.divxtotal2.net/wp-content/uploads/2016/10/Saw-II-(ARCHIVO).torrent&image=imageurl&player=20']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://fr.web.img6.acsta.net/c_215_290/medias/nmedia/18/35/62/56/18443241.jpg</thumbnail>
+<fanart>http://fr.web.img6.acsta.net/c_215_290/medias/nmedia/18/35/62/56/18443241.jpg</fanart>
+</item>
+<item>
+<title>[COLOR orange]Saw III[/COLOR][COLOR white][/COLOR]</title>
+<thumbnail>https://media-cache.cinematerial.com/p/500x/frlka3rf/saw-iii-dvd-cover.jpg</thumbnail> 
+<fanart>https://media-cache.cinematerial.com/p/500x/frlka3rf/saw-iii-dvd-cover.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/quvjaaq4scy7pjmw'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://media-cache.cinematerial.com/p/500x/frlka3rf/saw-iii-dvd-cover.jpg</thumbnail> 
+<page></page>
+</item>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Saw III[/COLOR][COLOR white] Torrent[/COLOR]</title>
+<thumbnail>https://media-cache.cinematerial.com/p/500x/frlka3rf/saw-iii-dvd-cover.jpg</thumbnail> 
+<fanart>https://media-cache.cinematerial.com/p/500x/frlka3rf/saw-iii-dvd-cover.jpg</fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=7TneUK9si2I',
+	'plugin://plugin.video.quasar/play?uri=http://www.divxtotal2.net/wp-content/uploads/2016/10/Saw-III-(ARCHIVO).torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.divxtotal2.net/wp-content/uploads/2016/10/Saw-III-(ARCHIVO).torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.divxtotal2.net/wp-content/uploads/2016/10/Saw-III-(ARCHIVO).torrent&image=imageurl&player=20']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://media-cache.cinematerial.com/p/500x/frlka3rf/saw-iii-dvd-cover.jpg</thumbnail> 
+<fanart>https://media-cache.cinematerial.com/p/500x/frlka3rf/saw-iii-dvd-cover.jpg</fanart>
+</item>
+<item>
+<title>[COLOR orange]Saw IV[/COLOR][COLOR white][/COLOR]</title>
+<thumbnail>http://hdfull.tv/thumbs/movie_d1489f642204e537ec4136d7ae7ff0b8.jpg</thumbnail> 
+<fanart>http://hdfull.tv/thumbs/movie_d1489f642204e537ec4136d7ae7ff0b8.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/pki108vlgj4y'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://hdfull.tv/thumbs/movie_d1489f642204e537ec4136d7ae7ff0b8.jpg</thumbnail> 
+<page></page>
+</item>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Saw IV [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail>http://hdfull.tv/thumbs/movie_d1489f642204e537ec4136d7ae7ff0b8.jpg</thumbnail> 
+<fanart>http://hdfull.tv/thumbs/movie_d1489f642204e537ec4136d7ae7ff0b8.jpg</fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=0YRCXAPDEQM',
+	'plugin://plugin.video.quasar/play?uri=http://www.estrenosdtl.io/torrents/Saw.IV.%5BSpanish%5D.DVDScreener.XviD.MP3.%5BDTL%5D.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.estrenosdtl.io/torrents/Saw.IV.%5BSpanish%5D.DVDScreener.XviD.MP3.%5BDTL%5D.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.estrenosdtl.io/torrents/Saw.IV.%5BSpanish%5D.DVDScreener.XviD.MP3.%5BDTL%5D.torrent&image=imageurl&player=20']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://hdfull.tv/thumbs/movie_d1489f642204e537ec4136d7ae7ff0b8.jpg</thumbnail> 
+<fanart>http://hdfull.tv/thumbs/movie_d1489f642204e537ec4136d7ae7ff0b8.jpg</fanart>
+</item>
+<item>
+<title>[COLOR orange]Saw V[/COLOR][COLOR white][/COLOR]</title>
+<thumbnail>https://vignette.wikia.nocookie.net/sawfilms/images/e/ec/Saw_V_New_Poster.jpg</thumbnail> 
+<fanart>https://vignette.wikia.nocookie.net/sawfilms/images/e/ec/Saw_V_New_Poster.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/cji0j37v0ucm'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail> 
+<page></page>
+</item>
+<item>
+<title>[COLOR orange]Saw VI[/COLOR][COLOR white][/COLOR]</title>
+<thumbnail>http://4.bp.blogspot.com/_JM9zAs7y-Ew/TJEVeH7-sJI/AAAAAAAAB3U/iSmKxx1Y14U/s1600/SAW_VI_Poster_prensa.jpg</thumbnail> 
+<fanart>http://4.bp.blogspot.com/_JM9zAs7y-Ew/TJEVeH7-sJI/AAAAAAAAB3U/iSmKxx1Y14U/s1600/SAW_VI_Poster_prensa.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/g7saiselgon5'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://4.bp.blogspot.com/_JM9zAs7y-Ew/TJEVeH7-sJI/AAAAAAAAB3U/iSmKxx1Y14U/s1600/SAW_VI_Poster_prensa.jpg</thumbnail> 
+<page></page>
+</item>
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Saw VI[/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail>https://vignette.wikia.nocookie.net/sawfilms/images/e/ec/Saw_V_New_Poster.jpg</thumbnail> 
+<fanart>http://hdfull.tv/thumbs/movie_d1489f642204e537ec4136d7ae7ff0b8.jpg</fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=-zFvxEAdakE',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/saw-vi-dvdrip-spa.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/saw-vi-dvdrip-spa.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/saw-vi-dvdrip-spa.torrent&image=imageurl&player=20']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://vignette.wikia.nocookie.net/sawfilms/images/e/ec/Saw_V_New_Poster.jpg</thumbnail> 
+<fanart>http://hdfull.tv/thumbs/movie_d1489f642204e537ec4136d7ae7ff0b8.jpg</fanart>
+</item>
+<item>
+<title>[COLOR orange]Saw VII[/COLOR][COLOR white][/COLOR]</title>
+<thumbnail>https://fanart.tv/fanart/movies/41439/movieposter/saw-3d-the-final-chapter-529180debefac.jpg</thumbnail> 
+<fanart>https://fanart.tv/fanart/movies/41439/movieposter/saw-3d-the-final-chapter-529180debefac.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = ' http://streamcloud.eu/doc7gwplgxfr'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://fanart.tv/fanart/movies/41439/movieposter/saw-3d-the-final-chapter-529180debefac.jpg</thumbnail> 
+<page></page>
+</item>
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Saw VII [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail>https://vignette.wikia.nocookie.net/sawfilms/images/e/ec/Saw_V_New_Poster.jpg</thumbnail> 
+<fanart>http://hdfull.tv/thumbs/movie_d1489f642204e537ec4136d7ae7ff0b8.jpg</fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=-VJT77LYKsk',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Saw.VII.DVD.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/Saw.VII.DVD.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Saw.VII.DVD.torrent&image=imageurl&player=20']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://vignette.wikia.nocookie.net/sawfilms/images/e/ec/Saw_V_New_Poster.jpg</thumbnail> 
+<fanart>http://hdfull.tv/thumbs/movie_d1489f642204e537ec4136d7ae7ff0b8.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR orange]Saw VIII[/COLOR][COLOR white][/COLOR]</title>
+<thumbnail>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/10/saw-viii-nuevo-poster.jpg</thumbnail> 
+<fanart>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/10/saw-viii-nuevo-poster.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/xjs6a1twnfm8'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/10/saw-viii-nuevo-poster.jpg</thumbnail> 
+<page></page>
+</item>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Saw VIII TS SCREENER [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/10/saw-viii-nuevo-poster.jpg</thumbnail> 
+<fanart>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/10/saw-viii-nuevo-poster.jpg</fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=-U2GqDYjn3g',
+	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Saw_8_BRscreener2,84gb.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/Saw_8_BRscreener2,84gb.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Saw_8_BRscreener2,84gb.torrent&image=imageurl&player=20']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/10/saw-viii-nuevo-poster.jpg</thumbnail> 
+<fanart>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/10/saw-viii-nuevo-poster.jpg</fanart>
+</item>
 <!-- T -->
 
 <!-- U -->
