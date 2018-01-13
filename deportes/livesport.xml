@@ -1,4 +1,10 @@
 <items>
+<item>
+<title>La Liga</title>
+<jsonrpc>Plugin://plugin.video.youtube/channel/UCTv-XvfzLX3i4IGWAm4sbmA/?page=0</jsonrpc>
+<link>DummyLink</link>
+<thumbnail>http://files.laliga.es/seccion_logos/laliga-h-16-9.jpg</thumbnail>
+</item>
 <!-- 
 <item>
   <title>[COLOR white][B]Real Madrid - F.C. Barcelona[/B] [COLOR gold]AV 1 SPA[/COLOR]</title>
