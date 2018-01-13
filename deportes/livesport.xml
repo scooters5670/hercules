@@ -50,9 +50,9 @@
 </item>
 
 <item>
-  <title>[COLOR yellow]13/01/2018 | 13:00 ESP | 07:00 MEX [/COLOR][COLOR white][B]LA LIGA:GIRONA-LAS PALMAS[SPA][/B] [COLOR gold]AV 1 SPA[/COLOR]</title>
-  <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-  <link>plugin://program.plexus/?url=acestream://541257197770d34d4e89a05dac57b259e9e63127&amp;mode=1&amp;name=Deportes Hercules: SPANISH LA LIGA GIRONA-LAS PALMAS	AV:1-2 [SPA]</link>
+<title>[COLOR yellow]13/01/2018 | 13:00 ESP | 07:00 MEX [/COLOR][COLOR white][B]LA LIGA:GIRONA-LAS PALMAS[SPA][/B] [COLOR gold]AV 1 SPA[/COLOR]</title>
+<thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
+  
 <link>$doregex[select]</link>
 <regex>
 <name>select</name>
@@ -74,7 +74,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
   <title>[COLOR yellow]13/01/2018 | 16:15 ESP | 10:15 MEX [/COLOR][COLOR white][B]LA LIGA:REAL MADRID-VILLARREAL [/B] [COLOR gold]AV 1-2 SPA[/COLOR]</title>
   <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-  <link></link>
+  <link>ignore</link>
 </item>
 
 <item>
