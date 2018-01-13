@@ -52,19 +52,19 @@
 <item>
 <title>[COLOR yellow]13/01/2018 | 13:00 ESP | 07:00 MEX [/COLOR][COLOR white][B]LA LIGA:GIRONA-LAS PALMAS[SPA][/B] [COLOR gold]AV 1 SPA[/COLOR]</title>
 <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-<link>ignore</link>
-<jsonrpc>$doregex[select]</jsonrpc>
+<link>$doregex[select]</link>
+
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver:', ['Previa', 'Partido AV1', 'Partido AV2'])
+    ret = dialog.select('Ver:', ['La liga-Previa', 'Partido AV1', 'Partido AV2'])
     channels = [
 	'plugin://plugin.video.youtube/play/?video_id=OdfZh1XEXx8',
-	'plugin://program.plexus/?url=acestream://541257197770d34d4e89a05dac57b259e9e63127&amp;mode=1&amp;name=Hercules+AV10',
-	'plugin://program.plexus/?url=acestream://541257197770d34d4e89a05dac57b259e9e63127&amp;mode=1&amp;name=Deportes_Hercules:_AV2']
+	'plugin://program.plexus/?url=acestream://541257197770d34d4e89a05dac57b259e9e63127&amp;mode=1&amp;name=Hercules+AV-1',
+	'plugin://program.plexus/?url=acestream://541257197770d34d4e89a05dac57b259e9e63127&amp;mode=1&amp;name=Hercules+AV-2']
     return channels[ret]
 ]]></expres>
 <page></page>
