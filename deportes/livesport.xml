@@ -1,4 +1,4 @@
-
+<items>
 <!-- 
 <item>
   <title>[COLOR white][B]Real Madrid - F.C. Barcelona[/B] [COLOR gold]AV 1 SPA[/COLOR]</title>
@@ -63,69 +63,53 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
 <externallink>https://pastebin.com/raw/Uf9S1LP6$$LSProEncKey=Adryan-acestream$$</externallink>
 </item>
-
 <item>
-<title>[COLOR yellow]13/01/2018 | 13:00 ESP | 07:00 MEX [/COLOR][COLOR white][B]LA LIGA:GIRONA-LAS PALMAS[SPA][/B] [COLOR gold]AV 1 SPA[/COLOR]</title>
+<title>[COLOR yellow]13/01/2018 | 13:00 ESP | 07:00 MEX [/COLOR][COLOR lime][B]LA LIGA:GIRONA-LAS PALMAS[SPA][/B] [COLOR gold]AV 1 SPA[/COLOR]</title>
 <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-<link>$doregex[select]</link>
-
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import xbmcgui
-    dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver:', ['La liga-Previa', 'Partido'])
-    channels = [
-	'plugin://plugin.video.youtube/play/?video_id=OdfZh1XEXx8',
-	'plugin://program.plexus/?url=acestream://541257197770d34d4e89a05dac57b259e9e63127&amp;mode=1&amp;name=Hercules+AV1']
-    return channels[ret]
-]]></expres>
-<page></page>
-</regex>
-  </item>
-
-<item>
-  <title>[COLOR yellow]13/01/2018 | 16:15 ESP | 10:15 MEX [/COLOR][COLOR white][B]LA LIGA:REAL MADRID-VILLARREAL [/B] [COLOR gold]AV 1-2 SPA[/COLOR]</title>
-  <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-<link>$doregex[select]</link>
-
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import xbmcgui
-    dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver:', ['La liga-Previa', 'Partido'])
-    channels = [
-	'plugin://plugin.video.youtube/play/?video_id=OdfZh1XEXx8',
-	'plugin://program.plexus/?url=acestream://541257197770d34d4e89a05dac57b259e9e63127&amp;mode=1&amp;name=Hercules+AV1']
-    return channels[ret]
-]]></expres>
-<page></page>
-</regex>
+<link>plugin://program.plexus/?url=acestream://541257197770d34d4e89a05dac57b259e9e63127&amp;mode=1&amp;name=Hercules+AV1</link>
 </item>
 
 <item>
   <title>[COLOR yellow]13/01/2018	16:00 ESP | 10:00 MEX [/COLOR][COLOR white][B]LA LIGA 2: BARCELONA B-REAL VALLADOLID[/B] [COLOR gold]AV 8-9 SPA[/COLOR]</title>
   <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-  <link>$doregex[select]</link>
+  <link>plugin://program.plexus/?url=acestream://60b663f1299be92327aee5279cb3832c60526f65&amp;mode=1&amp;name=Hercules+AV8</link>
 
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import xbmcgui
-    dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver:', ['La liga-Previa', 'Partido'])
-    channels = [
-	'plugin://plugin.video.youtube/play/?video_id=OdfZh1XEXx8',
-	'plugin://program.plexus/?url=acestream://541257197770d34d4e89a05dac57b259e9e63127&amp;mode=1&amp;name=Hercules+AV1']
-    return channels[ret]
-]]></expres>
-<page></page>
-</regex>
 </item>
 
+<item>
+  <title>[COLOR yellow]13/01/2018 | 16:15 ESP | 10:15 MEX [/COLOR][COLOR lime][B]LA LIGA:REAL MADRID-VILLARREAL [/B] [COLOR gold]AV 1-2 SPA[/COLOR]</title>
+  <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
+<link>plugin://program.plexus/?url=acestream://541257197770d34d4e89a05dac57b259e9e63127&amp;mode=1&amp;name=Hercules+AV1</link>
 
+</item>
 
+<item>
+  <title>[COLOR yellow]13/01/2018 | 18:00 ESP | 12:00 MEX [/COLOR][COLOR lime][B]SPORTING GIJON-ALCORCON[/B] [COLOR gold]AV 8-9 SPA[/COLOR]</title>
+  <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
+<link>plugin://program.plexus/?url=acestream://60b663f1299be92327aee5279cb3832c60526f65&amp;mode=1&amp;name=Hercules+AV1</link>
+</item>
+
+<item>
+  <title>[COLOR yellow]13/01/2018 | 18:30 ESP | 12:00 MEX [/COLOR][COLOR lime][B]EIBAR-ATLETICO MADRID[/B] [COLOR gold]AV 1-2 SPA[/COLOR]</title>
+  <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
+<link>plugin://program.plexus/?url=acestream://541257197770d34d4e89a05dac57b259e9e63127&amp;mode=1&amp;name=Hercules+AV1</link>
+</item>
+
+<item>
+  <title>[COLOR yellow]13/01/2018 | 20:00 ESP | 14:00 MEX [/COLOR][COLOR white][B]LA LIGA 2: REUS-LUGO[/B] [COLOR gold]AV 8-9 SPA[/COLOR]</title>
+  <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
+<link>plugin://program.plexus/?url=acestream://60b663f1299be92327aee5279cb3832c60526f65&amp;mode=1&amp;name=Hercules+AV1</link>
+</item>
+
+<item>
+  <title>[COLOR yellow]13/01/2018 | 20:30 ESP | 14:30 MEX [/COLOR][COLOR white][B]LA LIGA 2: REAL ZARAGOZA-TENERIFE[/B] [COLOR gold]AV 8-9 SPA[/COLOR]</title>
+  <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
+<link>plugin://program.plexus/?url=acestream://60b663f1299be92327aee5279cb3832c60526f65&amp;mode=1&amp;name=Hercules+AV1</link>
+</item>
+
+<item>
+  <title>[COLOR yellow]13/01/2018 | 20:45 ESP | 14:45 MEX [/COLOR][COLOR lime][B]DEPORTIVO-VALENCIA[/B] [COLOR gold]AV 1-2 SPA[/COLOR]</title>
+  <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
+<link>plugin://program.plexus/?url=acestream://541257197770d34d4e89a05dac57b259e9e63127&amp;mode=1&amp;name=Hercules+AV1</link>
+</item>
+</items>
