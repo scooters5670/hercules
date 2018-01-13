@@ -52,7 +52,7 @@
 <item>
 <title>[COLOR yellow]13/01/2018 | 13:00 ESP | 07:00 MEX [/COLOR][COLOR white][B]LA LIGA:GIRONA-LAS PALMAS[SPA][/B] [COLOR gold]AV 1 SPA[/COLOR]</title>
 <thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-  
+  <link>ignore</link>
 <jsonrpc>$doregex[select]</jsonrpc>
 <regex>
 <name>select</name>
