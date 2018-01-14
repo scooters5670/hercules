@@ -844,21 +844,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>[COLOR orange]Solo para sus ojos[/COLOR][COLOR white] Stream | Pelisipad |[/COLOR]</title>
 <thumbnail>http://pelisipad.com/black_json/movie/14---007---S%C3%B3lo-para-sus-ojos--www.newpct.com--toni32-.mp4/poster_167x250.jpg</thumbnail> 
 <fanart>http://pelisipad.com/black_json/movie/14---007---S%C3%B3lo-para-sus-ojos--www.newpct.com--toni32-.mp4/poster_167x250.jpg</fanart>
-<link>$doregex[resolve]</link>
-<regex>
-<name>resolve</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
-    url = 'http://pelisipad.com/playmovie/14---007---S%C3%B3lo-para-sus-ojos--www.newpct.com--toni32-.mp4'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = 'http://www.gruponetai.com/videos/error.mp4'
-    return u
-]]></expres>
-<page>http://pelisipad.com/</page>
-</regex>
+<link>http://hn.pelisipad.com/s/transcoder/14---007---S%C3%B3lo-para-sus-ojos--www.newpct.com--toni32-.mp4/default/14---007---S%C3%B3lo-para-sus-ojos--www.newpct.com--toni32-.mp4?tt=1480190451&mm=MG6drXEjwzBesnlR0sYaxA&bb=E0oWUUX1Y0BA7aXCiyOiiA</link>
 </item>
 <item>
 <SetViewMode>500</SetViewMode>
