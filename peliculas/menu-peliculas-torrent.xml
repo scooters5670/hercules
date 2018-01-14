@@ -172,7 +172,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>    [COLOR orange][B] ESTRENOS [/B][/COLOR] [COLOR white] Castellano [/COLOR] </title>
+
+<title>    [COLOR orange][B] NOVEDADES [/B][/COLOR] [COLOR white] Castellano [/COLOR] </title>
 <link>$doregex[makelist2]</link>
 
 
@@ -202,7 +203,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
- <title>[COLOR white]Torrentin[/COLOR]</title>
+ <title>[COLOR white]Hercules Ejecutara Torrentin: Ver [/COLOR] [COLOR lime][B][makelist.param2][/B][/COLOR]</title>
 <link>plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com[makelist.param2]</link>
 <thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/$doregex[imagen].jpg</thumbnail>
 ]]></listrepeat>
