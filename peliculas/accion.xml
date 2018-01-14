@@ -21,7 +21,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	'plugin://plugin.video.youtube/play/?video_id=',
 	'plugin://plugin.video.quasar/play?uri=',
 	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=&image=imageurl&player=20']
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -60,7 +60,33 @@ def GetLSProData(page_data,Cookie_Jar,m):
 -->
 
 <!-- 0-9 @# -->
-
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]007: Operación Skyfall [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=6kw1UVovByw',
+	'plugin://plugin.video.quasar/play?uri=http://gruponetai.com/peliculas/skyfall-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://gruponetai.com/peliculas/skyfall-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://gruponetai.com/peliculas/skyfall-microhd-1080-px.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/Skyfallm.jpg</thumbnail>
+<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/Skyfallm.jpg</fanart>
+</item>
 
 
 <item>
@@ -109,10 +135,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=e88TFo21dP0',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/60-segundos-microhd-1080-px.torrent&image=imageurl&player=20']
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -141,9 +167,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
 	'plugin://plugin.video.youtube/play/?video_id=mi4xUUJSuro',
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/300-microhd-1080-px.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/300-microhd-1080-px.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/300-microhd-1080-px.torrent&image=imageurl&player=20']
+	'plugin://plugin.video.quasar/play?uri=http://gruponetai.com/peliculas/300-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://gruponetai.com/peliculas/300-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://gruponetai.com/peliculas/300-microhd-1080-px.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -168,14 +194,16 @@ la invasión del país. Spin-off de la película/cómic 300, basado en la novela
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer','Quasar-1080', 'Torrentin-1080', 'DVD-Rip'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=i14coKhHnl0',
-	'plugin://plugin.video.youtube/play/?video_id=uHqtubrBgkY',
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/300_El_origen_de_un_imperio_HDRip.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/300_El_origen_de_un_imperio_HDRip.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/300_El_origen_de_un_imperio_HDRip.torrent&image=imageurl&player=20']
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=i14coKhHnl0',
+	'plugin://plugin.video.quasar/play?uri=http://gruponetai.com/peliculas/300-el-origen-de-un-imperio-bluray-1080p.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://gruponetai.com/peliculas/300-el-origen-de-un-imperio-bluray-1080p.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://gruponetai.com/peliculas/300-el-origen-de-un-imperio-bluray-1080p.torrent']
     return channels[ret]
-	]]>
+]]></expres>
+<page></page>
+</regex>	
 <thumbnail>https://grantorrent.com/wp-content/uploads/2016/10/300_rise_of_an_empire-579288813-large.jpg</thumbnail>
 <fanart>https://grantorrent.com/wp-content/uploads/2016/10/300_rise_of_an_empire-579288813-large.jpg</fanart>
 </item>
@@ -203,9 +231,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
 	'plugin://plugin.video.youtube/play/?video_id=6iz6u_gCpUE',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/acorralado.torrent&image=imageurl&player=20']
+	'plugin://plugin.video.quasar/play?uri=http://gruponetai.com/peliculas/acorralado.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://gruponetai.com/peliculas/acorralado.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://gruponetai.com/peliculas/acorralado.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -231,11 +259,12 @@ Actores:  Sylvester Stallone, Richard Crenna, Marc de Jonge, Kurtwood Smith, Spi
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=RgZjnERdB70',
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_acorralado_ii.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_acorralado_ii.torrent', 
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/rambo_acorralado_ii.torrent&image=imageurl&player=20']
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=RgZjnERdB70',
+	'plugin://plugin.video.quasar/play?uri=http://gruponetai.com/peliculas/rambo_acorralado_ii.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://gruponetai.com/peliculas/rambo_acorralado_ii.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://gruponetai.com/peliculas/rambo_acorralado_ii.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -264,9 +293,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
 	'plugin://plugin.video.youtube/play/?video_id=VSWiesqagko',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Atomica_HDRip.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Atomica_HDRip.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Atomica_HDRip.torrent&image=imageurl&player=20']
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/peliculas/Atomica_MicroHD.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/peliculas/Atomica_MicroHD.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/peliculas/Atomica_MicroHD.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -292,11 +321,12 @@ Un implacable agente del MI6 británico (Mark Strong), del grupo de operaciones 
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver trailer','Quasar', 'torrentin', 'Torrenter'])
-    channels = [''plugin://plugin.video.youtube/play/?video_id=jq0Eh6t0teY',
-	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent', 
-	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent', 
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/portal/peliculas/torrents/Agente_contrainteligente_MicroHD_1080p.torrent']
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -320,10 +350,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=r5ZavNs93sw',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Anacleto_Agente_Secreto_MicroHD_1080p.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Anacleto_Agente_Secreto_MicroHD_1080p.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Anacleto_Agente_Secreto_MicroHD_1080p.torrent&image=imageurl&player=20']
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -353,10 +383,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=_XnNVXahJ2k',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Baby_driver_MicroHD.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Baby_driver_MicroHD.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Baby_driver_MicroHD.torrent&image=imageurl&player=20']
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -373,18 +403,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>[COLOR orange]Barry Seal[/COLOR][COLOR white] El traficante | Streamgo[/COLOR]</title>
 <info>Basada en la vida real de Barry Seal, un expiloto que se convirtió en un importante narcotraficante en el cartel de Medellín
  y que acabó siendo reclutado por la CIA y el departamento de inteligencia de la DEA.</info>
-<link>$doregex[resolve]</link>
+<link>$doregex[select]</link>
 <regex>
-<name>resolve</name>
+<name>select</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
-    url = 'https://streamango.com/f/cbkqedorafcttkcd/4m3r1c4n_m4d3_2017_hdrip_720p_castellano_mp4'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = 'http://www.gruponetai.com/videos/error.mp4'
-    return u
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
+    return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
@@ -408,10 +440,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=_VBHPl3S35g',
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/barry-seal-bluray-1080p-dts-5-1-ac3-5-1-castellano-dts-5-1-ingles-subs-es-en.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/barry-seal-bluray-1080p-dts-5-1-ac3-5-1-castellano-dts-5-1-ingles-subs-es-en.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/barry-seal-bluray-1080p-dts-5-1-ac3-5-1-castellano-dts-5-1-ingles-subs-es-en.torrent&image=imageurl&player=20']
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -478,10 +510,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=yIToB-4_VYA',
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Bright_MicroHD4,60gb.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/Bright_MicroHD4,60gb.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Bright_MicroHD4,60gb.torrent&image=imageurl&player=20']
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -492,6 +524,39 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <!-- C -->
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Casino Royale [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail>https://pics.filmaffinity.com/casino_royale-126696965-large.jpg</thumbnail>
+<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/Casino%20Royalem.jpg</fanart>
+<info>
+La primera misión del agente británico James Bond (Daniel Craig) como agente 007 lo lleva hasta Le Chiffre (Mads Mikkelsen), 
+banquero de los terroristas de todo el mundo. Para detenerlo y desmantelar la red terrorista, Bond debe derrotarlo en una 
+arriesgada partida de póquer en el Casino Royale. Al principio a Bond le disgusta Vesper Lynd (Eva Green), 
+la hermosa oficial del Tesoro que debe vigilar el dinero del gobierno. Pero, a medida que Bond y Vesper se ven obligados 
+a defenderse juntos de los mortales ataques de Le Chiffre y sus secuaces, nace entre ellos una atracción mutua.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://pics.filmaffinity.com/casino_royale-126696965-large.jpg</thumbnail>
+<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/Casino%20Royalem.jpg</fanart>
+</item>
+
 
 <!-- D -->
 
@@ -514,10 +579,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=itWr1vz1zOo',
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/El_otro_guardaespaldas_MicroHD4,79gb.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com/uploads/torrents/peliculas/El_otro_guardaespaldas_MicroHD4,79gb.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/El_otro_guardaespaldas_MicroHD4,79gb.torrent&image=imageurl&player=20']
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -526,6 +591,34 @@ http://www.mejortorrent.com/uploads/torrents/peliculas/El_otro_guardaespaldas_Mi
 <thumbnail>https://grantorrent.com/wp-content/uploads/2017/12/El-otro-guardaespaldas.jpg</thumbnail>
 <fanart>https://grantorrent.com/wp-content/uploads/2017/12/El-otro-guardaespaldas.jpg</fanart>
 </item>
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange] [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/El%20mundo%20nunca%20es%20suficiente.jpg</thumbnail>
+<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/El%20mundo%20nunca%20es%20suficiente.jpg</fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/El%20mundo%20nunca%20es%20suficiente.jpg</thumbnail>
+<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/El%20mundo%20nunca%20es%20suficiente.jpg</fanart>
+</item>
+
 <!-- F -->
 
 <!-- G -->
@@ -542,10 +635,12 @@ http://www.mejortorrent.com/uploads/torrents/peliculas/El_otro_guardaespaldas_Mi
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=YzVbtWZ3Rxk',
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Ghost_in_the_Shell_MicroHD_1080p.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Ghost_in_the_Shell_MicroHD_1080p.torrent']
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -605,6 +700,33 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <!-- Q -->
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Quantum of Solace  [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/Quantum%20of%20Solace.jpg</thumbnail>
+<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/Quantum%20of%20Solace.jpg</fanart>
+</item>
 
 <!-- R -->
 <item>
@@ -618,19 +740,18 @@ Edad Recomendada: 18.
 Género: Acción, Aventura, Suspenso, Guerra.
 </info>
 <link>$doregex[select]</link>
-
-<thumbnail>https://grantorrent.com/wp-content/uploads/2017/02/rambo_iii-189639328-large.jpg</thumbnail>
-<fanart>https://grantorrent.com/wp-content/uploads/2017/02/rambo_iii-189639328-large.jpg</fanart>
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=bZemQdvthBs',
-	'plugin://plugin.video.quasar/play?uri=http://www.divxtotal2.net/wp-content/uploads/2016/10/Rambo-III-(ARCHIVO).torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.divxtotal2.net/wp-content/uploads/2016/10/Rambo-III-(ARCHIVO).torrent']
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -654,11 +775,12 @@ Género: Acción, Aventura, Suspenso, Guerra.
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Ver Trailer', 'Quasar-1080', 'torrentin-1080', 'Por defecto-DVD-Rip'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=At1ReucxHCk',
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Rambo_4_BDremux_1080_px.torrent',
-	'plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Rambo_4_BDremux_1080_px.torrent', 
-	'plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com/uploads/torrents/peliculas/Rambo_4_BDremux_1080_px.torrent']
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=',
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -692,9 +814,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
 	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=https://files.grantorrent.com/torrents/peliculas/Spectre_Microhd-1080p.torrent',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=https://files.grantorrent.com/torrents/peliculas/Spectre_Microhd-1080p.torrent',
-	'plugin://plugin.video.torrentin/?uri=https://files.grantorrent.com/torrents/peliculas/Spectre_Microhd-1080p.torrent']
+	'plugin://plugin.video.quasar/play?uri=',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
+	'plugin://plugin.video.torrentin/?uri=']
     return channels[ret]
 ]]></expres>
 <page></page>
