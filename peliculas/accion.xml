@@ -303,6 +303,27 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://grantorrent.com/wp-content/uploads/2017/10/At%C3%B3mica-screener.jpg</fanart>
 
 </item>
+<item>
+<title>[COLOR orange]Arma letal[/COLOR][COLOR white] Streamcloud [/COLOR]</title>
+<thumbnail>http://hdfull.tv/tthumb/172x256/movie_c3e3420a757cfb31853330c0aef1f7d0.jpg</thumbnail> 
+<fanart>http://hdfull.tv/tthumb/172x256/movie_c3e3420a757cfb31853330c0aef1f7d0.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamplay.to/763kznfvh8k6'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+</item>
+
 
 
 <item>
@@ -556,16 +577,24 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <!-- E -->
 <item>
-<title>[COLOR orange][/COLOR][COLOR white][/COLOR]</title>
+<title>[COLOR orange]El mosquetero[/COLOR][COLOR white] |Streamcloud.eu| [/COLOR]</title>
 <thumbnail>http://hdfull.tv/tthumb/172x256/movie_fda2bd5cbbd66eb1a750a056c2c437f6.jpg</thumbnail> 
 <fanart>http://hdfull.tv/tthumb/172x256/movie_fda2bd5cbbd66eb1a750a056c2c437f6.jpg</fanart>
+<info>
+Año: 2001
+IMDB Rating: 6 
+Género: Acción	Aventura	Drama
+Director: Peter Hyams
+
+D'Artagnan abandona Gascuña, su región natal, con un doble objetivo: unirse a los mosqueteros del Rey y encontrar al hombre que asesinó a sus padres catorce años antes. Una vez en París, conoce a Aramis, Athos y Portos, que han sido expulsados de la Guardia Real y llevan una vida desordenada. Además, el intrigante cardenal Richelieu ha conseguido implicar a Tréville, el caballeroso jefe de los mosqueteros, en un turbio asesinato. Pero D'Artagnan no se quedará de brazos cruzados.
+</info>
 <link>$doregex[resolve]</link>
 <regex>
 <name>resolve</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
     import urlresolver
-    url = 'https://powvideo.net/ptfu2ugprioh'
+    url = 'http://streamcloud.eu/hl2tgmlrurel'
     try:
         u = urlresolver.resolve(url)
     except:
