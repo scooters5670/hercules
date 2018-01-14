@@ -26,8 +26,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
 </item>
 
 
@@ -424,6 +422,31 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</fanart>
 <page></page>
 </item>
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Blade runner [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/05/blade_runner-351607743-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/05/blade_runner-351607743-large.jpg</fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=LBbDxYuvdm4',
+	'plugin://plugin.video.quasar/play?uri=http://gruponetai.com/peliculas/blade-runner-the-final-cut-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://gruponetai.com/peliculas/blade-runner-the-final-cut-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://gruponetai.com/peliculas/blade-runner-the-final-cut-microhd-1080-px.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+</item>
 
 
 <item>
@@ -630,6 +653,33 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- K -->
 
 <!-- L -->
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]La roca |1996| [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2018/01/La_roca-309868610-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2018/01/La_roca-309868610-large.jpg</fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin: Dejame elegir'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=yYXlDplZHfA',
+	'plugin://plugin.video.quasar/play?uri=http://gruponetai.com/peliculas/la-roca-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://gruponetai.com/peliculas/la-roca-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://gruponetai.com/peliculas/la-roca-microhd-1080-px.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
 
 <item>
 <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail> 
@@ -660,7 +710,31 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page></regex>
 </item>
 <!-- M -->
-
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Muere otro dia [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail>https://www.cinemaxx.de/art/film/web/af/b7/1c/66327_poster_gross_w900.jpg</thumbnail>
+<fanart>https://www.cinemaxx.de/art/film/web/af/b7/1c/66327_poster_gross_w900.jpg</fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin: dejame elegir'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=84uhTWvSZbA',
+	'plugin://plugin.video.quasar/play?uri=http://gruponetai.com/peliculas/Muere.Otro.Dia.DVD.XviD.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://gruponetai.com/peliculas/Muere.Otro.Dia.DVD.XviD.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://gruponetai.com/peliculas/Muere.Otro.Dia.DVD.XviD.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+</item>
 <!-- N -->
 
 <!-- Ñ -->
@@ -750,10 +824,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=ulVU3uX7vvE',
+	'plugin://plugin.video.quasar/play?uri=http://gruponetai.com/peliculas/John_rambo_HDRip.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://gruponetai.com/peliculas/John_rambo_HDRip.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://gruponetai.com/peliculas/John_rambo_HDRip.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -765,6 +839,53 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <!-- S -->
+
+<item>
+<title>[COLOR orange]Solo para sus ojos[/COLOR][COLOR white] Stream | Pelisipad |[/COLOR]</title>
+<thumbnail>http://pelisipad.com/black_json/movie/14---007---S%C3%B3lo-para-sus-ojos--www.newpct.com--toni32-.mp4/poster_167x250.jpg</thumbnail> 
+<fanart>http://pelisipad.com/black_json/movie/14---007---S%C3%B3lo-para-sus-ojos--www.newpct.com--toni32-.mp4/poster_167x250.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://pelisipad.com/playmovie/14---007---S%C3%B3lo-para-sus-ojos--www.newpct.com--toni32-.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page>http://pelisipad.com/</page>
+</regex>
+</item>
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Skyfall [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/01/Skyfall-806932185-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/01/Skyfall-806932185-large.jpg</fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=UbC7iRA_O3g',
+	'plugin://plugin.video.quasar/play?uri=http://gruponetai.com/peliculas/skyfall-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://gruponetai.com/peliculas/skyfall-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://gruponetai.com/peliculas/skyfall-microhd-1080-px.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+</item>
+
 <item>
 <SetViewMode>500</SetViewMode>
 <title>[COLOR orange]Spectre 007 [/COLOR][COLOR white]Torrent[/COLOR]</title>
@@ -786,18 +907,51 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=ycih-sGr9js',
+	'plugin://plugin.video.quasar/play?uri=http://gruponetai.com/peliculas/Spectre_Microhd-1080p.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://gruponetai.com/peliculas/Spectre_Microhd-1080p.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://gruponetai.com/peliculas/Spectre_Microhd-1080p.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
 </item>
+
+
 <!-- T -->
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange]Templario [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail>https://grantorrent.com/wp-content/uploads/2017/11/Templario-151210775-large.jpg</thumbnail>
+<fanart>https://grantorrent.com/wp-content/uploads/2017/11/Templario-151210775-large.jpg</fanart>
+<info>
+Inglaterra, principios del siglo XIII. El 15 de junio de 1215 y, tras una dura negociación, 
+el despótico rey Juan se vio obligado a aceptar ciertas peticiones de los señores feudales, 
+cuyo objetivo era limitar el poder real. Así nació la Carta Magna. Sin embargo, tras reunir 
+un fuerte ejército, Juan se negó a cumplir el acuerdo, provocando así una guerra civil: 
+la Primera guerra de los Barones (1215-1217). El rey decidió eliminar a los que lo habían humillado,
+ especialmente a un grupo de caballeros templarios que, atrincherados en el castillo de Rochester, 
+ intentaron resistir el asedio de las tropas reales.
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=UkK1H4uHXqA',
+	'plugin://plugin.video.quasar/play?uri=http://gruponetai.com/peliculas/Templario_11_HDRip.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://gruponetai.com/peliculas/Templario_11_HDRip.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://gruponetai.com/peliculas/Templario_11_HDRip.torrent']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+</item>
 
 <!-- U -->
 
