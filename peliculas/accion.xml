@@ -135,10 +135,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=e88TFo21dP0',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/peliculas/60-segundos-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/peliculas/60-segundos-microhd-1080-px.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/peliculas/60-segundos-microhd-1080-px.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -323,10 +323,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=jq0Eh6t0teY',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/peliculas/Agente_contrainteligente_MicroHD_1080p.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/peliculas/Agente_contrainteligente_MicroHD_1080p.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/peliculas/Agente_contrainteligente_MicroHD_1080p.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -350,10 +350,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=r5ZavNs93sw',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/peliculas/Anacleto_Agente_Secreto_MicroHD_1080p.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/peliculas/Anacleto_Agente_Secreto_MicroHD_1080p.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/peliculas/Anacleto_Agente_Secreto_MicroHD_1080p.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -383,10 +383,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=_XnNVXahJ2k',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/peliculas/Baby_driver_MicroHD.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/peliculas/Baby_driver_MicroHD.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/peliculas/Baby_driver_MicroHD.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -412,10 +412,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=GhG8tISCkW8',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/peliculas/Barry_Seal_el_traficante_MicroHD.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/peliculas/Barry_Seal_el_traficante_MicroHD.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/peliculas/Barry_Seal_el_traficante_MicroHD.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -425,35 +425,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </item>
 
-<item>
-<SetViewMode>500</SetViewMode>
-<title>[COLOR orange]Barry Seal: El traficante[/COLOR][COLOR white] Torrent[/COLOR]</title>
-<info>
-Basada en la vida real de Barry Seal, un expiloto que se convirtió en un importante narcotraficante en el cartel de Medellín y que acabó siendo reclutado por la CIA y el departamento de inteligencia de la DEA.
-</info>
-<link>$doregex[select]</link>
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import xbmcgui
-    dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
-    channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
-    return channels[ret]
-]]></expres>
-<page></page>
-</regex>
-
-
-<thumbnail>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</thumbnail> 
-<fanart>http://hdfull.tv/tthumb/172x256/movie_ae5d3e5563b41e908172a55ac4a198ac.jpg</fanart>
-
-</item>
 
 <item>
 <title>[COLOR orange]Bright [/COLOR][COLOR white] 2017[/COLOR]</title>
@@ -510,10 +481,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=yIToB-4_VYA',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/peliculas/Bright_MicroHD.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/peliculas/Bright_MicroHD.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/peliculas/Bright_MicroHD.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -527,8 +498,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <SetViewMode>500</SetViewMode>
 <title>[COLOR orange]Casino Royale [/COLOR][COLOR white]Torrent[/COLOR]</title>
-<thumbnail>https://pics.filmaffinity.com/casino_royale-126696965-large.jpg</thumbnail>
-<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/Casino%20Royalem.jpg</fanart>
+<thumbnail>https://pics.filmaffinity.com/casino_royale-126696965-mmed.jpg</thumbnail>
+<fanart>https://pics.filmaffinity.com/casino_royale-126696965-mmed.jpg</fanart>
 <info>
 La primera misión del agente británico James Bond (Daniel Craig) como agente 007 lo lleva hasta Le Chiffre (Mads Mikkelsen), 
 banquero de los terroristas de todo el mundo. Para detenerlo y desmantelar la red terrorista, Bond debe derrotarlo en una 
@@ -545,16 +516,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=Y6-Jmc4tTk4',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/peliculas/casino_royale_microhd.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/peliculas/casino_royale_microhd.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/peliculas/casino_royale_microhd.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://pics.filmaffinity.com/casino_royale-126696965-large.jpg</thumbnail>
-<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/Casino%20Royalem.jpg</fanart>
+<thumbnail>https://pics.filmaffinity.com/casino_royale-126696965-mmed.jpg</thumbnail>
+<fanart>https://pics.filmaffinity.com/casino_royale-126696965-mmed.jpg</fanart>
 </item>
 
 
@@ -579,10 +550,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=itWr1vz1zOo',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/peliculas/El_otro_guardaespaldas_MicroHD.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/peliculas/El_otro_guardaespaldas_MicroHD.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/peliculas/El_otro_guardaespaldas_MicroHD.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
