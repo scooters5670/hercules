@@ -498,8 +498,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <SetViewMode>500</SetViewMode>
 <title>[COLOR orange]Casino Royale [/COLOR][COLOR white]Torrent[/COLOR]</title>
-<thumbnail>https://pics.filmaffinity.com/casino_royale-126696965-mmed.jpg</thumbnail>
-<fanart>https://pics.filmaffinity.com/casino_royale-126696965-mmed.jpg</fanart>
+<thumbnail>http://7345-presscdn-0-16.pagely.netdna-cdn.com/wp-content/blogs.dir/1/files/2011/05/casino-royale-movie-poster.jpg</thumbnail>
+<fanart>http://7345-presscdn-0-16.pagely.netdna-cdn.com/wp-content/blogs.dir/1/files/2011/05/casino-royale-movie-poster.jpg</fanart>
 <info>
 La primera misión del agente británico James Bond (Daniel Craig) como agente 007 lo lleva hasta Le Chiffre (Mads Mikkelsen), 
 banquero de los terroristas de todo el mundo. Para detenerlo y desmantelar la red terrorista, Bond debe derrotarlo en una 
@@ -524,8 +524,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://pics.filmaffinity.com/casino_royale-126696965-mmed.jpg</thumbnail>
-<fanart>https://pics.filmaffinity.com/casino_royale-126696965-mmed.jpg</fanart>
+<thumbnail>http://7345-presscdn-0-16.pagely.netdna-cdn.com/wp-content/blogs.dir/1/files/2011/05/casino-royale-movie-poster.jpg</thumbnail>
+<fanart>http://7345-presscdn-0-16.pagely.netdna-cdn.com/wp-content/blogs.dir/1/files/2011/05/casino-royale-movie-poster.jpg</fanart>
 </item>
 
 
@@ -564,7 +564,7 @@ http://www.mejortorrent.com/uploads/torrents/peliculas/El_otro_guardaespaldas_Mi
 </item>
 <item>
 <SetViewMode>500</SetViewMode>
-<title>[COLOR orange] [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<title>[COLOR orange]El mundo nunca es suficiente [/COLOR][COLOR white]Torrent[/COLOR]</title>
 <thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/El%20mundo%20nunca%20es%20suficiente.jpg</thumbnail>
 <fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/El%20mundo%20nunca%20es%20suficiente.jpg</fanart>
 <info>
@@ -578,10 +578,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=-aZ42UTDLvE',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/peliculas/El_Mundo_Nunca_Es_Suficiente_dvdrip.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/peliculas/El_Mundo_Nunca_Es_Suficiente_dvdrip.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/peliculas/El_Mundo_Nunca_Es_Suficiente_dvdrip.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -608,10 +608,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=8nfFMf6Hg9A',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/peliculas/Ghost_in_the_shell_17_MicroHD.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/peliculas/Ghost_in_the_shell_17_MicroHD.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/peliculas/Ghost_in_the_shell_17_MicroHD.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
@@ -674,8 +674,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <SetViewMode>500</SetViewMode>
 <title>[COLOR orange]Quantum of Solace  [/COLOR][COLOR white]Torrent[/COLOR]</title>
-<thumbnail></thumbnail>
-<fanart></fanart>
+<thumbnail>https://www.dvdsreleasedates.com/posters/800/Q/Quantum-of-Solace-movie-poster.jpg</thumbnail>
+<fanart>https://www.dvdsreleasedates.com/posters/800/Q/Quantum-of-Solace-movie-poster.jpg</fanart>
 <info>
 </info>
 <link>$doregex[select]</link>
@@ -687,22 +687,24 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=Pwas87ZMgpo',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/peliculas/Quantum_of_Solace_MicroHD_1080_px.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/peliculas/Quantum_of_Solace_MicroHD_1080_px.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/peliculas/Quantum_of_Solace_MicroHD_1080_px.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/Quantum%20of%20Solace.jpg</thumbnail>
-<fanart>http://www.mejortorrent.com/uploads/imagenes/peliculas/Quantum%20of%20Solace.jpg</fanart>
+<thumbnail>https://www.dvdsreleasedates.com/posters/800/Q/Quantum-of-Solace-movie-poster.jpg</thumbnail>
+<fanart>https://www.dvdsreleasedates.com/posters/800/Q/Quantum-of-Solace-movie-poster.jpg</fanart>
 </item>
 
 <!-- R -->
 <item>
 <SetViewMode>500</SetViewMode>
 <title>[COLOR orange]Rambo III[/COLOR][COLOR white] Torrent[/COLOR]</title>
+<thumbnail>https://cinebelico.files.wordpress.com/2008/09/rambo_iii_1988_6.jpg</thumbnail>
+<fanart>https://cinebelico.files.wordpress.com/2008/09/rambo_iii_1988_6.jpg</fanart>
 <info>
 Director: Peter MacDonald.
 Actores: Sylvester Stallone, Richard Crenna, Marc de Jonge, Kurtwood Smith.
@@ -719,10 +721,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver via:', ['Trailer', 'Quasar', 'Torrenter', 'Torrentin'])
     channels = [
-	'plugin://plugin.video.youtube/play/?video_id=',
-	'plugin://plugin.video.quasar/play?uri=',
-	'plugin://plugin.video.torrenter/?action=playSTRM&url=',
-	'plugin://plugin.video.torrentin/?uri=']
+	'plugin://plugin.video.youtube/play/?video_id=xCIo3iF5Vcg',
+	'plugin://plugin.video.quasar/play?uri=http://www.gruponetai.com/peliculas/Rambo-III.torrent',
+	'plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.gruponetai.com/peliculas/Rambo-III.torrent',
+	'plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/peliculas/Rambo-III.torrent']
     return channels[ret]
 ]]></expres>
 <page></page>
