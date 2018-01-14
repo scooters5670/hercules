@@ -145,7 +145,7 @@ plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com[makelist.param2
 <name>makelist</name>
 <listrepeat><![CDATA[
 <title>[COLOR orange] [B][makelist2.param2][/B] [makelist2.param1]  [makelist2.param3] [/COLOR]</title>
-<link><link>$doregex[select]</link></link>
+<link>$doregex[select]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 
 ]]></listrepeat>
@@ -181,7 +181,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist2</name>
 <listrepeat><![CDATA[
 <title>[COLOR orange]$doregex[name] [/COLOR]</title>
-<link>$doregex[makelist]</link>
+<link>plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com[makelist.param2]</link>
 <thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/$doregex[imagen].jpg</thumbnail>
 ]]></listrepeat>
 <expres>peli-descargar-torrent-(.*?)-.*?\n.*?\/uploads\/imagenes\/peliculas\/(.*?)\.jpg</expres>
