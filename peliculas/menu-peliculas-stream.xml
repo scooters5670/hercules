@@ -76,7 +76,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR orange][B] Buscar: [/B] [/COLOR][COLOR white] Requiere Torrentin [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
+<title>[COLOR orange][B] Buscar: [/B] [/COLOR][COLOR lime] Requiere Torrenter [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
 <link>$doregex[makelist2]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 
@@ -119,7 +119,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR orange]Ver [B][makelist2.param2][/B] [/COLOR]</title>
 
-<link>plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com[makelist.param2]</link>
+<link>plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com[makelist.param2]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 
 ]]></listrepeat>
@@ -132,7 +132,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 </item>
 <item>
-<title>[COLOR orange][B] Buscar: [/B] [/COLOR][COLOR white] Requiere Quasar [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
+<title>[COLOR orange][B] Buscar: [/B] [/COLOR][COLOR lime] Requiere Quasar [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
 <link>$doregex[makelist2]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 
@@ -204,16 +204,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/videoclub.xml</externallink>	
 </item>
 	
-<item>
+<!--<item>
 <title>[COLOR orange] Videoclub [COLOR white] En cines [/COLOR]</title>
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/estrenos.xml</externallink>	
-</item>
+</item>-->
 	
 <item>
-<title>[COLOR orange]VideoClub [COLOR white] En Cines - V.O Subtituladas [/COLOR]</title>
+<title>[COLOR orange]VideoClub [COLOR white]Peliculas - V.O[/COLOR]</title>
 <thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/peliculas.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
