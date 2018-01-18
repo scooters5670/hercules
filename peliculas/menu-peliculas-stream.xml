@@ -2,7 +2,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <SetViewMode>500</SetViewMode>
 <items>
-
+<!--
 <item>
 <title>[COLOR orange][+]Buscar:[/COLOR][COLOR white] |Por Stream| [/COLOR] </title>
 <link>$doregex[lista]</link>
@@ -74,7 +74,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/Buscar.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 </item>
-
+-->
 <item>
 <title>[COLOR orange][B] Buscar: [/B] [/COLOR][COLOR lime] Requiere Torrenter [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
 <link>$doregex[makelist2]</link>
