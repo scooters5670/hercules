@@ -74,13 +74,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- Intento de buscador en Kbagui -->
 <item>
 <title>[COLOR orange][+]Buscar:[/COLOR][COLOR white] |KB| [/COLOR] </title>
-<link>$doregex[lista]</link>
+<link>$doregex[makelist]</link>
 
 <regex>
 <name>makelist</name>
   <listrepeat><![CDATA[
          <SetViewMode>55</SetViewMode>
-		 <title>$pyFunction:'[lista.param3]'.replace(".mp4", "  [COLOR white] [MP4] [/COLOR]").replace(".avi", "  [COLOR orange] [AVI] [/COLOR]").replace(".mkv", "  [COLOR white] [MKV] [/COLOR]")</title>
+		 <title>$pyFunction:'[makelist.param3]'.replace(".mp4", "  [COLOR white] [MP4] [/COLOR]").replace(".avi", "  [COLOR orange] [AVI] [/COLOR]").replace(".mkv", "  [COLOR white] [MKV] [/COLOR]")</title>
         <link>$doregex[getUrl]</link>
 		<thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/Buscar.png</thumbnail>
 		]]></listrepeat>
@@ -111,8 +111,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<regex>
-<name>getUrl</name>
+<regex><name>getUrl</name>
 <expres><![CDATA[#$pyFunction
 import re , requests ,json
 def GetLSProData(page_data,Cookie_Jar,m):
