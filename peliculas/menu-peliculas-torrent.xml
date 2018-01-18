@@ -476,10 +476,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 -->  
    
 <item>
-<title>[COLOR orange][B] Peliculas[/B][/COLOR][COLOR white] [Stream y Torrents][/COLOR]</title>
+<title>[COLOR orange][B] Peliculas[/B][/COLOR][COLOR white] [Torrents][/COLOR]</title>
 <link>http://ignore</link>
 <thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/peliculas.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
 <externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/menu-peliculas-stream.xml</externallink>
+</item> 
+<item>
+<title>[COLOR orange][B] Peliculas[/B][/COLOR][COLOR white] [Stream][/COLOR]</title>
+<link>http://ignore</link>
+<thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/peliculas.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/peliculas-genero.xml</externallink>
 </item> 
 </items>
