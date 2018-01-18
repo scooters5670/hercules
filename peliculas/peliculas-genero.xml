@@ -166,14 +166,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/accion.xml</externallink>	
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/streaming/accion.xml</externallink>	
 </item>
 	
 <item>
 <title>[COLOR orange] Videoclub [COLOR white] Animacion [/COLOR]</title>
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 <link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/animacion.xml</externallink>	
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/streaming/animacion.xml</externallink>	
 </item>
 	
 <item>
@@ -181,7 +181,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/aventuras.xml</externallink>	
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/streaming/aventuras.xml</externallink>	
 </item>
 	
 <item>
@@ -189,7 +189,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/belico.xml</externallink>	
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/streaming/belico.xml</externallink>	
 </item>
 
 <item>
@@ -204,7 +204,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/drama.xml</externallink>	
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/streaming/drama.xml</externallink>	
 </item>
 	
 <item>
@@ -212,7 +212,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/familiar.xml</externallink>	
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/streaming/familiar.xml</externallink>	
 </item>
 	
 <item>
@@ -221,7 +221,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/fantastico.xml</externallink>	
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/streaming/fantastico.xml</externallink>	
 </item>
 
 
@@ -231,7 +231,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/ficcion.xml</externallink>	
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/streaming/ficcion.xml</externallink>	
 </item>
 	
 <item>
@@ -239,7 +239,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/nacional.xml</externallink>	
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/streaming/nacional.xml</externallink>	
 </item>
 		
 <item>
@@ -247,7 +247,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/romantico.xml</externallink>	
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/streaming/romantico.xml</externallink>	
 </item>
 	
 <item>
@@ -255,7 +255,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/suspense.xml</externallink>	
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/streaming/suspense.xml</externallink>	
 </item>
 	
 <item>
@@ -263,7 +263,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/terror.xml</externallink>	
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/streaming/terror.xml</externallink>	
 </item>
 	
 <item>
@@ -271,6 +271,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/thriller.xml</externallink>	
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/streaming/thriller.xml</externallink>	
 </item>
 </items>
