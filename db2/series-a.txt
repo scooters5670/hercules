@@ -1,5 +1,7 @@
-﻿
-Nombre:"American Horror Story" src="http://kbagi.com/p3p0t3/american-horror-story-t1-602492/" img="https://allserieslinamarcela.files.wordpress.com/2011/11/american_horror_story_ver7_xlg.jpg";
+﻿Nombre:"TITULO" src="http://kbagi.com/choco2017/el-tricicle-577488/list,1,1"; img=""; 
+Nombre:"TITULO" src="http://kbagi.com/choco2017/el-tricicle-577488/list,1,1"; img="";
+Nombre:"TITULO" src="http://kbagi.com/choco2017/el-tricicle-577488/list,1,1"; img="";
+Nombre:"TITULO" src="http://kbagi.com/choco2017/el-tricicle-577488/list,1,1"; img="";
 
 
 
