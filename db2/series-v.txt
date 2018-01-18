@@ -1,3 +1,2 @@
 Nombre:"Vikingos T1-T5" src="http://kbagi.com/juanitronic/vikings-49-562444/list,1,3" img="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3c24f136995841.5731483d60bcb.jpg"; Server=""
 Nombre:"Vikingos T5 Latino" src="http://kbagi.com/thejard79/vikingos-temporada-5-dual-617462" img="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3c24f136995841.5731483d60bcb.jpg"; Server=""
-
