@@ -1,6 +1,6 @@
 <items>
 <item>
-<title>[COLOR orange][+]Buscar:[/COLOR][COLOR white] |Por Stream| [/COLOR] </title>
+<title>[COLOR orange][+]Buscar:[/COLOR][COLOR white] |DK| [/COLOR] </title>
 <link>$doregex[lista]</link>
 
 <regex>
