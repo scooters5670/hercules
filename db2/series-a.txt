@@ -1,7 +1,7 @@
-﻿Nombre:"TITULO" src="http://kbagi.com/choco2017/el-tricicle-577488/list,1,1"; img=""; 
-Nombre:"TITULO" src="http://kbagi.com/choco2017/el-tricicle-577488/list,1,1"; img="";
-Nombre:"TITULO" src="http://kbagi.com/choco2017/el-tricicle-577488/list,1,1"; img="";
-Nombre:"TITULO" src="http://kbagi.com/choco2017/el-tricicle-577488/list,1,1"; img="";
+﻿Nombre:"American Horror Story" src="http://kbagi.com/p3p0t3/american-horror-story-t1-602492/list,1,1"; img=""; 
+Nombre:"TITULO" src=""; img="";
+Nombre:"TITULO" src=""; img="";
+Nombre:"TITULO" src=""; img="";
 
 
 
