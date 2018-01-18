@@ -1,0 +1,484 @@
+
+<!--
+Para torrents !
+
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange] [/COLOR][COLOR white]Torrent[/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<info>
+</info>
+<link>$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver via:', ['Quasar', 'Torrenter', 'Por defecto'])
+    channels = ['plugin://plugin.video.quasar/play?uri=', 'plugin://plugin.video.torrenter/?action=playSTRM&url=', 'plugin://plugin.video.quasar/play?uri=']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<!--  Regex para streamplay,streamcloud,openload,StreamGo,Uptobox,Yourupload
+
+<item>
+<title>[COLOR orange][/COLOR][COLOR white][/COLOR]</title>
+<thumbnail></thumbnail> 
+<fanart></fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = ' Url de la pelicula'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail> 
+<page></page>
+</item>
+
+-->
+
+
+<!-- 0-9 @# -->
+<item>
+<title>[COLOR orange]24 horas to Live[/COLOR][COLOR white] 2017[/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+<thumbnail>http://www.tumegadescarga.com/wp-content/uploads/2017/11/24_Hours_to_Live_poster_usa-min.jpg</thumbnail>
+<fanart>http://www.tumegadescarga.com/wp-content/uploads/2017/11/24_Hours_to_Live_poster_usa-min.jpg</fanart>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title> 
+        <link>$doregex[getUrl]</link>
+
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/moipera/24-horas-to-live-97412</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.tumegadescarga.com/wp-content/uploads/2017/11/24_Hours_to_Live_poster_usa-min.jpg</thumbnail>
+<fanart>http://www.tumegadescarga.com/wp-content/uploads/2017/11/24_Hours_to_Live_poster_usa-min.jpg</fanart>
+</item>
+<item>
+<title>[COLOR orange]50 Primaveras[/COLOR][COLOR white] 2017 [/COLOR]</title>
+    <info>
+       Aurore Tabort está separada, acaba de perder su empleo y recibe la noticia de que va a ser abuela. A sus 50 años su vida parece estar estancada, pero cuando se encuentra por casualidad con un antiguo amor de su juventud, se produce un cambio en Aurore, y se niega a admitir que esa podría ser la ocasión perfecta para empezar una nueva vida. 
+    </info>
+<thumbnail>http://bucket2.clanacion.com.ar/anexos/fotos/cartelera/50-primaveras-c_8024_poster2.jpg</thumbnail> 
+<fanart>http://bucket2.clanacion.com.ar/anexos/fotos/cartelera/50-primaveras-c_8024_poster2.jpg/fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamango.com/f/qartsprocsrsabab/50_Primaveras_264_mkv'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://bucket2.clanacion.com.ar/anexos/fotos/cartelera/50-primaveras-c_8024_poster2.jpg</thumbnail> 
+<page></page>
+</item>    
+
+
+<item>
+<title>[COLOR orange]60 Segundos[/COLOR] Castellano [COLOR white] StreamGo [/COLOR]</title>
+    <info>
+    Hace ya tiempo que Randall "Memphis" Raines (Nicolas Cage) ha dejado atrás su pasado delictivo. Sin embargo, se ve obligado a volver... cuando su hermano Kip (Giovanni Ribisi) falla al realizar un trabajo para Raymond Calitri (Christopher Eccleston), un famoso broker del robo de vehículos. Ahora, para salvar a su hermano, Memphis deberá reunir a su antiguo equipo para robar 50 coches de lujo. Con la policía tras él, Memphis deberá cumplir el trato y robar cada auto en 60 segundos. 
+Elenco: Nicolas Cage , Giovanni Ribisi , Angelina Jolie , T.J. Cross , Robert Duvall , William Lee Scott , Scott Caan , James Duval , Delroy Lindo , Timothy Olyphant , Chi McBride , Christopher Eccleston , Grace Zabriskie , Vinnie Jones , Will Patton , Michael Peña .
+    </info>
+<thumbnail>http://hdfull.tv/tthumb/172x256/movie_9a3f0952d44879cc3c57c4f5ee96d02b.jpg</thumbnail> 
+<fanart>http://hdfull.tv/tthumb/172x256/movie_9a3f0952d44879cc3c57c4f5ee96d02b.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamango.com/f/nandstmtadtmlpfn'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://hdfull.tv/tthumb/172x256/movie_9a3f0952d44879cc3c57c4f5ee96d02b.jpg</thumbnail> 
+<page></page>
+</item>
+
+
+<!-- A -->
+<item>
+<title>[COLOR orange][B]Asesinato en el Orient Express[/B][/COLOR][COLOR white] Latino 2017 TS screener[/COLOR]</title>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/b/bd/Murder_on_the_Orient_Express_teaser_poster.jpg</thumbnail> 
+<fanart>https://upload.wikimedia.org/wikipedia/en/b/bd/Murder_on_the_Orient_Express_teaser_poster.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/ew3gavltja8x'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/b/bd/Murder_on_the_Orient_Express_teaser_poster.jpg</thumbnail> 
+<page></page>
+</item>
+
+
+<!-- B -->
+    <item>
+<title>[COLOR orange]Bright [/COLOR][COLOR white] 2017[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</thumbnail>
+<fanart>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</fanart>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title> 
+        <link>$doregex[getUrl]</link>
+
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/moipera/bright-99139</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</thumbnail>
+<fanart>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</fanart>
+</item>
+
+
+<!-- C -->
+
+<!-- D -->
+    <item>
+<title>[COLOR orange]Dunkerke[/COLOR][COLOR white] 2017[/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+<thumbnail>http://es.web.img3.acsta.net/c_215_290/pictures/17/06/09/12/52/190097.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/c_215_290/pictures/17/06/09/12/52/190097.jpg</fanart>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title> 
+        <link>$doregex[getUrl]</link>
+
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/moipera/dunk3rnk3-98535</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://es.web.img3.acsta.net/c_215_290/pictures/17/06/09/12/52/190097.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/c_215_290/pictures/17/06/09/12/52/190097.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR orange]Dunkerke [2017][/COLOR][COLOR white] V.O[/COLOR]</title>
+<thumbnail>https://foreignpolicymag.files.wordpress.com/2017/07/dunkirk_film_poster.jpg</thumbnail> 
+<fanart>https://foreignpolicymag.files.wordpress.com/2017/07/dunkirk_film_poster.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamango.com/f/onelcqorpasblksc/0p3r4t10n_dunk1rk_2017_brrip_720p_subesp_gnula_mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://foreignpolicymag.files.wordpress.com/2017/07/dunkirk_film_poster.jpg</thumbnail> 
+<page></page>
+</item>
+
+<!-- E -->
+
+<!-- F -->
+
+<!-- G -->
+<item>
+<title>[COLOR orange]Ghost, mas alla del amor. [/COLOR][COLOR white] Castellano[/COLOR]</title>  
+    <thumbnail>https://i.pinimg.com/originals/f2/cc/c1/f2ccc1c5b0646407aada89aa34dd335f.jpg</thumbnail>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamango.com/f/ndcetroqnpmlofkn/'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.pinimg.com/originals/f2/cc/c1/f2ccc1c5b0646407aada89aa34dd335f.jpg</thumbnail>    
+</item>
+
+<!-- H -->
+
+<!-- I -->
+
+<item>
+<title>[COLOR orange]IT [/COLOR][COLOR white] 2017[/COLOR]</title>
+<thumbnail>http://www.theglobaldispatch.com/wp-content/uploads/2016/06/It-remake-movie-poster-2017.jpg</thumbnail> 
+<fanart>http://www.theglobaldispatch.com/wp-content/uploads/2016/06/It-remake-movie-poster-2017.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/prq0uqzh6235'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://www.theglobaldispatch.com/wp-content/uploads/2016/06/It-remake-movie-poster-2017.jpg</thumbnail> 
+<page></page>
+</item>
+
+<!-- J -->
+
+<!-- K -->
+
+<!-- L -->
+<item>
+    <title>[COLOR orange][B]Las aventuras de Tadeo Jones[/B][COLOR white] Castellano [/COLOR][/COLOR]</title>
+<thumbnail>http://es.web.img2.acsta.net/medias/nmedia/18/90/40/12/20199350.jpg</thumbnail> 
+<fanart>http://es.web.img2.acsta.net/medias/nmedia/18/90/40/12/20199350.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/cv706fmlg1j2/LsAventdTadJonBRRIP_-_www.newpct.com.avi.html'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail> 
+<thumbnail>http://es.web.img2.acsta.net/medias/nmedia/18/90/40/12/20199350.jpg</thumbnail> 
+</item>
+<!-- M -->
+
+<item>
+<title>[COLOR orange]Mia[/COLOR][COLOR white]2011
+Drama |Argentina|[/COLOR]</title>
+<thumbnail>http://www.pelisplanet.com/wp-content/uploads/2017/07/M%C3%ADa-210x300.jpg</thumbnail> 
+<fanart>http://www.pelisplanet.com/wp-content/uploads/2017/07/M%C3%ADa-210x300.jpg</fanart>
+<info>
+Sinopsis:    
+La historia aborda el derecho a la felicidad y a poder formar parte de la comunidad, de quienes han elegido una forma diferente de la moralmente aceptada por la sociedad, y nos permite repasar el tema de la discriminación, la intolerancia, la marginación y la exclusión social, pero también el de la infinita capacidad de amor que tiene el ser humano.
+</info>
+
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamango.com/f/cdbnmnsaabboktdm/M_a_mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail></thumbnail> 
+<page></page>
+</item>
+
+<!-- N -->
+
+<!-- Ñ -->
+
+<!-- O -->
+
+<!-- P -->
+
+<!-- Q -->
+
+<!-- R -->
+
+<!-- S -->
+<item>
+<title>[COLOR orange]SAW VIII[/COLOR][COLOR white]Latino 2017[/COLOR]</title>
+<thumbnail>https://pbs.twimg.com/media/DKPJoKYXcAEOhC8.jpg</thumbnail> 
+<fanart>https://pbs.twimg.com/media/DKPJoKYXcAEOhC8.jpg</fanart>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://streamcloud.eu/631cciv7nk6k'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://www.gruponetai.com/videos/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://pbs.twimg.com/media/DKPJoKYXcAEOhC8.jpg</thumbnail> 
+<page></page>
+</item>
+
+<!-- T -->
+    
+<item>
+<title>[COLOR orange][B]Tadeo Jones 2[/B][/COLOR][COLOR white] El secreto del rey Midas[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>https://i2.wp.com/www.peliculastoday.com/wp-content/uploads/2017/08/Tadeo-Jones-2-El-secreto-del-rey-Midas.jpg</thumbnail> 
+<fanart>https://i2.wp.com/www.peliculastoday.com/wp-content/uploads/2017/08/Tadeo-Jones-2-El-secreto-del-rey-Midas.jpg</fanart>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title> 
+        <link>$doregex[getUrl]</link>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/moipera/tade0-j0n3s-2-98534</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://i2.wp.com/www.peliculastoday.com/wp-content/uploads/2017/08/Tadeo-Jones-2-El-secreto-del-rey-Midas.jpg</thumbnail> 
+<fanart>https://i2.wp.com/www.peliculastoday.com/wp-content/uploads/2017/08/Tadeo-Jones-2-El-secreto-del-rey-Midas.jpg</fanart>
+</item>
+
+
+<!-- U -->
+
+<!-- V -->
+
+<!-- W -->
+
+<!-- X -->
+
+<!-- Y -->
+
+<!-- Z -->

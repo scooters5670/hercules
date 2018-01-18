@@ -1,0 +1,403 @@
+<SetViewMode>500</SetViewMode>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SetViewMode>500</SetViewMode>
+<items>
+<!--
+<item>
+<title>[COLOR orange][+]Buscar:[/COLOR][COLOR white] |Por Stream| [/COLOR] </title>
+<link>$doregex[lista]</link>
+
+<regex>
+<name>lista</name>
+  <listrepeat><![CDATA[
+         <SetViewMode>55</SetViewMode>
+		 <title>$pyFunction:'[lista.param3]'.replace(".mp4", "  [COLOR white] [MP4] [/COLOR]").replace(".avi", "  [COLOR orange] [AVI] [/COLOR]").replace(".mkv", "  [COLOR white] [MKV] [/COLOR]")</title>
+        <link>$doregex[getUrl]</link>
+		<thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/Buscar.png</thumbnail>
+		]]></listrepeat>
+<expres><![CDATA[href=\"(.*?,(.*?)\..*?)\".*?preview">(.*?mkv|.*?mp4|.*?avi)<]]><expres>
+<page>http://diskokosmiko.mx/action/SearchFiles?Phrase=Hercules&amp;Mode=List&amp;Type=Video&amp;SizeFromMB=0&amp;SizeToMB=0&amp;pageNumber=10</page>
+<rawpost>Phrase=$doregex[search]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/action/SearchFiles</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[lista.param1]</page>
+<referer>http://diskokosmiko.mx/moipera</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[lista.param1]</page>
+<rawpost>fileId=[lista.param2]&__RequestVerificationToken=$doregex[tok2]</rawpost>
+<referer>http://diskokosmiko.mx[lista.param1]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok2</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx[lista.param1]</page>
+<referer>http://diskokosmiko.mx/moipera</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/Buscar.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+</item>
+-->
+<item>
+<title>[COLOR orange][B] Buscar: [/B] [/COLOR][COLOR lime] Requiere Torrenter [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>500</SetViewMode>
+<title>[COLOR white][UPPERCASE][B] [makelist2.param2][/B][/UPPERCASE][/COLOR] [I][COLOR lightslategray][makelist2.param3][/I][/COLOR]  </title>
+<link>$doregex[makelist]</link>
+
+
+</regex>
+]]></listrepeat>
+<expres><![CDATA[peli-descargar-torrent-(.*?)-.*?darkblue\'>(.*?)<.*?gray\;\'>(.*?)<]]></expres>
+<page>http://www.mejortorrent.com/secciones.php?sec=buscador&amp;valor=$doregex[search]</page>
+</regex>
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
+
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Por Nombre:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR orange]Ver [B][makelist2.param2][/B] [/COLOR]</title>
+
+<link>plugin://plugin.video.torrenter/?action=playSTRM&url=http://www.mejortorrent.com[makelist.param2]</link>
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
+
+]]></listrepeat>
+<expres>href=\'(.*?torrent)\'</expres>
+<page>http://www.mejortorrent.com/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
+</regex>
+
+
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
+
+</item>
+
+<item>
+<title>[COLOR orange][B] Buscar: [/B] [/COLOR][COLOR lime] Requiere Quasar [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>500</SetViewMode>
+<title>[COLOR white][UPPERCASE][B] [makelist2.param2][/B][/UPPERCASE][/COLOR] [I][COLOR lightslategray][makelist2.param3][/I][/COLOR]  </title>
+<link>$doregex[makelist]</link>
+
+
+</regex>
+]]></listrepeat>
+<expres><![CDATA[peli-descargar-torrent-(.*?)-.*?darkblue\'>(.*?)<.*?gray\;\'>(.*?)<]]></expres>
+<page>http://www.mejortorrent.com/secciones.php?sec=buscador&amp;valor=$doregex[search]</page>
+</regex>
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
+
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Por Nombre:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR orange]Ver [B][makelist2.param2][/B] [/COLOR]</title>
+
+<link>plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com[makelist.param2]</link>
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
+
+]]></listrepeat>
+<expres>href=\'(.*?torrent)\'</expres>
+<page>http://www.mejortorrent.com/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
+</regex>
+
+
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
+
+</item>
+
+<item>
+<title>[COLOR orange][B] Buscar: [/B] [/COLOR][COLOR lime] Requiere Torrentin [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>500</SetViewMode>
+<title>[COLOR white][UPPERCASE][B] [makelist2.param2][/B][/UPPERCASE][/COLOR] [I][COLOR lightslategray][makelist2.param3][/I][/COLOR]  </title>
+<link>$doregex[makelist]</link>
+
+
+</regex>
+]]></listrepeat>
+<expres><![CDATA[peli-descargar-torrent-(.*?)-.*?darkblue\'>(.*?)<.*?gray\;\'>(.*?)<]]></expres>
+<page>http://www.mejortorrent.com/secciones.php?sec=buscador&amp;valor=$doregex[search]</page>
+</regex>
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
+
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Por Nombre:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR orange]Ver [B][makelist2.param2][/B] [/COLOR]</title>
+
+<link>plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com[makelist.param2]</link>
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
+
+]]></listrepeat>
+<expres>href=\'(.*?torrent)\'</expres>
+<page>http://www.mejortorrent.com/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
+</regex>
+
+
+<thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
+
+</item>
+<!--
+<item>
+<title>[COLOR orange]Taquillas[/COLOR]</title>
+<thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/peliculas.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/novedades.xml</externallink>	
+</item>
+-->
+<item>
+<title>[COLOR orange]Recientes [COLOR white] Peticiones recientes. [/COLOR]</title>
+<thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/peliculas.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/videoclub.xml</externallink>	
+</item>
+	
+<!--<item>
+<title>[COLOR orange] Videoclub [COLOR white] En cines [/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/estrenos.xml</externallink>	
+</item>-->
+	
+<item>
+<title>[COLOR orange]VideoClub [COLOR white]Peliculas - V.O[/COLOR]</title>
+<thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/peliculas.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/vo.xml</externallink>	
+</item>
+
+
+<!--<item>
+<title>[COLOR orange] Videoclub [COLOR white] Especial Navidad [/COLOR]</title>
+<thumbnail>https://bartolomeborrego.files.wordpress.com/2013/12/feliz-navidad-letras-3b.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/cine-navidad.xml</externallink>	
+</item>
+-->
+
+		
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Accion [/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/accion.xml</externallink>	
+</item>
+	
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Animacion [/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/animacion.xml</externallink>	
+</item>
+	
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Aventuras [/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/aventuras.xml</externallink>	
+</item>
+	
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Belico[/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/belico.xml</externallink>	
+</item>
+
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Comedia [/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/comedia.xml</externallink>	
+</item>
+	
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Drama [/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/drama.xml</externallink>	
+</item>
+	
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Familiar [/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/familiar.xml</externallink>	
+</item>
+	
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Fantastico [/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/fantastico.xml</externallink>	
+</item>
+
+
+	
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Ficcion [/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/ficcion.xml</externallink>	
+</item>
+	
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Nacional [/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/nacional.xml</externallink>	
+</item>
+		
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Romantico [/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/romantico.xml</externallink>	
+</item>
+	
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Suspense[/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/suspense.xml</externallink>	
+</item>
+	
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Terror [/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/terror.xml</externallink>	
+</item>
+	
+<item>
+<title>[COLOR orange] Videoclub [COLOR white] Thriller [/COLOR]</title>
+<thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/thriller.xml</externallink>	
+</item>
+</items>
