@@ -82,7 +82,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src="(.*?)"</expres>
+<expres>Nombre:"(.*?)" src="(.*?)" img="(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-a.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -151,7 +151,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-b.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -221,7 +221,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-c.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -290,7 +290,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-d.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -358,7 +358,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-e.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -426,7 +426,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-f.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -494,7 +494,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-g.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -562,7 +562,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-h.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -630,7 +630,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-i.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -699,7 +699,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-j.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -767,7 +767,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-k.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -835,7 +835,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-l.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -903,7 +903,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-m.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -971,7 +971,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-n.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -1039,7 +1039,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-ñ.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -1107,7 +1107,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-o.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -1175,7 +1175,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-p.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -1243,7 +1243,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-q.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -1311,7 +1311,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-r.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -1379,7 +1379,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-s.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -1447,7 +1447,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-t.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -1515,7 +1515,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-u.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -1583,7 +1583,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-v.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -1651,7 +1651,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-w.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -1719,7 +1719,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-x.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -1787,7 +1787,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-y.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
@@ -1855,7 +1855,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)";</expres>
+<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-z.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
