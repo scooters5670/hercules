@@ -1,6 +1,6 @@
-﻿Nombre:"American Horror Story T1" src="http://kbagi.com/p3p0t3/american-horror-story-t1-602492/list,1,1" img="https://allserieslinamarcela.files.wordpress.com/2011/11/american_horror_story_ver7_xlg.jpg"
-Nombre:"American Horror Story T2" src="http://kbagi.com/p3p0t3/american-horror-story-t2-602496/list,1,1" img="https://allserieslinamarcela.files.wordpress.com/2011/11/american_horror_story_ver7_xlg.jpg"
-Nombre:"American Horror Story T3" src="http://kbagi.com/p3p0t3/american-horror-story-t3-602660/list,1,1" img="https://allserieslinamarcela.files.wordpress.com/2011/11/american_horror_story_ver7_xlg.jpg"
-Nombre:"American Horror Story T4" src="http://kbagi.com/p3p0t3/american-horror-story-t4-602670/list,1,1" img="https://allserieslinamarcela.files.wordpress.com/2011/11/american_horror_story_ver7_xlg.jpg"
-Nombre:"American Horror Story T5" src="http://kbagi.com/p3p0t3/american-horror-story-t5-602681/list,1,1" img="https://allserieslinamarcela.files.wordpress.com/2011/11/american_horror_story_ver7_xlg.jpg"
-Nombre:"American Horror Story T6" src="http://kbagi.com/p3p0t3/american-horror-story-t6-602724/list,1,1" img="https://allserieslinamarcela.files.wordpress.com/2011/11/american_horror_story_ver7_xlg.jpg"
+﻿Nombre:"American Horror Story T1" src="http://kbagi.com/p3p0t3/american-horror-story-t1-602492/list,1,1" img="https://allserieslinamarcela.files.wordpress.com/2011/11/american_horror_story_ver7_xlg.jpg";
+Nombre:"American Horror Story T2" src="http://kbagi.com/p3p0t3/american-horror-story-t2-602496/list,1,1" img="https://allserieslinamarcela.files.wordpress.com/2011/11/american_horror_story_ver7_xlg.jpg";
+Nombre:"American Horror Story T3" src="http://kbagi.com/p3p0t3/american-horror-story-t3-602660/list,1,1" img="https://allserieslinamarcela.files.wordpress.com/2011/11/american_horror_story_ver7_xlg.jpg";
+Nombre:"American Horror Story T4" src="http://kbagi.com/p3p0t3/american-horror-story-t4-602670/list,1,1" img="https://allserieslinamarcela.files.wordpress.com/2011/11/american_horror_story_ver7_xlg.jpg";
+Nombre:"American Horror Story T5" src="http://kbagi.com/p3p0t3/american-horror-story-t5-602681/list,1,1" img="https://allserieslinamarcela.files.wordpress.com/2011/11/american_horror_story_ver7_xlg.jpg";
+Nombre:"American Horror Story T6" src="http://kbagi.com/p3p0t3/american-horror-story-t6-602724/list,1,1" img="https://allserieslinamarcela.files.wordpress.com/2011/11/american_horror_story_ver7_xlg.jpg";
