@@ -262,6 +262,103 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
+<title>Arma Letal 3 |1080|</title>
+<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<thumbnail>http://es.web.img3.acsta.net/pictures/14/02/10/13/55/314753.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/pictures/14/02/10/13/55/314753.jpg</fanart>
+<info>
+Sinopsis:
+Martin Riggs y Roger Murtaugh, la incombustible pareja de policías de Los Ángeles, 
+se enfrentan a un difícil caso: armas confiscadas y a punto de ser destruidas han 
+desaparecido de las dependencias policiales y están llegando a manos de los delincuentes
+ más peligrosos de la ciudad.
+</info>
+<regex><name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://kbagi.com/Netai/arma-letal-coleccion-620400' 
+ url='http://kbagi.com/Netai/arma-letal-coleccion-620400/arma-letal-3-dual,5464927,list,1,1.mkv'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'Netai' , 'Password' : '@q1w2e3r4t5@'}
+ nr1 = requests.post('http://kbagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>Arma Letal 4 |1080|</title>
+<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<thumbnail>http://es.web.img2.acsta.net/medias/nmedia/18/67/73/68/20129993.jpg</thumbnail>
+<fanart>http://es.web.img2.acsta.net/medias/nmedia/18/67/73/68/20129993.jpg</fanart>
+<info>
+Sinopsis:
+La pareja de policías formada por Martin Riggs y Roger Murtaugh vuelve a la carga 
+para enfrentarse a un capo de la mafia asiática que ha extendido sus actividades 
+a Los Ángeles. En la investigación les ayudará un joven policía responsable de los 
+quebraderos de cabeza familiares de Murtaugh, ya que ha dejado embarazada a su hija. 
+En casa de Riggs, las cosas también se complican cuando su compañera se queda 
+embarazada y amenaza con hacerlo pasar por el altar.
+</info>
+<regex><name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://kbagi.com/Netai/arma-letal-coleccion-620400' 
+ url='http://kbagi.com/Netai/arma-letal-coleccion-620400/arma-letal-4-1080,5465058,list,1,1.mkv'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'Netai' , 'Password' : '@q1w2e3r4t5@'}
+ nr1 = requests.post('http://kbagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+<item>
 <title>Assesains Creed 2016 |1080|</title>
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://www.cinema.com.my/images/movies/2016/7assassinscreed00_450.jpg</thumbnail>
