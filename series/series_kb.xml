@@ -768,7 +768,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <fanart></fanart>
         ]]></listrepeat>
 <expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
-<page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-k.txt</page> <!-- Aqui va la url donde estan las webs -->
+<page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-k.txt</page>
 <cookieJar></cookieJar>
 </regex>
 
