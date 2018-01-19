@@ -1,10 +1,5 @@
 <items>
-<item>
-<title>[COLOR gold]La Liga Channel youtube.[/COLOR]</title>
-<jsonrpc>Plugin://plugin.video.youtube/channel/UCTv-XvfzLX3i4IGWAm4sbmA/?page=0</jsonrpc>
-<link>DummyLink</link>
-<thumbnail>http://files.laliga.es/seccion_logos/laliga-h-16-9.jpg</thumbnail>
-</item>
+
 <!-- 
 <item>
   <title>[COLOR white][B]Real Madrid - F.C. Barcelona[/B] [COLOR gold]AV 1 SPA[/COLOR]</title>
@@ -67,6 +62,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/acestream.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
-<externallink>https://pastebin.com/raw/Uf9S1LP6$$LSProEncKey=Adryan-acestream$$</externallink>
+<externallink>https://pastebin.com/raw/Uf9S1LP6$$LSProEncKey=Hercules-acestream$$</externallink>
 </item>
 </items>
