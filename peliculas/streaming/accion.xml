@@ -169,6 +169,97 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <!-- A -->
+<item>
+<title>Arma Letal |1080|</title>
+<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<thumbnail>http://es.web.img2.acsta.net/pictures/14/02/27/10/09/045962.jpg</thumbnail>
+<fanart>http://es.web.img2.acsta.net/pictures/14/02/27/10/09/045962.jpg</fanart>
+<info>
+El sargento de policía Roger (Danny Glover) se lleva un gran disgusto cuando le asignan como compañero de patrulla a Martin (Mel Gibson),
+un joven agemte con fama de violento y desequilibrado. Para colmo de males les encomiendan una delicada misión: esclarecer el asesinato 
+de una joven, que ha sido presentado como un suicidio, ya que existe la sospecha de que, detrás de todo ello, hay una oscura trama.
+</info>
+<regex><name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://kbagi.com/Netai/arma-letal-coleccion-620400' 
+ url='http://kbagi.com/Netai/arma-letal-coleccion-620400/arma-letal-1,5463904,gallery,1,1.mkv'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'Netai' , 'Password' : '@q1w2e3r4t5@'}
+ nr1 = requests.post('http://kbagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>Arma Letal 2 |1080|</title>
+<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<thumbnail>http://es.web.img3.acsta.net/pictures/14/03/05/10/10/478427.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/pictures/14/03/05/10/10/478427.jpg</fanart>
+<info>
+Sinopsis:
+La pareja de policías formada por Martin Riggs (Mel Gibson) y su compañero Roger Murtaugh (Danny Glover) 
+se enfrenta ahora a una poderosa organización surafricana de traficantes de droga que opera en Estados Unidos. 
+Su misión principal es la de proteger al testigo protegido Leo Getz (Joe Pesci), un alocado contable que ha 
+blanqueado dinero para la banda y que en unos días va a testificar contra ellos. 
+</info>
+<regex><name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://kbagi.com/Netai/arma-letal-coleccion-620400' 
+ url='http://kbagi.com/Netai/arma-letal-coleccion-620400/arma-letal-2,5464255,gallery,1,1.mkv'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'Netai' , 'Password' : '@q1w2e3r4t5@'}
+ nr1 = requests.post('http://kbagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
 
 <item>
 <title>Assesains Creed 2016 |1080|</title>
@@ -257,6 +348,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 </item>
+
+
 
 
 <!-- B -->
