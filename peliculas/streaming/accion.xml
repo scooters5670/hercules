@@ -127,8 +127,8 @@ LINEA 25.USERNAME Y PASSWORD
 <item>
 <title>47 Ronin |1080|</title>
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
-<thumbnail>https://timsfilmreviews.files.wordpress.com/2014/03/47-ronin-poster.jpg</thumbnail>
-<fanart>https://timsfilmreviews.files.wordpress.com/2014/03/47-ronin-poster.jpg</fanart>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/I/810a2xlo4gL._SY445_.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/I/810a2xlo4gL._SY445_.jpg</fanart>
 <regex><name>getUrl</name>
 <expres><![CDATA[#$pyFunction
 import re , requests ,json
@@ -162,6 +162,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <cookieJar></cookieJar>
 </regex>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/I/810a2xlo4gL._SY445_.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/I/810a2xlo4gL._SY445_.jpg</fanart>
 </item>
 
 <!-- A -->
