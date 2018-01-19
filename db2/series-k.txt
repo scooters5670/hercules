@@ -1,1 +1,1 @@
-Nombre:"Knightfall T1" src="http://kbagi.com/juanitronic/knightfall-617216/list,1,1" img="http://www.bolsamania.com/seriesadictos/wp-content/uploads/2017/06/Knightfall_FULL.jpg"; Server="kbagui.com"
+Nombre:"Knightfall T1" src="http://kbagi.com/juanitronic/knightfall-617216/list,1,1" img="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/21a3c951393285.58ec59e399196.jpg"; Server=""

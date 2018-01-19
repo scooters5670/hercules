@@ -767,7 +767,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
+<expres>Nombre:"(.*?)" src="(.*?)" img="(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-k.txt</page>
 <cookieJar></cookieJar>
 </regex>
@@ -1583,7 +1583,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<thumbnail>[makelist2.param3]</thumbnail>
         <fanart></fanart>
         ]]></listrepeat>
-<expres>Nombre:"(.*?)" src:"(.*?)" img:"(.*?)"</expres>
+<expres>Nombre:"(.*?)" src="(.*?)" img="(.*?)"</expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/db2/series-v.txt</page> <!-- Aqui va la url donde estan las webs -->
 <cookieJar></cookieJar>
 </regex>
