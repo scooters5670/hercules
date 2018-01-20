@@ -381,6 +381,101 @@
 <!-- U -->
 
 <!-- V -->
+<item>
+<title>[COLOR orange]Vikingos| 1 Temporada | 720p[/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/Vikingos1/[makelist3.param1]</link>
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://www.gruponetai.com/series/series-torrents/Vikingos1/</page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://d24v5oonnj2ncn.cloudfront.net/wp-content/uploads/2013/02/12220218/Vikings-History-Channel-Season-1.jpg</thumbnail>
+  
+</item>
+
+<item>
+<title>[COLOR orange]Vikingos| 2 Temporada | 720p[/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/Vikingos2/[makelist3.param1]</link>
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://www.gruponetai.com/series/series-torrents/Vikingos2/</page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3c24f136995841.5731483d60bcb.jpg</thumbnail>
+  
+</item>
+
+<item>
+<title>[COLOR orange]Vikingos| 3 Temporada | 720p[/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/Vikingos3/[makelist3.param1]</link>
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://www.gruponetai.com/series/series-torrents/Vikingos3/</page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://i.pinimg.com/474x/ef/a1/b6/efa1b622e204b5dee50effb9b8323a59--vikings-tv-show-vikings-tv-series.jpg</thumbnail>
+  
+</item>
+
+
+<item>
+<title>[COLOR orange]Vikingos| 4 Temporada | 720p[/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/Vikingos4/[makelist3.param1]</link>
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://www.gruponetai.com/series/series-torrents/Vikingos4/</page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://www.descargatelocorp.com/wp-content/uploads/2016/10/Vikingos-Temporada-4-HD-Espa%C3%B1ol-Latino.jpg</thumbnail>
+  
+</item>
+
+<item>
+<title>[COLOR orange]Vikingos| 5 Temporada | 720p[/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/Vikingos5/[makelist3.param1]</link>
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://www.gruponetai.com/series/series-torrents/Vikingos5/</page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/10/vikingos-temporada-5.jpg</thumbnail>
+  
+</item>
 
 <!-- W -->
 
