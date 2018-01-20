@@ -221,6 +221,8 @@
 <item>
 <title>[COLOR orange]Knightfall [COLOR white]| T1 | SD|720p[/COLOR][/COLOR]</title>
 <link>$doregex[makelist3]</link>
+<thumbnail>http://gruponetai.com/series/series-torrents/Knightfall/Knightfall.jpg</thumbnail> 
+<fanart>http://gruponetai.com/series/series-torrents/Knightfall/Knightfall.jpg</fanart>
 <regex>
   <name>makelist3</name>
   <listrepeat><![CDATA[
