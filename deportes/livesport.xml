@@ -77,7 +77,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver:', ['La liga-Previa', ''])
+    ret = dialog.select('Ver:', ['La liga-Previa', 'REAL MADRID-DEPORTIVO'])
     channels = [
 	'plugin://plugin.video.youtube/play/?video_id=0mYmDxpn0ek',
 	'plugin://program.plexus/?url=acestream://63d893d4db0f0c591436c7a88b6f6fc27e84a5b8&amp;mode=1&amp;name=Hercules+AV1']
@@ -105,7 +105,44 @@ channels = ['plugin://plugin.video.youtube/play/?video_id=0mYmDxpn0ek','plugin:/
 <page></page>
 </regex>
   </item>  
+<item>
+<title>[COLOR white][B]21/01/2018 |	20:45 Futbol | LA LIGA:	REAL BETIS-FC BARCELONA[/B] [COLOR gold]AV 1[/COLOR]</title>
+<thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
+<link>$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['La liga-Previa', 'REAL BETIS-FC BARCELONA'])
+    channels = [
+	'plugin://plugin.video.youtube/play/?video_id=MpxhyituJns',
+	'plugin://program.plexus/?url=acestream://63d893d4db0f0c591436c7a88b6f6fc27e84a5b8&amp;mode=1&amp;name=Hercules+AV1']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+  </item>  
   
+<item>
+<title>[COLOR white][B]21/01/2018 | 16:15 FUTBOL: LA LIGA - REAL BETIS-FC BARCELONA	[/B] [Youtube] [COLOR lime]Emision en directo.[/COLOR]</title>
+<thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
+<link>$doregex[select]</link>
 
-
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Previa Partido','Emision en directo 1 [Youtube]', 'Emision en directo 2[Youtube]'])
+channels = ['plugin://plugin.video.youtube/play/?video_id=RPXR1VV7oWc','plugin://plugin.video.youtube/play/?video_id=RPXR1VV7oWc','plugin://plugin.video.youtube/play/?video_id=RPXR1VV7oWc']
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+  </item>    
+  RPXR1VV7oWc
 </items>
