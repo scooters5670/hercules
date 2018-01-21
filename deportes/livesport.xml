@@ -99,7 +99,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver:', ['Previa Partido','Emision en directo 1 [Youtube]', 'Emision en directo 2[Youtube]'])
-channels = ['plugin://plugin.video.youtube/play/?video_id=0mYmDxpn0ek','plugin://plugin.video.youtube/play/?video_id=1lrV7UuwtBI','plugin://plugin.video.youtube/play/?video_id=3TmjPCW7Xn4']
+channels = ['plugin://plugin.video.youtube/play/?video_id=0mYmDxpn0ek','plugin://plugin.video.youtube/play/?video_id=UUATc-BqrCo','plugin://plugin.video.youtube/play/?video_id=3TmjPCW7Xn4']
     return channels[ret]
 ]]></expres>
 <page></page>
