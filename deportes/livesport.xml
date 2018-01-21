@@ -65,42 +65,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <externallink>https://pastebin.com/raw/DpkadhRG$$LSProEncKey=deportes$$</externallink>
 </item>
 
-<item>
-<title>[COLOR white][B]*Listado:[/B][/COLOR][COLOR white] Arenavision.top[/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<item><title>[COLOR gold][makelist.param1] [COLOR white] [makelist.param2]  [COLOR yellow] [makelist.param4][/COLOR][/COLOR][/COLOR]</title>
-<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=HERCULES+[makelist.param4]</link>
-			<regex>
-			<name>hash</name> 
-			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision.top/$doregex[canal]</page>
-			<referer>http://arenavision.top/</referer>
-			<setcookie>beget=begetok</setcookie>
-			</regex>
-			<regex>
-			<name>canal</name> 
-			<expres>$pyFunction:'[makelist.param5]'.replace('1','01').replace('2','02').replace('3','03').replace('4','04').replace('5','05').replace('6','06').replace('7','07').replace('8','08').replace('9','09')</expres>
-			<page></page>
-			</regex>
-			
-<thumbnail>https://raw.githubusercontent.com/Andorth/Futbol/master/images/laliga.png</thumbnail>
-<fanart>http://vignette3.wikia.nocookie.net/fifa-ultimate-team/images/c/c4/Campo-de-futbol.jpeg</fanart>
-<info></info>
-
-]]></listrepeat>
-<expres><![CDATA[230px">(.*?)<[\w\W\s]{0,50}px">(.*?)CEST[\w\W\s]{0,53}px">(.*?)<[\w\W\s]{0,53}SPANISH LA LIGA[\w\W\s]{0,50}px">(.*?)<[\w\W\s]{0,50}px">([0-9]+)]]></expres>
-<Agent>Mozilla</Agent>
-<page>http://arenavision.top/iguide</page>
-<Agent>Mozilla</Agent>
-<referer>http://arenavision.top/iguide</referer>
-<setcookie>beget=begetok</setcookie>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/Andorth/Futbol/master/images/laliga.png</thumbnail>
-<fanart>http://vignette3.wikia.nocookie.net/fifa-ultimate-team/images/c/c4/Campo-de-futbol.jpeg</fanart>
-</item>
 
 
 <item>
