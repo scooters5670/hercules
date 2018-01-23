@@ -74,21 +74,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR orange][B]Vercanales.tv[/B] [/COLOR] </title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[COLOR white][B][makelist.param2][/B][/COLOR]</title>
-<sportsdevil>[makelist.param1]</sportsdevil>
-<referer>http://www.vercanalestv.com/</referer>
-<thumbnail>[makelist.param3]</thumbnail>
-]]></listrepeat>
-<expres>a href="(.*)".*title="(.*?)online.*?src="(.*?)"</expres>
-<page>http://www.vercanalestv.com/</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
+<title>[COLOR orange][B]La liga 123[/B] [/COLOR] </title>
+<thumbnail>http://vercanalestv.com/logos/laliga123.jpg</thumbnail>
+<sportdevil>http://vercanalestv.com/tv/deportes/multi-liga-2/canal-plus-liga-2.html</sportdevil>
 </item>
 
 </items>
