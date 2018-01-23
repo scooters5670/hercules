@@ -91,12 +91,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR pink][B]VipGoal.Net[/B] [/COLOR] </title>
+<title>[COLOR white][B]VipGoal.Net[/B] [/COLOR] </title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR skyblue][B][makelist.param2][/B][/COLOR]</title>
+<title>[COLOR yellow][B][makelist.param2][/B][/COLOR]</title>
 <sportsdevil>[makelist.param1]</sportsdevil>
 <referer>http://www.vipgoal.net/</referer>
 <thumbnail>[makelist.param3]</thumbnail>
@@ -110,12 +110,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR blue][B]Pirlo.TV[/B] [/COLOR]</title>
+<title>[COLOR orange][B]Pirlo.TV[/B] [/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR coral][makelist.param1][/COLOR] • [COLOR skyblue][B][makelist.param3][/B][/COLOR][COLOR skyblue][makelist.param4][/COLOR]</title>
+<title>[COLOR gold][makelist.param1][/COLOR] • [COLOR skyblue][B][makelist.param3][/B][/COLOR][COLOR skyblue][makelist.param4][/COLOR]</title>
 <sportsdevil>http://www.pirlotvlive.com/[makelist.param2]</sportsdevil>
 <referer>http://www.pirlotvlive.com</referer>
 ]]></listrepeat>
