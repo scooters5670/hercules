@@ -109,24 +109,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
 
-<item>
-<title>[COLOR gold]FUTBOL EN LA TELE [Donde lo hechan?][/COLOR]</title>
- <link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[COLOR white][B][makelist.param1][/B][/COLOR][COLOR lime][B][makelist.param2] [makelist.param3][/B][/COLOR][makelist.param4] [makelist.param5]</title>
-<link>$doregex[ip]|User-Agent=iPad</link>
-<thumbnail></thumbnail>
-]]></listrepeat>
-<expres><![CDATA[img src=".*? hora.*? title=.*?n fecha".*? (.*)\n]]></expres>
-<page>www.futbolenlatv.es</page> 
-</regex>
-<thumbnail></thumbnail>
-<info></info>
- </item>
- 
  
 </items>
 
