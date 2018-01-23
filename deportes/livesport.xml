@@ -47,6 +47,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   </item>
 -->
 
+
 <item>
 <title>[COLOR orange][B]+Avezy[/B][COLOR gold] Addon Requerido[/COLOR][/COLOR]</title>
 <link>http://Ignoreme</link>
@@ -64,21 +65,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
 <externallink>https://pastebin.com/raw/DpkadhRG$$LSProEncKey=deportes$$</externallink>
 </item>
-
-<item>
- <title>[COLOR white] BEIN LA LIGA [/COLOR]</title>
-<sportsdevil>http://latelete.tv/bein-sports-la-liga-online-en-directo-gratis-24h/</sportsdevil>
-<referer>hhttp://latelete.tv/</referer>
-<thumbnail>http://vercanalestv.com/logos/bein-sports.png</thumbnail>
-</item>
-
-<item>
- <title>[COLOR white]LA LIGA 123[/COLOR]</title>
-<sportsdevil>http://latelete.tv/opcion-2-canal-plus-liga-en-directo-gratis-por-internet/</sportsdevil>
-<referer>http://vercanalestv.com/</referer>
-<thumbnail>http://vercanalestv.com/logos/bein-sports.png</thumbnail>
-</item>
-
 
 
 
