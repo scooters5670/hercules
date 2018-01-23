@@ -118,20 +118,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR orange][B]GUIA DE EVENTOS[/B] [/COLOR]</title>
-<link>$doregex[makelist]</link>
+<title>ELITEGOL [PROGRAMACION]</title>
+ <link>$doregex[makelist]</link>
+
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR gold][makelist.param1][/COLOR] • [makelist.param2] [COLOR white][B][makelist.param3][/B][/COLOR][COLOR yellow][makelist.param4][/COLOR]</title>
-<sportdevil>http://www.elitegol.me/[makelist.param2]</sportsdevil>
-<referer>http://www.elitegol.me/</referer>
+<title>[COLOR white][COLOR gold][B][makelist.param1][/B][/COLOR][COLOR lime][B][makelist.param2] [makelist.param3][/B][/COLOR][/COLOR][makelist.param4] [makelist.param5]</title>
+<link>$doregex[ip]|User-Agent=iPad</link>
+<thumbnail>http://www.elitegol.me/images/deporte/FOOTBALL.png</thumbnail>
 ]]></listrepeat>
-<expres>t\"\>(.*?)\<[\w\W\s]{0,120}../(.*?)"[\w\W\s]{0,10}blank">(.*?)<[\w\W\s]{0,2}>(.*?)<</expres>
-<page>http://www.elitegol.me/</page>
-<referer></referer>
-<cookieJar></cookieJar>
+<expres><![CDATA[href=.*? title=.*?n\s(.*?)"|"(src=.*?)">\n\s\s\s(.*?)\n|fecha">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
+<page>http://www.elitegol.me/index.php?ck=FOOTBALL</page>
 </regex>
-</item>
+<thumbnail>http://www.elitegol.me/images/deporte/FOOTBALL.png</thumbnail>
+<info></info>
+ </item>
 </items>
 
