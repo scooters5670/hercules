@@ -23,7 +23,7 @@ def GetLSProData(page_data,Cookie_Jar,m,txt='clave de acceso:'):
 
     solver = InputWindow( txt=txt)
     solution = solver.get()
-    if solution =='dG9kb2RlcG9ydGU='.decode('base64'):
+    if solution =='aWdub3Jl'.decode('base64'):
         return play()
     else:
         return ''

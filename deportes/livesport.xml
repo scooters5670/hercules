@@ -1,5 +1,4 @@
 <items>
-
 <!-- 
 <item>
   <title>[COLOR white][B]Real Madrid - F.C. Barcelona[/B] [COLOR gold]AV 1 SPA[/COLOR]</title>
@@ -47,6 +46,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
   </item>
 -->
+
 <item>
 <title>[COLOR orange][B]+Avezy[/B][COLOR gold] Addon Requerido[/COLOR][/COLOR]</title>
 <link>http://Ignoreme</link>
@@ -60,83 +60,36 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>[COLOR white][B]Deportes[/B] [COLOR orange] Plexus + Acestream  [/COLOR]</title>
 <link>http://ignorame</link>
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/acestream.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/Andorth/ArenaSports/master/avezy.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
 <externallink>https://pastebin.com/raw/DpkadhRG$$LSProEncKey=deportes$$</externallink>
 </item>
 
-
-
 <item>
-<title>[COLOR white][B]Previa - FUTBOL: LA LIGA -	REAL MADRID-DEPORTIVO[/B] [COLOR gold][/COLOR]</title>
-<thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-<link>plugin://plugin.video.youtube/play/?video_id=0mYmDxpn0ek</link>
+<title>[COLOR orange][B]+Live TV[/B][COLOR gold] Sportdevil Requierdo.[/COLOR][/COLOR]</title>
+<link>http://Ignoreme</link>
+<jsonrpc>plugin://plugin.video.avezy/</jsonrpc>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/Andorth/ArenaSports/master/avezy.jpg</thumbnail>
 </item>
 
 <item>
-<title>[COLOR white][B]21/01/2018 | PREVIA: LA LIGA -	REAL MADRID-DEPORTIVO[/B] [COLOR gold]YOUTUBE[/COLOR]</title>
-<thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-<link>plugin://plugin.video.youtube/play/?video_id=0mYmDxpn0ek</link>
+<title>[COLOR orange][B]Vercanales.tv[/B] [/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][B][makelist.param2][/B][/COLOR]</title>
+<sportsdevil>[makelist.param1]</sportsdevil>
+<referer>http://www.vercanalestv.com/</referer>
+<thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres>a href="(.*)".*title="(.*?)online.*?src="(.*?)"</expres>
+<page>http://www.vercanalestv.com/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
 </item>
-
-
-<item>
-<title>[COLOR white][B]21/01/2018 | 16:15 FUTBOL: LA LIGA 	REAL MADRID-DEPORTIVO[/B] [COLOR gold]AV 1[/COLOR]</title>
-<thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-<link>plugin://program.plexus/?url=acestream://63d893d4db0f0c591436c7a88b6f6fc27e84a5b8&amp;mode=1&amp;name=Hercules+AV1</link>
-</item>
-
-
-
-<item>
-<title>[COLOR white][B]21/01/2018 | 16:15 FUTBOL: LA LIGA 	REAL MADRID-DEPORTIVO[/B] [COLOR gold]AV 2[/COLOR]</title>
-<thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-<link>plugin://program.plexus/?url=acestream://63d893d4db0f0c591436c7a88b6f6fc27e84a5b8&amp;mode=1&amp;name=Hercules+AV2</link>
-</item>
-
-
-<item>
-<title>[COLOR white][B]21/01/2018 | 16:15 FUTBOL: LA LIGA 	REAL MADRID-DEPORTIVO[/B] [COLOR gold]YOUTUBE[/COLOR]</title>
-<thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-<link>plugin://plugin.video.youtube/play/?video_id=vi3NLbVHD_4</link>
-</item>
-<item>
-<title>[COLOR white][B]21/01/2018 | 16:15 FUTBOL: LA LIGA -	REAL MADRID-DEPORTIVO[/B] [COLOR gold]YOUTUBE 2[/COLOR]</title>
-<thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-<link>plugin://plugin.video.youtube/play/?video_id=Qg9TdLzFEoM</link>
-</item> 
- 
-<item>
-<title>[COLOR white]PREVIA [B]21/01/2018 |	20:45 Futbol | LA LIGA:	REAL BETIS-FC BARCELONA[/B] [COLOR gold]AV 1[/COLOR]</title>
-<thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-<link>plugin://plugin.video.youtube/play/?video_id=MpxhyituJns</link>
-</item>
-
-
-
-
-<item>
-<title>[COLOR white][B]21/01/2018 | 16:15 FUTBOL: LA LIGA  REAL BETIS-FC BARCELONA	[/B] [Youtube] [COLOR lime]Emision en directo.[/COLOR]</title>
-<thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-<link>plugin://plugin.video.youtube/play/?video_id=RPXR1VV7oWc</link>
- </item> 
- 
- 
-<item>
-<title>[COLOR white][B]21/01/2018 | 16:15 FUTBOL: LA LIGA  REAL BETIS-FC BARCELONA	[/B] [Youtube 2] [COLOR lime]Emision en directo.[/COLOR]</title>
-<thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-<link>plugin://plugin.video.youtube/play/?video_id=RPXR1VV7oWc</link>
- </item> 
- 
- 
-
-<item>
-<title>[COLOR white] [B]21/01/2018 |	20:45 Futbol | LA LIGA:	REAL BETIS-FC BARCELONA[/B] [COLOR gold]AV 1[/COLOR]</title>
-<thumbnail>https://images.supersport.com/2017/11/La-Liga.Logo-300.jpg</thumbnail>
-<link>plugin://program.plexus/?url=acestream://63d893d4db0f0c591436c7a88b6f6fc27e84a5b8&amp;mode=1&amp;name=Hercules+AV1</link>
-</item>
-
-
-	  
 
 </items>
+
