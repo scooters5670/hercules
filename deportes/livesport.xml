@@ -81,12 +81,23 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
+
 <item>
-<title>Sky Sports 1 </title>
-<sportsdevil>http://mamahd.com/watch-sky-sports-1-live-stream-1.html</sportsdevil>
-<referer>http://mammahd.com</referer>
-<thumbnail>http://www.skysports.com/core/img/channels/Sky-Sports-1-Logo.png</thumbnail>
-<fanart></fanart>
+<title>[COLOR white][B]Elitegol.me[/B] Live tv - Deportes. [/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR gold][B][makelist.param2][/B][/COLOR]</title>
+<sportsdevil>[makelist.param1]</sportsdevil>
+<referer>http://www.elitegol.me/</referer>
+<thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres>a href="(.*)".*title="(.*?)online.*?src="(.*?)"</expres>
+<page>http://www.elitegol.me/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
 </item>
 
 
