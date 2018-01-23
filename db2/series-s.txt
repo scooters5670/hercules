@@ -5,4 +5,4 @@ Nombre:"Smallville " src="http://kbagi.com/juanitronic/smallville-216-559868/lis
 
 
   server=""
-Nombre:"Sword Art Online T1" src="http://kbagi.com/Netai/sword-art-online-t1-621692/list,1,1" img="http://img1.ak.crunchyroll.com/i/spire2/ee3681aaec5227d4fa7a66d18a6eb5b01338838097_full.jpg"; server="kbagi.com"
+Nombre:"Sword Art Online T1" src="http://kbagi.com/Netai/sword-art-online-t1-621692/list,1,2" img="http://img1.ak.crunchyroll.com/i/spire2/ee3681aaec5227d4fa7a66d18a6eb5b01338838097_full.jpg"; server="kbagi.com"
