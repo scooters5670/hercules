@@ -124,11 +124,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][COLOR gold][B][makelist.param1][/B][/COLOR][COLOR lime][B][makelist.param2] [makelist.param3][/B][/COLOR][/COLOR][makelist.param4] [makelist.param5]</title>
+<title>[COLOR white][B][makelist.param1][/B][/COLOR][COLOR lime][B][makelist.param2] [makelist.param3][/B][/COLOR][/COLOR][makelist.param4] [makelist.param5]</title>
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail>http://www.elitegol.me/images/deporte/FOOTBALL.png</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[href=.*? title=.*?n\s(.*?)"|"(src=.*?)">\n\s\s\s(.*?)\n|fecha">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
+<expres><![CDATA[title=.*?n\s(.*?)"|"(src=.*?)">\n\s\s\s(.*?)\n|fecha" .*?">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
 <page>http://www.elitegol.me/index.php?ck=FOOTBALL</page>
 </regex>
 <thumbnail>http://www.elitegol.me/images/deporte/FOOTBALL.png</thumbnail>
