@@ -65,20 +65,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <externallink>https://pastebin.com/raw/DpkadhRG$$LSProEncKey=deportes$$</externallink>
 </item>
 
-<item>
-<title>[COLOR orange][B]+Live TV[/B][COLOR gold] Sportdevil Requierdo.[/COLOR][/COLOR]</title>
-<link>http://Ignoreme</link>
-<jsonrpc>plugin://plugin.video</jsonrpc>
-<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
-<thumbnail>https://raw.githubusercontent.com/Andorth/ArenaSports/master/avezy.jpg</thumbnail>
-</item>
+
 
 <item>
 <title>[COLOR orange][B]La liga 123[/B] [/COLOR] </title>
 <thumbnail>http://vercanalestv.com/logos/laliga123.jpg</thumbnail>
+<link>ignore</link>
 <sportdevil>http://vercanalestv.com/tv/deportes/multi-liga-2/canal-plus-liga-2.html</sportdevil>
 <referer>http://www.vercanalestv.com/ver-canal-plus-liga-2-en-directo-partidos-de-2o-division-gratis/</referer>
 </item>
+
+<!-- makelist -->
 
 
 
@@ -121,17 +118,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR orange][B]Pirlo.TV[/B] [/COLOR]</title>
+<title>[COLOR orange][B]GUIA DE EVENTOS[/B] [/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR gold][makelist.param1][/COLOR] • [COLOR skyblue][B][makelist.param3][/B][/COLOR][COLOR skyblue][makelist.param4][/COLOR]</title>
-<sportsdevil>http://www.pirlotvlive.com/[makelist.param2]</sportsdevil>
-<referer>http://www.pirlotvlive.com</referer>
+<title>[COLOR gold][makelist.param1][/COLOR] • [makelist.param2] [COLOR white][B][makelist.param3][/B][/COLOR][COLOR yellow][makelist.param4][/COLOR]</title>
+<sportdevil>http://www.elitegol.me/[makelist.param2]</sportsdevil>
+<referer>http://www.elitegol.me/</referer>
 ]]></listrepeat>
 <expres>t\"\>(.*?)\<[\w\W\s]{0,120}../(.*?)"[\w\W\s]{0,10}blank">(.*?)<[\w\W\s]{0,2}>(.*?)<</expres>
-<page>http://www.pirlotvlive.com/</page>
+<page>http://www.elitegol.me/</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
