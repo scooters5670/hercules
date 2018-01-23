@@ -1,6 +1,8 @@
 
-Nombre:"Smallville " src="http://kbagi.com/juanitronic/smallville-216-559868/list,1,9" img="https://images-na.ssl-images-amazon.com/images/M/MV5BYmNiNzlhOWItMDM5Mi00MGYzLWI1ZDYtNmI5NzI0MWFkMTIwXkEyXkFqcGdeQXVyNjU2NjA5NjM@._V1_UY268_CR6,0,182,268_AL_.jpg";
+Nombre:"Smallville " src="http://kbagi.com/juanitronic/smallville-216-559868/list,1,9" img="http://toptvshows.co/images/tvimages/smallville-tv-show-poster.jpg";
 
 
 
 
+  server=""
+Nombre:"Sword Art Online T1" src="http://kbagi.com/Netai/sword-art-online-t1-621692/list,1,1" img="http://img1.ak.crunchyroll.com/i/spire2/ee3681aaec5227d4fa7a66d18a6eb5b01338838097_full.jpg"; server="kbagi.com"
