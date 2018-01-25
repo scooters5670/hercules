@@ -1,3 +1,3 @@
 
 Nombre:"Smallville " src="http://kbagi.com/juanitronic/smallville-216-559868/list,1,9" img="http://toptvshows.co/images/tvimages/smallville-tv-show-poster.jpg";
-Nombre:"Sword Art Online T1" src="http://kbagi.com/Netai/sword-art-online-t1-621692/list,1,2" img="http://img1.ak.crunchyroll.com/i/spire2/ee3681aaec5227d4fa7a66d18a6eb5b01338838097_full.jpg";
+Nombre:"Sword Art Online T1" src="http://kbagi.com/Netai/sword-art-online-t1-621692/list,1,2" img="http://image.tmdb.org/t/p/w396/AmRfcLbXwB2Zmp5k3OOzu9WW11L.jpg";
