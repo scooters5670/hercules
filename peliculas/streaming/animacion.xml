@@ -143,9 +143,9 @@ LINEA 25.USERNAME Y PASSWORD
 <regex>
 <name>getUrl</name>
 <expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=450401</page> 
-<rawpost>fileId=450401&__RequestVerificationToken=$doregex[tok2]</rawpost>
-<referer>http://diskokosmiko.mx/Godzuky/peliculas-infantiles-40015</referer>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[tok]</page> 
+<rawpost>fileId=$doregex[tok]&__RequestVerificationToken=$doregex[tok2]</rawpost>
+<referer>http://diskokosmiko.mx/Bomberman198275/50-clasicos-de-disney-78580/list,1,2</referer>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
@@ -155,8 +155,8 @@ LINEA 25.USERNAME Y PASSWORD
 <regex>
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/Godzuky/peliculas-infantiles-40015/el-rey-leon-1994,503973,list,1,1.mkv</page> <!-- URL AL ARCHIVO -->
-<referer>http://diskokosmiko.mx/Godzuky/peliculas-infantiles-40015</referer> <!-- URL A LA COLECCION -->
+<page>http://diskokosmiko.mx/Bomberman198275/50-clasicos-de-disney-78580/28-el-rey-leon,1250065,list,1,2.mp4</page> <!-- URL AL ARCHIVO -->
+<referer>http://diskokosmiko.mx/Bomberman198275/50-clasicos-de-disney-78580/list,1,2</referer> <!-- URL A LA COLECCION -->
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
@@ -164,14 +164,14 @@ LINEA 25.USERNAME Y PASSWORD
 <regex>
 <name>tok2</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/Godzuky/peliculas-infantiles-40015/el-rey-leon-1994,503973,list,1,1.mkv</page> <!-- URL AL ARCHIVO -->
-<referer>http://diskokosmiko.mx/Godzuky/peliculas-infantiles-40015</referer> <!-- URL A LA COLECCION -->
+<page>http://diskokosmiko.mx/Bomberman198275/50-clasicos-de-disney-78580/28-el-rey-leon,1250065,list,1,2.mp4</page> <!-- URL AL ARCHIVO -->
+<referer>http://diskokosmiko.mx/Bomberman198275/50-clasicos-de-disney-78580/list,1,2</referer> <!-- URL A LA COLECCION -->
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
 
 
-<thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/Buscar.png</thumbnail>
+<thumbnail></thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 </item>
 
