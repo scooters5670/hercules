@@ -74,49 +74,38 @@ SE CAMBIA LA LINEA 11.SE PONE LA CARPETA DONDE ESTA LAPELICULA
 SE CAMBIA LINEA 12. FIJATE COMO ESTA MONTADO EL ARCHIVO PARA QUE FUNCIONE TIENE QUE SER ASIN EN PRINCIPIO ES EL LINK DE LA PELICULA.
 LINEA 25.USERNAME Y PASSWORD
 
-<!-- DISKOKOSMIKO 
 
+<!-- DISKOKOSMIKO para una peli de un directorio.
 <item>
-<title>[COLOR orange]Bright [/COLOR][COLOR white] 2017[/COLOR]</title>
-<link>$doregex[makelist]</link>
-<thumbnail>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</thumbnail>
-<fanart>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</fanart>
-<info>Ambientada en un presente alternativo donde los seres humanos, orcos, elfos y hadas han convivido desde el inicio de los tiempos, dos policías con perfiles muy distintos patrullan juntos. Uno es el humano Ward (Will Smith), y el otro el orco Jakoby (Joel Edgerton). Ambos inician una guardia nocturna que cambiará el futuro y el mundo que conocen. A pesar de sus diferencias personales, deberán trabajar juntos para proteger a una joven elfo y una reliquia perdida que, de caer en las manos equivocadas, podría destruirlo todo.</info>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[makelist.param3]</title> 
-        <link>$doregex[getUrl]</link>
+<title>[COLOR orange][COLOR white][/COLOR][/COLOR]</title>
+<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 
-]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/moipera/bright-99139</page>
-<cookieJar></cookieJar>
-</regex>
 <regex>
 <name>getUrl</name>
 <expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=807649</page>
+<rawpost>fileId=807649&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/danonaba89/fileuploader-46197/list,1,1</referer>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
 <cookieJar></cookieJar>
 </regex>
+
 <regex>
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx</referer>
+<page>http://diskokosmiko.mx/danonaba89/fileuploader-46197/007-al-servicio-de-su-majestad-720p,807649,list,1,1.mp4</page> 
+<referer>http://diskokosmiko.mx/danonaba89/fileuploader-46197/list,1,1</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</thumbnail>
-<fanart>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</fanart>
+
+<thumbnail>http://3.bp.blogspot.com/-DhSEuda6H28/UIvCJTgBxFI/AAAAAAAAE1g/xufo3r9EMNQ/s1600/correr007.jpg</thumbnail>
+<fanart>http://3.bp.blogspot.com/-DhSEuda6H28/UIvCJTgBxFI/AAAAAAAAE1g/xufo3r9EMNQ/s1600/correr007.jpg</fanart>
 </item>
 
-<!-- DISKOKOSMIKO para una peli de un directorio.
+
 
 
 
@@ -167,6 +156,35 @@ LINEA 25.USERNAME Y PASSWORD
 <!-- R -->
 
 <!-- S -->
+<item>
+<title>[COLOR orange]Sin compromiso[COLOR white] 2011[/COLOR][/COLOR]</title>
+<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=1546728</page>
+<rawpost>fileId=1546728&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/JGPELICULAS/cine-de-comedia-90257/list,1,5</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/JGPELICULAS/cine-de-comedia-90257/sin-compromiso-2011,1546728,list,1,5.avi</page> 
+<referer>http://diskokosmiko.mx/JGPELICULAS/cine-de-comedia-90257/list,1,5</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/82/10/53/19611205.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/82/10/53/19611205.jpg</fanart>
+</item>
+
 
 <!-- T -->
 
