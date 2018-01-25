@@ -5,7 +5,7 @@
 <!--  Regex para streamplay,streamcloud,openload,StreamGo,Uptobox,Yourupload
 
 <item>
-<title>[COLOR orange][/COLOR][COLOR white][/COLOR]</title>
+<title>[COLOR orange][COLOR orange][/COLOR]</title>[COLOR white][/COLOR]</title><title>[/COLOR]</title>]
 <thumbnail></thumbnail> 
 <fanart></fanart>
 <link>$doregex[resolve]</link>
@@ -30,7 +30,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- Para KBAGUI 
 
 <item>
-<title>Assesains Creed 2016 |1080|</title>
+<title>[COLOR orange]Assesains Creed 2016 |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://www.cinema.com.my/images/movies/2016/7assassinscreed00_450.jpg</thumbnail>
 <fanart>http://www.cinema.com.my/images/movies/2016/7assassinscreed00_450.jpg</fanart>
@@ -76,7 +76,7 @@ LINEA 25.USERNAME Y PASSWORD
 
 <!-- DISKOKOSMIKO para una peli de un directorio.
 <item>
-<title>El rey Leon |SD|</title>
+<title>[COLOR orange]El rey Leon |SD|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 
 <regex>
@@ -118,7 +118,48 @@ LINEA 25.USERNAME Y PASSWORD
 <!-- 0-9 @# -->
 
 <item>
-<title>47 Ronin |1080|</title>
+<title>[COLOR orange]007 Al servicio de su majestad.[/COLOR]</title>
+<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=807649</page> 
+<rawpost>fileId=807649&__RequestVerificationToken=$doregex[tok2]</rawpost>
+<referer>http://diskokosmiko.mx/danonaba89/fileuploader-46197/list,1,1</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<!--<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/danonaba89/fileuploader-46197/007-al-servicio-de-su-majestad-720p,807649,list,1,1.mp4</page> 
+<referer>http://diskokosmiko.mx/danonaba89/fileuploader-46197/list,1,1</referer> 
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+-->
+
+<regex>
+<name>tok2</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/danonaba89/fileuploader-46197/007-al-servicio-de-su-majestad-720p,807649,list,1,1.mp4</page> 
+<referer>http://diskokosmiko.mx/danonaba89/fileuploader-46197/list,1,1</referer> 
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+
+<thumbnail>http://3.bp.blogspot.com/-DhSEuda6H28/UIvCJTgBxFI/AAAAAAAAE1g/xufo3r9EMNQ/s1600/correr007.jpg</thumbnail>
+<fanart>http://3.bp.blogspot.com/-DhSEuda6H28/UIvCJTgBxFI/AAAAAAAAE1g/xufo3r9EMNQ/s1600/correr007.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR orange]47 Ronin |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>https://images-na.ssl-images-amazon.com/images/I/810a2xlo4gL._SY445_.jpg</thumbnail>
 <fanart>https://images-na.ssl-images-amazon.com/images/I/810a2xlo4gL._SY445_.jpg</fanart>
@@ -163,7 +204,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <!-- A -->
 <item>
-<title>Arma Letal |1080|</title>
+<title>[COLOR orange]Arma Letal |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://es.web.img2.acsta.net/pictures/14/02/27/10/09/045962.jpg</thumbnail>
 <fanart>http://es.web.img2.acsta.net/pictures/14/02/27/10/09/045962.jpg</fanart>
@@ -208,7 +249,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>Arma Letal 2 |1080|</title>
+<title>[COLOR orange]Arma Letal 2 |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://es.web.img3.acsta.net/pictures/14/03/05/10/10/478427.jpg</thumbnail>
 <fanart>http://es.web.img3.acsta.net/pictures/14/03/05/10/10/478427.jpg</fanart>
@@ -255,7 +296,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>Arma Letal 3 |1080|</title>
+<title>[COLOR orange]Arma Letal 3 |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://es.web.img3.acsta.net/pictures/14/02/10/13/55/314753.jpg</thumbnail>
 <fanart>http://es.web.img3.acsta.net/pictures/14/02/10/13/55/314753.jpg</fanart>
@@ -302,7 +343,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>Arma Letal 4 |1080|</title>
+<title>[COLOR orange]Arma Letal 4 |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://es.web.img2.acsta.net/medias/nmedia/18/67/73/68/20129993.jpg</thumbnail>
 <fanart>http://es.web.img2.acsta.net/medias/nmedia/18/67/73/68/20129993.jpg</fanart>
@@ -352,7 +393,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>Assesains Creed 2016 |1080|</title>
+<title>[COLOR orange]Assesains Creed 2016 |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://www.cinema.com.my/images/movies/2016/7assassinscreed00_450.jpg</thumbnail>
 <fanart>http://www.cinema.com.my/images/movies/2016/7assassinscreed00_450.jpg</fanart>
@@ -392,7 +433,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>Atomica |1080|</title>
+<title>[COLOR orange]Atomica |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/atomica-2017/130314404-3-esl-ES/Atomica-2017.jpg</thumbnail>
 <fanart>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/atomica-2017/130314404-3-esl-ES/Atomica-2017.jpg</fanart>
@@ -444,7 +485,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <!-- B -->
 <item>
-<title>Blanco Humano |1080|</title>
+<title>[COLOR orange]Blanco Humano |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://es.web.img3.acsta.net/r_1280_720/pictures/210/071/21007152_201305202243554.jpg</thumbnail>
 <fanart>http://es.web.img3.acsta.net/r_1280_720/pictures/210/071/21007152_201305202243554.jpg</fanart>
@@ -486,7 +527,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>Blanco Humano 2|1080|</title>
+<title>[COLOR orange]Blanco Humano 2|1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://www.adicine.com/wp-content/uploads/2017/06/Blanco-humano-2-poster.jpg</thumbnail>
 <fanart>http://www.adicine.com/wp-content/uploads/2017/06/Blanco-humano-2-poster.jpg</fanart>
@@ -527,7 +568,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 <!-- C -->
 <item>
-<title>Cobra, el brazo fuerte de la ley |1080|</title>
+<title>[COLOR orange]Cobra, el brazo fuerte de la ley |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>https://www.elseptimoarte.net/carteles/cobra_el_brazo_fuerte_de_la_ley_7768.jpg</thumbnail>
 <fanart>https://www.elseptimoarte.net/carteles/cobra_el_brazo_fuerte_de_la_ley_7768.jpg</fanart>
@@ -567,7 +608,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>Con Air |1080|</title>
+<title>[COLOR orange]Con Air |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://3.bp.blogspot.com/-JaBHNLiAi-U/UaDN4g1pOeI/AAAAAAAAICY/84OgN-zs_N4/s1600/conair.jpg</thumbnail>
 <fanart>http://3.bp.blogspot.com/-JaBHNLiAi-U/UaDN4g1pOeI/AAAAAAAAICY/84OgN-zs_N4/s1600/conair.jpg</fanart>
@@ -607,7 +648,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>Cyborg |1080|</title>
+<title>[COLOR orange]Cyborg |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://es.web.img2.acsta.net/r_1280_720/medias/nmedia/18/68/02/00/20531067.jpg</thumbnail>
 <fanart>http://es.web.img2.acsta.net/r_1280_720/medias/nmedia/18/68/02/00/20531067.jpg</fanart>
@@ -649,7 +690,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- D -->
 
 <item>
-<title>Daño Colateral |1080|</title>
+<title>[COLOR orange]Daño Colateral |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/79/19/81/20076739.jpg</thumbnail>
 <fanart>http://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/79/19/81/20076739.jpg</fanart>
@@ -689,7 +730,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title> Demolition Man |1080|</title>
+<title>[COLOR orange] Demolition Man |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://images3.static-bluray.com/movies/covers/30754_front.jpg</thumbnail>
 <fanart>http://images3.static-bluray.com/movies/covers/30754_front.jpg</fanart>
@@ -729,7 +770,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title> Dias de trueno |1080|</title>
+<title>[COLOR orange] Dias de trueno |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://104.236.196.111/imdb//media/photo_images/rE92biZNn5dLnLCKMac2PkyMRcM.jpg</thumbnail>
 <fanart>http://104.236.196.111/imdb//media/photo_images/rE92biZNn5dLnLCKMac2PkyMRcM.jpg</fanart>
@@ -770,7 +811,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <!-- E -->
 <item>
-<title>El equipo A |1080|</title>
+<title>[COLOR orange]El equipo A |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>https://www.elseptimoarte.net/carteles/el_equipo_a_5463.jpg</thumbnail>
 <fanart>https://www.elseptimoarte.net/carteles/el_equipo_a_5463.jpg</fanart>
@@ -813,7 +854,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>El especialista |1080|</title>
+<title>[COLOR orange]El especialista |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://www.blogodisea.com/wp-content/uploads/2010/05/el-especialista-sylvester-stallone-sharon-stone.jpg</thumbnail>
 <fanart>http://www.blogodisea.com/wp-content/uploads/2010/05/el-especialista-sylvester-stallone-sharon-stone.jpg</fanart>
@@ -860,7 +901,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>El mensajero |1080|</title>
+<title>[COLOR orange]El mensajero |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>https://imagessl0.casadellibro.com/m/ig/0/2212440.jpg</thumbnail>
 <fanart>https://imagessl0.casadellibro.com/m/ig/0/2212440.jpg</fanart>
@@ -907,7 +948,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>El ultimo desafio |1080|</title>
+<title>[COLOR orange]El ultimo desafio |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>https://www.deaplaneta.com/uploads/20130109/ultimodesafio.0.jpg</thumbnail>
 <fanart>https://www.deaplaneta.com/uploads/20130109/ultimodesafio.0.jpg</fanart>
@@ -954,7 +995,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>Encerrado |1080|</title>
+<title>[COLOR orange]Encerrado |1080|<title>[/COLOR]</title>]
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 <thumbnail>http://es.web.img3.acsta.net/medias/nmedia/18/79/16/34/20531060.jpg</thumbnail>
 <fanart>http://es.web.img3.acsta.net/medias/nmedia/18/79/16/34/20531060.jpg</fanart>
