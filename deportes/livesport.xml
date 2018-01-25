@@ -94,7 +94,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][B][makelist.param1][/B][/COLOR][COLOR orange][B][makelist.param2] [makelist.param3][/B][/COLOR][/COLOR][makelist.param4] [makelist.param5]</title>
+<title>[COLOR white][B][makelist.param1][/B][/COLOR][COLOR orange][B][makelist.param2] [makelist.param3][/B][/COLOR][makelist.param4] [makelist.param5]</title>
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/000/185/2a3/35da564.jpg</thumbnail>
 ]]></listrepeat>
