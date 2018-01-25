@@ -143,8 +143,8 @@ LINEA 25.USERNAME Y PASSWORD
 <regex>
 <name>getUrl</name>
 <expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[tok]</page> 
-<rawpost>fileId=$doregex[tok]&__RequestVerificationToken=$doregex[tok2]</rawpost>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=1240733</page> 
+<rawpost>fileId=1240733&__RequestVerificationToken=$doregex[tok2]</rawpost>
 <referer>http://diskokosmiko.mx/Bomberman198275/50-clasicos-de-disney-78580/list,1,2</referer>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
