@@ -137,7 +137,7 @@ LINEA 25.USERNAME Y PASSWORD
 <!-- E -->
 
 <item>
-<title>El rey Leon |1080|</title>
+<title>El rey Leon |SD|</title>
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 
 <regex>
@@ -171,7 +171,48 @@ LINEA 25.USERNAME Y PASSWORD
 </regex>
 
 
-<thumbnail></thumbnail>
+<thumbnail>http://images4.fanpop.com/image/photos/14800000/Lion-King-posters-animated-movies-14801412-300-395.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>El rey Leon |1080| HD</title>
+<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=503973</page>  <!--  Buscar el numero "503973" dentro de source code de diskokosmiko en la etiqueta: <div class="list_row" data-file-id="503973">  -->
+<rawpost>fileId=503973&__RequestVerificationToken=$doregex[tok2]</rawpost> <!-- Poner el numero de referencia al archivo listado arriba -->
+<referer>http://diskokosmiko.mx/Godzuky/peliculas-infantiles-40015</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/Godzuky/peliculas-infantiles-40015/el-rey-leon-1994,503973,list,1,1.mkv</page> <!-- URL AL ARCHIVO -->
+<referer>http://diskokosmiko.mx/Godzuky/peliculas-infantiles-40015</referer> <!-- URL A LA COLECCION -->
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok2</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/Godzuky/peliculas-infantiles-40015/el-rey-leon-1994,503973,list,1,1.mkv</page> <!-- URL AL ARCHIVO -->
+<referer>http://diskokosmiko.mx/Godzuky/peliculas-infantiles-40015</referer> <!-- URL A LA COLECCION -->
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+
+<thumbnail>http://images4.fanpop.com/image/photos/14800000/Lion-King-posters-animated-movies-14801412-300-395.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 </item>
 
