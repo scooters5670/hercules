@@ -178,7 +178,7 @@ LINEA 25.USERNAME Y PASSWORD
 
 
 <item>
-<title>El rey Leon |1080| HD</title>
+<title>El rey Leon |1080| HD |LATINO|</title>
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 
 <regex>
@@ -207,6 +207,45 @@ LINEA 25.USERNAME Y PASSWORD
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
 <page>http://diskokosmiko.mx/Godzuky/peliculas-infantiles-40015/el-rey-leon-1994,503973,list,1,1.mkv</page> <!-- URL AL ARCHIVO -->
 <referer>http://diskokosmiko.mx/Godzuky/peliculas-infantiles-40015</referer> <!-- URL A LA COLECCION -->
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+
+<thumbnail>http://images4.fanpop.com/image/photos/14800000/Lion-King-posters-animated-movies-14801412-300-395.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+</item>
+
+<item>
+<title>El rey Leon |HD| Castellano</title>
+<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=719868</page> 
+<rawpost>fileId=719868&__RequestVerificationToken=$doregex[tok2]</rawpost>
+<referer>http://diskokosmiko.mx/danonaba89/fileuploader-46197/gallery,1,15</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/danonaba89/fileuploader-46197/el-rey-leon-1-1080p,719868,gallery,1,14.mp4</page> <!-- URL AL ARCHIVO -->
+<referer>http://diskokosmiko.mx/danonaba89/fileuploader-46197/gallery,1,15</referer> <!-- URL A LA COLECCION -->
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok2</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page></page> <!-- URL AL ARCHIVO -->
+<referer>http://diskokosmiko.mx/danonaba89/fileuploader-46197/gallery,1,15</referer> <!-- URL A LA COLECCION -->
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
