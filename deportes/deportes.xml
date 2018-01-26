@@ -7,7 +7,7 @@
 </item>
 
 <item>
-<title>[COLOR gold][B]+ZONA PRIVADA[/B] [/COLOR][COLOR white]Eventos en directo.[/COLOR]</title>
+<title>[COLOR gold][B]+ZONA PREMIUM[/B] [/COLOR][COLOR white]Area privada.[/COLOR]</title>
 <link>NA</link>
 <externallink>$doregex[getinput]</externallink>
 <regex>
