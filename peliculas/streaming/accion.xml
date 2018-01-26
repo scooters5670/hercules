@@ -2540,14 +2540,27 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Timecop  [COLOR white]|HD|[/COLOR][/COLOR]</title>
-<link>$doregex[select] |Accept-Encoding=gzip, deflate, sdch </link>
-<!-- $doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch -->
+<link>$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
 <info>
 En un mundo futuro, en el que es posible viajar al pasado, se ha creado la Comisión de Control del Tiempo, cuya función consiste en impedir la alteración de hechos que cambiarían el curso de la historia. Walker, un agente de policía que diez años antes perdió a su mujer en un ataque criminal, regresa al pasado para rescatarla y acabar con el ambicioso senador McComb.
 
 </info>
 
-<regex><name>getUrl</name>
+<regex>
+<name>getUrl</name>
 <expres><![CDATA[#$pyFunction
 import re , requests ,json
 def GetLSProData(page_data,Cookie_Jar,m):
@@ -2581,21 +2594,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
-<!-- seleccion para ver trailer o pelicula. -->
-
 <regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import xbmcgui
-    dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver:', ['Trailer', 'Quasar'])
-    channels = ['plugin://plugin.video.youtube/play/?video_id=pH7a-SpHOnU',
-	'$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch']
-    return channels[ret]
-]]></expres>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=pH7a-SpHOnU</expres>
 <page></page>
 </regex>
+
+<!-- seleccion para ver trailer o pelicula. -->
+
+
 
 <thumbnail>http://www.cineycine.com/archivos/2014/02/timecop-poster.jpg</thumbnail>
 <fanart>http://www.cineycine.com/archivos/2014/02/timecop-poster.jpg</fanart>
