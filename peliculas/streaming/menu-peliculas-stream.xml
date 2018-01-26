@@ -76,7 +76,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 -->
 <item>
-<title>[COLOR orange][B] Buscar: [/B] [/COLOR][COLOR lime] Requiere Torrenter [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
+<title>[COLOR orange][B][+]Buscar: [/B] [/COLOR][COLOR lime] Requiere Torrenter [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
 <link>$doregex[makelist2]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 
@@ -133,7 +133,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR orange][B] Buscar: [/B] [/COLOR][COLOR lime] Requiere Quasar [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
+<title>[COLOR orange][B][+]Buscar: [/B] [/COLOR][COLOR lime] Requiere Quasar [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
 <link>$doregex[makelist2]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 
@@ -190,7 +190,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR orange][B] Buscar: [/B] [/COLOR][COLOR lime] Requiere Torrentin [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
+<title>[COLOR orange][B][+]Buscar: [/B] [/COLOR][COLOR lime] Requiere Torrentin [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
 <link>$doregex[makelist2]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
 

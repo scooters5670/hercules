@@ -1,6 +1,6 @@
 <items>
 <item>
-<title>[COLOR orange][+]Buscar:[/COLOR][COLOR white] |DK| [/COLOR] </title>
+<title>[COLOR orange][+]Buscar:[/COLOR][COLOR white] |Server 1| [/COLOR] </title>
 <link>$doregex[lista]</link>
 
 <regex>
@@ -73,7 +73,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <!-- Intento de buscador en Kbagui -->
 <item>
-<title>[COLOR orange][+]Buscar:[/COLOR][COLOR white] |KB| [/COLOR] </title>
+<title>[COLOR orange][+]Buscar:[/COLOR][COLOR white] |Server 2| [/COLOR] </title>
 <link>$doregex[makelist]</link>
 
 <regex>
