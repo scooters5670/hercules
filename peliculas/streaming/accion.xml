@@ -2582,7 +2582,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 <!-- seleccion para ver trailer o pelicula. -->
-<link>$doregex[select]</link>
+
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
