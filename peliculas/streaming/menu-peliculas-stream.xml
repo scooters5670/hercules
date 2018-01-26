@@ -79,7 +79,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>[COLOR orange][B][+]Buscar: [/B] [/COLOR][COLOR lime] Requiere Torrenter [/COLOR] [COLOR lightslategray]por Adryan[/COLOR] </title>
 <link>$doregex[makelist2]</link>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
-
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
@@ -94,7 +94,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://www.mejortorrent.com/secciones.php?sec=buscador&amp;valor=$doregex[search]</page>
 </regex>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
-
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 
 
 <regex>
@@ -129,7 +129,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
-
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 </item>
 
 <item>
@@ -151,7 +151,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://www.mejortorrent.com/secciones.php?sec=buscador&amp;valor=$doregex[search]</page>
 </regex>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
-
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 
 
 <regex>
@@ -186,7 +186,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
-
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 </item>
 
 <item>
@@ -208,7 +208,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://www.mejortorrent.com/secciones.php?sec=buscador&amp;valor=$doregex[search]</page>
 </regex>
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
-
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 
 
 <regex>
@@ -243,7 +243,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <thumbnail>http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/matte-white-square-icons-business/124774-matte-white-square-icon-business-magnifying-glass-ps.png</thumbnail>
-
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 </item>
 <!--
 <item>
@@ -292,7 +292,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[COLOR orange] Videoclub [COLOR white] Accion [/COLOR]</title>
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
-	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/accion.xml</externallink>	
 </item>
@@ -300,6 +300,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[COLOR orange] Videoclub [COLOR white] Animacion [/COLOR]</title>
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/animacion.xml</externallink>	
 </item>
@@ -323,6 +324,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[COLOR orange] Videoclub [COLOR white] Comedia [/COLOR]</title>
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/comedia.xml</externallink>	
 </item>
@@ -347,6 +349,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>[COLOR orange] Videoclub [COLOR white] Fantastico [/COLOR]</title>
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/hercules/master/peliculas/fantastico.xml</externallink>	
 </item>
@@ -364,7 +367,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[COLOR orange] Videoclub [COLOR white] Nacional [/COLOR]</title>
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
-	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/nacional.xml</externallink>	
 </item>
@@ -380,7 +383,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[COLOR orange] Videoclub [COLOR white] Suspense[/COLOR]</title>
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
-	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/suspense.xml</externallink>	
 </item>
@@ -396,7 +399,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[COLOR orange] Videoclub [COLOR white] Thriller [/COLOR]</title>
 <thumbnail>http://www.centronaval.org.pe/app/index_files/play.png</thumbnail>
-	<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/Hercules/master/peliculas/thriller.xml</externallink>	
 </item>

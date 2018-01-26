@@ -78,7 +78,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[COLOR orange][+]Buscar:[/COLOR][COLOR white] |SERVER 2| [/COLOR] </title>
 <link>$doregex[makelist]</link>
-
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 <regex>
 <name>makelist</name>
   <listrepeat><![CDATA[
@@ -154,7 +154,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[COLOR orange]Buscar[/COLOR] [COLOR white] Serie online [/COLOR]</title>
 <link>$doregex[makelist1]</link>
-
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 
 <regex>
 <name>makelist1</name>
