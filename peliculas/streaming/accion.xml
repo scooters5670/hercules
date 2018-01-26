@@ -527,61 +527,6 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 <fanart>http://www.locopelis.com/files/uploads/9519.jpg</fanart>
 </item>
 
-<item>
-<title>[COLOR orange]007: [COLOR white]Moonraker.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
-
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
-<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
-<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page><item>
-<title>[COLOR orange]007: [COLOR white]Moonraker.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
-
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
-<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
-<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/12-007-moonraker,280088,list,1,1.mkv</page> 
-<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>fileid</name>
-<expres>fileId.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/12-007-moonraker,280088,list,1,1.mkv</page> 
-<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://www.locopelis.com/files/uploads/9519.jpg</thumbnail>
-<fanart>http://www.locopelis.com/files/uploads/9519.jpg</fanart>
-</item>
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Solo para sus ojos.[/COLOR][/COLOR]</title>
