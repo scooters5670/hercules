@@ -2713,6 +2713,10 @@ se ha creado la Comisión de Control del Tiempo, cuya función consiste
 	1994
 	</date>
 	<time>98 min.</time>
+	<year>
+	1994
+	</year>
+	<gender>Accion</gender>
     <category>Accion</category>
     <country>Estados Unidos</country>
    
@@ -2788,5 +2792,88 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- X -->
 
 <!-- Y -->
+<item>
+<title>[COLOR orange]Yo, el halcon [COLOR white]|HD|[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+<info>
+Lincoln Hawk es un camionero que lo único que desea es estar con su hijo. Cuando lo abandonó doce años antes, el niño pasó a estar bajo la custodia de su madre. Ahora debe participar en luchas para recuperar el amor de su hijo, que está en una academia militar.
+
+</info>
+
+<!-- Aqui ponemos toda la informacion de la pelicula -->
+
+<desc>Sylvester Stallone,  David Mendenhall,  Robert Loggia,  Susan Blakely,  Rick Zumwalt, Chris McCarthy,  Terry Funk,  Allan Graf,  Magic Schwarz,  John Braden</desc>
+   
+    <date>
+	1987
+	</date>
+	<time>93 min.</time>
+	<year>
+	1987
+	</year>
+	<gender>Accion</gender>
+    <category>Accion</category>
+    <country>Estados Unidos</country>
+   
+
+<!-- seleccion para ver trailer o pelicula. -->
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://kbagi.com/juanleiva/cine-de-accion-550259' 
+ url='http://kbagi.com/juanleiva/cine-de-accion-550259/yo-el-halcon-microhd1080-pxac3-castellanosubs-1,4296305,gallery,1,2.mkv'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'Netai' , 'Password' : '@q1w2e3r4t5@'}
+ nr1 = requests.post('http://kbagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=ZZFt5bIs5p8</expres>
+<page></page>
+</regex>
+
+<thumbnail>http://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/79/16/39/20531566.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/79/16/39/20531566.jpg</fanart>
+</item>
 
 <!-- Z -->
