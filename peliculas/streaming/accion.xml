@@ -76,15 +76,15 @@ LINEA 25.USERNAME Y PASSWORD
 
 <!-- DISKOKOSMIKO para una peli de un directorio.
 <item>
-<title>[COLOR orange][COLOR white][/COLOR][/COLOR]</title>
+<title>[COLOR orange]007: [COLOR white]El hombre de la pistola de oro.[/COLOR][/COLOR]</title>
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
 
 <regex>
 <name>getUrl</name>
 <expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=807649</page>
-<rawpost>fileId=807649&__RequestVerificationToken=$doregex[tok]</rawpost> 
-<referer>http://diskokosmiko.mx/danonaba89/fileuploader-46197/list,1,1</referer>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
@@ -94,14 +94,23 @@ LINEA 25.USERNAME Y PASSWORD
 <regex>
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/danonaba89/fileuploader-46197/007-al-servicio-de-su-majestad-720p,807649,list,1,1.mp4</page> 
-<referer>http://diskokosmiko.mx/danonaba89/fileuploader-46197/list,1,1</referer>
+<page>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/10-007-el-hombre-con-la-pistola-de-oro,253774,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://3.bp.blogspot.com/-DhSEuda6H28/UIvCJTgBxFI/AAAAAAAAE1g/xufo3r9EMNQ/s1600/correr007.jpg</thumbnail>
-<fanart>http://3.bp.blogspot.com/-DhSEuda6H28/UIvCJTgBxFI/AAAAAAAAE1g/xufo3r9EMNQ/s1600/correr007.jpg</fanart>
+<regex>
+<name>fileid</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/10-007-el-hombre-con-la-pistola-de-oro,253774,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://www.dvdventas.com/imagenes/FILMS/VIEW/foto_5305.jpg</thumbnail>
+<fanart>http://www.dvdventas.com/imagenes/FILMS/VIEW/foto_5305.jpg</fanart>
 </item>
 -->
 
@@ -436,6 +445,95 @@ LINEA 25.USERNAME Y PASSWORD
 <thumbnail>http://www.dvdventas.com/imagenes/FILMS/VIEW/foto_5305.jpg</thumbnail>
 <fanart>http://www.dvdventas.com/imagenes/FILMS/VIEW/foto_5305.jpg</fanart>
 </item>
+
+
+<item>
+<title>[COLOR orange]007: [COLOR white]La espia que me amo.[/COLOR][/COLOR]</title>
+<info>La misteriosa desaparición de dos submarinos nucleares exige la colaboración 
+de los mejores agentes de los servicios secretos británico y soviético: James Bond 
+y la mayor Amasova. Detrás de todo se encuentra el magnate Stromberg, que se 
+propone destruir a la humanidad para fundar una nueva civilización bajo el mar. </info>
+<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/11-007-la-espia-que-me-amo,275151,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>fileid</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/11-007-la-espia-que-me-amo,275151,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://3.bp.blogspot.com/_G1LKCNUoOw4/S-9fKwlSVRI/AAAAAAAAADQ/AFKiPIIEsDo/s275/james-bond-007-la-espia-que-me-amo.jpg</thumbnail>
+<fanart>https://3.bp.blogspot.com/_G1LKCNUoOw4/S-9fKwlSVRI/AAAAAAAAADQ/AFKiPIIEsDo/s275/james-bond-007-la-espia-que-me-amo.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR orange]007: [COLOR white]Moonraker.[/COLOR][/COLOR]</title>
+<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/12-007-moonraker,280088,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>fileid</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/12-007-moonraker,280088,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://www.locopelis.com/files/uploads/9519.jpg</thumbnail>
+<fanart>http://www.locopelis.com/files/uploads/9519.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
 
 <item>
 <title>[COLOR orange]47 Ronin |1080|[/COLOR]</title>
