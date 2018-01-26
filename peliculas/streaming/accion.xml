@@ -2,7 +2,7 @@
 <!-- seleccion para ver trailer o pelicula. -->
 <!--
 <item>
-<title>[COLOR orange]Timecop  [COLOR white]|HD|[/COLOR][/COLOR]</title>
+<title>[COLOR orange]Inferno  [COLOR white]|HD|[/COLOR][/COLOR]</title>
 <link>$doregex[select]</link>
 
 <regex>
@@ -17,10 +17,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
+<desc>
+
+</desc>
 <info>
-En un mundo futuro, en el que es posible viajar al pasado, se ha creado la Comisión de Control del Tiempo, cuya función consiste en impedir la alteración de hechos que cambiarían el curso de la historia. Walker, un agente de policía que diez años antes perdió a su mujer en un ataque criminal, regresa al pasado para rescatarla y acabar con el ambicioso senador McComb.
 
 </info>
+<date>
+</date>
+
 
 <regex>
 <name>getUrl</name>
@@ -29,7 +34,7 @@ import re , requests ,json
 def GetLSProData(page_data,Cookie_Jar,m):
 
  ref = 'http://kbagi.com/juanleiva/cine-de-accion-550259' 
- url='http://kbagi.com/juanleiva/cine-de-accion-550259/the-quest-en-busca-de-la-ciudad-perdida-1996-m720p-dual-ll,4574585,gallery,1,2.mkv'
+ url='http://kbagi.com/juanleiva/cine-de-accion-550259/van-dammes-inferno-1999-microhd-720p-mkv,4574566,gallery,1,2.mkv'
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
             'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
  session = requests.Session()
@@ -59,13 +64,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <regex>
 <name>gertrailer</name>
-<expres>plugin://plugin.video.youtube/play/?video_id=pH7a-SpHOnU</expres>
+<expres>plugin://plugin.video.youtube/play/?video_id=LVH2_eh3RUk</expres>
 <page></page>
 </regex>
 
 
-<thumbnail>http://www.cineycine.com/archivos/2014/02/timecop-poster.jpg</thumbnail>
-<fanart>http://www.cineycine.com/archivos/2014/02/timecop-poster.jpg</fanart>
+<thumbnail>http://es.web.img3.acsta.net/medias/nmedia/18/91/34/50/20140962.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/medias/nmedia/18/91/34/50/20140962.jpg</fanart>
 </item>
 -->
 
@@ -2029,7 +2034,82 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- H -->
 
 <!-- I -->
+<item>
+<title>[COLOR orange]Inferno  [COLOR white]|HD|[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
 
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+<desc>
+Jean-Claude Van Damme,  Pat Morita,  Danny Trejo,  Gabrielle Fitzpatrick, Larry Drake,  Vincent Schiavelli,  Jaime Pressly,  Lee Tergesen
+</desc>
+<info>
+Un hombre acabado, al borde del suicidio, llega a la ciudad de Inferno, donde en un esfuerzo por recuperar todo aquello que le ha sido arrebatado, recobrará su fuerza y su espíritu. Allí se dará cuenta de que, por más que intente evitarlo, no le quedará más remedio que enfrentarse a los villanos para defender a sus habitantes, a pesar de que en un principio no son para él más que un puñado de desconocidos. 
+</info>
+<date>
+1999
+</date>
+<time>
+91 min.
+</time>
+
+
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://kbagi.com/juanleiva/cine-de-accion-550259' 
+ url='http://kbagi.com/juanleiva/cine-de-accion-550259/van-dammes-inferno-1999-microhd-720p-mkv,4574566,gallery,1,2.mkv'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'Netai' , 'Password' : '@q1w2e3r4t5@'}
+ nr1 = requests.post('http://kbagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=LVH2_eh3RUk</expres>
+<page></page>
+</regex>
+
+
+<thumbnail>http://es.web.img3.acsta.net/medias/nmedia/18/91/34/50/20140962.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/medias/nmedia/18/91/34/50/20140962.jpg</fanart>
+</item>
+-->
 
 <!-- J -->
 
@@ -2608,8 +2688,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[COLOR orange]Timecop  [COLOR white]|HD|[/COLOR][/COLOR]</title>
 <link>$doregex[select]</link>
+<info>
+
+Un hombre acabado, al borde del suicidio, llega a la ciudad de Inferno, donde en un esfuerzo por recuperar todo aquello que le ha sido arrebatado, recobrará su fuerza y su espíritu. Allí se dará cuenta de que, por más que intente evitarlo, no le quedará más remedio que enfrentarse a los villanos para defender a sus habitantes, a pesar de que en un principio no son para él más que un puñado de desconocidos. 
+</info>
+
 <!-- Aqui ponemos toda la informacion de la pelicula -->
-<sub-title>policía en el tiempo</sub-title>
+
 <desc>En un mundo futuro, en el que es posible viajar al pasado, 
 se ha creado la Comisión de Control del Tiempo, cuya función consiste
  en impedir la alteración de hechos que cambiarían el curso de la historia. 
@@ -2646,10 +2731,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<info>
-En un mundo futuro, en el que es posible viajar al pasado, se ha creado la Comisión de Control del Tiempo, cuya función consiste en impedir la alteración de hechos que cambiarían el curso de la historia. Walker, un agente de policía que diez años antes perdió a su mujer en un ataque criminal, regresa al pasado para rescatarla y acabar con el ambicioso senador McComb.
-
-</info>
 
 <regex>
 <name>getUrl</name>
