@@ -115,7 +115,7 @@ LINEA 25.USERNAME Y PASSWORD
 -->
 
 <!-- 0-9 @# -->
-
+<SetViewMode>504</SetViewMode>
 <item>
 <title>[COLOR orange]007 [COLOR white]Al servicio de su majestad. |Castellano|[/COLOR][/COLOR]</title>
 <link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
