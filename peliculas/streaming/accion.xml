@@ -3450,6 +3450,97 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
+
+<item>
+<title>[COLOR orange]Rambo [COLOR white] IV[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Opcion 1', 'Opcion 2'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]', '$doregex[getUrl2]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=xCIo3iF5Vcg</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/ader/rambo-oskarsan-34341</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/ader/rambo-oskarsan-34341/rambo-3-www-newpct-comtoni32,340924,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/ader/rambo-oskarsan-34341</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>fileid</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/ader/rambo-oskarsan-34341/rambo-3-www-newpct-comtoni32,340924,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/ader/rambo-oskarsan-34341</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>getUrl2</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid2]</page>
+<rawpost>fileId2=$doregex[fileid2]&__RequestVerificationToken=$doregex[tok2]</rawpost> 
+<referer>http://diskokosmiko.mx/JGPELICULAS/rambo-89612</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok2</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/JGPELICULAS/rambo-89612/rambo-4-2008,1529918,list,1,1.avi</page> 
+<referer>http://diskokosmiko.mx/JGPELICULAS/rambo-89612</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>fileid2</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/JGPELICULAS/rambo-89612/rambo-4-2008,1529918,list,1,1.avi</page> 
+<referer>http://diskokosmiko.mx/JGPELICULAS/rambo-89612</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://static.posters.cz/image/750/poster/rambo-iii-i3531.jpg</thumbnail>
+<fanart>https://static.posters.cz/image/750/poster/rambo-iii-i3531.jpg</fanart>
+</item>
+
+
+
 <!-- S -->
 
 
