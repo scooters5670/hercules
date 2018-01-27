@@ -1211,6 +1211,120 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <!-- A -->
 <item>
+<title>[COLOR orange]Acorralado [COLOR white]Parte I[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=BBccpoudeCc</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/ader/rambo-oskarsan-34341</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/ader/rambo-oskarsan-34341/rambo-1-www-newpct-comtoni32,341523,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/ader/rambo-oskarsan-34341</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>fileid</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/ader/rambo-oskarsan-34341/rambo-1-www-newpct-comtoni32,341523,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/ader/rambo-oskarsan-34341</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://i.pinimg.com/originals/04/42/f0/0442f02a9af51c143f4658bdc7a381ac.jpg</thumbnail>
+<fanart>https://i.pinimg.com/originals/04/42/f0/0442f02a9af51c143f4658bdc7a381ac.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR orange]Acorralado [COLOR white]Parte II[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=RgZjnERdB70</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/ader/rambo-oskarsan-34341</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/ader/rambo-oskarsan-34341/rambo-2-www-newpct-comtoni32,340831,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/ader/rambo-oskarsan-34341</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>fileid</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/ader/rambo-oskarsan-34341/rambo-2-www-newpct-comtoni32,340831,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/ader/rambo-oskarsan-34341</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://www.peliculastoday.com/wp-content/uploads/2016/10/portada-Rambo-Acorralado-Parte-II.jpg</thumbnail>
+<fanart>https://www.peliculastoday.com/wp-content/uploads/2016/10/portada-Rambo-Acorralado-Parte-II.jpg</fanart>
+</item>
+
+<item>
 <title>[COLOR orange]Alerta Maxima [COLOR white] Steven Seagal[/COLOR][/COLOR]</title>
 <link>$doregex[select]</link>
 
@@ -3276,8 +3390,157 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- Q -->
 
 <!-- R -->
+<item>
+<title>[COLOR orange]Rambo [COLOR white] III[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
 
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=xCIo3iF5Vcg</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/ader/rambo-oskarsan-34341</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/ader/rambo-oskarsan-34341/rambo-3-www-newpct-comtoni32,340924,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/ader/rambo-oskarsan-34341</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>fileid</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/ader/rambo-oskarsan-34341/rambo-3-www-newpct-comtoni32,340924,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/ader/rambo-oskarsan-34341</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<thumbnail>https://static.posters.cz/image/750/poster/rambo-iii-i3531.jpg</thumbnail>
+<fanart>https://static.posters.cz/image/750/poster/rambo-iii-i3531.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR orange]Rambo [COLOR white] IV [Jhon Rambo][/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Servidor 1', 'Servidor 2'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]', '$doregex[getUrl2]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=ulVU3uX7vvE</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://kbagi.com/chiscri/peliculas-micro-hd-1080-596405</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://kbagi.com/chiscri/peliculas-micro-hd-1080-596405/rambo-iv-2008,5099349,list,1,2.mkv</page> 
+<referer>http://kbagi.com/chiscri/peliculas-micro-hd-1080-596405</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>fileid</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://kbagi.com/chiscri/peliculas-micro-hd-1080-596405/rambo-iv-2008,5099349,list,1,2.mkv</page> 
+<referer>http://kbagi.com/chiscri/peliculas-micro-hd-1080-596405</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<!-- Agragamos 2 Opcion -->
+
+<regex>
+<name>getUrl2</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid2]</page>
+<rawpost>fileId=$doregex[fileid2]&__RequestVerificationToken=$doregex[tok2]</rawpost> 
+<referer>http://kbagi.com/ROBERINFERNO/sn-453640/list,1,4</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok2</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://kbagi.com/ROBERINFERNO/sn-453640/rambo-4,4666068,list,1,3.mp4</page> 
+<referer>http://kbagi.com/ROBERINFERNO/sn-453640/list,1,4</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>fileid2</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://kbagi.com/ROBERINFERNO/sn-453640/rambo-4,4666068,list,1,3.mp4</page> 
+<referer>http://kbagi.com/ROBERINFERNO/sn-453640/list,1,4</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<thumbnail>https://static.posters.cz/image/750/poster/rambo-iii-i3531.jpg</thumbnail>
+<fanart>https://static.posters.cz/image/750/poster/rambo-iii-i3531.jpg</fanart>
+</item>
 <!-- S -->
+
 
 <!-- T -->
 <item>
