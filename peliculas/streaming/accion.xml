@@ -3700,8 +3700,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
-    ret = dialog.select('Ver:', ['Trailer', 'Opcion 1', 'Opcion 2'])
-    regex = ['$doregex[gertrailer]', '$doregex[getUrl]', '$doregex[getlink]']
+    ret = dialog.select('Ver:', ['Trailer', 'Opcion 1'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
     return regex[ret]
 ]]></expres>
 <page></page>
