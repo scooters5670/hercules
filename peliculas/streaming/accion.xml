@@ -3462,7 +3462,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import xbmcgui
     dialog = xbmcgui.Dialog()
     ret = dialog.select('Ver:', ['Trailer', 'Opcion 1', 'Opcion 2'])
-    regex = ['$doregex[gertrailer]', '$doregex[getUrl]', '$doregex[getUrl2]']
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]', '$doregex[getlink]']
     return regex[ret]
 ]]></expres>
 <page></page>
@@ -3506,10 +3506,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <regex>
-<name>getUrl2</name>
+<name>getlink</name>
 <expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid2]</page>
-<rawpost>fileId2=$doregex[fileid2]&__RequestVerificationToken=$doregex[tok2]</rawpost> 
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[linkid]</page>
+<rawpost>linkid=$doregex[linkid]&__RequestVerificationToken=$doregex[toke]</rawpost> 
 <referer>http://diskokosmiko.mx/JGPELICULAS/rambo-89612</referer>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
@@ -3518,7 +3518,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 <regex>
-<name>tok2</name>
+<name>toke</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
 <page>http://diskokosmiko.mx/JGPELICULAS/rambo-89612/rambo-4-2008,1529918,list,1,1.avi</page> 
 <referer>http://diskokosmiko.mx/JGPELICULAS/rambo-89612</referer>
@@ -3527,7 +3527,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 <regex>
-<name>fileid2</name>
+<name>linkid</name>
 <expres>fileId.*?value="([^"]+)<expres>
 <page>http://diskokosmiko.mx/JGPELICULAS/rambo-89612/rambo-4-2008,1529918,list,1,1.avi</page> 
 <referer>http://diskokosmiko.mx/JGPELICULAS/rambo-89612</referer>
