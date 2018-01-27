@@ -76,7 +76,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!--  para una peli de un directorio. Con Trailer |DISKOKOSMIKO|
 <item>
 <title>[COLOR orange]007: [COLOR white]El hombre de la pistola de oro.[/COLOR][/COLOR]</title>
-<link>$doregex[select]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[select]</link>
 
 <regex>
 <name>select</name>
@@ -163,7 +163,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Assesains Creed 2016 |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://www.cinema.com.my/images/movies/2016/7assassinscreed00_450.jpg</thumbnail>
 <fanart>http://www.cinema.com.my/images/movies/2016/7assassinscreed00_450.jpg</fanart>
 <regex><name>getUrl</name>
@@ -213,7 +213,7 @@ LINEA 25.USERNAME Y PASSWORD
 <SetViewMode>500</SetViewMode>
 <item>
 <title>[COLOR orange]007 [COLOR white]Al servicio de su majestad. |Castellano|[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -242,7 +242,7 @@ LINEA 25.USERNAME Y PASSWORD
 
 <item>
 <title>[COLOR orange]007[COLOR white] Al servicio de su majestad. -Latino [/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -272,7 +272,7 @@ LINEA 25.USERNAME Y PASSWORD
 
 <item>
 <title>[COLOR orange]007 [COLOR white]- Contra Dr. No[COLOR white] Castellano[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -300,7 +300,7 @@ LINEA 25.USERNAME Y PASSWORD
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Desde Rusia con amor - Castellano HD[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -329,7 +329,7 @@ LINEA 25.USERNAME Y PASSWORD
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Goldfinger - Castellano HD[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -358,7 +358,7 @@ LINEA 25.USERNAME Y PASSWORD
 
 <item>
 <title>[COLOR orange]007:[COLOR white] Operacion trueno[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -388,7 +388,7 @@ LINEA 25.USERNAME Y PASSWORD
 
 <item>
 <title>[COLOR orange]007:[COLOR white] Solo se vive dos veces[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -417,7 +417,7 @@ LINEA 25.USERNAME Y PASSWORD
 
 <item>
 <title>[COLOR orange]007:[COLOR white] Diamantes para la eternidad[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -446,7 +446,7 @@ LINEA 25.USERNAME Y PASSWORD
 
 <item>
 <title>[COLOR orange]007:[COLOR white] Nunca digas nunca jamas.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -476,7 +476,7 @@ LINEA 25.USERNAME Y PASSWORD
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Al servicio secreto de su majestad.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -505,7 +505,7 @@ LINEA 25.USERNAME Y PASSWORD
 
 <item>
 <title>[COLOR orange]007: [COLOR white]El hombre de la pistola de oro.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -548,7 +548,7 @@ LINEA 25.USERNAME Y PASSWORD
 de los mejores agentes de los servicios secretos británico y soviético: James Bond 
 y la mayor Amasova. Detrás de todo se encuentra el magnate Stromberg, que se 
 propone destruir a la humanidad para fundar una nueva civilización bajo el mar. </info>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -586,7 +586,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Moonraker.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -625,7 +625,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Solo para sus ojos.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -664,7 +664,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Octopussy.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -703,7 +703,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Panorama para matar.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -742,7 +742,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Alta tension.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -782,7 +782,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Licencia para matar.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -820,7 +820,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Goldeneye.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -858,7 +858,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]El mañana nunca muere.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -896,7 +896,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]El mundo nunca es suficiente.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -935,7 +935,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Muere otro dia.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -973,7 +973,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Casino Royale.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -1011,7 +1011,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Quantum of solace.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -1050,7 +1050,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Skyfall.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -1089,7 +1089,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]007: [COLOR white]Spectre.[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -1127,7 +1127,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]13 horas [COLOR white]los soldados secretos de bengasi[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex>
 <name>getUrl</name>
@@ -1167,7 +1167,7 @@ propone destruir a la humanidad para fundar una nueva civilización bajo el mar.
 
 <item>
 <title>[COLOR orange]47 Ronin |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>https://images-na.ssl-images-amazon.com/images/I/810a2xlo4gL._SY445_.jpg</thumbnail>
 <fanart>https://images-na.ssl-images-amazon.com/images/I/810a2xlo4gL._SY445_.jpg</fanart>
 <regex><name>getUrl</name>
@@ -1212,7 +1212,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- A -->
 <item>
 <title>[COLOR orange]Alerta Maxima [COLOR white] Steven Seagal[/COLOR][/COLOR]</title>
-<link>$doregex[select]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[select]</link>
 
 <regex>
 <name>select</name>
@@ -1269,7 +1269,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Alerta Maxima 2[COLOR white] Steven Seagal[/COLOR][/COLOR]</title>
-<link>$doregex[select]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[select]</link>
 <info>Travis Dane (Eric Bogosian) es un brillante experto en tecnología que, con ayuda de unos mercenarios, decide secuestrar el Gran Continental, el tren de pasajeros más elegante de Estados Unidos. Su objetivo es transformar uno de los vagones en un centro capaz de controlar un satélite mortal, con el que amenaza destruir la ciudad de Washington. El único pasajero que no ha sido capturado por los terroristas es Casey Ryback (Steven Seagal), un ex marine que se convierte en la última esperanza para salvar a los tres millones de personas que están en peligro. </info>
 <date>1995</date>
 <regex>
@@ -1327,7 +1327,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Arma Letal [/COLOR][COLOR gold]|1080|[/COLOR]<title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://es.web.img2.acsta.net/pictures/14/02/27/10/09/045962.jpg</thumbnail>
 <fanart>http://es.web.img2.acsta.net/pictures/14/02/27/10/09/045962.jpg</fanart>
 <info>
@@ -1372,7 +1372,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Arma Letal 2 |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://es.web.img3.acsta.net/pictures/14/03/05/10/10/478427.jpg</thumbnail>
 <fanart>http://es.web.img3.acsta.net/pictures/14/03/05/10/10/478427.jpg</fanart>
 <info>
@@ -1419,7 +1419,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Arma Letal 3 |1080|[COLOR white][/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://es.web.img3.acsta.net/pictures/14/02/10/13/55/314753.jpg</thumbnail>
 <fanart>http://es.web.img3.acsta.net/pictures/14/02/10/13/55/314753.jpg</fanart>
 <info>
@@ -1466,7 +1466,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Arma Letal 4 |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://es.web.img2.acsta.net/medias/nmedia/18/67/73/68/20129993.jpg</thumbnail>
 <fanart>http://es.web.img2.acsta.net/medias/nmedia/18/67/73/68/20129993.jpg</fanart>
 <info>
@@ -1516,7 +1516,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Assesains Creed 2016 |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://www.cinema.com.my/images/movies/2016/7assassinscreed00_450.jpg</thumbnail>
 <fanart>http://www.cinema.com.my/images/movies/2016/7assassinscreed00_450.jpg</fanart>
 <regex><name>getUrl</name>
@@ -1556,7 +1556,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Atomica |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/atomica-2017/130314404-3-esl-ES/Atomica-2017.jpg</thumbnail>
 <fanart>http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/atomica-2017/130314404-3-esl-ES/Atomica-2017.jpg</fanart>
 <info>
@@ -1680,7 +1680,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 <item>
 <title>[COLOR orange]Blanco Humano |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://es.web.img3.acsta.net/r_1280_720/pictures/210/071/21007152_201305202243554.jpg</thumbnail>
 <fanart>http://es.web.img3.acsta.net/r_1280_720/pictures/210/071/21007152_201305202243554.jpg</fanart>
 <regex><name>getUrl</name>
@@ -1722,7 +1722,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Blanco Humano 2|1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://www.adicine.com/wp-content/uploads/2017/06/Blanco-humano-2-poster.jpg</thumbnail>
 <fanart>http://www.adicine.com/wp-content/uploads/2017/06/Blanco-humano-2-poster.jpg</fanart>
 <regex><name>getUrl</name>
@@ -1838,7 +1838,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- C -->
 <item>
 <title>[COLOR orange]Cobra, el brazo fuerte de la ley |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>https://www.elseptimoarte.net/carteles/cobra_el_brazo_fuerte_de_la_ley_7768.jpg</thumbnail>
 <fanart>https://www.elseptimoarte.net/carteles/cobra_el_brazo_fuerte_de_la_ley_7768.jpg</fanart>
 <regex><name>getUrl</name>
@@ -1878,7 +1878,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Con Air |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://3.bp.blogspot.com/-JaBHNLiAi-U/UaDN4g1pOeI/AAAAAAAAICY/84OgN-zs_N4/s1600/conair.jpg</thumbnail>
 <fanart>http://3.bp.blogspot.com/-JaBHNLiAi-U/UaDN4g1pOeI/AAAAAAAAICY/84OgN-zs_N4/s1600/conair.jpg</fanart>
 <regex><name>getUrl</name>
@@ -1918,7 +1918,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Cyborg |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://es.web.img2.acsta.net/r_1280_720/medias/nmedia/18/68/02/00/20531067.jpg</thumbnail>
 <fanart>http://es.web.img2.acsta.net/r_1280_720/medias/nmedia/18/68/02/00/20531067.jpg</fanart>
 <regex><name>getUrl</name>
@@ -1960,7 +1960,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Daño Colateral |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/79/19/81/20076739.jpg</thumbnail>
 <fanart>http://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/79/19/81/20076739.jpg</fanart>
 <regex><name>getUrl</name>
@@ -2000,7 +2000,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange] Demolition Man |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://images3.static-bluray.com/movies/covers/30754_front.jpg</thumbnail>
 <fanart>http://images3.static-bluray.com/movies/covers/30754_front.jpg</fanart>
 <regex><name>getUrl</name>
@@ -2040,7 +2040,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange] Dias de trueno |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://104.236.196.111/imdb//media/photo_images/rE92biZNn5dLnLCKMac2PkyMRcM.jpg</thumbnail>
 <fanart>http://104.236.196.111/imdb//media/photo_images/rE92biZNn5dLnLCKMac2PkyMRcM.jpg</fanart>
 <regex><name>getUrl</name>
@@ -2153,7 +2153,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]El equipo A |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>https://www.elseptimoarte.net/carteles/el_equipo_a_5463.jpg</thumbnail>
 <fanart>https://www.elseptimoarte.net/carteles/el_equipo_a_5463.jpg</fanart>
 <info>
@@ -2196,7 +2196,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]El especialista |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://www.blogodisea.com/wp-content/uploads/2010/05/el-especialista-sylvester-stallone-sharon-stone.jpg</thumbnail>
 <fanart>http://www.blogodisea.com/wp-content/uploads/2010/05/el-especialista-sylvester-stallone-sharon-stone.jpg</fanart>
 <info>
@@ -2315,7 +2315,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]El mensajero |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>https://imagessl0.casadellibro.com/m/ig/0/2212440.jpg</thumbnail>
 <fanart>https://imagessl0.casadellibro.com/m/ig/0/2212440.jpg</fanart>
 <info>
@@ -2437,7 +2437,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]El ultimo desafio |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>https://www.deaplaneta.com/uploads/20130109/ultimodesafio.0.jpg</thumbnail>
 <fanart>https://www.deaplaneta.com/uploads/20130109/ultimodesafio.0.jpg</fanart>
 <info>
@@ -2484,7 +2484,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Encerrado |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>http://es.web.img3.acsta.net/medias/nmedia/18/79/16/34/20531060.jpg</thumbnail>
 <fanart>http://es.web.img3.acsta.net/medias/nmedia/18/79/16/34/20531060.jpg</fanart>
 <info>
@@ -2534,7 +2534,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- F -->
 <item>
 <title>[COLOR orange]Firewall [COLOR white]Harrison Ford [/COLOR][/COLOR]</title>
-<link>$doregex[select]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[select]</link>
 <info> Cuando Jack Stanfield (Harrison Ford), un especialista en seguridad informática de un banco, regresa a casa tras un día de trabajo para estar con su mujer Beth (Virginia Madsen) y sus hijos, suele suspirar aliviado. Le consuela estar lejos de las omnipresentes cámaras, de los controles de identidad, de las constantes tareas de mantenimiento y actualización de los complejos firewalls electrónicos y otras medidas de defensa, que se han convertido en práctica normal en esta era en la que todo se hace a través de la red: la comunicación, el comercio y el crimen. 
 </info>
 <date>2006</date>
@@ -2676,7 +2676,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- J -->
 <item>
 <title>[COLOR orange]Juego de patriotas [COLOR white]Harrison Ford [/COLOR][/COLOR]</title>
-<link>$doregex[select]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[select]</link>
 <info> 
 Jack Ryan es un agente que ha abandonado la CIA. No ha sido una decisión fácil, pero no se arrepiente porque ahora, por primera vez, tiene una vida familiar. Durante unas vacaciones en Londres, mientras pasea por la ciudad con su familia, es testigo de un atentado del IRA contra Lord Holmes, un distinguido miembro de la Familia Real Británica. En medio de la confusión, los gritos y las llamas, Ryan reacciona automáticamente: le salva la vida a Lord Holmes, pero mata a uno de los terroristas. Uno de los autores del atentado, Sean Miller, arrestado y condenado a prisión, resulta ser el hermano mayor del terrorista muerto. Y ha jurado vengarse de Ryan y su familia.
 </info>
@@ -2737,7 +2737,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Kickboxer |1080|[/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <thumbnail>https://images-na.ssl-images-amazon.com/images/I/810a2xlo4gL._SY445_.jpg</thumbnail>
 <fanart>https://images-na.ssl-images-amazon.com/images/I/810a2xlo4gL._SY445_.jpg</fanart>
 <regex><name>getUrl</name>
@@ -2784,7 +2784,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]La huida [COLOR white]|HD|[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex><name>getUrl</name>
 <expres><![CDATA[#$pyFunction
@@ -2825,7 +2825,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]La roca [COLOR white]|HD|[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex><name>getUrl</name>
 <expres><![CDATA[#$pyFunction
@@ -2867,7 +2867,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Maximo riesgo [COLOR white]|HD|[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex><name>getUrl</name>
 <expres><![CDATA[#$pyFunction
@@ -2909,7 +2909,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- N -->
 <item>
 <title>[COLOR orange]Noche y dia [COLOR white]|HD|[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 
 <regex><name>getUrl</name>
 <expres><![CDATA[#$pyFunction
@@ -2956,7 +2956,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- P -->
 <item>
 <title>[COLOR orange]Panico en el tunel [COLOR white]|HD|[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <info>En el túnel que une Manhattan con Nueva Jersey se produce una gran explosión que deja atrapados a los pocos supervivientes de los cientos de vehículos que en aquel instante se encontraban en su interior. Para rescatarlos, un antiguo directivo del Servicio de Urgencias Médicas entra en el túnel a través de su precario sistema de ventilación, con la esperanza de encontrar una vía por la que las víctimas puedan salir.</info>
 <regex><name>getUrl</name>
 <expres><![CDATA[#$pyFunction
@@ -2997,7 +2997,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Peligro inminente [COLOR white]Harrison Ford [/COLOR][/COLOR]</title>
-<link>$doregex[select]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[select]</link>
 <info> 
 Cuando el Almirante James Greer cae gravemente enfermo, Ryan es nombrado subdirector de la CIA. Su primera misión: investigar el asesinato de uno de los amigos personales del Presidente, un importante hombre de negocios vinculado al tráfico de drogas colombiano. Pero sin que Ryan lo sepa, la CIA ha enviado una fuerza paramilitar, dirigida por el temible Clark, contra el cártel colombiano. Atrapado entre dos fuegos, Ryan decide arriesgar su carrera y su vida por la única causa en la que aún cree: la verdad. 
 
@@ -3057,7 +3057,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 <item>
 <title>[COLOR orange]Perseguido [COLOR white]|HD|[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <info>
 En la sociedad del futuro el concepto del concurso de televisión es llevado a un extremo cruel. Los concursantes, la mayoría prisioneros obligados a participar, deben huir de matones en un terreno restringido, seguidos por las cámaras y una audiencia sangrienta. Ninguno sobrevive para recoger el premio hasta que un hombre injustamente acusado, Ben Richards (Arnold Schwarzenegger), empieza a ganar a los asesinos y a tener el apoyo de la audiencia. Su objetivo es de desvelar la farsa y la crueldad del programa y de su presentador.
 </info>
@@ -3100,7 +3100,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Plan de escape [COLOR white]|HD|[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <info>
 Ray Breslin (Stallone), un experto en seguridad carcelaria, se enfrenta a su mayor reto: escapar de la prisión que él mismo ha diseñado. En la cárcel conoce al enigmático Church (Schwarzenegger), un tipo que se ha ganado el respeto de todos los presos por ser capaz de mantenerlos cuerdos en las horas más oscuras. 
 </info>
@@ -3143,7 +3143,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Soldado de fortuna [COLOR white]|HD|[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <info>
 Marsella, años 20. Un boxeador ha desafiado a la mafia al intentar rescatar a su amante de las manos de un gángster. Para eludir el peligro, se alista en la legión francesa y lo trasladan a Marruecos. Allí participará en una peligrosa misión, en el corazón del desierto, a las órdenes de un tiránico oficial..
 
@@ -3187,7 +3187,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Soldado Universal [COLOR white]|HD|[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <info>
 Marsella, años 20. Un boxeador ha desafiado a la mafia al intentar rescatar a su amante de las manos de un gángster. Para eludir el peligro, se alista en la legión francesa y lo trasladan a Marruecos. Allí participará en una peligrosa misión, en el corazón del desierto, a las órdenes de un tiránico oficial..
 
@@ -3231,7 +3231,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]Muerte Subita [COLOR white]|HD|[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <info>
 En un partido de hockey, un grupo de terroristas toma el palco de honor de un estadio y retiene a sus ocupantes entre los que se encuentra el vicepresidente del gobierno. Exigen que a lo largo del partido se proceda a una transferencia de dinero a sus cuentas bancarias. En caso contrario, el estadio, sembrado de bombas, volará por los aires con todos los espectadores dentro.
 </info>
@@ -3282,7 +3282,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- T -->
 <item>
 <title>[COLOR orange]The Guardian (Guardianes de altamar)[COLOR white]|HD|[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <info>
 
 </info>
@@ -3325,7 +3325,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR orange]The Quest  [COLOR white](En busca de la ciudad perdida)(1996)|HD|[/COLOR][/COLOR]</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
+<link>$doregex[getUrl]</link>
 <info>
 Van Damme es Chris Dubois, un delincuente callejero que, huyendo de la policía, acaba en una remota ciudad perdida del Tíbet, secuestrado y vendido como esclavo a unos piratas.
 </info>
