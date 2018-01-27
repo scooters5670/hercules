@@ -3452,7 +3452,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR orange]Rambo [COLOR white] IV[/COLOR][/COLOR]</title>
+<title>[COLOR orange]Rambo [COLOR white] IV |1080|[/COLOR][/COLOR]</title>
 <link>$doregex[select]</link>
 
 <regex>
@@ -3504,13 +3504,40 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
+<thumbnail>http://www.freemovieposters.net/posters/rambo_iv_2008_4790_poster.jpg</thumbnail>
+<fanart>http://www.freemovieposters.net/posters/rambo_iv_2008_4790_poster.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR orange]Rambo [COLOR white] IV |SD|[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
 
 <regex>
-<name>getlink</name>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Opcion 1', 'Opcion 2'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]', '$doregex[getlink]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=xCIo3iF5Vcg</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getUrl</name>
 <expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[linkid]</page>
-<rawpost>linkid=$doregex[linkid]&__RequestVerificationToken=$doregex[toke]</rawpost> 
-<referer>http://diskokosmiko.mx/JGPELICULAS/rambo-89612</referer>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/SHIRKAM/rambo-saga-49106</referer>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
@@ -3518,28 +3545,26 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 <regex>
-<name>toke</name>
+<name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/JGPELICULAS/rambo-89612/rambo-4-2008,1529918,list,1,1.avi</page> 
-<referer>http://diskokosmiko.mx/JGPELICULAS/rambo-89612</referer>
+<page>http://diskokosmiko.mx/SHIRKAM/rambo-saga-49106/rambo-4-2008,640267,list,1,1.avi</page> 
+<referer>http://diskokosmiko.mx/SHIRKAM/rambo-saga-49106</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
 
 <regex>
-<name>linkid</name>
+<name>fileid</name>
 <expres>fileId.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/JGPELICULAS/rambo-89612/rambo-4-2008,1529918,list,1,1.avi</page> 
-<referer>http://diskokosmiko.mx/JGPELICULAS/rambo-89612</referer>
+<page>http://diskokosmiko.mx/SHIRKAM/rambo-saga-49106/rambo-4-2008,640267,list,1,1.avi</page> 
+<referer>http://diskokosmiko.mx/SHIRKAM/rambo-saga-49106</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>https://static.posters.cz/image/750/poster/rambo-iii-i3531.jpg</thumbnail>
-<fanart>https://static.posters.cz/image/750/poster/rambo-iii-i3531.jpg</fanart>
+<thumbnail>http://www.freemovieposters.net/posters/rambo_iv_2008_4790_poster.jpg</thumbnail>
+<fanart>http://www.freemovieposters.net/posters/rambo_iv_2008_4790_poster.jpg</fanart>
 </item>
-
-
 
 <!-- S -->
 
