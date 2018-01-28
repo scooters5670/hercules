@@ -27,7 +27,7 @@
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail></thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[datetime=.*?n\s(.*?)"|"(champ.*?)">|local">(.*?)" |visitor"> |channelinfo">(.*?)"</span>\n\s\s\s(.*)\n]]></expres>
+<expres><![CDATA[datetime=.*?n\s.*?n\s(.*?)"|"(.*?)">\n\s\s\s(.*?)\n ">(.*?) |date">(.*?)</span>\n\s\s\s(.*)\n"|"(luego.*?)">\n\s\s\s(.*?)\n|date">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
 <page>http://dondeverlo.com/</page>
 </regex>
 <thumbnail>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/000/185/2a3/35da564.jpg</thumbnail>
