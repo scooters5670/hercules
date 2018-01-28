@@ -9,15 +9,15 @@
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/000/185/2a3/35da564.jpg</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[title=.*?n\s(.*?)"|"(ahor.*?)">\n\s\s\s(.*?)\n|date">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
+<expres><![CDATA[title=.*?n\s(.*?)"|"(ahor.*?)">\n\s\s\s(.*?)\n|date">(.*?)</span>\n\s\s\s(.*)\n"|"(luego.*?)">\n\s\s\s(.*?)\n|date">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
 <page>http://www.formulatv.com/programacion/</page>
 </regex>
 <thumbnail>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/000/185/2a3/35da564.jpg</thumbnail>
 <info>Cortesia de Adryanlist </info>
  </item>
  
- <item>
-<title>Partidos de Futbol: [Por donde lo Hechan?] </title>
+<item>
+<title>Partidos en la TV:</title>
  <link>$doregex[makelist]</link>
 
 <regex>
@@ -27,11 +27,11 @@
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail></thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[title=.*?n\s(.*?)"|">\n\s\s\s(.*?)">(.*?)\n\s\s\s(premium">(.*?)</spam>\n]]></expres>
-<page>http://www.futbolenlatv.es/competicion/la-liga</page>
+<expres><![CDATA[title=.*?n\s(.*?)"|"(.*?)"> (.*?)\ ">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
+<page>https://www.dondeloechan.com/</page>
 </regex>
-<thumbnail></thumbnail>
-
+<thumbnail>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/000/185/2a3/35da564.jpg</thumbnail>
+<info>Cortesia de Adryanlist </info>
  </item>
 
 
