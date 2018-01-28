@@ -27,11 +27,11 @@
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail></thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[title=.*?n\s(.*?)"|"(ahor.*?)">\n\s\s\s(.*?)\n|date">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
-<page>http://www.formulatv.com/programacion/</page>
+<expres><![CDATA[title=.*?n\s(.*?)"|"(class="datesep roboto today.*?)"></div>\n\s\s\s(.*?)\n|class">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
+<page>https://www.dondeloechan.com/</page>
 </regex>
-<thumbnail>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/000/185/2a3/35da564.jpg</thumbnail>
-<info>Cortesia de Adryanlist </info>
+<thumbnail></thumbnail>
+
  </item>
 
 
