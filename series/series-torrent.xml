@@ -190,12 +190,12 @@
 <title>[COLOR orange]Doctora en Alabama [COLOR white]T1 - T4[/COLOR][/COLOR]</title>
 <link>$doregex[makelist3]</link>
 <regex>
-  <name>makelist3</name>
+  <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
-        <link>plugin://plugin.video.torrentin/?uri=http://www.divxtotal2.net/wp-content/uploads/2016/10/[makelist3.param1]</link> 
+        <title>$pyFunction:'[COLOR white][makelist.param1][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrentin/?uri=http://www.divxtotal2.net/wp-content/uploads/2016/10/[makelist.param2]</link> 
         ]]></listrepeat>
-<expres>href="(.*?torrent)</expres>
+<expres>title="(.*?torrent) | href="(.*?torrent)</expres>
 <!-- href="(.*?torrent) -->
 <page>http://www.divxtotal2.net/series/doctora-en-alabama/</page>
 <cookieJar></cookieJar>
