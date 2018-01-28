@@ -67,9 +67,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[COLOR white][B]LIVE TV[/B] [COLOR orange]GUIA[/COLOR]</title>
-<link>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/livetv.xml</link>
-<info>Cortesia de Adryanlist </info>
-<jsonrpc>ignore</jsonrpc>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/livetv.xml</externallink>
 <thumbnail>https://2.bp.blogspot.com/-k2BY966uTu4/VWLz1tMy9iI/AAAAAAAAC8w/JTFdG2cuOJI/s1600/Zona%2BLive%2BTV.png</thumbnail>
 <fanart>https://2.bp.blogspot.com/-k2BY966uTu4/VWLz1tMy9iI/AAAAAAAAC8w/JTFdG2cuOJI/s1600/Zona%2BLive%2BTV.png</fanart>
 <externallink></externallink>
