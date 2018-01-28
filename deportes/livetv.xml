@@ -27,7 +27,7 @@
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail></thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[hora=.*?n\s(.*?)"|" title=.*?n\s(.*?)"|"(.*?)">\n\s\s\s(.*?)\n|premium">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
+<expres><![CDATA[title=.*?n\s(.*?)"|"(hor.*?)">\n\s\s\s(.*?)\n|mobile-team">(.*?)</span>\n\s\s\s(premium.*)\n]]></expres>
 <page>http://www.futbolenlatv.es/competicion/la-liga</page>
 </regex>
 <thumbnail></thumbnail>
