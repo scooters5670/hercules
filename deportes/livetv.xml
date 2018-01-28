@@ -16,21 +16,6 @@
 <info>Cortesia de Adryanlist </info>
  </item>
  
-<item>
-<title> [COLOR lime]*[/COLOR]    [COLOR white][B] TV PREMIUM [/B] [/COLOR][COLOR gold]28-01-2018[/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex><name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>https://pastebin.com/raw/XN6S8jJy</page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>
-</thumbnail>
-<fanart>
-</fanart>
-</item>
-
-
 
 <item>
 <title>[COLOR=orange][B][I]Tve 1[/I][/B][/COLOR]</title>
@@ -1364,3 +1349,36 @@
 <thumbnail>http://www.vercanalestv.com/imagenes/eurosport2.png</thumbnail>
 <fanart>http://www.lanueva.com/upload/news/deportes/2017/10/59d2b2640b019_large.jpg</fanart>
 </item>
+
+
+<item>
+<title> [COLOR lime]*[/COLOR]    [COLOR white][B] IPTV España[/B] [/COLOR]</title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <title>[COLOR lightgreen] [makelist2.param2][/COLOR]</title>
+ <link>$doregex[makelist]</link>
+ <thumbnail></thumbnail>
+ ]]></listrepeat>
+<expres><![CDATA[post-title entry-title[\w\W\s]{0,28}href='(.*?)'>(IPTV.*?)<]]></expres>
+<page>https://pastebin.com/raw/XN6S8jJy</page>
+</regex>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[COLOR lightyellow][makelist.param1][/COLOR]</title>
+    <link>plugin://plugin.video.f4mTester/?url=[makelist.param2].m3u8&amp;streamtype=HLSRETRY&amp;name=[COLOR lightblue]IPTV Premium: Hercules[/COLOR] [makelist.param1]</link>
+    <thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[EXTINF:-1,(.*?)<.*>\n(http.*?).m3u8]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
