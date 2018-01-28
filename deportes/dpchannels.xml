@@ -1,22 +1,5 @@
-<item>
-<title>Programacion EPG [FormulaTV] Cortesia de Adryan</title>
- <link>$doregex[makelist]</link>
-<info>Cortesia de Adryanlist </info>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[COLOR white][B][makelist.param1][/B][/COLOR][COLOR orange][B][makelist.param2] [makelist.param3][/B][/COLOR][COLOR lime][makelist.param4] [makelist.param5][/COLOR]</title>
-<link>$doregex[ip]|User-Agent=iPad</link>
-<thumbnail>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/000/185/2a3/35da564.jpg</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[title=.*?n\s(.*?)"|"(ahor.*?)">\n\s\s\s(.*?)\n luego">(.*?) |date">(.*?)</span>\n\s\s\s(.*)\n"|"(luego.*?)">\n\s\s\s(.*?)\n|date">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
-<page>http://www.formulatv.com/programacion/</page>
-</regex>
-<thumbnail>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/000/185/2a3/35da564.jpg</thumbnail>
-<info>Cortesia de Adryanlist </info>
- </item>
- 
 
+ 
 <item>
 <title>[COLOR=orange][B][I]Tve 1[/I][/B][/COLOR]</title>
 <link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embedn.php?file=launotelefivegb&amp;width=100%&amp;height=100%</page><cookieJar></cookieJar></regex><thumbnail>http://www.thelogodb.com/images/media/logo/rwwwxv1441657735.png/medium</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
