@@ -18,30 +18,18 @@
  
 <item>
 <title> [COLOR lime]*[/COLOR]    [COLOR white][B] TV PREMIUM [/B] [/COLOR][COLOR gold]28-01-2018[/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-   <title>[COLOR skyblue] [makelist.param2][/COLOR]</title>
-   <link>$doregex[makelist2]</link>
-   <thumbnail>http://is5.mzstatic.com/image/thumb/Purple111/v4/14/95/94/1495944f-4eaf-1b64-4642-1e2aea98a8d1/source/175x175bb.jpg</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[post-title entry-title[\w\W\s]{0,23}href='(.*?)'>(.*?)<]]></expres>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex><name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
 <page>https://pastebin.com/raw/XN6S8jJy</page>
+<cookieJar></cookieJar>
 </regex>
-
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-   <title>[COLOR deepskyblue] [makelist2.param2][/COLOR]</title>
-   <link>plugin://plugin.video.f4mTester/?url=[makelist2.param5]&amp;streamtype=TSDOWNLOADER&amp;name=[makelist2.param2]&amp;maxbitrate=0&amp;Buffer=20971520</link>
-   <thumbnail>http://is5.mzstatic.com/image/thumb/Purple111/v4/14/95/94/1495944f-4eaf-1b64-4642-1e2aea98a8d1/source/175x175bb.jpg</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[\"(.*?)\[\@\](.*?)\[\@\](.*?)\[\@\](.*?)\[\@\](.*?)\"]]></expres>
-<page>[makelist.param1]</page>
-</regex>
-<thumbnail>http://adryanlist.org/adryan/img/iptv.jpg</thumbnail>
+<thumbnail>
+</thumbnail>
+<fanart>
+</fanart>
 </item>
+
 
 
 <item>
