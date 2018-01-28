@@ -66,7 +66,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR white][B]LIVE TV[/B] [COLOR orange]GUIA[/COLOR]</title>
+<title>[COLOR white][B]*Deportes TV[/B] [COLOR orange] Cortesia de Adryanlist[/COLOR]</title>
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/livetv.xml</externallink>
 <thumbnail>https://2.bp.blogspot.com/-k2BY966uTu4/VWLz1tMy9iI/AAAAAAAAC8w/JTFdG2cuOJI/s1600/Zona%2BLive%2BTV.png</thumbnail>
@@ -75,7 +75,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR white][B]Canales de Deportes [/B] [COLOR orange]GUIA[/COLOR]</title>
+<title>[COLOR white][B]*TV Premium [/B] [COLOR orange] Cortesia de Adryanlist[/COLOR]</title>
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/dpchannels.xml</externallink>
 <thumbnail>https://2.bp.blogspot.com/-k2BY966uTu4/VWLz1tMy9iI/AAAAAAAAC8w/JTFdG2cuOJI/s1600/Zona%2BLive%2BTV.png</thumbnail>
