@@ -27,7 +27,7 @@
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail></thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[title=.*?n\s(.*?)"|img class=">(.*?)</div></span>\n\s\s\s(.*)\n]]></expres>
+<expres><![CDATA[class="datesep roboto today.*?n\s(.*?)">"|title=.*?n\s(.*?)"|"(.*?)">\n\s\s\s(.*?)\n|">(.*?)</div>\n\s\s\s(.*)\n]]></expres>
 <page>https://www.dondeloechan.com/</page>
 </regex>
 <thumbnail></thumbnail>
