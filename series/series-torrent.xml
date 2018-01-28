@@ -187,8 +187,10 @@
 
 <!-- D -->
 <item>
-<title>[COLOR orange]Doctora en Alabama [COLOR white]T1-T4 |www.divxtotal2.net[/COLOR][/COLOR]</title>
+<title>[COLOR orange]Doctora en Alabama [COLOR white]| T1-T4 | SD[/COLOR][/COLOR]</title>
 <link>$doregex[makelist3]</link>
+<thumbnail></thumbnail> 
+<fanart></fanart>
 <regex>
   <name>makelist3</name>
   <listrepeat><![CDATA[
@@ -200,7 +202,7 @@
 <page>http://www.divxtotal2.net/series/doctora-en-alabama/</page>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://2.bp.blogspot.com/-73Z2ECQpXYs/UvzU6jFdmGI/AAAAAAAAFYQ/RJVx34n-PzM/s1600/Poster+10.jpg</thumbnail> 
+<thumbnail>http://www.seriespapaya.com/uploads/Doctora-en-Alabama-(Hart-of-Dixie)25.jpg</thumbnail> 
 </item> 
 <!-- E -->
 <item>
