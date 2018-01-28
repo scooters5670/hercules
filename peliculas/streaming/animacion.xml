@@ -26,21 +26,41 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail></thumbnail> 
 <page></page>
 </item>
-
-<!-- Para KBAGUI 
-
+<!-- KBAGI para una peli de un directorio.
 <item>
-<title>Xxx:Reactivado</title>
-<link>$doregex[getUrl]|Accept-Encoding=gzip, deflate, sdch</link>
-<thumbnail>https://image.tmdb.org/t/p/w640/iOT9ca00e4hrMdgu1lDKvbIG6RI.jpg</thumbnail>
-<fanart>https://image.tmdb.org/t/p/w533_and_h300_bestv2/3VgLpWEjNM2awBlN3TwrY3AZnzU.jpg</fanart>
-<regex><name>getUrl</name>
+<title>[COLOR orange]Inferno  [COLOR white]|HD|[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+<desc>
+
+</desc>
+<info>
+
+</info>
+<date>
+</date>
+
+
+<regex>
+<name>getUrl</name>
 <expres><![CDATA[#$pyFunction
 import re , requests ,json
 def GetLSProData(page_data,Cookie_Jar,m):
 
- ref = 'http://kbagi.com/ataulfo/mus-pelis-110151' 
- url='http://kbagi.com/ataulfo/mus-pelis-110151/157595-xrc,1735771,list,1,2.mkv'
+ ref = 'http://kbagi.com/juanleiva/cine-de-accion-550259' 
+ url='http://kbagi.com/juanleiva/cine-de-accion-550259/van-dammes-inferno-1999-microhd-720p-mkv,4574566,gallery,1,2.mkv'
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
             'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
  session = requests.Session()
@@ -67,67 +87,323 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <cookieJar></cookieJar>
 </regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=LVH2_eh3RUk</expres>
+<page></page>
+</regex>
+
+<thumbnail>http://es.web.img3.acsta.net/medias/nmedia/18/91/34/50/20140962.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/medias/nmedia/18/91/34/50/20140962.jpg</fanart>
 </item>
 
 
-SE CAMBIA LA LINEA 11.SE PONE LA CARPETA DONDE ESTA LAPELICULA
-SE CAMBIA LINEA 12. FIJATE COMO ESTA MONTADO EL ARCHIVO PARA QUE FUNCIONE TIENE QUE SER ASIN EN PRINCIPIO ES EL LINK DE LA PELICULA.
-LINEA 25.USERNAME Y PASSWORD
-
-<!-- DISKOKOSMIKO 
-
+<!-- DISKOKOSMIKO para una peli de un directorio.
 <item>
-<title>[COLOR orange]Bright [/COLOR][COLOR white] 2017[/COLOR]</title>
-<link>$doregex[makelist]</link>
-<thumbnail>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</thumbnail>
-<fanart>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</fanart>
-<info>Ambientada en un presente alternativo donde los seres humanos, orcos, elfos y hadas han convivido desde el inicio de los tiempos, dos policías con perfiles muy distintos patrullan juntos. Uno es el humano Ward (Will Smith), y el otro el orco Jakoby (Joel Edgerton). Ambos inician una guardia nocturna que cambiará el futuro y el mundo que conocen. A pesar de sus diferencias personales, deberán trabajar juntos para proteger a una joven elfo y una reliquia perdida que, de caer en las manos equivocadas, podría destruirlo todo.</info>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[makelist.param3]</title> 
-        <link>$doregex[getUrl]</link>
+<title>[COLOR orange]007: [COLOR white]El hombre de la pistola de oro.[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
 
-]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/moipera/bright-99139</page>
-<cookieJar></cookieJar>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
 </regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=LVH2_eh3RUk</expres>
+<page></page>
+</regex>
+
 <regex>
 <name>getUrl</name>
 <expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
 <cookieJar></cookieJar>
 </regex>
+
 <regex>
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx</referer>
+<page>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/10-007-el-hombre-con-la-pistola-de-oro,253774,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</thumbnail>
-<fanart>https://noescinetodoloquereluce.com/wp-content/uploads/2017/11/brightposter.jpg</fanart>
-</item>
 
-<!-- DISKOKOSMIKO para una peli de un directorio.
+<regex>
+<name>fileid</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/10-007-el-hombre-con-la-pistola-de-oro,253774,list,1,1.mkv</page> 
+<referer>http://diskokosmiko.mx/Manolosalamanca/saga-james-bond-007-27783/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<thumbnail>http://www.dvdventas.com/imagenes/FILMS/VIEW/foto_5305.jpg</thumbnail>
+<fanart>http://www.dvdventas.com/imagenes/FILMS/VIEW/foto_5305.jpg</fanart>
+</item>
 
 
 
 -->
 
 <!-- 0-9 @# -->
+<item>
+<title>[COLOR orange]¡Rompe Ralph! [COLOR white] 2012[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+<info>
+Durante décadas, Ralph ha vivido a la sombra de Repara-Félix Jr., el chico bueno de su videojuego. Cansado de ser el malo de la historia, Ralph decide tomar el asunto por sus propias y gigantes manos, y se lanza en un viaje a través de los distintos mundos y generaciones de videojuegos para demostrarle al mundo que él también puede ser un héroe
 
+</info>
+<date>2012</date>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
 
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=zzsi_Uj-yC4</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/naredo/animacion-20219/list,1,1</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/naredo/animacion-20219/rompe-ralph,72595,list,1,1.avi</page> 
+<referer>http://diskokosmiko.mx/naredo/animacion-20219/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>fileid</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/naredo/animacion-20219/rompe-ralph,72595,list,1,1.avi</page> 
+<referer>http://diskokosmiko.mx/naredo/animacion-20219/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://www.labutaca.net/peliculas/wp-content/uploads/2012/02/rompe-ralph-cartel2.jpg</thumbnail>
+<fanart>http://www.labutaca.net/peliculas/wp-content/uploads/2012/02/rompe-ralph-cartel2.jpg</fanart>
+</item>
 
 <!-- A -->
+<item>
+<title>[COLOR orange]Aladin [COLOR white] (Aladino) 1992[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+<thumbnail>https://pics.filmaffinity.com/aladdin-819103562-mmed.jpg</thumbnail>
+<fanart>https://pics.filmaffinity.com/aladdin-819103562-mmed.jpg/fanart>
+<info>
+Basada en el famoso cuento "Aladino y la lámpara maravillosa", la trama se sitúa en el exótico paisaje del mítico reino árabe de Agrabah. Aladdin es un ingenioso joven que, a pesar de vivir en un estado de extrema pobreza, sueña con casarse con la bella hija del sultán, la princesa Yasmin. El destino interviene cuando el astuto visir del Sultán, Yafar, recluta a Aladdin para que le ayude a recuperar una lámpara mágica de las profundidades de la Cueva de las Maravillas. El joven encuentra la lámpara, en la que vive un genio que concede tres deseos a quien lo libere. 
+</info>
+<date>2012</date>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
 
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=WiI1Zl0MR0g</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/naredo/animacion-20219/list,1,1</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/naredo/animacion-20219/aladdin-1,996313,list,1,1.avi</page> 
+<referer>http://diskokosmiko.mx/naredo/animacion-20219/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>fileid</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/naredo/animacion-20219/aladdin-1,996313,list,1,1.avi</page> 
+<referer>http://diskokosmiko.mx/naredo/animacion-20219/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>[COLOR orange]Aladin 2[COLOR white] El retorno de Jafar[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+<thumbnail>https://cs7050.vk.me/c621229/v621229006/233b8/KH5sRV6ZKB8.jpg</thumbnail>
+<fanart>https://cs7050.vk.me/c621229/v621229006/233b8/KH5sRV6ZKB8.jpg</fanart>
+<info>
+Aladdin y Jasmine viven felices en el palacio real, rodeados de lujos y de la magia del genio. Pero, muy lejos de allí, algo se remueve en las arenas del desierto: Yago, el loro dentudo de Jafar, ha logrado escapar de la lámpara que los mantenía presos a ambos. Tras traicionar a su amo, Yago decide vivir una nueva vida en donde él es el jefe. Pero Jafar esconde más de un as en la manga..
+
+</info>
+<date>2012</date>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=5kdcMfmetuw</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/naredo/animacion-20219/list,1,1</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/naredo/animacion-20219/aladdin-2-el-retorno-de-jaffar,996281,list,1,1.avi</page> 
+<referer>http://diskokosmiko.mx/naredo/animacion-20219/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>fileid</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/naredo/animacion-20219/aladdin-2-el-retorno-de-jaffar,996281,list,1,1.avi</page> 
+<referer>http://diskokosmiko.mx/naredo/animacion-20219/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>[COLOR orange]Aladin 3[COLOR white]Aladin y el rey de los ladrones [/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+<thumbnail>http://es.web.img2.acsta.net/pictures/15/12/07/14/09/064381.jpg</thumbnail>
+<fanart>http://es.web.img2.acsta.net/pictures/15/12/07/14/09/064381.jpg</fanart>
+<info>
+
+
+</info>
+<date>2012</date>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=oIIKwzbJ6FM</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[fileid]</page>
+<rawpost>fileId=$doregex[fileid]&__RequestVerificationToken=$doregex[tok]</rawpost> 
+<referer>http://diskokosmiko.mx/naredo/animacion-20219/list,1,1</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/naredo/animacion-20219/aladdin-3-y-el-rey-de-los-ladrones,996283,list,1,1.avi</page> 
+<referer>http://diskokosmiko.mx/naredo/animacion-20219/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>fileid</name>
+<expres>fileId.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/naredo/animacion-20219/aladdin-3-y-el-rey-de-los-ladrones,996283,list,1,1.avi</page> 
+<referer>http://diskokosmiko.mx/naredo/animacion-20219/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+</item>
 <!-- B -->
 
 <!-- C -->
