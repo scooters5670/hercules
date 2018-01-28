@@ -74,5 +74,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <externallink></externallink>
 </item>
 
+<item>
+<title>[COLOR white][B]Canales de Deportes [/B] [COLOR orange]GUIA[/COLOR]</title>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/dpchannels.xml</externallink>
+<thumbnail>https://2.bp.blogspot.com/-k2BY966uTu4/VWLz1tMy9iI/AAAAAAAAC8w/JTFdG2cuOJI/s1600/Zona%2BLive%2BTV.png</thumbnail>
+<fanart>https://2.bp.blogspot.com/-k2BY966uTu4/VWLz1tMy9iI/AAAAAAAAC8w/JTFdG2cuOJI/s1600/Zona%2BLive%2BTV.png</fanart>
+<externallink></externallink>
+</item>
+
 </items>
 
