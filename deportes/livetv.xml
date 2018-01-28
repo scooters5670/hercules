@@ -1373,7 +1373,7 @@
 <name>makelist</name>
 <listrepeat><![CDATA[
     <title>[COLOR lightyellow][makelist.param1][/COLOR]</title>
-    <link>plugin://plugin.video.f4mTester/?url=[makelist.param2].m3u8&amp;streamtype=HLSRETRY&amp;name=[COLOR lightblue]IPTV Premium: Hercules[/COLOR] [makelist.param1]</link>
+    <link>plugin://plugin.video.f4mTester/?url=https://pastebin.com/raw/XN6S8jJy&amp;streamtype=HLSRETRY&amp;name=[COLOR white]IPTV Premium: Hercules[/COLOR] [makelist.param1]</link>
     <thumbnail></thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[EXTINF:-1,(.*?)<.*>\n(http.*?).m3u8]]></expres>
