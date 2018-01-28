@@ -17,22 +17,31 @@
  </item>
  
 <item>
-<title>Partidos en la TV:</title>
- <link>$doregex[makelist]</link>
-
+<title> [COLOR lime]*[/COLOR]    [COLOR white][B] TV PREMIUM [/B] [/COLOR][COLOR gold]28-01-2018[/COLOR]</title>
+<link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][B][makelist.param1][/B][/COLOR][COLOR orange][B][makelist.param2] [makelist.param3][/B][/COLOR][COLOR lime][makelist.param4] [makelist.param5][/COLOR]</title>
-<link>$doregex[ip]|User-Agent=iPad</link>
-<thumbnail></thumbnail>
+   <title>[COLOR skyblue] [makelist.param2][/COLOR]</title>
+   <link>$doregex[makelist2]</link>
+   <thumbnail>http://is5.mzstatic.com/image/thumb/Purple111/v4/14/95/94/1495944f-4eaf-1b64-4642-1e2aea98a8d1/source/175x175bb.jpg</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[datetime=.*?n\s.*?n\s(.*?)"|"(.*?)">\n\s\s\s(.*?)\n ">(.*?) |date">(.*?)</span>\n\s\s\s(.*)\n"|"(luego.*?)">\n\s\s\s(.*?)\n|date">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
-<page>http://dondeverlo.com/</page>
+<expres><![CDATA[post-title entry-title[\w\W\s]{0,23}href='(.*?)'>(.*?)<]]></expres>
+<page>https://pastebin.com/raw/XN6S8jJy</page>
 </regex>
-<thumbnail>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/000/185/2a3/35da564.jpg</thumbnail>
-<info>Cortesia de Adryanlist </info>
- </item>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <title>[COLOR deepskyblue] [makelist2.param2][/COLOR]</title>
+   <link>plugin://plugin.video.f4mTester/?url=[makelist2.param5]&amp;streamtype=TSDOWNLOADER&amp;name=[makelist2.param2]&amp;maxbitrate=0&amp;Buffer=20971520</link>
+   <thumbnail>http://is5.mzstatic.com/image/thumb/Purple111/v4/14/95/94/1495944f-4eaf-1b64-4642-1e2aea98a8d1/source/175x175bb.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[\"(.*?)\[\@\](.*?)\[\@\](.*?)\[\@\](.*?)\[\@\](.*?)\"]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/iptv.jpg</thumbnail>
+</item>
 
 
 <item>
@@ -1014,9 +1023,6 @@
  
 <item>
 <title>[COLOR yellow]LA LIGA  [/COLOR]</title>
-<sportsdevil>http://livetv-free.com/canal-liga.php</sportsdevil>
-<sportsdevil>http://pirlotv.es/canal-plus-liga-2.php</sportsdevil>
-<sportsdevil>http://rojadirectatv.mx/canal-plus-liga-2.php</sportsdevil>
 <sportsdevil>http://www.vercanalestv.com/ver-laliga-tv-online-y-en-directo-las-24h-por-internet-gratis/</sportsdevil>
 <referer>http://cinestrenostv.tv/</referer>
 <thumbnail>http://vercanalestv.com/imagenes/laligatv.jpg</thumbnail>
