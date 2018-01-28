@@ -192,7 +192,7 @@
 <regex>
   <name>makelist</name>
   <listrepeat><![CDATA[
-        <title>$pyFunction:'[COLOR white][makelist.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ") [COLOR lime][makelist.param3][COLOR]</title>
+        <title>$pyFunction:'[COLOR white][makelist.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ") .replace("http://www.divxtotal2.net/wp-content/uploads/2016/10/", " ") [COLOR lime][makelist.param3][COLOR]</title>
         <link>plugin://plugin.video.torrentin/?uri=http://www.divxtotal2.net/wp-content/uploads/2016/10/[makelist.param1]</link> 
         ]]></listrepeat>
 <expres>href="(.*?torrent)title="">.*?</expres>
