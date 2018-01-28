@@ -193,7 +193,7 @@
 <regex>
   <name>makelist3</name>
   <listrepeat><![CDATA[
-        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("/series/series-torrents/", " ") .replace("-", " ") .replace("_", " ")</title>
         <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/doctora_en_alabama/[makelist3.param1]</link>
         ]]></listrepeat>
 <expres>href="(.*?torrent)</expres>
