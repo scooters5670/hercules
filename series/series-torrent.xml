@@ -189,20 +189,19 @@
 <item>
 <title>[COLOR orange]Doctora en Alabama [COLOR white]| T1-T4 | SD[/COLOR][/COLOR]</title>
 <link>$doregex[makelist3]</link>
-<thumbnail></thumbnail> 
-<fanart></fanart>
+<thumbnail>http://www.seriespapaya.com/uploads/Doctora-en-Alabama-(Hart-of-Dixie)25.jpg</thumbnail> 
+<fanart>http://www.seriespapaya.com/uploads/Doctora-en-Alabama-(Hart-of-Dixie)25.jpg</fanart>
 <regex>
   <name>makelist3</name>
   <listrepeat><![CDATA[
         <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
-        <link>plugin://plugin.video.torrentin/?uri=https://mejortorrent.website/uploads/torrents/series/[makelist3.param1]</link>
+        <link>plugin://plugin.video.torrentin/?uri=http://www.divxtotal2.net/wp-content/uploads/2016/10/[makelist3.param1]</link>
         ]]></listrepeat>
 <expres>href="(.*?torrent)</expres>
 <!-- href="(.*?torrent) -->
-<page>https://mejortorrent.website/serie-descargar-torrents-12008-12009-Doctora-en-Alabama-1-Temporada.html</page>
+<page>http://www.divxtotal2.net/series/doctora-en-alabama/</page>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://www.seriespapaya.com/uploads/Doctora-en-Alabama-(Hart-of-Dixie)25.jpg</thumbnail> 
 </item> 
 <!-- E -->
 <item>
