@@ -29,7 +29,7 @@
 <fanart>http://www.seriespapaya.com/uploads/[makelist1.param2]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[titulo\":\"(.*?)\".*?uploads\\/(.*?)\".*?serie\\\/(.*?)\"]]></expres>
-<page>http://www.seriespapaya.com/buscar.php?term=Doctora en Alabama (Hart of Dixie)</page>
+<page>http://www.seriespapaya.com/buscar.php?term=Doctora+en+alabama</page>
 </regex>
 
 <regex>
