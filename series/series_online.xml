@@ -17,8 +17,8 @@
 <item>
 <title>[COLOR lime]Doctora en Alabama[/COLOR] T1-T4 [COLOR white] Series Papaya [/COLOR]</title>
 <link>$doregex[makelist1]</link>
+<thumbnail>https://www.elitetorrent.biz/wp-content/uploads/portadas/portada-doctora-en-alabama-3x22-final-5xcaA.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
-
 <regex>
 <name>makelist1</name>
 <listrepeat><![CDATA[
@@ -29,7 +29,7 @@
 <fanart>http://www.seriespapaya.com/uploads/[makelist1.param2]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[titulo\":\"(.*?)\".*?uploads\\/(.*?)\".*?serie\\\/(.*?)\"]]></expres>
-<page>http://www.seriespapaya.com/buscar.php?term=Doctora+en+alabama</page>
+<page>http://www.seriespapaya.com/buscar.php?term=Doctora en Alabama (Hart of Dixie)</page>
 </regex>
 
 <regex>
@@ -83,10 +83,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>location\.href=\'(.*?)\'</expres>
 <page>[makelist3.param4]</page>[makelist3.param2]
 </regex>
-
-
-<thumbnail>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/Buscar.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
 </item>
 
 
