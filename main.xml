@@ -90,10 +90,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <parentalblock>true</parentalblock> 
-<title>[COLOR lime][B]Area Privada[/B][/COLOR] [COLOR lime]Addon activado.[/COLOR]</title>
+<title>[COLOR red][B]Area Privada[/B][/COLOR] [COLOR lime]Addon activo.[/COLOR]</title>
 <link>http:/Ignoreme</link>
-<externallink>https://pastebin.com/raw/DkvqG87z$$LSProEncKey=#hercules@? index.xml$$</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Oxygen480-status-security-high.svg/1024px-Oxygen480-status-security-high.svg.png</thumbnail>
+<externallink>https://pastebin.com/DkvqG87z$$LSProEncKey=hercules@? =inicio.xml$$</externallink>
+<thumbnail>https://www.agromaquinaria.es/agronetsl/distribuidores/caseih/index_files/menu_data/accesoprivado.jpg</thumbnail>
 </item>
 <title>[COLOR orange]Creditos[/COLOR]</title>
 <link>$doregex[openDialog]</link>
