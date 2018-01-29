@@ -92,8 +92,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <parentalblock>true</parentalblock> 
 <title>[COLOR red][B]Area Privada[/B][/COLOR] [COLOR lime]Addon activo.[/COLOR]</title>
 <link>http:/Ignoreme</link>
-<externallink>https://pastebin.com/DkvqG87z$$LSProEncKey=hercules@? =inicio.xml$$</externallink>
-<thumbnail>https://www.agromaquinaria.es/agronetsl/distribuidores/caseih/index_files/menu_data/accesoprivado.jpg</thumbnail>
+<externallink>https://pastebin.com/raw/DkvqG87z$$LSProEncKey=$zonaprivada$$$</externallink>
+<thumbnail>http://www.aermartrans.com/wp-content/uploads/2016/12/acceso-privado.jpg</thumbnail>
 </item>
 <title>[COLOR orange]Creditos[/COLOR]</title>
 <link>$doregex[openDialog]</link>
