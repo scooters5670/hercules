@@ -48,8 +48,11 @@ def play():
 <page></page>
 </regex>
 </item>
-
+<items>
 <SetViewMode>500</SetViewMode>
+<!-- Zona Privada - Requiere Activacion. -->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
 <!-- Zona Privada - Requiere Activacion. -->
 <item>
 
@@ -78,7 +81,7 @@ def GetLSProData(page_data,Cookie_Jar,m,txt='clave de acceso:'):
 
     solver = InputWindow( txt=txt)
     solution = solver.get()
-    if solution =='12345'.decode('base64'):
+    if solution =='MTIzNDU='.decode('base64'):
         return play()
     else:
         return ''
