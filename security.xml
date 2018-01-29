@@ -122,23 +122,5 @@ def play():
 <fanart>https:/raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
 <thumbnail>https://upload.wikimedia.org/wikipedia/commons/1/1b/SD_Download_Manager_logo.png</thumbnail>
 </item> 
-<item>
-<parentalblock>true</parentalblock> 
-<title>[COLOR white][B]*Deportes TV[/B] [COLOR orange] Cortesia de Adryanlist[/COLOR]</title>
-<link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/livetv.xml</externallink>
-<thumbnail>https://2.bp.blogspot.com/-k2BY966uTu4/VWLz1tMy9iI/AAAAAAAAC8w/JTFdG2cuOJI/s1600/Zona%2BLive%2BTV.png</thumbnail>
-<fanart>https://2.bp.blogspot.com/-k2BY966uTu4/VWLz1tMy9iI/AAAAAAAAC8w/JTFdG2cuOJI/s1600/Zona%2BLive%2BTV.png</fanart>
-<externallink></externallink>
-</item>
 
-<item>
-<parentalblock>true</parentalblock> 
-<title>[COLOR white][B]*TV Premium [/B] [COLOR orange] Cortesia de Adryanlist[/COLOR]</title>
-<link>ignore</link>
-<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/dpchannels.xml</externallink>
-<thumbnail>https://2.bp.blogspot.com/-k2BY966uTu4/VWLz1tMy9iI/AAAAAAAAC8w/JTFdG2cuOJI/s1600/Zona%2BLive%2BTV.png</thumbnail>
-<fanart>https://2.bp.blogspot.com/-k2BY966uTu4/VWLz1tMy9iI/AAAAAAAAC8w/JTFdG2cuOJI/s1600/Zona%2BLive%2BTV.png</fanart>
-<externallink></externallink>
-</item>
 </items>
