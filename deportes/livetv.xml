@@ -340,18 +340,7 @@ def GetLSProData (page_data, Cookie_Jar, m, url = 'http://www.tutv-gratis.com/20
  
 <item>
 <title>[COLOR white]BEINSPORTS LA LIGA  [/COLOR]</title>
-<sportsdevil>http://pirlotv.es/canal-plus-liga.php</sportsdevil>
-<sportsdevil>http://rojadirectatv.mx/canal-plus-liga.php</sportsdevil>
-<sportsdevil>http://elitegoltv.me/plus-liga.php</sportsdevil>
-<sportsdevil>http://cinestrenostv.tv/canales/deportes/plusliga.php</sportsdevil>
-<sportsdevil>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</sportsdevil>
-<sportsdevil>http://tvenganchado.com/beinlaliga.php</sportsdevil>
-<sportsdevil>http://tvenganchado.com/beinlaligaop1.php</sportsdevil>
-<sportsdevil>http://tvenganchado.com/beinlaligaop2.php</sportsdevil>
-<sportsdevil>http://latelete.tv/bein-sports-la-liga-online-en-directo-gratis-24h/</sportsdevil>
-<sportsdevil>http://vertutele.com/ver-bein-sport-la-liga-hd-online-en-directo-gratis-por-internet-24h/</sportsdevil>
-<sportsdevil>http://www.vipgoal.net/C+Liga/35576/Canal-plus-liga-en-directo.html</sportsdevil>
-<sportsdevil>http://verdirectotv.com/ver-bein-la-liga-gratis-en-directo/</sportsdevil>
+
 <sportsdevil>http://www.vercanalestv.com/ver-bein-sports-la-liga-en-directo-24h-gratis-online/</sportsdevil>
 <referer>http://cinestrenostv.tv/</referer>
 <thumbnail>http://vercanalestv.com/imagenes/bein-spor-liga.jpg</thumbnail>

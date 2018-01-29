@@ -96,6 +96,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.aermartrans.com/wp-content/uploads/2016/12/acceso-privado.jpg</thumbnail>
 </item>
 
+
+<item>
+<parentalblock>true</parentalblock> 
+<title>[COLOR orange]Seccion Descargas - youtube-dl[/COLOR]</title>
+<link>http:/Ignoreme</link>
+<jsonrpc>plugin://script.module.youtube.dl/</jsonrpc>
+<fanart>https:/raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/1/1b/SD_Download_Manager_logo.png</thumbnail>
+</item> 
+
 <title>[COLOR orange]Creditos[/COLOR]</title>
 <link>$doregex[openDialog]</link>
 <regex>
