@@ -2,37 +2,9 @@
 <SetViewMode>55</SetViewMode>
 <items>
 <item>
-<title>[COLOR orange][B]Bienvenidos a Hercules.[/B][/COLOR] [COLOR white]Grupo Netai.[/COLOR]</title>
+<title>[COLOR orange][B]Bienvenidos a Hercules.[/B][/COLOR] [COLOR red]Actualice a la version 1.3.2 !![/COLOR]</title>
 <link>http:/Ignoreme</link>
 <thumbnail>http://www.gruponetai.com/images/hercules/icon.png</thumbnail>
 <externallink></externallink>
-</item>
-
-
-    
-<item>
-<title>[COLOR orange]Tutoriales[/COLOR] [COLOR white] Necesitas ayuda? Te ayudamos. [/COLOR]</title>
-<link>$doregex[select]</link>
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   tutoriales = dialog.select('Elige un tutorial:', ['Activacion de licencia Hercules: Kodiadictos.', 'Tutorial de Hercules - Canal Nereo.', 'Tutorial de QUASAR','Kodiadictos: Quasar tutorial','Kodiadictos:Hercules.','Notbuffering tutorial'])
-   channels = ['plugin://plugin.video.youtube/play/?video_id=TkjiSM68zE4', 'https://archive.org/download/HerculesCANALNEREO/Hercules-CANALNEREO.mp4', 'https://archive.org/download/tutorial_201710/tutorial.mp4', 'plugin://plugin.video.youtube/play/?video_id=fekNhnMMuh8', 'https://archive.org/download/hercules-kodiadictpos/hercules-kodiadictpos.mp4','https://archive.org/download/NetaiAvancedConfigSettings/Netai-avanced-config-settings.mp4']
-   return channels[tutoriales]
-]]></expres>
-<page></page>
-</regex>
-</item>
- 
-
-<item>
-<parentalblock>true</parentalblock> 
-<title>[COLOR lime][B]Entrar Al servidor[/B][/COLOR] [COLOR white]Su addon está activado.[/COLOR]</title>
-<link>http:/Ignoreme</link>
-<externallink>https://pastebin.com/raw/DkvqG87z$$LSProEncKey=hercules?ini$$</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Oxygen480-status-security-high.svg/1024px-Oxygen480-status-security-high.svg.png</thumbnail>
 </item>
 </items>
