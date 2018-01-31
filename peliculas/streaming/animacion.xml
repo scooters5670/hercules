@@ -165,6 +165,77 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <!-- 0-9 @# -->
 <item>
+<title>[COLOR orange]¡Canta! [COLOR white]|HD|[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+<desc>
+
+</desc>
+<info>
+
+</info>
+<date>
+</date>
+
+
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://kbagi.com/Hispared/pelipekes-582341/list,1,1' 
+ url='http://kbagi.com/Hispared/pelipekes-582341/c7nt7-s1ng,4847981,list,1,1.mkv'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'Netai' , 'Password' : '@q1w2e3r4t5@'}
+ nr1 = requests.post('http://kbagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=vMmvUM4h4Xc</expres>
+<page></page>
+</regex>
+
+<thumbnail>http://es.web.img3.acsta.net/r_1280_720/pictures/16/06/02/10/15/041586.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/r_1280_720/pictures/16/06/02/10/15/041586.jpg</fanart>
+</item>
+
+<item>
 <title>[COLOR orange]¡Rompe Ralph! [COLOR white] 2012[/COLOR][/COLOR]</title>
 <link>$doregex[select]</link>
 <info>
@@ -535,6 +606,76 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- F -->
 
 <!-- G -->
+<item>
+<title>[COLOR orange]Gru, [COLOR white]Mi villano favorito 3|HD|[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+<desc>
+
+</desc>
+<info>
+
+</info>
+<date>
+</date>
+
+
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://kbagi.com/Hispared/pelipekes-582341' 
+ url='http://kbagi.com/Hispared/pelipekes-582341/gru-3-mi-villano-favorito,4945597,list,1,2.mkv'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'Netai' , 'Password' : '@q1w2e3r4t5@'}
+ nr1 = requests.post('http://kbagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=icqqPK1s0_4</expres>
+<page></page>
+</regex>
+
+<thumbnail>http://es.web.img3.acsta.net/r_1280_720/pictures/17/03/15/12/56/206190.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/r_1280_720/pictures/17/03/15/12/56/206190.jpg</fanart>
+</item>
 
 <!-- H -->
 
@@ -554,6 +695,83 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <!-- Ñ -->
 
 <!-- O -->
+<item>
+<title>[COLOR orange]Otto es un rinoceronte [COLOR white]|HD|[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+<desc>
+Topper es un niño de diez años de desbordante imaginación, a quien sus compañeros de clase creen un mentiroso por las peripecias que cuenta sobre su padre, marinero que vive lejos de casa surcando los siete mares. Un día Topper se encuentra con un curioso lápiz con el que dibuja un rinoceronte en la pared del salón de su casa. 
+</desc>
+<info>
+
+</info>
+<genre>
+Animacion
+</genre>
+<date>Año
+2013
+</date>
+<credits>Director
+Kenneth Kainz</credits>
+
+
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://kbagi.com/Hispared/pelipekes-582341/list,1,1' 
+ url=''
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'Netai' , 'Password' : '@q1w2e3r4t5@'}
+ nr1 = requests.post('http://kbagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=ctYSUJD_5gI</expres>
+<page></page>
+</regex>
+
+<thumbnail>https://2.bp.blogspot.com/-QgUMeoxvlUk/V-nFf6vJKtI/AAAAAAAAOZE/QO1LDDJx3ygTGjjA15SPqdFLnGeBS1_AQCLcB/s1600/Otto_es_un_rinoceronte%2Bafiche.jpg</thumbnail>
+<fanart>https://2.bp.blogspot.com/-QgUMeoxvlUk/V-nFf6vJKtI/AAAAAAAAOZE/QO1LDDJx3ygTGjjA15SPqdFLnGeBS1_AQCLcB/s1600/Otto_es_un_rinoceronte%2Bafiche.jpg</fanart>
+</item>
+
 
 <!-- P -->
 
