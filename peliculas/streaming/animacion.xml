@@ -235,6 +235,84 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://es.web.img3.acsta.net/r_1280_720/pictures/16/06/02/10/15/041586.jpg</fanart>
 </item>
 
+
+<item>
+<title>[COLOR orange]¡Upps! ¿donde esta Noe? [COLOR white]|HD|[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Latino', 'Castellano'])
+    regex = ['$doregex[gertrailer]', '$doregex[verlatino]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+<desc>
+
+</desc>
+<info>
+
+</info>
+<date>
+</date>
+
+
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://kbagi.com/danielsan081/dibujos-hd-579802' 
+ url='http://kbagi.com/danielsan081/dibujos-hd-579802/ups-donde-esta-noe-2015-1080p,5083112,gallery,1,1.mkv'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'Netai' , 'Password' : '@q1w2e3r4t5@'}
+ nr1 = requests.post('http://kbagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=GxBnp5w0_r8</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>verlatino</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=P8up-uCp2z0</expres>
+<page></page>
+</regex>
+<thumbnail>http://es.web.img3.acsta.net/r_1280_720/pictures/16/06/02/10/15/041586.jpg</thumbnail>
+<fanart>http://es.web.img3.acsta.net/r_1280_720/pictures/16/06/02/10/15/041586.jpg</fanart>
+</item>
+https://www.lahiguera.net/cinemania/pelicula/7133/upsss_donde_esta_noe-cartel-6189.jpg
+
 <item>
 <title>[COLOR orange]¡Rompe Ralph! [COLOR white] 2012[/COLOR][/COLOR]</title>
 <link>$doregex[select]</link>
@@ -475,6 +553,80 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 </item>
+
+<item>
+<title>[COLOR orange]Angry Birds [COLOR white]|HD|[/COLOR][/COLOR]</title>
+<link>$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver:', ['Trailer', 'Pelicula'])
+    regex = ['$doregex[gertrailer]', '$doregex[getUrl]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+<desc>
+
+</desc>
+<info>
+
+</info>
+<date>
+</date>
+
+
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://kbagi.com/danielsan081/dibujos-hd-579802' 
+ url='http://kbagi.com/danielsan081/dibujos-hd-579802/angry-birds-la-pelicula-2016-1080p,4893568,gallery,1,1.mkv'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'Netai' , 'Password' : '@q1w2e3r4t5@'}
+ nr1 = requests.post('http://kbagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>gertrailer</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=I5NUePZrJ20</expres>
+<page></page>
+</regex>
+
+<thumbnail>http://is4.mzstatic.com/image/thumb/Video30/v4/26/6f/6f/266f6f75-c6b1-3c31-83b3-cbd13bfa3230/source/1200x630bb.jpg</thumbnail>
+<fanart>http://is4.mzstatic.com/image/thumb/Video30/v4/26/6f/6f/266f6f75-c6b1-3c31-83b3-cbd13bfa3230/source/1200x630bb.jpg</fanart>
+</item>
+
+
+
 <!-- B -->
 
 <!-- C -->
@@ -734,7 +886,7 @@ import re , requests ,json
 def GetLSProData(page_data,Cookie_Jar,m):
 
  ref = 'http://kbagi.com/Hispared/pelipekes-582341/list,1,1' 
- url=''
+ url='http://kbagi.com/Hispared/pelipekes-582341/0tt0-es-un-r1n0cer0nte,4851055,list,1,1.mkv'
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
             'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
  session = requests.Session()
