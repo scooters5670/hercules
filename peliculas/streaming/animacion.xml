@@ -308,10 +308,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>plugin://plugin.video.youtube/play/?video_id=P8up-uCp2z0</expres>
 <page></page>
 </regex>
-<thumbnail>http://es.web.img3.acsta.net/r_1280_720/pictures/16/06/02/10/15/041586.jpg</thumbnail>
-<fanart>http://es.web.img3.acsta.net/r_1280_720/pictures/16/06/02/10/15/041586.jpg</fanart>
+<thumbnail>https://www.lahiguera.net/cinemania/pelicula/7133/upsss_donde_esta_noe-cartel-6189.jpg</thumbnail>
+<fanart>https://www.lahiguera.net/cinemania/pelicula/7133/upsss_donde_esta_noe-cartel-6189.jpg</fanart>
 </item>
-https://www.lahiguera.net/cinemania/pelicula/7133/upsss_donde_esta_noe-cartel-6189.jpg
+
 
 <item>
 <title>[COLOR orange]¡Rompe Ralph! [COLOR white] 2012[/COLOR][/COLOR]</title>
