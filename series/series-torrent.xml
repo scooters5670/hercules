@@ -22,25 +22,7 @@
   
 </item>
 
-<item>
-<title>[COLOR orange]A dos metros sobre tierra T2[/COLOR]</title>
-<link>$doregex[makelist3]</link>
-<regex>
-  <name>makelist3</name>
-  <listrepeat><![CDATA[
-        <title>$pyFunction:'[COLOR gold][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
-        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/A_dos_metros_sobre_tierra2/[makelist3.param1]</link>
 
-        ]]></listrepeat>
-<expres>href="(.*?torrent)</expres>
-<!-- href="(.*?torrent) -->
-<page>http://www.gruponetai.com/series/series-torrents/A_dos_metros_sobre_tierra2/</page>
-<cookieJar></cookieJar>
-</regex>
-
-<thumbnail>http://www.mejortorrent.com/uploads/imagenes/series/A%20dos%20metros%20bajo%20tierrahd.jpg</thumbnail>
-  
-</item>
 <!-- A -->
 <item>
 <title>[COLOR orange]A dos metros sobre tierra T1[/COLOR]</title>
