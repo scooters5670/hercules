@@ -1,105 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <items>
 
+<!-- 0-9 @# -->
 <item>
-<title> [COLOR orange][B] +BUSCADOR [/B] [/COLOR][COLOR white]Series Torrent [/COLOR] </title>
-<link>$doregex[makelist2]</link>
-
-
+<title>[COLOR orange]11-22-63 - Miniserie [/COLOR]</title>
+<link>$doregex[makelist3]</link>
 <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
- <SetViewMode>55</SetViewMode>
- <title>[COLOR orange][B] [makelist2.param2][/B][/COLOR] [COLOR white][makelist2.param3][/COLOR]  </title>
-<link>$doregex[makelist]</link>
-<thumbnail></thumbnail>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR gold][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrentin/?uri=https://www.divxtotal2.net/series/11-22-63/[makelist3.param1]</link>
 
-</regex>
-]]></listrepeat>
-<expres><![CDATA[peli-descargar-torrent-(.*?)-.*?darkblue\'>(.*?)<.*?gray\;\'>(.*?)<]]></expres>
-<page>www.mejortorrent.com/secciones.php?sec=buscador&valor=$doregex[search]</page>
-</regex>
-
-
-
-
-<regex>
-<name>search</name>
-<expres><![CDATA[#$pyFunction
-import xbmc
-import xbmcaddon
-import xbmcgui
-def GetLSProData(page_data,Cookie_Jar,m):
-    dialog = xbmcgui.Dialog()
-    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
-    return d
-]]></expres>
-<page></page>
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>https://www.divxtotal2.net/series/11-22-63/</page>
 <cookieJar></cookieJar>
 </regex>
 
-
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-   <title>[COLOR lightblue]Reproducir [B][makelist2.param2][/B] [/COLOR]</title>
-
-    <link>plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com[makelist.param2]</link>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-<info>[B][COLOR skyblue]»»»   A  D  R  Y  A  N  L  I  S  T  «««[/COLOR]
-[COLOR aquamarine]Donaciones paypal.me/adryanlist[/COLOR][/B]</info>
-]]></listrepeat>
-<expres>href=\'(.*?torrent)\'</expres>
-<page>http://www.mejortorrent.com/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
-</regex>
-
-
-<thumbnail>https://icon-icons.com/icons2/849/PNG/512/search_locate_find_icon-icons.com_67287.png</thumbnail>
-
+<thumbnail>https://www.divxtotal2.net/wp-content/uploads/2016/10/11-22-63-(IMAGEN).jpg</thumbnail>
+  
 </item>
 
 <item>
-<title> [COLOR orange][B] +MEJORES SERIES [/B] [/COLOR][COLOR white] Torrent [/COLOR] </title>
-<link>$doregex[makelist2]</link>
-
-
+<title>[COLOR orange]A dos metros sobre tierra T2[/COLOR]</title>
+<link>$doregex[makelist3]</link>
 <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
- <SetViewMode>55</SetViewMode>
- <title>[COLOR orange][B] [makelist2.param2][/B][/COLOR] [COLOR white][makelist2.param3][/COLOR]  </title>
-<link>$doregex[makelist]</link>
-<thumbnail></thumbnail>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR gold][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/A_dos_metros_sobre_tierra2/[makelist3.param1]</link>
 
-</regex>
-]]></listrepeat>
-<expres><![CDATA[peli-descargar-torrent-(.*?)-.*?darkblue\'>(.*?)<.*?gray\;\'>(.*?)<]]></expres>
-<page>www.mejortorrent.com/secciones.php?sec=buscador&valor=.</page>
-</regex>
-
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-   <title>[COLOR white] [makelist2.param2] [/COLOR][COLOR lime]HD[/COLOR]</title>
-
-    <link>plugin://plugin.video.torrentin/?uri=http://www.mejortorrent.com[makelist.param2]</link>
-<thumbnail></thumbnail>
-
-]]></listrepeat>
-<expres>href=\'(.*?torrent)\'</expres>
-<page>http://www.mejortorrent.com/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://www.gruponetai.com/series/series-torrents/A_dos_metros_sobre_tierra2/</page>
+<cookieJar></cookieJar>
 </regex>
 
-
-<thumbnail>https://2.bp.blogspot.com/-xVAZcIbHpYk/WS7iXUfxDbI/AAAAAAAAAz4/NhVvq2f7USEvRrqkPgxGdZjK1xN9f7BpwCLcB/s1600/icono%2Bbribri%2BSERIES.png</thumbnail>
-
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/series/A%20dos%20metros%20bajo%20tierrahd.jpg</thumbnail>
+  
 </item>
-
-http://www.mejortorrent.com/secciones.php?sec=descargas&ap=series_hd&func=mostrar&letra=.
-<!-- 0-9 @# -->
-
 <!-- A -->
 <item>
 <title>[COLOR orange]A dos metros sobre tierra T1[/COLOR]</title>
