@@ -8,13 +8,13 @@
 <regex>
   <name>makelist3</name>
   <listrepeat><![CDATA[
-        <title>$pyFunction:'[COLOR gold][makelist3.param2][/COLOR]'.replace("https://www.divxtotal2.net/series/11-22-63/ .torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
-        <link>plugin://plugin.video.torrentin/?uri=https://www.divxtotal2.net/series/11-22-63/[makelist3.param1]</link>
+        <title>$pyFunction:'[COLOR gold][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("https://grantorrent.com/series/11-22-63-temporada-1/", " ... ")  .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrentin/?uri=https://grantorrent.com/series/11-22-63-temporada-1/[makelist3.param1]</link>
 
         ]]></listrepeat>
-<expres>href="(.*?torrent title="">(.*?</a><expres>
+<expres>href="(.*?.torrent</a><expres>
 <!-- href="(.*?torrent) -->
-<page>https://www.divxtotal2.net/series/11-22-63/</page>
+<page>https://grantorrent.com/series/11-22-63-temporada-1/</page>
 <cookieJar></cookieJar>
 </regex>
 
