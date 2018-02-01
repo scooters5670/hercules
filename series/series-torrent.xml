@@ -2,25 +2,7 @@
 <items>
 
 <!-- 0-9 @# -->
-<item>
-<title>[COLOR orange]Prueba [/COLOR]</title>
-<link>$doregex[makelist3]</link>
-<regex>
-  <name>makelist3</name>
-  <listrepeat><![CDATA[
-        <title>$pyFunction:'[COLOR gold][makelist3.param2][/COLOR]'.replace(".torrent", .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
-        <link>plugin://plugin.video.torrentin/?uri=https://grantorrent.com/series/the-grand-tour-temporada-2/[makelist3.param1]</link>
 
-        ]]></listrepeat>
-<expres>href="(.*?.torrent</a><expres>
-<!-- href="(.*?torrent) -->
-<page>https://grantorrent.com/series/the-grand-tour-temporada-2/</page>
-<cookieJar></cookieJar>
-</regex>
-
-<thumbnail>https://grantorrent.com/series/wp-content/uploads/2016/12/The-Grand-Tour-2016.jpg</thumbnail>
-  
-</item>
 
 
 <!-- A -->
@@ -247,7 +229,6 @@
 <!-- G -->
 
 
-
 <!-- H -->
 
 <!-- I -->
@@ -393,6 +374,25 @@
 <expres>href="(.*?torrent)</expres>
 <!-- href="(.*?torrent) -->
 <page>http://www.gruponetai.com/series/series-torrents/The_grand_tour%20/</page> 
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://gruponetai.com/series/series-torrents/The_grand_tour%20/The-Grand-Tour-2016.jpg</thumbnail> ftp://u115903181@31.220.16.252/public_html/series/series-torrents/The_grand_tour%20
+</item>
+
+<item>
+<title>[COLOR orange]The Grand Tour 2- Quasar[/COLOR]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("/series/series-torrents/", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/The_grand_tour2/[makelist3.param1]</link>
+
+        ]]></listrepeat>
+<expres>href="(.*?torrent)</expres>
+<!-- href="(.*?torrent) -->
+<page>http://www.gruponetai.com/series/series-torrents/The_grand_tour2/</page> 
 <cookieJar></cookieJar>
 </regex>
 
