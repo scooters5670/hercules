@@ -12,7 +12,7 @@
         <link>plugin://plugin.video.torrentin/?uri=https://www.divxtotal2.net/series/11-22-63/[makelist3.param1]</link>
 
         ]]></listrepeat>
-<expres>href="(.*?torrent)</expres>
+<expres>href="(.*?torrent title="">(.*?</a><expres>
 <!-- href="(.*?torrent) -->
 <page>https://www.divxtotal2.net/series/11-22-63/</page>
 <cookieJar></cookieJar>
