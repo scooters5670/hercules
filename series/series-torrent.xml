@@ -368,16 +368,16 @@
   <name>makelist3</name>
   <listrepeat><![CDATA[
         <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
-        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/The_grand_tour%20/[makelist3.param1]</link>
+        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/The_grand_tour/[makelist3.param1]</link>
 
         ]]></listrepeat>
 <expres>href="(.*?torrent)</expres>
 <!-- href="(.*?torrent) -->
-<page>http://www.gruponetai.com/series/series-torrents/The_grand_tour%20/</page> 
+<page>http://www.gruponetai.com/series/series-torrents/The_grand_tour/</page> 
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://gruponetai.com/series/series-torrents/The_grand_tour%20/The-Grand-Tour-2016.jpg</thumbnail> ftp://u115903181@31.220.16.252/public_html/series/series-torrents/The_grand_tour%20
+<thumbnail>http://www.gruponetai.com/series/series-torrents/The_grand_tour/The-Grand-Tour-2016.jpg</thumbnail>
 </item>
 
 <item>
@@ -386,17 +386,17 @@
 <regex>
   <name>makelist3</name>
   <listrepeat><![CDATA[
-        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("/series/series-torrents/", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
-        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/The_grand_tour2/[makelist3.param1]</link>
+        <title>$pyFunction:'[COLOR white][makelist3.param2][/COLOR]'.replace(".torrent", " ") .replace("%20", " ") .replace("-", " ") .replace("_", " ")</title>
+        <link>plugin://plugin.video.torrentin/?uri=http://www.gruponetai.com/series/series-torrents/The_grand_tour%202/[makelist3.param1]</link>
 
         ]]></listrepeat>
 <expres>href="(.*?torrent)</expres>
 <!-- href="(.*?torrent) -->
-<page>http://www.gruponetai.com/series/series-torrents/The_grand_tour2/</page> 
+<page>http://www.gruponetai.com/series/series-torrents/The_grand_tour%202/</page> 
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://gruponetai.com/series/series-torrents/The_grand_tour%20/The-Grand-Tour-2016.jpg</thumbnail> ftp://u115903181@31.220.16.252/public_html/series/series-torrents/The_grand_tour%20
+<thumbnail>http://www.gruponetai.com/series/series-torrents/The_grand_tour%202/The-Grand-Tour-2016.jpg</thumbnail> 
 </item>
 
 
