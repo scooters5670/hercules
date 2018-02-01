@@ -17,7 +17,7 @@
 </regex>
 ]]></listrepeat>
 <expres><![CDATA[peli-descargar-torrent-(.*?)-.*?darkblue\'>(.*?)<.*?gray\;\'>(.*?)<]]></expres>
-<page>http://www.mejortorrent.com/secciones.php?sec=buscador&amp;valor=$doregex[search]</page>
+<page>www.mejortorrent.com/secciones.php?sec=buscador&valor=$doregex[search]</page>
 </regex>
 
 
@@ -75,7 +75,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 ]]></listrepeat>
 <expres><![CDATA[peli-descargar-torrent-(.*?)-.*?darkblue\'>(.*?)<.*?gray\;\'>(.*?)<]]></expres>
-<page>http://www.mejortorrent.com/secciones.php?sec=descargas&ap=series_hd&func=mostrar&letra=.</page>
+<page>www.mejortorrent.com/secciones.php?sec=buscador&valor=.</page>
 </regex>
 
 
