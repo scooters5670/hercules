@@ -97,10 +97,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR white]Grupo Netai [/COLOR][B][COLOR lime]IPTV[/B][/COLOR]</title>
+<title>[COLOR white]Grupo Netai [/COLOR][B][COLOR lime]IPTV[/B] LIVE TV[/COLOR]</title>
 <link>ignore</link>
 <thumbnail>http://www.gruponetai.com/images/hercules/deportes.png</thumbnail>
-<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/iptv.xml</externallink>
+<externallink>https://pastebin.com/raw/hu3SeLiQ$$LSProEncKey=lista-deportes$$</externallink>
 </item>
 </items>
 
