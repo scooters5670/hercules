@@ -97,7 +97,7 @@ class InputWindow(xbmcgui.WindowDialog):
         return False
 
 def play():
-    return 'https://raw.githubusercontent.com/Andorth/hercules/master/deportes/pruebatv.xml.xml'
+    return 'https://raw.githubusercontent.com/Andorth/hercules/master/deportes/pruebatv.xml'
 ]]></expres>
 <page></page>
 </regex>
