@@ -96,21 +96,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-	<title>[COLOR white][B]IPTV Grupo Netai[/B] [/COLOR][COLOR orange] 02/02/2018[/COLOR]  [COLOR yellow] [B] Necesario f4mtester [/B] [/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-	<title>[makelist.param1]</title>
-	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=HLSRETRY&amp;maxbitrate=0&amp;proxy=None&amp;name=[COLOR orange]Hercules IPTV[/COLOR] [makelist.param1]</link>
-	<thumbnail></thumbnail>
-]]></listrepeat>
-<expres>(.*?),(http.*?)\n</expres>
-<page>https://pastebin.com/raw/VNDe03ND</page>
-<agent>ipad</agent>
-</regex>
+<title>[COLOR white][B]IPTV Grupo Netai[/B] [/COLOR][COLOR orange] 02/02/2018[/COLOR]  [COLOR yellow] [B] Necesario f4mtester [/B] [/COLOR]</title>
+<link>https://pastebin.com/raw/VNDe03ND</link>
 <thumbnail>https://4.bp.blogspot.com/-kehmcd3-mxA/WHg3rqUVx5I/AAAAAAAAAzI/KxnOCdZWsiA0m8vdBohS1nUUzooqKxl3QCLcB/s1600/l_42904967.1178.jpg</thumbnail>
 </item>
-
 </items>
 
