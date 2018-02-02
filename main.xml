@@ -90,9 +90,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <parentalblock>true</parentalblock> 
-<title>[COLOR red][B]Area Privada[/B][/COLOR] [COLOR lime]Addon activo.[/COLOR]</title>
-<!-- <externallink>https://pastebin.com/raw/PCm5eHXE$$LSProEncKey=#zona-privad@$$</externallink>-->
-<externallink>https://pastebin.com/raw/HwB5Zmq1$$LSProEncKey=#zona-privad@$$</externallink>
+<title>[COLOR ligthblue][B]Zona Privada[/B][/COLOR] [COLOR yellow]Addon activo.[/COLOR]</title>
+<externallink>https://pastebin.com/raw/PCm5eHXE$$LSProEncKey=#zona¬privada$$</externallink>
 <link>http:/Ignoreme</link>
 <thumbnail>http://www.aermartrans.com/wp-content/uploads/2016/12/acceso-privado.jpg</thumbnail>
 </item>
