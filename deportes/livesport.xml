@@ -97,10 +97,33 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <items>
 <item>
+<link>plugin://plugin.video.f4mTester/?url=http://www.gruponetai.com/tv/IPTV-01-02-2018.m3u&amp;streamtype=HLS</link>
 <title> Grupo Netai Lista Spain</title>
-<link>http://www.gruponetai.com/tv/IPTV-01-02-2018.m3u</link>
 <thumbnail>https://4.bp.blogspot.com/-kehmcd3-mxA/WHg3rqUVx5I/AAAAAAAAAzI/KxnOCdZWsiA0m8vdBohS1nUUzooqKxl3QCLcB/s1600/l_42904967.1178.jpg</thumbnail>
 <desc>Lista iptv gratuita actualizada el 02/02/2018</desc>
+</item>
+
+<item>
+<title>LISTA 2</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[ 
+<title> [makelist.param2]</title>
+<link>$doregex[m3u8]|User-Agent=iPhone</link>
+<thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/([^"]*)" title="(.*?)"><img src="([^"]*)"]]></expres>
+<page>http://www.gruponetai.com/tv/</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>\{file:.*?[",'](http.*m3u.*?)[",']<expres>
+<page>http://www.gruponetai.com/tv/[makelist.param1]</page>
+<referer>http://www.gruponetai.com/tv/</referer>
+<cookieJar></cookieJar>
+</regex>
 </item>
 
 </items>
