@@ -104,7 +104,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>LISTA 2</title>
+<title>IPTV Grupo Netai</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
