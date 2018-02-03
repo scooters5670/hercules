@@ -102,5 +102,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.gruponetai.com/images/hercules/deportes.png</thumbnail>
 <externallink>https://pastebin.com/raw/hu3SeLiQ$$LSProEncKey=lista-deportes$$</externallink>
 </item>
+
+<item>
+<title>[COLOR orange][B]LIVE IPTV[/B][/COLOR][COLOR lime] [Addon necesario][/COLOR]</title>
+<link>http:/Ignoreme</link>
+<jsonrpc>plugin://plugin.video.live.iptv/</jsonrpc>
+<fanart>https://raw.githubusercontent.com/Andorth/hercules/master/iptv/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/Andorth/hercules/master/iptv/icon.png</thumbnail>
+</item>
 </items>
 
