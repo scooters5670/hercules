@@ -57,17 +57,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR orange][B]+Arenavision EZY[/B][COLOR gold] Addon Requerido[/COLOR][/COLOR]</title>
+<title>[COLOR orange][B]+Arenavision EZY[/B][COLOR gold] By Adryanlist[/COLOR][/COLOR]</title> 
 <link>http://Ignoreme</link>
-<jsonrpc>plugin.video.arenavisionezy/</jsonrpc>
+<externallink></externallink>
 <fanart>http://static.wixstatic.com/media/052ed6_ef369f9334794c5e97eccbd907d4b66d~mv2.png</fanart>
 <thumbnail>http://static.wixstatic.com/media/052ed6_ef369f9334794c5e97eccbd907d4b66d~mv2.png</thumbnail>
 </item>
 
 <item>
-<title>[COLOR orange][B]+LA LIGA[/B][COLOR gold] Addon Requerido[/COLOR][/COLOR]</title>
+<title>[COLOR orange][B]+Deportes a la carta[/B][COLOR gold] Addon Requerido[/COLOR][/COLOR]</title>
 <link>http://Ignoreme</link>
-<jsonrpc>plugin.video.laliga/</jsonrpc>
+<jsonrpc>plugin.video.</jsonrpc>
 <fanart>http://cadenaser00.epimg.net/emisora/imagenes/2016/06/28/radio_cadiz/1467113098_136472_1467113748_noticia_normal.jpg</fanart>
 <thumbnail>http://cadenaser00.epimg.net/emisora/imagenes/2016/06/28/radio_cadiz/1467113098_136472_1467113748_noticia_normal.jpg</thumbnail>
 </item>
