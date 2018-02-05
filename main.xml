@@ -93,6 +93,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <parentalblock>true</parentalblock> 
 <title>[COLOR gold][B]+Deportes y entretenimiento.[/B] [/COLOR][COLOR white]Area privada.[/COLOR]</title>
+<thumbnail>>https://pbs.twimg.com/profile_images/810525442633515008/0JCMnHHH.jpg</thumbnail>
 <link>NA</link>
 <externallink>$doregex[getinput]</externallink>
 <regex>
