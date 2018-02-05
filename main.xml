@@ -88,16 +88,59 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <externallink>https://raw.githubusercontent.com/Andorth/hercules/master/youtubers/inicio.xml</externallink>
 </item> 
 
+<!-- Zona Privada - Requiere Activacion. -->
+
 <item>
 <parentalblock>true</parentalblock> 
-<title>[COLOR orange][B]Zona Privada[/B][/COLOR] [COLOR lime]Addon activo.[/COLOR]</title>
-<externallink>https://pastebin.com/raw/PCm5eHXE$$LSProEncKey=privado$$</externallink>
-<link>http:/Ignoreme</link>
-<thumbnail>http://www.aermartrans.com/wp-content/uploads/2016/12/acceso-privado.jpg</thumbnail>
+<title>[COLOR gold][B]+Deportes y entretenimiento.[/B] [/COLOR][COLOR white]Area privada.[/COLOR]</title>
+<link>NA</link>
+<externallink>$doregex[getinput]</externallink>
+<regex>
+<name>getinput</name>
+
+<expres><![CDATA[#$pyFunction
+import xbmcgui,xbmc, xbmcaddon, time, base64
+
+def GetLSProData(page_data,Cookie_Jar,m,txt='clave de acceso:'):
+    addon = xbmcaddon.Addon('plugin.video.Hercules')
+    addon_version = addon.getAddonInfo('version')
+    profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
+
+    solver = InputWindow( txt=txt)
+    solution = solver.get()
+    if solution =='MTIzNDU='.decode('base64'):
+        return play()
+    else:
+        return ''
+
+class InputWindow(xbmcgui.WindowDialog):
+    def __init__(self, *args, **kwargs):
+
+        self.txt = kwargs.get('txt','')
+
+        xbmcgui.WindowXMLDialog.__init__(self)
+        #self.addControl(self.txt)
+        path = xbmcaddon.Addon().getAddonInfo('path')
+        self.kbd = xbmc.Keyboard()
+        self.kbd.setHeading( self.txt)
+
+    def get(self):
+        self.show()
+        time.sleep(2)
+        self.kbd.doModal()
+        if (self.kbd.isConfirmed()):
+            text = self.kbd.getText()
+            self.close()
+            return text
+        self.close()
+        return False
+
+def play():
+    return 'https://raw.githubusercontent.com/Andorth/hercules/master/deportes/premium.xml'
+]]></expres>
+<page></page>
+</regex>
 </item>
-
-
-
 
 <item>
 <parentalblock>true</parentalblock> 

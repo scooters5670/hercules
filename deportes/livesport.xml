@@ -57,6 +57,22 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
+<title>[COLOR orange][B]+Arenavision EZY[/B][COLOR gold] Addon Requerido[/COLOR][/COLOR]</title>
+<link>http://Ignoreme</link>
+<jsonrpc>plugin.video.arenavisionezy/</jsonrpc>
+<fanart>http://static.wixstatic.com/media/052ed6_ef369f9334794c5e97eccbd907d4b66d~mv2.png</fanart>
+<thumbnail>http://static.wixstatic.com/media/052ed6_ef369f9334794c5e97eccbd907d4b66d~mv2.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR orange][B]+LA LIGA[/B][COLOR gold] Addon Requerido[/COLOR][/COLOR]</title>
+<link>http://Ignoreme</link>
+<jsonrpc>plugin.video.laliga/</jsonrpc>
+<fanart>http://cadenaser00.epimg.net/emisora/imagenes/2016/06/28/radio_cadiz/1467113098_136472_1467113748_noticia_normal.jpg</fanart>
+<thumbnail>http://cadenaser00.epimg.net/emisora/imagenes/2016/06/28/radio_cadiz/1467113098_136472_1467113748_noticia_normal.jpg</thumbnail>
+</item>
+
+<item>
 <parentalblock>true</parentalblock> 
 <title>[COLOR white][B]Deportes[/B] [COLOR orange] Plexus + Acestream  [/COLOR]</title>
 <link>http://ignorame</link>
@@ -97,14 +113,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR white]Grupo Netai [/COLOR][B][COLOR lime]IPTV[/B] LIVE TV[/COLOR]</title>
+<title>[COLOR white]IPTV[/COLOR][B][COLOR lime][/B] LIVE TV[/COLOR]</title>
+<parentalblock>true</parentalblock>
 <link>ignore</link>
 <thumbnail>http://www.gruponetai.com/images/hercules/deportes.png</thumbnail>
 <externallink>https://pastebin.com/raw/hu3SeLiQ$$LSProEncKey=lista-deportes$$</externallink>
 </item>
 
+
 <item>
-<title>[COLOR orange][B]LIVE IPTV[/B][/COLOR][COLOR lime] [Addon necesario][/COLOR]</title>
+<parentalblock></parentalblock>
+<title>[COLOR orange][B]LIVE IPTV[/B][/COLOR][COLOR yellow] [Addon necesario][/COLOR]</title>
 <link>http:/Ignoreme</link>
 <jsonrpc>plugin://plugin.video.live.iptv/</jsonrpc>
 <fanart>https://raw.githubusercontent.com/Andorth/hercules/master/iptv/fanart.jpg</fanart>
