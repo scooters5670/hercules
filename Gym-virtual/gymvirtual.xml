@@ -15,16 +15,11 @@
 </title>
 
 <item>
-<title>[COLOR orange][B][/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<title>[COLOR orange][B]Acelerar el metabolismo.[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR]</title> 
 <thumbnail>https://yt3.ggpht.com/-b0NtN-R0N6c/AAAAAAAAAAI/AAAAAAAAAAA/_4rUZxg5lK8/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail> 
 <link>plugin://plugin.video.youtube/play/?playlist_id=PLReDUkUQG7xrb6vRzitNGqrkljvwZHV1G</link>
 </title>
 
-<item>
-
-
-
-</title>
 
 <item>
 <title>[COLOR orange][B]Rutinas para tonificar y aplanar el abdomen[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
@@ -63,6 +58,147 @@
 <fanart>https://i.ytimg.com/an_webp/naRDSZN4Yjw/mqdefault_6s.webp?du=3000&sqp=CMi759MF&rs=AOn4CLDu6UAEAm_4luewQHx3jjMfXk4QvQ</fanart>
 </regex>
 <item>
+
+<item>
+<title>[COLOR orange][B]Rutinas para tonificar y fortalecer los brazos[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>\s?.data-video-id="(.*?)".*data-title="(.*?)"</expres>
+<page>https://www.youtube.com/playlist?list=PLReDUkUQG7xpCcu6kgK4RlppZkS-IV5EH</page>
+<referer>https://www.youtube.com/user/gymvirtual/playlists</referer>
+<cookieJar></cookieJar>
+<thumbnail>https://i.ytimg.com/vi/ZIm_qrJSOds/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAtXs3s2uTxn8OgLwkF1NRZtW0FSg</thumbnail>
+<fanart>https://i.ytimg.com/vi/ZIm_qrJSOds/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAtXs3s2uTxn8OgLwkF1NRZtW0FSg</fanart>
+</regex>
+<item>
+
+<item>
+<title>[COLOR orange][B]Rutinas Total Body, Trabajar todo el cuerpo[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>\s?.data-video-id="(.*?)".*data-title="(.*?)"</expres>
+<page>https://www.youtube.com/playlist?list=PLReDUkUQG7xrb6vRzitNGqrkljvwZHV1G</page>
+<referer>https://www.youtube.com/user/gymvirtual/playlists</referer>
+<cookieJar></cookieJar>
+<thumbnail>https://i.ytimg.com/vi/BsXYSlOBMZg/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLANgl4-4GhUPQo2YR7VY1fUAbfbwA</thumbnail>
+<fanart>https://i.ytimg.com/vi/BsXYSlOBMZg/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLANgl4-4GhUPQo2YR7VY1fUAbfbwA</fanart>
+</regex>
+<item>
+
+<item>
+<title>[COLOR orange][B]Rutinas para bailar y tonificar | TONO BAILE[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>\s?.data-video-id="(.*?)".*data-title="(.*?)"</expres>
+<page>https://www.youtube.com/playlist?list=PLReDUkUQG7xpPE0xmSgVR2QAtU4kCjNc0</page>
+<referer>https://www.youtube.com/user/gymvirtual/playlists</referer>
+<cookieJar></cookieJar>
+<thumbnail>https://i.ytimg.com/vi/TY6z01wKL_k/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAyZX_xm3yK6t2DvWiYP_oj3hn7gA</thumbnail>
+<fanart>https://i.ytimg.com/vi/TY6z01wKL_k/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAyZX_xm3yK6t2DvWiYP_oj3hn7gA</fanart>
+</regex>
+<item>
+
+<item>
+<title>[COLOR orange][B]Rutinas de cardio intenso, HIIT[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>\s?.data-video-id="(.*?)".*data-title="(.*?)"</expres>
+<page>https://www.youtube.com/playlist?list=PLReDUkUQG7xqf3F1wIvh9R88uj1Oo0KKc</page>
+<referer>https://www.youtube.com/user/gymvirtual/playlists</referer>
+<cookieJar></cookieJar>
+<thumbnail>https://i.ytimg.com/vi/dVR79qRDRKc/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDA8or06vcqqMEjdlYqE0OzPgkrow</thumbnail>
+<fanart>https://i.ytimg.com/vi/dVR79qRDRKc/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDA8or06vcqqMEjdlYqE0OzPgkrow</fanart>
+</regex>
+<item>
+
+
+<item>
+<title>[COLOR orange][B]Rutinas para tonificar las piernas[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>\s?.data-video-id="(.*?)".*data-title="(.*?)"</expres>
+<page>https://www.youtube.com/playlist?list=PLReDUkUQG7xq1MLGSLELHt17LskGMgFAS</page>
+<referer>https://www.youtube.com/user/gymvirtual/playlists</referer>
+<cookieJar></cookieJar>
+<thumbnail>https://i.ytimg.com/vi/WdehyAwDK3M/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDcKwvwI8vNVNbYKkqVeFPNKXe8HA</thumbnail>
+<fanart>https://i.ytimg.com/vi/WdehyAwDK3M/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDcKwvwI8vNVNbYKkqVeFPNKXe8HA</fanart>
+</regex>
+<item>
+
+
+<item>
+<title>[COLOR orange][B]Rutinas para tonificar y fortalecer los glúteos[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>\s?.data-video-id="(.*?)".*data-title="(.*?)"</expres>
+<page>https://www.youtube.com/playlist?list=PLReDUkUQG7xrWBer-RbJ9tZP8e-QjmYPD</page>
+<referer>https://www.youtube.com/user/gymvirtual/playlists</referer>
+<cookieJar></cookieJar>
+<thumbnail>https://i.ytimg.com/vi/EgH9npSDgLA/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBLHMFtdNKLsCwkPxR2k9Sj9dWZRA</thumbnail>
+<fanart>https://i.ytimg.com/vi/EgH9npSDgLA/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBLHMFtdNKLsCwkPxR2k9Sj9dWZRA</fanart>
+</regex>
+<item>
+
+<item>
+<title>[COLOR orange][B]Calentamiento 5 MIN.[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>\s?.data-video-id="(.*?)".*data-title="(.*?)"</expres>
+<page>https://www.youtube.com/playlist?list=PLReDUkUQG7xraf1eawFcEiADm-M8vMMgP</page>
+<referer>https://www.youtube.com/user/gymvirtual/playlists</referer>
+<cookieJar></cookieJar>
+<thumbnail>https://i.ytimg.com/vi/Vwi3bA1HEWA/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLD5gIXQ0VYjjclNfFzvKqXGxiSdxA</thumbnail>
+<fanart>https://i.ytimg.com/vi/Vwi3bA1HEWA/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLD5gIXQ0VYjjclNfFzvKqXGxiSdxA</fanart>
+</regex>
+<item>
+
+
+
+
+
+
 
 
 
