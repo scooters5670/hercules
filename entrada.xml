@@ -88,6 +88,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <externallink>https://raw.githubusercontent.com/Andorth/hercules/master/youtubers/inicio.xml</externallink>
 </item> 
 
+<item>
+<title>Gym Virtual</title>
+<desc>Entrena desde casa con nuestro gimnasio virtual.</desc>
+<thumbnail>https://raw.githubusercontent.com/Andorth/hercules/master/Gym-virtual/logo.png</thumbnail>
+<link>ignore</link>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/Gym-virtual/gymvirtual.xml</externallink>
+</item>
 <!-- Zona Privada - Requiere Activacion. -->
 
 <item>
