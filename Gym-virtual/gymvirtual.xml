@@ -1,10 +1,6 @@
 <item>
 <SetViewMode>55</SetViewMode>
-<item>
-<title>[COLOR white][B]Gym Virtual[/B][/COLOR][ COLOR lime] Patry Jordan[/COLOR]</title> 
-<thumbnail>https://yt3.ggpht.com/-b0NtN-R0N6c/AAAAAAAAAAI/AAAAAAAAAAA/_4rUZxg5lK8/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail> 
-<link>plugin://plugin.video.youtube/play/?playlist_id=PLReDUkUQG7xrb6vRzitNGqrkljvwZHV1G</link>
-</title>
+
 
 <item>
 <title>[COLOR orange]Estiramiento en la zona lumbar[/COLOR]</title> 
@@ -17,6 +13,60 @@
 <thumbnail>https://i.ytimg.com/vi/RPkjCrCtCkY/hqdefault.jpg</thumbnail>
 <link>plugin://plugin.video.youtube/play/?video_id=RPkjCrCtCkY</link>
 </title>
+
+<item>
+<title>[COLOR orange][B][/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<thumbnail>https://yt3.ggpht.com/-b0NtN-R0N6c/AAAAAAAAAAI/AAAAAAAAAAA/_4rUZxg5lK8/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail> 
+<link>plugin://plugin.video.youtube/play/?playlist_id=PLReDUkUQG7xrb6vRzitNGqrkljvwZHV1G</link>
+</title>
+
+<item>
+
+
+
+</title>
+
+<item>
+<title>[COLOR orange][B]Rutinas para tonificar y aplanar el abdomen[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>\s?.data-video-id="(.*?)".*data-title="(.*?)"</expres>
+<page>https://www.youtube.com/playlist?list=PLReDUkUQG7xqd_-mkcf8weHYLDoZLUVD1</page>
+<referer>https://www.youtube.com/user/gymvirtual/playlists</referer>
+<cookieJar></cookieJar>
+<thumbnail>https://i.ytimg.com/vi/k_u8obkaGE4/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCto0bFvozSFy21H1LV44lmyxU-hQ</thumbnail>
+<fanart>https://i.ytimg.com/vi/k_u8obkaGE4/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCto0bFvozSFy21H1LV44lmyxU-hQ</fanart>
+</regex>
+<item>
+
+<item>
+<title>[COLOR orange][B]Rutinas de cardio para adelgazar[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>\s?.data-video-id="(.*?)".*data-title="(.*?)"</expres>
+<page>https://www.youtube.com/playlist?list=PLReDUkUQG7xrigiYln7Pu5RAdGCfANkTt</page>
+<referer>https://www.youtube.com/user/gymvirtual/playlists</referer>
+<cookieJar></cookieJar>
+<thumbnail>https://i.ytimg.com/an_webp/naRDSZN4Yjw/mqdefault_6s.webp?du=3000&sqp=CMi759MF&rs=AOn4CLDu6UAEAm_4luewQHx3jjMfXk4QvQ</thumbnail>
+<fanart>https://i.ytimg.com/an_webp/naRDSZN4Yjw/mqdefault_6s.webp?du=3000&sqp=CMi759MF&rs=AOn4CLDu6UAEAm_4luewQHx3jjMfXk4QvQ</fanart>
+</regex>
+<item>
+
+
+
+
 
 <item>
 <SetViewMode>500</SetViewMode>
