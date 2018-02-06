@@ -1,0 +1,46 @@
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange][B]GYM VIRTUAL[/B] [COLOR white] Patry Jordan [/COLOR] Requiere Addon Youtube.</title>
+<link>$doregex[makelist]</link>
+<regex><name>makelist</name>
+<listrepeat><![CDATA[   
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+<thumbnail>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</thumbnail>
+]]></listrepeat>
+<expres>title="(.*?)".*?watch\?v=(.*?)[",&amp;]</expres>
+<!-- Lista todo el contenido del canal. -->
+<page>https://www.youtube.com/channel/UCPVGUnnNyf_FWLE0cLmphEA</page>
+</regex>  
+<thumbnail>https://i.ytimg.com/vi/[makelist.param1]/hqdefault.jpg</thumbnail>
+</item>
+
+<item>
+<title>Estiramiento en la zona lumbar</title> 
+<thumbnail>https://i.ytimg.com/vi/XcJ1zVXfTfQ/hqdefault.jpg</thumbnail> 
+<link>plugin://plugin.video.youtube/play/?video_id=XcJ1zVXfTfQ</link>
+</title>
+
+<item>
+<title>Aliviar dolor espalda y cuello / cervicales</title> 
+<thumbnail>https://i.ytimg.com/vi/RPkjCrCtCkY/hqdefault.jpg</thumbnail>
+<link>plugin://plugin.video.youtube/play/?video_id=RPkjCrCtCkY</link>
+</title>
+
+<item>
+<SetViewMode>500</SetViewMode>
+<title>[COLOR orange][B]GYM VIRTUAL[/B] [COLOR white] Fausto Carrillo [/COLOR] Requiere Addon Youtube.</title>
+<link>$doregex[makelist]</link>
+<regex><name>makelist</name>
+<listrepeat><![CDATA[   
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+<thumbnail>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</thumbnail>
+]]></listrepeat>
+<expres>title="(.*?)".*?watch\?v=(.*?)[",&amp;]</expres>
+<!-- Lista todo el contenido del canal. -->
+<page>https://www.youtube.com/channel/UCbVNBFaRkgL-6kg92q1fsYw</page>
+</regex>  
+<thumbnail>https://i.ytimg.com/vi/[makelist.param1]/hqdefault.jpg</thumbnail>
+</item>
+
