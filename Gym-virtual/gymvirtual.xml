@@ -22,7 +22,7 @@
 
 
 <item>
-<title>[COLOR orange][B]Rutinas para tonificar y aplanar el abdomen[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<title>[COLOR orange][B]Rutinas para tonificar y aplanar el abdomen[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR]</title> 
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -41,7 +41,7 @@
 <item>
 
 <item>
-<title>[COLOR orange][B]Rutinas de cardio para adelgazar[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<title>[COLOR orange][B]Rutinas de cardio para adelgazar[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR]</title> 
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -60,7 +60,7 @@
 <item>
 
 <item>
-<title>[COLOR orange][B]Rutinas para tonificar y fortalecer los brazos[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<title>[COLOR orange][B]Rutinas para tonificar y fortalecer los brazos[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR]</title> 
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -79,7 +79,7 @@
 <item>
 
 <item>
-<title>[COLOR orange][B]Rutinas Total Body, Trabajar todo el cuerpo[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<title>[COLOR orange][B]Rutinas Total Body, Trabajar todo el cuerpo[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR]</title> 
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -98,7 +98,7 @@
 <item>
 
 <item>
-<title>[COLOR orange][B]Rutinas para bailar y tonificar | TONO BAILE[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<title>[COLOR orange][B]Rutinas para bailar y tonificar | TONO BAILE[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR]</title> 
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -117,7 +117,7 @@
 <item>
 
 <item>
-<title>[COLOR orange][B]Rutinas de cardio intenso, HIIT[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<title>[COLOR orange][B]Rutinas de cardio intenso, HIIT[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR]</title> 
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -137,7 +137,7 @@
 
 
 <item>
-<title>[COLOR orange][B]Rutinas para tonificar las piernas[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<title>[COLOR orange][B]Rutinas para tonificar las piernas[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR]</title> 
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -157,7 +157,7 @@
 
 
 <item>
-<title>[COLOR orange][B]Rutinas para tonificar y fortalecer los glúteos[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<title>[COLOR orange][B]Rutinas para tonificar y fortalecer los glúteos[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR]</title> 
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -176,7 +176,7 @@
 <item>
 
 <item>
-<title>[COLOR orange][B]Calentamiento 5 MIN.[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR][/COLOR]</title> 
+<title>[COLOR orange][B]Calentamiento 5 MIN.[/B][/COLOR][ COLOR white] Patry Jordan[/COLOR]</title> 
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -193,16 +193,6 @@
 <fanart>https://i.ytimg.com/vi/Vwi3bA1HEWA/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLD5gIXQ0VYjjclNfFzvKqXGxiSdxA</fanart>
 </regex>
 <item>
-
-
-
-
-
-
-
-
-
-
 
 <item>
 <SetViewMode>500</SetViewMode>
