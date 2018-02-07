@@ -12,11 +12,35 @@
 </channels>
 
 <item>
-<title>[COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Premium deportes [/COLOR]</title>
+<title>[COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Premium ES [/COLOR]</title>
 <parentalblock>true</parentalblock>
 <link>ignore</link>
-<thumbnail>http://www.gruponetai.com/images/hercules/deportes.png</thumbnail>
-<externallink>https://pastebin.com/raw/hu3SeLiQ$$LSProEncKey=lista-deportes$$</externallink>
+<thumbnail></thumbnail>
+<externallink></externallink>
+</item>
+
+<item>
+<title>[COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Premium ES 2[/COLOR]</title>
+<parentalblock>true</parentalblock>
+<link>ignore</link>
+<thumbnail></thumbnail>
+<externallink></externallink>
+</item>
+
+<item>
+<title>[COLOR white]IPTV[/COLOR][B][COLOR orange][/B] Lista canales latinos[/COLOR]</title>
+<parentalblock>true</parentalblock>
+<link>ignore</link>
+<thumbnail>http://www.ramalin.com/wp-content/uploads/2015/11/mejor-lista-iptv-latina-en-la-hi-207x191.jpg</thumbnail>
+<externallink>https://pastebin.com/raw/NmgN8NYU</externallink>
+</item>
+
+<item>
+<title>[COLOR white]IPTV[/COLOR][B][COLOR orange][/B] Lista canales USA[/COLOR]</title>
+<parentalblock>true</parentalblock>
+<link>ignore</link>
+<thumbnail></thumbnail>
+<externallink></externallink>
 </item>
 
 <item>
@@ -40,6 +64,18 @@
       <credits>Netai, Adryanlist, Grupo Netai.</credits>
     </channels_info>
 </channels>
+
+
+<item>
+<title>[COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Deportes Premium ES [/COLOR]</title>
+<parentalblock>true</parentalblock>
+<link>ignore</link>
+<thumbnail></thumbnail>
+<externallink></externallink>
+</item>
+
+
+
 <item>
 <title>[COLOR orange][B]+Avezy[/B][COLOR gold] Addon Requerido[/COLOR][/COLOR]</title>
 <link>http://Ignoreme</link>
@@ -48,8 +84,6 @@
 <thumbnail>https://raw.githubusercontent.com/Andorth/ArenaSports/master/avezy.jpg</thumbnail>
 </item>
 
-
-
 <item>
 <parentalblock>true</parentalblock> 
 <title>[COLOR white][B]Deportes Adryanlist[/B] [COLOR orange] Plexus + Acestream  [/COLOR]</title>
@@ -57,7 +91,7 @@
 <info>Cortesia de Adryanlist </info>
 <thumbnail>http://adryanlist.org/adryan/img/acestreams.png</thumbnail>
 <fanart>http://adryanlist.org/adryan/img/acestreams.png</fanart>
-<externallink></externallink>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/adryan-deportes.xml</externallink>
 </item>
 
 
