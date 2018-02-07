@@ -95,6 +95,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/hercules/master/Gym-virtual/gymvirtual.xml</externallink>
 </item>
+<item>
+
+<title>[COLOR orange][B]Deportes[/B][/COLOR] Youtube[COLOR white][/COLOR]</title>
+<link>http:/Ignoreme</link>
+<thumbnail>http://www.gruponetai.com/images/hercules/deportes.png</thumbnail>
+<fanart>https:/raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/deportes.xml</externallink>
+</item>
 <!-- Zona Privada - Requiere Activacion. -->
 
 <item>
@@ -158,7 +166,7 @@ def play():
 <fanart>https:/raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
 <thumbnail>https://upload.wikimedia.org/wikipedia/commons/1/1b/SD_Download_Manager_logo.png</thumbnail>
 </item> 
-
+<item>
 <title>[COLOR orange]Creditos[/COLOR]</title>
 <link>$doregex[openDialog]</link>
 <regex>
