@@ -1,11 +1,10 @@
-<items>
 
 <item>
 <title>[COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Premium ES [/COLOR]</title>
 <parentalblock>true</parentalblock>
 <link>ignore</link>
 <thumbnail>https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/be/88/63/be8863ac-9930-12fe-10d7-b3a1379193d6/source/512x512bb.jpg</thumbnail>
-<externallink>http://iptv.xtrego.com:8080/get.php?username=seba&password=seba&type=m3u</externallink>
+<externallink>https://pastebin.com/raw/5rh3XvBc</externallink>
 </item>
 
 <item>
@@ -13,7 +12,7 @@
 <parentalblock>true</parentalblock>
 <link>ignore</link>
 <thumbnail>https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/be/88/63/be8863ac-9930-12fe-10d7-b3a1379193d6/source/512x512bb.jpg</thumbnail>
-<externallink>https://pastebin.com/raw/5rh3XvBc</externallink>
+<externallink>https://pastebin.com/raw/SNqjyiTv</externallink>
 </item>
 
 <item>
@@ -29,7 +28,7 @@
 <parentalblock>true</parentalblock>
 <link>ignore</link>
 <thumbnail>https://s.downloadatoz.com/8/3/4/8fba9a264a07eeac0df415a6bc69d075.jpg</thumbnail>
-<externallink></externallink>
+<externallink>https://pastebin.com/raw/4rNkn4Z1</externallink>
 </item>
 
 <item>
@@ -78,5 +77,3 @@
 <thumbnail>http://www.gruponetai.com/images/hercules/deportes.png</thumbnail>
 <externallink>https://pastebin.com/raw/hu3SeLiQ$$LSProEncKey=lista-deportes$$</externallink>
 </item>
-
-</items>
