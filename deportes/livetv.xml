@@ -1,7 +1,10 @@
 
 <item>
 <title>[COLOR=orange][B][I]Real Madrid Tv [/I][/B][/COLOR]</title>
-<link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1000_av-p.m3u8<link><thumbnail>https://upload.wikimedia.org/wikipedia/en/a/ae/Realmadrid-TV.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+<link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1000_av-p.m3u8<link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/a/ae/Realmadrid-TV.jpg</thumbnail>
+<fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
+</item>
 
 
 
@@ -774,4 +777,14 @@
 </regex>
 <thumbnail></thumbnail>
 </item>
+
+
+<item>
+<title>[COLOR=orange][B]Canales Latinos [/B][/COLOR]</title>
+<link>ignore<link>
+<externallink>https://pastebin.com/raw/HXBbZUJk</externallink>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
 
