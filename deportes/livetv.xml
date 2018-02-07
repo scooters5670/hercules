@@ -1,181 +1,4 @@
 
-<item>
-<title>[COLOR=orange][B][I]Real Madrid Tv [/I][/B][/COLOR]</title>
-<link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1000_av-p.m3u8<link>
-<thumbnail>https://upload.wikimedia.org/wikipedia/en/a/ae/Realmadrid-TV.jpg</thumbnail>
-<fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
-</item>
-
-
-
-<item>
-<title>[COLOR=orange][B][I]Barça Tv [/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=barca&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>http://www.creativesatellite.co.uk/contents/media/barca_tv.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR=orange][B][I]Gol Tv [/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=golesp&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>http://static.goltelevision.com/uploads/gol/web/img/og-image.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR=orange][B][I]Fightime [/I][/B][/COLOR]</title>
-<link><link><thumbnail>http://fight-time.com/wp-content/uploads/2017/03/Fight-Time-Logo-Transparente-1.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Bein Sports[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
-<sportsdevil><sportsdevil>http://cinestrenostv.tv/canales/deportes/multibein/canal1.html</sportsdevil></sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Bein_Sports.png/200px-Bein_Sports.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]La Liga Tv[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=barliga&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>http://i65.tinypic.com/dgm78k.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]La Liga 123[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=ligaunodostres&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>http://files.laliga.es/seccion_logos/laliga-123-h-16-9.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Bein Sports La Liga[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=beinlaliga&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/BeinLaLiga.png/300px-BeinLaLiga.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Bein Sports[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=beinsport&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Bein_Sports.png/200px-Bein_Sports.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Partidazo[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
-<sportsdevil>http://cinestrenostv.tv/canales/deportes/plus-partidazo.php</sportsdevil></sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Movistar_Partidazo.svg/200px-Movistar_Partidazo.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Deportes 1[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
-<sportsdevil>http://cinestrenostv.tv/canales/deportes/multideportes/canal1.html</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Movistar_Deportes_1.svg/200px-Movistar_Deportes_1.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Deportes 1[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=deporteone&width=588&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Movistar_Deportes_1.svg/200px-Movistar_Deportes_1.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Deportes 2[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
-<sportsdevil>http://cinestrenostv.tv/canales/deportes/plusdeportes2.php</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Movistar_Deportes_2.svg/200px-Movistar_Deportes_2.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Deportes 2[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=deportedosm&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Movistar_Deportes_2.svg/200px-Movistar_Deportes_2.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Futbol[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
-<sportsdevil>http://cinestrenostv.tv/canales/deportes/multifutbol/canal1.html</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Movistar_F%C3%BAtbol.svg/200px-Movistar_F%C3%BAtbol.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Futbol[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=futbolespm&width=100%&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Movistar_F%C3%BAtbol.svg/200px-Movistar_F%C3%BAtbol.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Moto Gp[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
-<sportsdevil>http://cinestrenostv.tv/canales/deportes/motogp.php</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Movistar_Moto_GP.svg/200px-Movistar_Moto_GP.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Moto Gp[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=motogpm&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Movistar_Moto_GP.svg/200px-Movistar_Moto_GP.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Formula 1[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
-<sportsdevil>http://cinestrenostv.tv/canales/deportes/formula1.php</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Movistar_Formula_1.svg/200px-Movistar_Formula_1.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Formula 1[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=funoesp&width=100%&height=100%</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Movistar_Formula_1.svg/200px-Movistar_Formula_1.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Teledeporte[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
-<sportsdevil>http://cinestrenostv.tv/canales/deportes/teledeporte.php</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Tve_teledeporte.png/150px-Tve_teledeporte.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Teledeporte[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=teledeporteesp&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Tve_teledeporte.png/150px-Tve_teledeporte.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Nba[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
-<sportsdevil>http://cinestrenostv.tv/canales/deportes/nba/canal.html</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/pt/b/b6/NBALogo.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Nba[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=nnba&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/pt/b/b6/NBALogo.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>[COLOR orange][B][I]Eurosport 1[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
-<sportsdevil>http://cinestrenostv.tv/canales/deportes/eurosports.php</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Eurosport_1_Logo_2015.svg/250px-Eurosport_1_Logo_2015.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-<info>Cortesia de Adryanlist </info>
-
-<item>
-<title>[COLOR orange][B][I]Eurosport 1[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=eurosportsesp&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Eurosport_1_Logo_2015.svg/250px-Eurosport_1_Logo_2015.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-<info>Cortesia de Adryanlist </info>
-
-<item>
-<title>[COLOR orange][B][I]Eurosport 2[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
-<sportsdevil>http://cinestrenostv.tv/canales/deportes/eurosports2.php</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Eurosport_2_Logo_2015.png/250px-Eurosport_2_Logo_2015.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-<info>Cortesia de Adryanlist </info>
-
-<item>
-<title>[COLOR orange][B][I]Eurosport 2[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=eurosportsdosesp&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Eurosport_2_Logo_2015.png/250px-Eurosport_2_Logo_2015.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-<info>Cortesia de Adryanlist </info>
-
-<item>
-<title>[COLOR orange][B][I]Golf[/I][/B][/COLOR]</title>
-<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=golfesp&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Movistar_Golf.svg/200px-Movistar_Golf.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
-
-
-
 
 
 <item>
@@ -246,17 +69,7 @@
  
  
  
- 
- 
- 
- 
- 
- 
-   
- 
- 
- 
- 
+
 <item>
 <title>[COLOR red]BEIN SPORTS ESPAÑA  [/COLOR]</title>
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
@@ -786,5 +599,183 @@
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
+
+
+
+ 
+<item>
+<title>[COLOR=orange][B][I]Real Madrid Tv [/I][/B][/COLOR]</title>
+<link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1000_av-p.m3u8<link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/a/ae/Realmadrid-TV.jpg</thumbnail>
+<fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>[COLOR=orange][B][I]Barça Tv [/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=barca&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>http://www.creativesatellite.co.uk/contents/media/barca_tv.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR=orange][B][I]Gol Tv [/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=golesp&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>http://static.goltelevision.com/uploads/gol/web/img/og-image.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR=orange][B][I]Fightime [/I][/B][/COLOR]</title>
+<link><link><thumbnail>http://fight-time.com/wp-content/uploads/2017/03/Fight-Time-Logo-Transparente-1.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Bein Sports[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
+<sportsdevil><sportsdevil>http://cinestrenostv.tv/canales/deportes/multibein/canal1.html</sportsdevil></sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Bein_Sports.png/200px-Bein_Sports.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]La Liga Tv[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=barliga&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>http://i65.tinypic.com/dgm78k.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]La Liga 123[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=ligaunodostres&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>http://files.laliga.es/seccion_logos/laliga-123-h-16-9.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Bein Sports La Liga[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=beinlaliga&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/BeinLaLiga.png/300px-BeinLaLiga.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Bein Sports[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=beinsport&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Bein_Sports.png/200px-Bein_Sports.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Partidazo[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/plus-partidazo.php</sportsdevil></sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Movistar_Partidazo.svg/200px-Movistar_Partidazo.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Deportes 1[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/multideportes/canal1.html</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Movistar_Deportes_1.svg/200px-Movistar_Deportes_1.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Deportes 1[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=deporteone&width=588&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Movistar_Deportes_1.svg/200px-Movistar_Deportes_1.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Deportes 2[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/plusdeportes2.php</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Movistar_Deportes_2.svg/200px-Movistar_Deportes_2.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Deportes 2[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=deportedosm&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Movistar_Deportes_2.svg/200px-Movistar_Deportes_2.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Futbol[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/multifutbol/canal1.html</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Movistar_F%C3%BAtbol.svg/200px-Movistar_F%C3%BAtbol.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Futbol[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=futbolespm&width=100%&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Movistar_F%C3%BAtbol.svg/200px-Movistar_F%C3%BAtbol.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Moto Gp[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/motogp.php</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Movistar_Moto_GP.svg/200px-Movistar_Moto_GP.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Moto Gp[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=motogpm&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Movistar_Moto_GP.svg/200px-Movistar_Moto_GP.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Formula 1[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/formula1.php</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Movistar_Formula_1.svg/200px-Movistar_Formula_1.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Formula 1[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=funoesp&width=100%&height=100%</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Movistar_Formula_1.svg/200px-Movistar_Formula_1.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Teledeporte[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/teledeporte.php</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Tve_teledeporte.png/150px-Tve_teledeporte.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Teledeporte[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=teledeporteesp&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Tve_teledeporte.png/150px-Tve_teledeporte.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Nba[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/nba/canal.html</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/pt/b/b6/NBALogo.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Nba[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=nnba&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/pt/b/b6/NBALogo.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>[COLOR orange][B][I]Eurosport 1[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/eurosports.php</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Eurosport_1_Logo_2015.svg/250px-Eurosport_1_Logo_2015.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+<info>Cortesia de Adryanlist </info>
+
+<item>
+<title>[COLOR orange][B][I]Eurosport 1[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=eurosportsesp&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Eurosport_1_Logo_2015.svg/250px-Eurosport_1_Logo_2015.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+<info>Cortesia de Adryanlist </info>
+
+<item>
+<title>[COLOR orange][B][I]Eurosport 2[/I][/B][/COLOR] [COLOR orange](Sports Devil)[/COLOR]</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/eurosports2.php</sportsdevil><referer>http://cinestrenostv.tv/canales/deportes/multiliga/canal1.html</referer><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Eurosport_2_Logo_2015.png/250px-Eurosport_2_Logo_2015.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+<info>Cortesia de Adryanlist </info>
+
+<item>
+<title>[COLOR orange][B][I]Eurosport 2[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=eurosportsdosesp&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Eurosport_2_Logo_2015.png/250px-Eurosport_2_Logo_2015.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+<info>Cortesia de Adryanlist </info>
+
+<item>
+<title>[COLOR orange][B][I]Golf[/I][/B][/COLOR]</title>
+<link>$doregex[GetPageUrl]|User-Agent=|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link><regex><name>GetPageUrl</name><expres>source: '(.*?)'</expres><page>http://livesports.pw/embed.php?file=golfesp&width=650&height=397</page><cookieJar></cookieJar></regex><thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Movistar_Golf.svg/200px-Movistar_Golf.svg.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
 
 

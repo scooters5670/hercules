@@ -15,16 +15,16 @@
 <title>[COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Premium ES [/COLOR]</title>
 <parentalblock>true</parentalblock>
 <link>ignore</link>
-<thumbnail></thumbnail>
-<externallink></externallink>
+<thumbnail>https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/be/88/63/be8863ac-9930-12fe-10d7-b3a1379193d6/source/512x512bb.jpg</thumbnail>
+<externallink>http://iptv.xtrego.com:8080/get.php?username=seba&password=seba&type=m3u</externallink>
 </item>
 
 <item>
 <title>[COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Premium ES 2[/COLOR]</title>
 <parentalblock>true</parentalblock>
 <link>ignore</link>
-<thumbnail></thumbnail>
-<externallink></externallink>
+<thumbnail>https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/be/88/63/be8863ac-9930-12fe-10d7-b3a1379193d6/source/512x512bb.jpg</thumbnail>
+<externallink>https://pastebin.com/raw/5rh3XvBc</externallink>
 </item>
 
 <item>
@@ -39,7 +39,7 @@
 <title>[COLOR white]IPTV[/COLOR][B][COLOR orange][/B] Lista canales USA[/COLOR]</title>
 <parentalblock>true</parentalblock>
 <link>ignore</link>
-<thumbnail></thumbnail>
+<thumbnail>https://s.downloadatoz.com/8/3/4/8fba9a264a07eeac0df415a6bc69d075.jpg</thumbnail>
 <externallink></externallink>
 </item>
 
@@ -70,8 +70,8 @@
 <title>[COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Deportes Premium ES [/COLOR]</title>
 <parentalblock>true</parentalblock>
 <link>ignore</link>
-<thumbnail></thumbnail>
-<externallink></externallink>
+<thumbnail>http://imgsdown.1mobile.com/group1/M00/B5/D8/S36rZlaxmw2APk-NAACFwO_83oc847.png</thumbnail>
+<externallink>https://pastebin.com/raw/SNqjyiTv</externallink>
 </item>
 
 
