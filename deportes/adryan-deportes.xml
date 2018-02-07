@@ -1,13 +1,4 @@
-<channels>
-    <channels_info> <!-- this is opitonal -->
-      <title>[COLOR orange]DEPORTES ADRYANLIST[/COLOR]</title> <!-- if channels_info, a title is required, other elements are optional -->
-      <genre>Deportes</genre>
-      <description>Seccion deportes por cortesia de Adryan Hdz (Adryanlist)</description>
-      <thumbnail>http://adryanlist.org/adryan/img/acestreams.png</thumbnail>
-      <fanart>http://adryanlist.org/adryan/img/acestreams.png</fanart>
-      <date>07-02-2018</date>
-      <credits>Adryanlist</credits>
-    </channels_info>
+
 <item>
 <title>[COLOR orange]  [B]FUTBOL [/B][/COLOR](Por Adryanlist) [COLOR lime](Elige tu Liga) [/COLOR]</title>
 <link>$doregex[makelist]</link>
