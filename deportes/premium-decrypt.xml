@@ -1,15 +1,4 @@
-<channels>
-    <channels_info> <!-- this is opitonal -->
-      <title>Television entretenimiento:</title> <!-- if channels_info, a title is required, other elements are optional -->
-      <genre>LIVE TV - TV EN VIVO.</genre>
-      <description>[COLOR lime]Esta seccion es privada, si has logrado entrar. Se agradecido y discreto. Si puedes hechar una mano agradecemos tu ayuda desde nuestra web: [COLOR white]http://gruponetai.com una donacion.
-	  [COLOR lime]Siempre nos ayudara a mantener los servidores en marcha. Esto son muchas horas de trabajo diario, se requieren medios que cuestan dinero. Si aprecias nuestro trabajo puedes ayudarnos a traves de nuestra web.[/COLOR][/COLOR][/COLOR]</description>
-      <thumbnail>https://apkmb.com/wp-content/uploads/2017/01/Live-TV.png</thumbnail>
-      <fanart></fanart>
-      <date>07-02-2018</date>
-      <credits>Netai, Adryanlist, Grupo Netai.</credits>
-    </channels_info>
-</channels>
+<items>
 
 <item>
 <title>[COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Premium ES [/COLOR]</title>
@@ -52,19 +41,6 @@
 <thumbnail>https://raw.githubusercontent.com/Andorth/hercules/master/iptv/icon.png</thumbnail>
 </item>
 
-<channels>
-    <channels_info> <!-- this is opitonal -->
-      <title>SECCION DE DEPORTES</title> <!-- if channels_info, a title is required, other elements are optional -->
-      <genre>LIVE TV - TV EN VIVO.</genre>
-      <description>[COLOR lime]Esta seccion es privada, si has logrado entrar. Se agradecido y discreto. Si puedes hechar una mano agradecemos tu ayuda desde nuestra web: [COLOR white]http://gruponetai.com una donacion.
-	  [COLOR lime]Siempre nos ayudara a mantener los servidores en marcha. Esto son muchas horas de trabajo diario, se requieren medios que cuestan dinero. Si aprecias nuestro trabajo puedes ayudarnos a traves de nuestra web.[/COLOR][/COLOR][/COLOR]</description>
-      <thumbnail>https://cdn6.aptoide.com/imgs/9/9/1/991283538163676d2b98cf09bb69eed8_icon.png</thumbnail>
-      <fanart></fanart>
-      <date>07-02-2018</date>
-      <credits>Netai, Adryanlist, Grupo Netai.</credits>
-    </channels_info>
-</channels>
-
 
 <item>
 <title>[COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Deportes Premium ES [/COLOR]</title>
@@ -103,4 +79,4 @@
 <externallink>https://pastebin.com/raw/hu3SeLiQ$$LSProEncKey=lista-deportes$$</externallink>
 </item>
 
-
+</items>
