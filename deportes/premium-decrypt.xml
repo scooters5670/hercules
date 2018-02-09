@@ -40,17 +40,6 @@
 </item>
 
 
-
-<item>
-<parentalblock></parentalblock>
-<title>[COLOR orange][B]LIVE IPTV[/B][/COLOR][COLOR yellow] [Addon necesario][/COLOR]</title>
-<link>http:/Ignoreme</link>
-<jsonrpc>plugin://plugin.video.live.iptv/</jsonrpc>
-<fanart>https://raw.githubusercontent.com/Andorth/hercules/master/iptv/fanart.jpg</fanart>
-<thumbnail>https://raw.githubusercontent.com/Andorth/hercules/master/iptv/icon.png</thumbnail>
-</item>
-
-
 <item>
 <title>[COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Deportes Premium ES [/COLOR]</title>
 <parentalblock>true</parentalblock>
@@ -79,11 +68,3 @@
 <externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/adryan-deportes.xml</externallink>
 </item>
 
-
-<item>
-<title>[COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Premium deportes [/COLOR]</title>
-<parentalblock>true</parentalblock>
-<link>ignore</link>
-<thumbnail>http://www.gruponetai.com/images/hercules/deportes.png</thumbnail>
-<externallink>https://pastebin.com/raw/hu3SeLiQ$$LSProEncKey=lista-deportes$$</externallink>
-</item>
