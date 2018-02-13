@@ -13,7 +13,7 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR orange][makelist.param1] - [COLOR white][makelist.param3] [COLOR yellow][B]*[makelist.param4][/B]
+<title>[COLOR orange][makelist.param1] [COLOR white][makelist.param3] [COLOR yellow][B][makelist.param4][/B]
 [COLOR lime] [makelist.param5] [COLOR red][makelist.param6][/COLOR]</title>
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail>[makelist.param1]</thumbnail>
@@ -46,6 +46,13 @@
 <referer>http://www.vertelevisor.com/</referer>
 <thumbnail>http://vertelevisor.com/logos/bein-sports.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
+
+<item>
+ <title>[COLOR orange] Bein Sport Ñ[/COLOR]</title>
+<sportsdevil>http://09stream.com/canales/beinsport.html</sportsdevil>
+<referer>http://www.dinostream.pw/channel.php?file=105711&width=650&height=400&autostart=true</referer>
+<thumbnail>http://09stream.com/img/beinlaliga.png</thumbnail>
 </item>
 
 <item>
