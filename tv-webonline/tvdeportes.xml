@@ -13,11 +13,11 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR ][COLOR white]Competicion: [makelist.param1] [COLOR orange] Fecha: [makelist.param2] [COLOR yellow] Hora:  [makelist.param3]  [COLOR white][makelist.param4] vs [makelist.param5][/COLOR] [COLOR orange] Emitido por:[B] [makelist.param6][/B][/COLOR]</title>
+<title>[COLOR ][COLOR white]Competicion: [makelist.param2] [COLOR orange] Fecha: [makelist.param3] [COLOR yellow] Hora:  [makelist.param4]  [COLOR white][B][makelist.param5] vs [makelist.param6][/B][/COLOR] [COLOR orange] Emitido por:[B][COLOR lime] [makelist.param7][/B][/COLOR]</title>
 <link>$doregex[ip]|User-Agent=iPad</link>
-<thumbnail></thumbnail>
+<thumbnail>[makelist.param1]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[competicion:"(.*?)" | fecha:"(.*?)" | hora:"(.*?)\n\s" | local:"(.*?)" | visitante:"(.*?)" | canales:"(.*?)" ]]></expres>
+<expres><![CDATA[logo:"(.*?)" | competicion:"(.*?)" | fecha:"(.*?)" | hora:"(.*?)\n\s" | local:"(.*?)" | visitante:"(.*?)" | canales:"(.*?)" ]]></expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/tv-webonline/eventos.txt</page>
 </regex>
 <thumbnail>http://www.solodeportes.co/wp-content/uploads/2016/09/TVFUTBOL.jpg</thumbnail>
