@@ -12,14 +12,13 @@
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
-<listrepeat><![CDATA[
-<title>[makelist.param2] </title>
+<listrepeat><![CDATA[<title>[makelist.param2] </title>
 <sportsdevil>http://www.vertelevisor.com/[makelist.param1]</sportsdevil>
 <thumbnail>http://www.vertelevisor.com/[makelist.param3]</thumbnail>
 <referer>http://www.vertelevisor.com/</referer>
 ]]></listrepeat>
-<expres><![CDATA[href="(.*?)" title="(.*?) rel="bookmark"><img src="(.*?)"]]></expres>
+<expres><![CDATA[href="(.*?)" title="(.*?)><img src="(.*?)"]]></expres>
 <page>http://www.vertelevisor.com/</page>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail>
+<thumbnail></thumbnail>
 </item>
