@@ -13,7 +13,9 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR orange][makelist.param1] [COLOR white][makelist.param3] [COLOR yellow][B][makelist.param4][/B][COLOR white] [makelist.param5] [COLOR red][makelist.param6][/COLOR]</title>
+<title>[COLOR orange][makelist.param1] [COLOR white][makelist.param3] [COLOR yellow][B][makelist.param4][/B]
+
+[COLOR white] [makelist.param5] [COLOR red][makelist.param6][/COLOR]</title>
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail>[makelist.param1]</thumbnail>
 ]]></listrepeat>
