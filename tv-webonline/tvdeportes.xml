@@ -1,6 +1,7 @@
 <item>
 <title> [COLOR orange][B]La liga 123[/B][/COLOR]  [COLOR lime]  Sportdevil de Jairox [/COLOR]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url='http://www.vertelevisor.com/ver-canal-laliga-123-tv-online-partidos-de-seguda-division/'%26referer='http://www.vertelevisor.com/'</link>
+<sportsdevil>http://www.vertelevisor.com/ver-canal-laliga-123-tv-online-partidos-de-seguda-division/</sportsdevil>
+<referer>http://telefivegb.com/canales/deporte/LIGA123/</referer>
 <thumbnail>http://vertelevisor.com/logos/laliga123.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
 </item>
