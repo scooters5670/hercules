@@ -1,7 +1,25 @@
 <item>
 <title> [COLOR orange][B]La liga 123[/B][/COLOR]  [COLOR lime]  Sportdevil de Jairox [/COLOR]</title>
-<sportsdevil>http://www.vertelevisor.com/ver-canal-laliga-123-tv-online-partidos-de-seguda-division/</sportsdevil>
-<referer>http://telefivegb.com/canales/deporte/LIGA123/</referer>
+<sportsdevil>http://www.vertelevisor.com/category/deportes/</sportsdevil>
+<referer>http://www.vertelevisor.com/</referer>
 <thumbnail>http://vertelevisor.com/logos/laliga123.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
+
+
+<item>
+<title> [COLOR lime]•[/COLOR][COLOR orange]vertelevisor.com[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] </title>
+<sportsdevil>http://www.vertelevisor.com/category/deportes/[makelist.param1]</sportsdevil>
+<thumbnail>http://www.vertelevisor.com/category/deportes/[makelist.param3]</thumbnail>
+<referer>http://www.vertelevisor.com/category/deportes/</referer>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)" title="(.*?)"><img src="(.*?)"]]></expres>
+<page>http://www.vertelevisor.com/category/deportes/</page>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail>
 </item>
