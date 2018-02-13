@@ -13,11 +13,11 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR orange][makelist.param2] [COLOR white][makelist.param3] [COLOR gold][makelist.param4][COLOR white] [makelist.param5][/COLOR]</title>
+<title>[COLOR orange][makelist.param1] [COLOR white][makelist.param3] [COLOR yellow][B][makelist.param4][/B][COLOR white] [makelist.param5] [COLOR red][makelist.param6][/COLOR]</title>
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail>[makelist.param1]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[logo:"(.*?)" fecha:"(.*?)" liga:"(.*?)" evento:"(.*?)" donde:"(.*?)"]]></expres>
+<expres><![CDATA[fecha:"(.*?)"|logo:"(.*?)"|hora:"(.*?)"|liga:"(.*?)"|partido:"(.*?)"|donde:"(.*?)"]]></expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/tv-webonline/eventos.txt</page>
 </regex>
 <thumbnail>http://www.solodeportes.co/wp-content/uploads/2016/09/TVFUTBOL.jpg</thumbnail>
