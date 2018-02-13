@@ -15,9 +15,9 @@
 <listrepeat><![CDATA[
 <title>[COLOR orange]Dia: [makelist.param1] [COLOR white]Hora:[makelist.param3] [COLOR yellow][B]Competicion:[makelist.param4] [COLOR white]Partido [makelist.param5] [COLOR lime]Lo Emiten:[makelist.param6] [COLOR gold]Dial:[makelist.param7][/COLOR][/B]</title>
 <link>$doregex[ip]|User-Agent=iPad</link>
-<thumbnail>[makelist.param1]</thumbnail>
+<thumbnail>[makelist.param2]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[fecha:"(.*?)"|logo:"(.*?)"|hora:"(.*?)"|liga:"(.*?)"|partido:"(.*?)"|donde:"(.*?)"|dial:"(.*?)"]]></expres>
+<expres><![CDATA[fecha:"(.*?)"\s|logo:"(.*?)"\s|hora:"(.*?)"\s|liga:"(.*?)"\s|partido:"(.*?)"|\sdonde:"(.*?)"\s|dial:"(.*?)"]]></expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/tv-webonline/eventos.txt</page>
 </regex>
 <thumbnail>http://www.solodeportes.co/wp-content/uploads/2016/09/TVFUTBOL.jpg</thumbnail>
