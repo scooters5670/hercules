@@ -1,6 +1,6 @@
 
 <item>
-<title>[COLOR orange]Guia TV [FormulaTV][COLOR]</title>
+<title>[COLOR orange]Guia TV [FormulaTV][/COLOR]</title>
  <link>$doregex[makelist]</link>
 
 <regex>
@@ -38,7 +38,7 @@
 <title>[COLOR orange][B]TV Deportes[/B] [COLOR white]vertelevisor.com[/COLOR]</title>
 <link>ignora</link>
 <desc>Seleccion de canales de deportes de las mejores web estables de internet.</desc>
-<externallink>https://raw.githubusercontent.com/Andorth/livetv/master/tvdeportes.xml<externallink>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/tv-webonline/tvdeportes.xml<externallink>
 <thumbnail>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/logo.png</thumbnail>
 </item>
 
