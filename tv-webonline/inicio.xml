@@ -23,8 +23,8 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-[makelist.param2] = [makelist.param2].replace("online en directo"," Sportdevil ")
-<title>[makelist.param2]</title>
+
+<title>[COLOR white]$pyFunction:'[makelist.param2]'.replace("online en directo", " Sportdevil").replace("online en directo gratis", " ").replace("gratis", " ")[/COLOR]</title>
 <sportsdevil>http://cinestrenostv.tv/[makelist.param1]</sportsdevil>
 <thumbnail>http://cinestrenostv.tv/[makelist.param3]</thumbnail>
 <referer>http://cinestrenostv.tv/</referer>
