@@ -6,7 +6,7 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR ][COLOR aquamarine][B][makelist.param1][/B][/COLOR][COLOR deepskyblue][B][makelist.param2] [makelist.param3][/B][/COLOR][/COLOR][makelist.param4] [makelist.param5]</title>
+<title>[COLOR ][COLOR white][B][makelist.param1][/B][/COLOR][COLOR orange][B][makelist.param2] [makelist.param3][/B][/COLOR][/COLOR][makelist.param4] [makelist.param5]</title>
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail>http://adryanlist.org/adryan/img/entretenimiento.png</thumbnail>
 ]]></listrepeat>
