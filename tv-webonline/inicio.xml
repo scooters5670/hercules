@@ -37,22 +37,6 @@
 
 
 <item>
-<title>[B][COLOR orange]vertelevisor.com[/COLOR][/B]</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[<title>[makelist.param2] </title>
-<sportsdevil>http://www.vertelevisor.com/[makelist.param1]</sportsdevil>
-<thumbnail>http://www.vertelevisor.com/[makelist.param3]</thumbnail>
-<referer>http://www.vertelevisor.com/</referer>
-]]></listrepeat>
-<expres><![CDATA[href="(.*?)" title="(.*?)><img src="(.*?)"]]></expres>
-<page>http://www.vertelevisor.com/</page>
-</regex>
-<thumbnail></thumbnail>
-</item>
-
-<item>
 <title>[COLOR orange][B]TV Deportes[/B] [COLOR white]vertelevisor.com[/COLOR]</title>
 <link>ignora</link>
 <desc>Seleccion de canales de deportes de las mejores web estables de internet.</desc>

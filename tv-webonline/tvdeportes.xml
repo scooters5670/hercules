@@ -7,6 +7,24 @@
 </item>
 
 <item>
+<title>[COLOR orange]Donde lo hechan [guia deportes][/COLOR]</title>
+ <link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR ][COLOR white]Hora: [makelist.param1] [COLOR orange] [makelist.param2] [COLOR yellow] [makelist.param3] vs [makelist.param4] [COLOR gold][makelist.param5] [makelist.param6][/COLOR]</title>
+<link>$doregex[ip]|User-Agent=iPad</link>
+<thumbnail>https://www.dondeloechan.com/images/banner_832x128.svg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[itemprop='startDate.*?)"/>.*?\n(.*?)"|"(class='ml1'>.*?)">\n(.*?)\n|homeTeam'">(.*?) icon-vs'>(.*?) class='mr2'>(.*?)  class='mr3'>(.*?)</span>\n\s\s\s(.*)\n]]></expres>
+<page>https://www.dondeloechan.com/</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/guia.png</thumbnail>
+<info>Cortesia de Adryanlist </info>
+ </item>
+
+<item>
 <title> [COLOR orange][B]La liga 123[/B][/COLOR]  [COLOR lime]  Sportdevil de Jairox [/COLOR]</title>
 <sportsdevil>http://www.vertelevisor.com/ver-canal-laliga-123-tv-online-partidos-de-seguda-division/</sportsdevil>
 <referer>http://www.vertelevisor.com/</referer>
