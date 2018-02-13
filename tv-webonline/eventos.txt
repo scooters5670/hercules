@@ -1,1 +1,1 @@
-logo:"http://i.imgur.com/FjRoDPR.png" fecha:"16 Febrero, 21:00" liga:"la liga" evento:"Girona-Leganés" donde:"beIN LaLiga"
+logo:"http://i.imgur.com/FjRoDPR.png" | fecha:"16 Febrero, 21:00" | liga:"la liga" | evento:"Girona-Leganés" | donde:"beIN LaLiga"

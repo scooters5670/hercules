@@ -17,7 +17,7 @@
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail>[makelist.param1]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[logo:"(.*?)"fecha:"(.*?)"\n\sliga:"(.*?)"evento:"(.*?)"donde:"(.*?)"]]></expres>
+<expres><![CDATA[logo:"(.*?)" fecha:"(.*?)" liga:"(.*?)" evento:"(.*?)" donde:"(.*?)"]]></expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/tv-webonline/eventos.txt</page>
 </regex>
 <thumbnail>http://www.solodeportes.co/wp-content/uploads/2016/09/TVFUTBOL.jpg</thumbnail>
