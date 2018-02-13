@@ -8,7 +8,7 @@
 
 <item>
 <title>[COLOR orange]Donde lo hechan [guia deportes][/COLOR]</title>
- <link>$doregex[makelist]</link>
+<link>$doregex[makelist]</link>
 
 <regex>
 <name>makelist</name>
@@ -17,7 +17,7 @@
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail>https://www.dondeloechan.com/images/banner_832x128.svg</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[itemprop='startDate.*?)"/>.*?\n(.*?)"|"(class='ml1'>.*?)">\n(.*?)\n|homeTeam'">(.*?) icon-vs'>(.*?) class='mr2'>(.*?)  class='mr3'>(.*?)</span>\n\s\s\s(.*)\n]]></expres>
+<expres><![CDATA[startDate.*?)"/>.*?\n(.*?)" "(class='ml1'>.*?)">\n(.*?)\n|homeTeam'">(.*?) icon-vs'>(.*?) class='mr2'>(.*?)  class='mr3'>(.*?)</span>\n\s\s\s(.*)\n]]></expres>
 <page>https://www.dondeloechan.com/</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/guia.png</thumbnail>
