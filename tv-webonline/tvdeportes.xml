@@ -14,11 +14,11 @@
 <name>makelist</name>
 <listrepeat><![CDATA[
 <title>[makelist.param2] </title>
-<sportsdevil>http://www.vertelevisor.com/category/deportes/[makelist.param1]</sportsdevil>
-<thumbnail>http://www.vertelevisor.com/category/deportes/[makelist.param3]</thumbnail>
+<sportsdevil>http://www.vertelevisor.com/[makelist.param1]</sportsdevil>
+<thumbnail>http://www.vertelevisor.com/[makelist.param3]</thumbnail>
 <referer>http://www.vertelevisor.com/category/deportes/</referer>
 ]]></listrepeat>
-<expres><![CDATA[href="(.*?)" title="(.*?)"><img src="(.*?)"]]></expres>
+<expres><![CDATA[href="(.*?)" title="(.*?) rel="bookmark"><img src="(.*?)"]]></expres>
 <page>http://www.vertelevisor.com/category/deportes/</page>
 </regex>
 <thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail>
