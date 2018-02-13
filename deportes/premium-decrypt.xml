@@ -1,6 +1,6 @@
 
 <item>
-<title>[COLOR red]*[/COLOR][COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Premium ES [/COLOR]</title>
+<title>[COLOR lime]*[/COLOR][COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Premium ES [/COLOR]</title>
 <parentalblock>true</parentalblock>
 <link>ignore</link>
 <thumbnail>https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/be/88/63/be8863ac-9930-12fe-10d7-b3a1379193d6/source/512x512bb.jpg</thumbnail>
@@ -8,7 +8,7 @@
 </item>
 
 <item>
-<title>[COLOR red]*[/COLOR][COLOR white]IPTV[/COLOR][B][COLOR lime][/B] DEPORTES[/COLOR]</title>
+<title>[COLOR lime]*[/COLOR][COLOR white]IPTV[/COLOR][B][COLOR lime][/B] DEPORTES[/COLOR]</title>
 <parentalblock>true</parentalblock>
 <link>ignore</link>
 <thumbnail>https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/be/88/63/be8863ac-9930-12fe-10d7-b3a1379193d6/source/512x512bb.jpg</thumbnail>
@@ -24,27 +24,6 @@
 </item>
 
 <item>
-<title>[COLOR red]*[/COLOR][COLOR white]IPTV[/COLOR][B][COLOR orange][/B] USA[/COLOR]</title>
-<parentalblock>true</parentalblock>
-<link>ignore</link>
-<thumbnail>https://s.downloadatoz.com/8/3/4/8fba9a264a07eeac0df415a6bc69d075.jpg</thumbnail>
-<externallink>https://pastebin.com/raw/4rNkn4Z1</externallink>
-</item>
-
-<item>
-<title>[COLOR red]*[/COLOR][COLOR white]IPTV[/COLOR][B][COLOR orange][/B] UK[/COLOR]</title>
-<parentalblock>true</parentalblock>
-<link>ignore</link>
-<thumbnail>https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/4b/2c/5c/4b2c5c7a-3b9d-53c9-3fa3-c6f5fbf4cbfc/AppIcon-Uk-1x_U007emarketing-85-220-8.png/246x0w.jpg</thumbnail>
-<externallink>https://pastebin.com/raw/m5cYaQzr</externallink>
-</item>
-
-
-
-
-
-
-<item>
 <title>[COLOR orange][B]+Avezy[/B][COLOR gold] Addon Requerido[/COLOR][/COLOR]</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://plugin.video.avezy/</jsonrpc>
@@ -54,11 +33,11 @@
 
 <item>
 <parentalblock>true</parentalblock> 
-<title>[COLOR white][B]Deportes Adryanlist[/B] [COLOR orange] Plexus + Acestream  [/COLOR]</title>
+<title>[COLOR white][B]Deportes[/B] [COLOR orange] Plexus + Acestream  [/COLOR]</title>
 <link>http://ignorame</link>
 <info>Cortesia de Adryanlist </info>
-<thumbnail>http://adryanlist.org/adryan/img/acestreams.png</thumbnail>
-<fanart>http://adryanlist.org/adryan/img/acestreams.png</fanart>
+<thumbnail>http://www.gruponetai.com/imagenes/deportes.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
 <externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/adryan-deportes.xml</externallink>
 </item>
 

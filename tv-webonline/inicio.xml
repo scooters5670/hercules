@@ -1,0 +1,86 @@
+<item>
+<title>Donde lo hechan []</title>
+ <link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][COLOR orange][B][makelist.param1][/B][/COLOR][COLOR white][B][makelist.param2] [makelist.param3][/B][/COLOR][/COLOR][makelist.param4] [makelist.param5] [makelist.param6] [makelist.param7]</title>
+<link>$doregex[ip]|User-Agent=iPad</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[datetime=".*?n\s(.*?)"|"(championship.*?)">\n\s\s\s(.*?)\n|gamedescription">(.*?)|local">(.*?)|visitor">(.*?)|channelinfo">(.*?)|chname">(.*?)|</div>\n\s\s\s(.*)\n]]></expres>
+<page>http://dondeverlo.com/futbol</page>
+</regex>
+<thumbnail></thumbnail>
+<info></info>
+ </item>
+
+<item>
+<title>Guia TV [FormulaTV]</title>
+ <link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR ][COLOR aquamarine][B][makelist.param1][/B][/COLOR][COLOR deepskyblue][B][makelist.param2] [makelist.param3][/B][/COLOR][/COLOR][makelist.param4] [makelist.param5]</title>
+<link>$doregex[ip]|User-Agent=iPad</link>
+<thumbnail>http://adryanlist.org/adryan/img/entretenimiento.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[title=.*?n\s(.*?)"|"(ahor.*?)">\n\s\s\s(.*?)\n|date">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
+<page>http://www.formulatv.com/programacion/</page>
+</regex>
+<thumbnail></thumbnail>
+<info>Cortesia de Adryanlist </info>
+ </item>
+
+<item>
+<title>[COLOR orange][B]cineestrenos.tv[/B] [/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] </title>
+<sportsdevil>http://cinestrenostv.tv/[makelist.param1]</sportsdevil>
+<thumbnail>http://cinestrenostv.tv/[makelist.param1]</thumbnail>
+<referer>http://cinestrenostv.tv/</referer>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)" title="(.*?)" target="tv"><img src="(.*?)"]]></expres>
+<page>http://cinestrenostv.tv/</page>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR orange][B]vertelevisor.com[/B] [/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] </title>
+<sportsdevil>http://www.vertelevisor.com/[makelist.param1]</sportsdevil>
+<thumbnail>http://www.vertelevisor.com/[makelist.param1]</thumbnail>
+<referer>http://www.vertelevisor.com/</referer>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)" title="(.*?)"><img src="(.*?)"]]></expres>
+<page>/</page>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR orange][B]vercanalestv.com[/B] [/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] </title>
+<sportsdevil>hhttp://www.vercanalestv.com/[makelist.param1]</sportsdevil>
+<thumbnail>http://www.vercanalestv.com/[makelist.param1]</thumbnail>
+<referer>http://www.vercanalestv.com/category/deportes/</referer>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)" title="(.*?)"><img src="(.*?)"]]></expres>
+<page>http://www.vercanalestv.com/category/deportes/</page>
+</regex>
+<thumbnail></thumbnail>
+</item>
