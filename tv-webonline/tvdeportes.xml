@@ -1,4 +1,12 @@
 <item>
+<title> [COLOR orange][B]Canales de Deportes[/B][/COLOR]  [COLOR white] vertelevisor.com [/COLOR]</title>
+<jsonrpc>plugin://plugin.video.</jsonrpc>
+<referer>http://www.vertelevisor.com/</referer>
+<thumbnail>http://vertelevisor.com/logos/laliga123.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
+
+<item>
 <title> [COLOR orange][B]La liga 123[/B][/COLOR]  [COLOR lime]  Sportdevil de Jairox [/COLOR]</title>
 <sportsdevil>http://www.vertelevisor.com/ver-canal-laliga-123-tv-online-partidos-de-seguda-division/</sportsdevil>
 <referer>http://www.vertelevisor.com/</referer>
@@ -6,19 +14,21 @@
 <fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
 </item>
 
+<item>
+<title> [COLOR orange][B]Beinsport |España[/B][/COLOR]  [COLOR lime]  Sportdevil de Jairox [/COLOR]</title>
+<sportsdevil>http://www.vertelevisor.com/ver-elitegol-futbol-online-en-directo-gratis-por-internet/</sportsdevil>
+<referer>http://www.vertelevisor.com/</referer>
+<thumbnail>http://vertelevisor.com/logos/bein-sports.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
 
 <item>
-<title> [COLOR lime]•[/COLOR][COLOR orange]vertelevisor.com[/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[<title>[makelist.param2] </title>
-<sportsdevil>http://www.vertelevisor.com/[makelist.param1]</sportsdevil>
-<thumbnail>http://www.vertelevisor.com/[makelist.param3]</thumbnail>
+<title> [COLOR orange][B]Beinsport |la liga[/B][/COLOR]  [COLOR lime]  Sportdevil de Jairox [/COLOR]</title>
+<sportsdevil>http://www.vertelevisor.com/ver-bein-sport-liga-online-en-directo-24h-online/</sportsdevil>
 <referer>http://www.vertelevisor.com/</referer>
-]]></listrepeat>
-<expres><![CDATA[href="(.*?)" title="(.*?)><img src="(.*?)"]]></expres>
-<page>http://www.vertelevisor.com/</page>
-</regex>
-<thumbnail></thumbnail>
+<thumbnail>http://vertelevisor.com/logos/bein-laliga.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
 </item>
+
+
+
