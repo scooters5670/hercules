@@ -13,7 +13,7 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[COLOR ][COLOR white] [makelist.param2] [COLOR orange] Fecha: [B] [makelist.param4] vs [makelist.param5]  [/B][/COLOR] [COLOR orange] Emitido por:[B][COLOR white] [makelist.param6][/B][/COLOR]</title>
+<title>[COLOR ][COLOR white][makelist.param2] [COLOR orange][makelist.param3], [makelist.param4] [Color yellow]Emitido por: [COLOR gold][makelist.param5][/COLOR]</title>
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail>[makelist.param1]</thumbnail>
 ]]></listrepeat>
