@@ -1,2 +1,1 @@
-logo:"http://i.imgur.com/FjRoDPR.png" fecha"16 Febrero, 21:00" liga:"la liga" evento"Girona-Leganés" donde"beIN LaLiga"
-logo:"http://www.elperiodicodelafresneda.es/wp-content/uploads/2017/11/LOGO-LIGA-123-3-265x300.png" fecha"16 Febrero, 21:00" liga"la liga 123" evento"Valladolid-Huesca" donde"Gol TV * La Liga 123 TV"
+logo:"http://i.imgur.com/FjRoDPR.png" fecha:"16 Febrero, 21:00" liga:"la liga" evento:"Girona-Leganés" donde:"beIN LaLiga"
