@@ -110,7 +110,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>http:/Ignoreme</link>
 <thumbnail>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.png</fanart>
-<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/.xml</externallink>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/tv-webonline/inicio.xml</externallink>
 </item>
 <!-- Zona Privada - Requiere Activacion. -->
 
