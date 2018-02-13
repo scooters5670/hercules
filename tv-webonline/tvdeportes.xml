@@ -17,7 +17,7 @@
 <link>$doregex[ip]|User-Agent=iPad</link>
 <thumbnail></thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[competicion:"(.*?)" | fecha:"(.*?)" | hora:"(.*?)\n\s\s\s" | local:"(.*?)" | visitante:"(.*?)" | canales:"(.*?)" ]]></expres>
+<expres><![CDATA[competicion:"(.*?)" | fecha:"(.*?)" | hora:"(.*?)\n\s" | local:"(.*?)" | visitante:"(.*?)" | canales:"(.*?)" ]]></expres>
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/tv-webonline/eventos.txt</page>
 </regex>
 <thumbnail>http://www.solodeportes.co/wp-content/uploads/2016/09/TVFUTBOL.jpg</thumbnail>

@@ -1,3 +1,2 @@
-#competicion:"" fecha:"" | hora:"" | local:"" | visitante:"" | canales:"" |
 competicion:"LaLiga Santander"  fecha:"Viernes, 16 de febrero de 2018" | hora:"ES 21:00 CAN 20:00 MEX 15:00" | local:"Girona" | visitante:"Leganés" | canales:"beIN LaLiga - LaLiga TV (HORECA)"
 competicion:"Liga123" fecha:"Viernes, 16 de febrero de 201" | hora:"21:00" | local:"Real Valladolid" | visitante:"Huesca" | canales:"LaLiga 1|2|3 TV | LaLiga TV Multi 1 (HORECA) | Opensport"
