@@ -25,7 +25,7 @@
 </item>
 
 <item>
-<title> [COLOR orange][B]Movistar |#0[/B][/COLOR]</title>
+<title> [COLOR orange][COLOR white]Dial 1[/COLOR]</title>
 <sportsdevil>http://www.vertelevisor.com/ver-canal-cero-en-directo-gratis-por-internet/</sportsdevil>
 <referer>http://www.vertelevisor.com/</referer>
 <thumbnail>http://vertelevisor.com/logos/canal-cero.png</thumbnail>
@@ -33,7 +33,7 @@
 </item>
 
 <item>
-<title> [COLOR orange][B]La liga 123[/B][/COLOR] </title>
+<title> [COLOR orange][/COLOR][COLOR white]Dial 2[/COLOR] </title>
 <sportsdevil>http://www.vertelevisor.com/ver-canal-laliga-123-tv-online-partidos-de-seguda-division/</sportsdevil>
 <referer>http://www.vertelevisor.com/</referer>
 <thumbnail>http://vertelevisor.com/logos/laliga123.jpg</thumbnail>
@@ -41,7 +41,7 @@
 </item>
 
 <item>
-<title> [COLOR orange][B]Beinsport |ESP[/B][/COLOR] </title>
+<title> [COLOR orange][B][/B][/COLOR][COLOR white]Dial 3[/COLOR] </title>
 <sportsdevil>http://www.vertelevisor.com/ver-elitegol-futbol-online-en-directo-gratis-por-internet/</sportsdevil>
 <referer>http://www.vertelevisor.com/</referer>
 <thumbnail>http://vertelevisor.com/logos/bein-sports.png</thumbnail>
@@ -49,14 +49,7 @@
 </item>
 
 <item>
- <title>[COLOR orange] Bein Sport Ñ[/COLOR]</title>
-<sportsdevil>http://09stream.com/canales/beinsport.html</sportsdevil>
-<referer>http://www.dinostream.pw/channel.php?file=105711&width=650&height=400&autostart=true</referer>
-<thumbnail>http://09stream.com/img/beinlaliga.png</thumbnail>
-</item>
-
-<item>
-<title> [COLOR orange][B]Beinsport |la liga[/B][/COLOR]</title>
+<title> [COLOR orange][B][/B][/COLOR] [COLOR white]Dial 4[/COLOR]</title>
 <sportsdevil>http://www.vertelevisor.com/ver-bein-sport-liga-online-en-directo-24h-online/</sportsdevil>
 <referer>http://www.vertelevisor.com/</referer>
 <thumbnail>http://vertelevisor.com/logos/bein-laliga.jpg</thumbnail>
@@ -64,7 +57,7 @@
 </item>
 
 <item>
-<title> [COLOR orange][B]Movistar |Futbol[/B][/COLOR]</title>
+<title> [COLOR orange][B][/B][/COLOR] [COLOR white]Dial 5[/COLOR]</title>
 <sportsdevil>http://www.vertelevisor.com/ver-canal-movistar-futbol-en-directo-gratis-por-internet/</sportsdevil>
 <referer>http://www.vertelevisor.com/</referer>
 <thumbnail>http://vertelevisor.com/logos/m-futbol.png</thumbnail>
@@ -72,7 +65,7 @@
 </item>
 
 <item>
-<title> [COLOR orange][B]Movistar |Partidazo[/B][/COLOR]</title>
+<title> [COLOR orange][B][/B][/COLOR] [COLOR white]Dial 6[/COLOR]</title>
 <sportsdevil>http://www.vertelevisor.com/ver-canal-movistar-partidazo-online-en-directo-gratis-por-internet-24h/</sportsdevil>
 <referer>http://www.vertelevisor.com/</referer>
 <thumbnail>http://vertelevisor.com/logos/m-partidazo.png</thumbnail>
@@ -80,7 +73,65 @@
 </item>
 
 <item>
-<title> [COLOR orange][B]Gol TV |[/B][/COLOR]</title>
+<title> [COLOR orange][B]Gol TV |[/B][/COLOR] [COLOR white]Dial 7[/COLOR]</title>
+<sportsdevil>http://www.vertelevisor.com/ver-goltv-en-directo-gratis-por-internet/</sportsdevil>
+<referer>http://www.vertelevisor.com/</referer>
+<thumbnail>http://vertelevisor.com/imagenes/goltv.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
+
+<!-- CANALES SPORTDEVIL -->
+
+<item>
+<title> [COLOR orange][B]Movistar |#0[/B] [COLOR white]Dial 1[/COLOR]</title>
+<sportsdevil>http://www.vertelevisor.com/ver-canal-cero-en-directo-gratis-por-internet/</sportsdevil>
+<referer>http://www.vertelevisor.com/</referer>
+<thumbnail>http://vertelevisor.com/logos/canal-cero.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
+
+<item>
+<title> [COLOR orange][B]La liga 123[/B][/COLOR][COLOR white]Dial 2[/COLOR] </title>
+<sportsdevil>http://www.vertelevisor.com/ver-canal-laliga-123-tv-online-partidos-de-seguda-division/</sportsdevil>
+<referer>http://www.vertelevisor.com/</referer>
+<thumbnail>http://vertelevisor.com/logos/laliga123.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
+
+<item>
+<title> [COLOR orange][B]Beinsport |ESP[/B][/COLOR][COLOR white]Dial 3[/COLOR] </title>
+<sportsdevil>http://www.vertelevisor.com/ver-elitegol-futbol-online-en-directo-gratis-por-internet/</sportsdevil>
+<referer>http://www.vertelevisor.com/</referer>
+<thumbnail>http://vertelevisor.com/logos/bein-sports.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
+
+<item>
+<title> [COLOR orange][B]Beinsport |la liga[/B][/COLOR] [COLOR white]Dial 4[/COLOR]</title>
+<sportsdevil>http://www.vertelevisor.com/ver-bein-sport-liga-online-en-directo-24h-online/</sportsdevil>
+<referer>http://www.vertelevisor.com/</referer>
+<thumbnail>http://vertelevisor.com/logos/bein-laliga.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
+
+<item>
+<title> [COLOR orange][B]Movistar |Futbol[/B][/COLOR] [COLOR white]Dial 5[/COLOR]</title>
+<sportsdevil>http://www.vertelevisor.com/ver-canal-movistar-futbol-en-directo-gratis-por-internet/</sportsdevil>
+<referer>http://www.vertelevisor.com/</referer>
+<thumbnail>http://vertelevisor.com/logos/m-futbol.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
+
+<item>
+<title> [COLOR orange][B]Movistar |Partidazo[/B][/COLOR] [COLOR white]Dial 6[/COLOR]</title>
+<sportsdevil>http://www.vertelevisor.com/ver-canal-movistar-partidazo-online-en-directo-gratis-por-internet-24h/</sportsdevil>
+<referer>http://www.vertelevisor.com/</referer>
+<thumbnail>http://vertelevisor.com/logos/m-partidazo.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
+
+<item>
+<title> [COLOR orange][B]Gol TV |[/B][/COLOR] [COLOR white]Dial 7[/COLOR]</title>
 <sportsdevil>http://www.vertelevisor.com/ver-goltv-en-directo-gratis-por-internet/</sportsdevil>
 <referer>http://www.vertelevisor.com/</referer>
 <thumbnail>http://vertelevisor.com/imagenes/goltv.jpg</thumbnail>
