@@ -22,8 +22,15 @@
 <page>https://raw.githubusercontent.com/Andorth/hercules/master/tv-webonline/eventos.txt</page>
 </regex>
 <thumbnail>http://www.solodeportes.co/wp-content/uploads/2016/09/TVFUTBOL.jpg</thumbnail>
+</item>
 
- </item>
+<item>
+<title> [COLOR orange][B]Movistar |#0[/B][/COLOR]</title>
+<sportsdevil>http://www.vertelevisor.com/ver-canal-cero-en-directo-gratis-por-internet/</sportsdevil>
+<referer>http://www.vertelevisor.com/</referer>
+<thumbnail>http://vertelevisor.com/logos/canal-cero.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
 
 <item>
 <title> [COLOR orange][B]La liga 123[/B][/COLOR] </title>
@@ -48,6 +55,23 @@
 <thumbnail>http://vertelevisor.com/logos/bein-laliga.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
 </item>
+
+<item>
+<title> [COLOR orange][B]Movistar |Futbol[/B][/COLOR]</title>
+<sportsdevil>http://www.vertelevisor.com/ver-canal-movistar-futbol-en-directo-gratis-por-internet/</sportsdevil>
+<referer>http://www.vertelevisor.com/</referer>
+<thumbnail>http://vertelevisor.com/logos/m-futbol.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
+
+<item>
+<title> [COLOR orange][B]Movistar |Partidazo[/B][/COLOR]</title>
+<sportsdevil>http://www.vertelevisor.com/ver-canal-movistar-partidazo-online-en-directo-gratis-por-internet-24h/</sportsdevil>
+<referer>http://www.vertelevisor.com/</referer>
+<thumbnail>http://vertelevisor.com/logos/m-partidazo.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.jpg</fanart>
+</item>
+
 
 
 
