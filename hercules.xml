@@ -34,13 +34,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://www.gruponetai.com/images/hercules/videotuto.png</thumbnail>
 </item>
 
-<item>
-<title>[COLOR skyblue][B]Adryanlist[/B][/COLOR][COLOR white] [Gracias por tu apoyo.][/COLOR]</title>
-<link>http:/Ignoreme</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/list.xml</externallink>
-<fanart>https://i.ytimg.com/vi/aDcsJnUIlVs/maxresdefault.jpg</fanart>
-<thumbnail>https://pbs.twimg.com/profile_images/900488110240219136/-L6a8pq1.jpg</thumbnail>
-</item>  
 
 <item>
 <title>[COLOR orange]Series[/COLOR]</title>
@@ -95,8 +88,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>ignore</link>
 <externallink>https://raw.githubusercontent.com/Andorth/hercules/master/Gym-virtual/gymvirtual.xml</externallink>
 </item>
-<item>
 
+<item>
 <title>[COLOR orange][B]Deportes[/B][/COLOR] Youtube[COLOR white][/COLOR]</title>
 <link>http:/Ignoreme</link>
 <thumbnail>http://www.gruponetai.com/images/hercules/deportes.png</thumbnail>
@@ -104,7 +97,29 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/deportes.xml</externallink>
 </item>
 
+<item>
+<title>[COLOR orange][B]Live TV[/B][/COLOR] Youtube[COLOR white][/COLOR]</title>
+<link>http:/Ignoreme</link>
+<thumbnail>https://raw.githubusercontent.com/Andorth/hercules/master/tv-webonline/imagenes/icon.png</thumbnail>
+<fanart>https:/raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/tv-webonline/inicio.xml</externallink>
+</item>
 
+<item>
+<title>[COLOR orange][B]+Avezy[/B][COLOR gold] Addon Requerido[/COLOR][/COLOR]</title>
+<link>http://Ignoreme</link>
+<jsonrpc>plugin://plugin.video.avezy/</jsonrpc>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/Andorth/ArenaSports/master/avezy.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR orange][B]+Sportweb[/B][COLOR gold] Addon Requerido[/COLOR][/COLOR]</title>
+<link>http://Ignoreme</link>
+<jsonrpc>plugin://plugin.video.sportweb/</jsonrpc>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
+<thumbnail>https://i.imgur.com/aBFk6WM.png</thumbnail>
+</item>
 
 
 <item>
@@ -116,7 +131,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://upload.wikimedia.org/wikipedia/commons/1/1b/SD_Download_Manager_logo.png</thumbnail>
 </item> 
 <item>
-<title>[COLOR orange]Creditos[/COLOR]</title>
+<!--<title>[COLOR orange]Creditos[/COLOR]</title>
 <link>$doregex[openDialog]</link>
 <regex>
 <name>openDialog</name>
@@ -136,5 +151,5 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>http:/www.thebarlowrchigh.co.uk/media/184153/information-icon.png</thumbnail>
 <fanart>https:/raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
-</item>
+</item>-->
 </items>

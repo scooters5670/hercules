@@ -7,6 +7,57 @@
 </item>
 
 <item>
+<title>[COLOR lime]*[/COLOR][COLOR white]IPTV[/COLOR][B][COLOR lime][/B] Premium ES [/COLOR]</title>
+<parentalblock>true</parentalblock>
+<link>ignore</link>
+<thumbnail>https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/be/88/63/be8863ac-9930-12fe-10d7-b3a1379193d6/source/512x512bb.jpg</thumbnail>
+<externallink>https://pastebin.com/raw/UNKgwNt7</externallink>
+</item>
+
+<item>
+<title>[COLOR lime]*[/COLOR][COLOR white]IPTV[/COLOR][B][COLOR lime][/B] DEPORTES[/COLOR]</title>
+<parentalblock>true</parentalblock>
+<link>ignore</link>
+<thumbnail>https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/be/88/63/be8863ac-9930-12fe-10d7-b3a1379193d6/source/512x512bb.jpg</thumbnail>
+<externallink>https://pastebin.com/raw/bBE5XGrk</externallink>
+</item>
+
+<item>
+<title>[COLOR red]*[/COLOR][COLOR white]IPTV[/COLOR][B][COLOR orange][/B] LATINOS[/COLOR]</title>
+<parentalblock>true</parentalblock>
+<link>ignore</link>
+<thumbnail>http://www.ramalin.com/wp-content/uploads/2015/11/mejor-lista-iptv-latina-en-la-hi-207x191.jpg</thumbnail>
+<externallink>https://pastebin.com/raw/NmgN8NYU</externallink>
+</item>
+
+<item>
+<title>[COLOR orange][B]+Avezy[/B][COLOR gold] Addon Requerido[/COLOR][/COLOR]</title>
+<link>http://Ignoreme</link>
+<jsonrpc>plugin://plugin.video.avezy/</jsonrpc>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/Andorth/ArenaSports/master/avezy.jpg</thumbnail>
+</item>
+
+<item>
+<parentalblock>true</parentalblock> 
+<title>[COLOR white][B]Deportes[/B] [COLOR orange] Plexus + Acestream  [/COLOR]</title>
+<link>http://ignorame</link>
+<info>Cortesia de Adryanlist </info>
+<thumbnail>http://www.gruponetai.com/imagenes/deportes.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/imagenes/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/deportes/adryan-deportes.xml</externallink>
+</item>
+
+<item>
+<title>[COLOR orange][B]Live TV online[/B][/COLOR] [COLOR white][/COLOR]</title>
+<link>http:/Ignoreme</link>
+<thumbnail>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/icon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/Andorth/livetv/master/imagenes/fanart.png</fanart>
+<externallink>https://raw.githubusercontent.com/Andorth/hercules/master/tv-webonline/inicio.xml</externallink>
+</item>
+
+
+<item>
 <title>[COLOR orange][B]+ Liga Santander[/B][COLOR white] Calentamientos y ruedas de prensa. [/COLOR][/COLOR]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.youtube/playlist/PLKj1QUtwqLN-vfkNAW15pQYzb5g7eMjZL/</jsonrpc>

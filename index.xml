@@ -2,7 +2,25 @@
 <SetViewMode>55</SetViewMode>
 <items>
 <item>
-<title>[COLOR orange][B]Bienvenidos a Hercules.[/B][/COLOR] [COLOR red]Actualice a la version 1.3.2 !![/COLOR]</title>
+<title>[COLOR orange][B]Bienvenidos a Hercules.[/B][/COLOR] [COLOR white][/COLOR]</title>
+<jsonrpc>http:/Ignoreme</jsonrpc>
+<thumbnail>http://www.gruponetai.com/images/hercules/icon.png</thumbnail>
+<externallink></externallink>
+</item>
+<item>
+<title>[COLOR red][B]ADDON CERRADO! [/B][COLOR]</title>
+<jsonrpc>http:/Ignoreme</jsonrpc>
+<thumbnail>http://www.gruponetai.com/images/hercules/icon.png</thumbnail>
+<externallink></externallink>
+</item>
+<item>
+<title>[COLOR white]El grupo Netai ha decidido cerrar indefinidamente Hercules.[/COLOR]</title>
+<jsonrpc>http:/Ignoreme</jsonrpc>
+<thumbnail>http://www.gruponetai.com/images/hercules/icon.png</thumbnail>
+<externallink></externallink>
+</item>
+<item>
+<jsonrpc>[COLOR white]Muchas gracias a todos por vuestro apoyo.[/COLOR]</jsonrpc></title>
 <link>http:/Ignoreme</link>
 <thumbnail>http://www.gruponetai.com/images/hercules/icon.png</thumbnail>
 <externallink></externallink>

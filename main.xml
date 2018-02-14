@@ -4,7 +4,7 @@
 <!-- Zona Privada - Requiere Activacion. -->
 <item>
 <parentalblock>true</parentalblock> 
-<title>[COLOR gold][B]Hercules:[/B] [/COLOR][COLOR white] Area privada.[/COLOR]</title>
+<title>[COLOR gold][B]Hercules:[/B] [/COLOR][COLOR white] Cerrado.[/COLOR]</title>
 <thumbnail>https://www.aixacorpore.es/wp-content/uploads/2017/11/area-privada_LOPD-150x150.png</thumbnail>
 <link>NA</link>
 <externallink>$doregex[getinput]</externallink>
