@@ -97,8 +97,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[COLOR lime]Heroes[/COLOR] T1-T4 [COLOR white] Series Papaya [/COLOR]</title>
 <link>$doregex[makelist1]</link>
-<thumbnail>https://www.elitetorrent.biz/wp-content/uploads/portadas/portada-doctora-en-alabama-3x22-final-5xcaA.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/Andorth/Hercules/master/fanart.jpg</fanart>
+<thumbnail>http://images.subs4free.com/newthumbs/s4fimg-0813715_big-s270.jpg</thumbnail>
+<fanart>http://images.subs4free.com/newthumbs/s4fimg-0813715_big-s270.jpg</fanart>
 <regex>
 <name>makelist1</name>
 <listrepeat><![CDATA[
