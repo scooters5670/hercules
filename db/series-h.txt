@@ -1,4 +1,4 @@
-Name:"Habitacion perdida [mini serie] [Castellano]" url:"http://diskokosmiko.mx/trivianita/habitacion-perdida-76145" img:"https://pics.filmaffinity.com/the_lost_room-424958393-large.jpg"; server:"http://diskokosmiko.mx"
-Name:"Halfworlds T1 [mkv][Castellano]" url:"diskokosmiko.mx/SeriesHD/halfworlds-t1-45709" img:"https://pics.filmaffinity.com/halfworlds_tv_series-927687249-large.jpg"; server:"http://diskokosmiko.mx"
-Name:"Harfworlds T2 [mkv] [Castellano]" url:"http://diskokosmiko.mx/SeriesHD/halfworlds-t2-61952" img:"https://pics.filmaffinity.com/halfworlds_tv_series-927687249-large.jpg"; server:"http://diskokosmiko.mx"
-Name:"Heroes T1-T4 sd" url:"http://diskokosmiko.mx/garroteca/heroes-96601/list,1,4" img:"https://occ-0-2568-2567.1.nflxso.net/art/7df36/572d9f90ceaa1ec1a1c29aecf7a6cc0fda07df36.jpg"; server:"http://diskokosmiko.mx"
+Name:"Habitacion perdida [mini serie] [Castellano]" url:"http://diskokosmiko.mx/trivianita/habitacion-perdida-76145" img:"http://4.bp.blogspot.com/-Lhax0NUOe-A/UzbzF8J_CwI/AAAAAAAAjbg/Vl9mUwV6DXk/s1600/affiche.jpg"; server:"http://diskokosmiko.mx"
+Name:"Halfworlds T1 [mkv][Castellano]" url:"diskokosmiko.mx/SeriesHD/halfworlds-t1-45709" img:"https://storyboardfilm.files.wordpress.com/2015/11/halfworldsposter.jpg?w=202&h=300"; server:"http://diskokosmiko.mx"
+Name:"Harfworlds T2 [mkv] [Castellano]" url:"http://diskokosmiko.mx/SeriesHD/halfworlds-t2-61952" img:"https://storyboardfilm.files.wordpress.com/2015/11/halfworldsposter.jpg?w=202&h=300"; server:"http://diskokosmiko.mx"
+Name:"Heroes T1-T4 sd" url:"http://diskokosmiko.mx/garroteca/heroes-96601" img:"https://occ-0-2568-2567.1.nflxso.net/art/7df36/572d9f90ceaa1ec1a1c29aecf7a6cc0fda07df36.jpg"; server:"http://diskokosmiko.mx"
