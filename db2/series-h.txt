@@ -1,9 +1,5 @@
-<<<<<<< HEAD
+Nombre:"Heroes T4 hd 720 mkv" src="http://kbagi.com/erteco/heroes-t1-t2-t3-t4-607793" img="https://art-s.nflximg.net/7df36/572d9f90ceaa1ec1a1c29aecf7a6cc0fda07df36.jpg";
 
-Nombre:"Heroes T4 hd 720 mkv" src="http://kbagi.com/erteco/heroes-t1-t2-t3-t4-607793/" img="https://art-s.nflximg.net/7df36/572d9f90ceaa1ec1a1c29aecf7a6cc0fda07df36.jpg";
-=======
-Nombre:"Heroes T1-T4 [mkv] 720 hd" src="http://kbagi.com/erteco/heroes-t1-t2-t3-t4-607793" img="https://art-s.nflximg.net/7df36/572d9f90ceaa1ec1a1c29aecf7a6cc0fda07df36.jpg";
->>>>>>> origin/master
 
 
 
